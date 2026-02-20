@@ -92,10 +92,8 @@ export default function BrandCheckPage({ params }: PageProps) {
               Is {brand.name} Accessible?
             </h1>
             <p className="text-lg text-slate-300">
-              Our AI-driven scan models common WCAG 2.1 checks to estimate how accessible
-              {" "}
-              {brand.name} is today. The score below is a representative snapshot based on
-              high-impact criteria.
+              {brand.description ??
+                `Our AI-driven scan models common WCAG 2.1 checks to estimate how accessible ${brand.name} is today. The score below is a representative snapshot based on high-impact criteria.`}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400">
               <span className="rounded-full border border-slate-700/70 bg-slate-900/60 px-3 py-1">
@@ -142,6 +140,19 @@ export default function BrandCheckPage({ params }: PageProps) {
             ))}
           </ul>
         </section>
+
+        {brand.whyAccessibilityMatters && (
+          <section className="grid gap-6 rounded-3xl border border-sky-800/40 bg-gradient-to-br from-sky-950/40 via-slate-900/60 to-slate-950 p-8">
+            <div>
+              <h2 className="text-2xl font-semibold text-white">
+                Why Accessibility Matters for {brand.name}
+              </h2>
+              <p className="mt-3 text-sm text-slate-300">
+                {brand.whyAccessibilityMatters}
+              </p>
+            </div>
+          </section>
+        )}
 
         <section className="grid gap-6 rounded-3xl border border-slate-800/70 bg-gradient-to-br from-slate-900/80 via-slate-900/60 to-slate-950 p-8">
           <div>

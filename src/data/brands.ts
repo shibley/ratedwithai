@@ -8,6 +8,8 @@ export type Brand = {
   score: number;
   grade: Grade;
   topViolations: string[];
+  description?: string;
+  whyAccessibilityMatters?: string;
 };
 
 const gradeForScore = (score: number): Grade => {
@@ -122,6 +124,10 @@ export const brands: Brand[] = [
     score: 72,
     grade: gradeForScore(72),
     topViolations: violationsForIndustry("saas"),
+    description:
+      "Spotify is the world's largest music streaming platform with over 500 million users, offering millions of songs, podcasts, and audiobooks across web and mobile apps.",
+    whyAccessibilityMatters:
+      "Music streaming serves users with visual impairments who rely on audio content. Accessible controls for playback, playlists, and discovery are essential. Deaf and hard-of-hearing users need podcast transcripts and visual alternatives.",
   },
   {
     slug: "microsoft",
@@ -140,6 +146,10 @@ export const brands: Brand[] = [
     score: 69,
     grade: gradeForScore(69),
     topViolations: violationsForIndustry("travel"),
+    description:
+      "Uber is the leading ride-hailing and transportation network, connecting millions of riders with drivers worldwide through its mobile app and web platform.",
+    whyAccessibilityMatters:
+      "Transportation access is a civil rights issue. Users with disabilities rely on Uber for independent mobility. Accessible booking, real-time updates, and driver communication features are critical for blind users and those with motor impairments.",
   },
   {
     slug: "walmart",
@@ -158,6 +168,10 @@ export const brands: Brand[] = [
     score: 80,
     grade: gradeForScore(80),
     topViolations: violationsForIndustry("saas"),
+    description:
+      "Netflix is the world's leading subscription streaming service with over 260 million subscribers, offering movies, TV series, documentaries, and original content across all devices.",
+    whyAccessibilityMatters:
+      "Video streaming must be accessible to all viewers. Closed captions, audio descriptions, and keyboard-navigable interfaces enable deaf, blind, and motor-impaired users to enjoy entertainment. Netflix pioneered audio descriptions but still has UI accessibility gaps.",
   },
   {
     slug: "tiktok",
@@ -194,6 +208,10 @@ export const brands: Brand[] = [
     score: 74,
     grade: gradeForScore(74),
     topViolations: violationsForIndustry("travel"),
+    description:
+      "Airbnb is the world's largest vacation rental and travel booking platform, connecting hosts with travelers across 220+ countries for unique stays and experiences.",
+    whyAccessibilityMatters:
+      "Travel booking requires complex interactions—date pickers, filters, maps, and checkout flows. Users with disabilities need accessible search, clear property accessibility information, and keyboard-operable booking to travel independently.",
   },
   {
     slug: "linkedin",
@@ -203,6 +221,10 @@ export const brands: Brand[] = [
     score: 82,
     grade: gradeForScore(82),
     topViolations: violationsForIndustry("saas"),
+    description:
+      "LinkedIn is the world's largest professional networking platform with over 1 billion members, enabling job searches, recruiting, professional content sharing, and business networking.",
+    whyAccessibilityMatters:
+      "Career access is essential for economic participation. Job seekers with disabilities must be able to search listings, apply online, and network professionally. Inaccessible LinkedIn creates barriers to employment opportunities.",
   },
   {
     slug: "twitter",
