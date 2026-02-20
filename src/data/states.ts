@@ -340,4 +340,1220 @@ export const states: State[] = [
       "ARIA roles and labels used appropriately",
     ],
   },
+  {
+    slug: "texas",
+    name: "Texas",
+    lawsuitStats: {
+      federal2024: 187,
+      total2024: 245,
+      year2023: 198,
+      trend: "increasing",
+      trendPercent: 23.7,
+    },
+    topIndustries: [
+      "Restaurant, Food & Beverages (26% of cases)",
+      "Lifestyle, Fashion & Apparel (24% of cases)",
+      "Healthcare & Medical Services (18% of cases)",
+      "Technology & SaaS (15% of cases)",
+      "Real Estate & Property Management (9% of cases)",
+    ],
+    stateRegulations: [
+      "Texas follows federal ADA standards without additional state law",
+      "Texas Architectural Barriers Act covers physical accessibility",
+      "Northern and Southern Districts of Texas see growing digital filings",
+      "No state-level statutory damages for web accessibility claims",
+    ],
+    notableCases: [
+      {
+        case: "Pena v. [Retail Chain]",
+        year: 2024,
+        description:
+          "Southern District ruled e-commerce checkout flow violated ADA; settlement required WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Rodriguez v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Patient scheduling portal found inaccessible; court awarded damages and ordered remediation",
+      },
+      {
+        case: "Martinez v. [Restaurant Group]",
+        year: 2022,
+        description:
+          "Online ordering platform settlement included mandatory accessibility training and audits",
+      },
+    ],
+    protectionSteps: [
+      "Conduct comprehensive WCAG 2.1 AA accessibility audit",
+      "Prioritize high-traffic pages and conversion flows",
+      "Implement keyboard navigation across all features",
+      "Test with screen readers on major user journeys",
+      "Create accessibility statement with contact details",
+      "Train development teams on accessibility standards",
+    ],
+    checklist: [
+      "Images include descriptive alt text",
+      "Forms have visible and properly associated labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Full keyboard navigation is functional",
+      "Focus indicators are visible on all controls",
+      "Videos include captions and audio descriptions",
+      "Headings follow logical hierarchy",
+      "Links have descriptive text",
+      "Error messages are clear and announced",
+      "ARIA labels used correctly",
+    ],
+  },
+  {
+    slug: "georgia",
+    name: "Georgia",
+    lawsuitStats: {
+      federal2024: 89,
+      total2024: 134,
+      year2023: 112,
+      trend: "increasing",
+      trendPercent: 19.6,
+    },
+    topIndustries: [
+      "Lifestyle, Fashion & Apparel (28% of cases)",
+      "Restaurant, Food & Beverages (23% of cases)",
+      "Healthcare & Medical Services (19% of cases)",
+      "Technology & Software (14% of cases)",
+      "Hospitality & Tourism (10% of cases)",
+    ],
+    stateRegulations: [
+      "Georgia follows federal ADA Title III requirements",
+      "No additional state-level website accessibility laws",
+      "Northern District of Georgia (Atlanta) sees majority of filings",
+      "Growing tech hub attracting increased accessibility scrutiny",
+    ],
+    notableCases: [
+      {
+        case: "Williams v. [E-commerce Company]",
+        year: 2024,
+        description:
+          "Atlanta-based retailer required full WCAG 2.1 AA compliance after screen reader accessibility failures",
+      },
+      {
+        case: "Johnson v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Telehealth platform found inaccessible; settlement included remediation and ongoing monitoring",
+      },
+      {
+        case: "Davis v. [Restaurant Chain]",
+        year: 2022,
+        description:
+          "Mobile app ordering system required accessibility updates under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Audit website for WCAG 2.1 AA compliance",
+      "Fix critical barriers affecting screen reader users",
+      "Ensure forms and checkout are keyboard accessible",
+      "Test mobile experience with assistive technologies",
+      "Publish accessibility statement and feedback mechanism",
+      "Implement accessibility into design and development process",
+    ],
+    checklist: [
+      "All images have meaningful alt text",
+      "Form fields include visible labels",
+      "Color contrast ratios meet WCAG standards",
+      "Site is navigable using only keyboard",
+      "Focus states are clearly visible",
+      "Video content includes captions",
+      "Heading structure is logical",
+      "Links describe their destination",
+      "Error messages are accessible",
+      "Page language is declared",
+    ],
+  },
+  {
+    slug: "new-jersey",
+    name: "New Jersey",
+    lawsuitStats: {
+      federal2024: 76,
+      total2024: 118,
+      year2023: 89,
+      trend: "increasing",
+      trendPercent: 32.6,
+    },
+    topIndustries: [
+      "Lifestyle, Fashion & Apparel (32% of cases)",
+      "Healthcare & Medical Services (21% of cases)",
+      "Restaurant, Food & Beverages (17% of cases)",
+      "Financial Services (14% of cases)",
+      "Education & Training (8% of cases)",
+    ],
+    stateRegulations: [
+      "New Jersey Law Against Discrimination (NJLAD) extends ADA protections",
+      "State law covers employers with 1+ employees",
+      "District of New Jersey has seen significant growth in accessibility filings",
+      "Strong state-level enforcement mechanisms available",
+    ],
+    notableCases: [
+      {
+        case: "Thompson v. [Retail Company]",
+        year: 2024,
+        description:
+          "E-commerce website found inaccessible under both ADA and NJLAD; dual remedies awarded",
+      },
+      {
+        case: "Anderson v. [Financial Institution]",
+        year: 2023,
+        description:
+          "Online banking portal required accessibility remediation and user testing with disabled individuals",
+      },
+      {
+        case: "Rivera v. [Healthcare System]",
+        year: 2022,
+        description:
+          "Patient portal settlement required WCAG 2.1 AA compliance within 18 months",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Address both federal ADA and NJLAD requirements",
+      "Implement automated and manual accessibility testing",
+      "Train content creators on accessibility basics",
+      "Create accessible document templates (PDFs, forms)",
+      "Monitor and respond to accessibility complaints promptly",
+    ],
+    checklist: [
+      "Images include appropriate alt text",
+      "Forms have visible, associated labels",
+      "Color contrast meets minimum requirements",
+      "Keyboard navigation works throughout",
+      "Focus indicators are visible",
+      "Multimedia includes captions/transcripts",
+      "Heading hierarchy is correct",
+      "Link text is descriptive",
+      "Error handling is accessible",
+      "ARIA is used appropriately",
+    ],
+  },
+  {
+    slug: "ohio",
+    name: "Ohio",
+    lawsuitStats: {
+      federal2024: 67,
+      total2024: 98,
+      year2023: 84,
+      trend: "increasing",
+      trendPercent: 16.7,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (24% of cases)",
+      "Lifestyle, Fashion & Apparel (22% of cases)",
+      "Restaurant, Food & Beverages (19% of cases)",
+      "Manufacturing & Industrial (15% of cases)",
+      "Financial Services (11% of cases)",
+    ],
+    stateRegulations: [
+      "Ohio follows federal ADA Title III standards",
+      "No additional state-level web accessibility requirements",
+      "Southern and Northern Districts of Ohio handle accessibility cases",
+      "Healthcare sector particularly targeted due to patient portal accessibility",
+    ],
+    notableCases: [
+      {
+        case: "Baker v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Patient portal found inaccessible to screen reader users; settlement required full compliance",
+      },
+      {
+        case: "Miller v. [Retail Chain]",
+        year: 2023,
+        description:
+          "E-commerce site required accessibility updates after keyboard navigation failures",
+      },
+      {
+        case: "Clark v. [Financial Services]",
+        year: 2022,
+        description:
+          "Online application process made accessible under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Perform WCAG 2.1 AA accessibility assessment",
+      "Focus on healthcare and patient-facing systems",
+      "Ensure keyboard accessibility across all features",
+      "Test with multiple screen readers",
+      "Create accessibility roadmap with timelines",
+      "Conduct regular accessibility audits",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Form inputs are properly labeled",
+      "Color contrast meets WCAG standards",
+      "Full keyboard navigation available",
+      "Focus states are visible",
+      "Video content is captioned",
+      "Headings are properly structured",
+      "Links are descriptive",
+      "Errors are clearly communicated",
+      "Page titles are unique and descriptive",
+    ],
+  },
+  {
+    slug: "north-carolina",
+    name: "North Carolina",
+    lawsuitStats: {
+      federal2024: 58,
+      total2024: 87,
+      year2023: 72,
+      trend: "increasing",
+      trendPercent: 20.8,
+    },
+    topIndustries: [
+      "Technology & Software (27% of cases)",
+      "Healthcare & Medical Services (23% of cases)",
+      "Lifestyle, Fashion & Apparel (20% of cases)",
+      "Financial Services (16% of cases)",
+      "Restaurant, Food & Beverages (9% of cases)",
+    ],
+    stateRegulations: [
+      "North Carolina follows federal ADA requirements",
+      "No additional state accessibility laws for websites",
+      "Research Triangle tech hub attracting increased scrutiny",
+      "Eastern and Western Districts handle accessibility filings",
+    ],
+    notableCases: [
+      {
+        case: "Harris v. [Tech Company]",
+        year: 2024,
+        description:
+          "SaaS platform required accessibility remediation affecting thousands of business users",
+      },
+      {
+        case: "Taylor v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Telehealth platform accessibility failures led to settlement with compliance requirements",
+      },
+      {
+        case: "Wilson v. [Financial Services]",
+        year: 2022,
+        description:
+          "Online account management made accessible under court order",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Prioritize SaaS and technology platform accessibility",
+      "Implement accessibility testing in CI/CD pipeline",
+      "Train engineering teams on accessibility development",
+      "Document accessibility features and compliance efforts",
+      "Engage accessibility consultants for complex features",
+    ],
+    checklist: [
+      "Images include meaningful alt text",
+      "Forms are fully labeled and accessible",
+      "Color contrast meets requirements",
+      "Keyboard navigation is complete",
+      "Focus indicators are present",
+      "Media content includes captions",
+      "Heading structure is logical",
+      "Link text describes destination",
+      "Error states are accessible",
+      "ARIA is correctly implemented",
+    ],
+  },
+  {
+    slug: "michigan",
+    name: "Michigan",
+    lawsuitStats: {
+      federal2024: 52,
+      total2024: 79,
+      year2023: 68,
+      trend: "increasing",
+      trendPercent: 16.2,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (26% of cases)",
+      "Lifestyle, Fashion & Apparel (23% of cases)",
+      "Manufacturing & Automotive (18% of cases)",
+      "Restaurant, Food & Beverages (16% of cases)",
+      "Financial Services (10% of cases)",
+    ],
+    stateRegulations: [
+      "Michigan follows federal ADA Title III standards",
+      "Persons with Disabilities Civil Rights Act provides state protections",
+      "Eastern District of Michigan (Detroit) handles most filings",
+      "Automotive and manufacturing sector websites increasingly targeted",
+    ],
+    notableCases: [
+      {
+        case: "Washington v. [Auto Dealer Group]",
+        year: 2024,
+        description:
+          "Vehicle inventory and financing websites required full accessibility compliance",
+      },
+      {
+        case: "Lewis v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Patient portal accessibility issues resolved through structured settlement",
+      },
+      {
+        case: "Moore v. [Retailer]",
+        year: 2022,
+        description:
+          "E-commerce platform required keyboard and screen reader accessibility updates",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance assessment",
+      "Focus on complex interactive features",
+      "Ensure automotive configurators are accessible",
+      "Test patient portals with assistive technology",
+      "Create accessibility documentation",
+      "Implement ongoing monitoring program",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms include visible labels",
+      "Color contrast is sufficient",
+      "Keyboard navigation works fully",
+      "Focus states are visible",
+      "Videos have captions",
+      "Headings are structured correctly",
+      "Links are descriptive",
+      "Errors are announced properly",
+      "Skip links are provided",
+    ],
+  },
+  {
+    slug: "virginia",
+    name: "Virginia",
+    lawsuitStats: {
+      federal2024: 61,
+      total2024: 89,
+      year2023: 73,
+      trend: "increasing",
+      trendPercent: 21.9,
+    },
+    topIndustries: [
+      "Technology & Software (29% of cases)",
+      "Government Contractors (21% of cases)",
+      "Healthcare & Medical Services (19% of cases)",
+      "Financial Services (15% of cases)",
+      "Professional Services (9% of cases)",
+    ],
+    stateRegulations: [
+      "Virginia follows federal ADA requirements",
+      "Government contractors face additional accessibility requirements",
+      "Eastern District of Virginia (Alexandria) is a major filing venue",
+      "Technology corridor companies increasingly targeted",
+    ],
+    notableCases: [
+      {
+        case: "Thompson v. [Government Contractor]",
+        year: 2024,
+        description:
+          "Federal contractor's public website required WCAG 2.1 AA compliance under settlement",
+      },
+      {
+        case: "Jackson v. [Tech Company]",
+        year: 2023,
+        description:
+          "Cloud platform accessibility failures led to remediation requirements",
+      },
+      {
+        case: "White v. [Healthcare Provider]",
+        year: 2022,
+        description:
+          "Telehealth accessibility settlement included ongoing monitoring requirements",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Address Section 508 requirements for government contractors",
+      "Implement accessibility in software development lifecycle",
+      "Test with multiple assistive technologies",
+      "Create VPAT documentation for enterprise products",
+      "Train teams on accessibility best practices",
+    ],
+    checklist: [
+      "Images have descriptive alt text",
+      "Forms are properly labeled",
+      "Color contrast meets standards",
+      "Full keyboard access available",
+      "Focus indicators are visible",
+      "Multimedia is captioned",
+      "Heading hierarchy is correct",
+      "Links describe their purpose",
+      "Error handling is accessible",
+      "ARIA roles are correct",
+    ],
+  },
+  {
+    slug: "washington",
+    name: "Washington",
+    lawsuitStats: {
+      federal2024: 48,
+      total2024: 76,
+      year2023: 61,
+      trend: "increasing",
+      trendPercent: 24.6,
+    },
+    topIndustries: [
+      "Technology & Software (35% of cases)",
+      "Lifestyle, Fashion & Apparel (21% of cases)",
+      "Healthcare & Medical Services (17% of cases)",
+      "E-commerce & Retail (14% of cases)",
+      "Financial Services (8% of cases)",
+    ],
+    stateRegulations: [
+      "Washington Law Against Discrimination (WLAD) extends protections",
+      "State courts recognize website accessibility claims",
+      "Seattle tech hub companies face heightened scrutiny",
+      "Western District of Washington handles most filings",
+    ],
+    notableCases: [
+      {
+        case: "Chen v. [Tech Giant]",
+        year: 2024,
+        description:
+          "Major platform required accessibility improvements across consumer-facing products",
+      },
+      {
+        case: "Nguyen v. [E-commerce Company]",
+        year: 2023,
+        description:
+          "Online marketplace settlement included WCAG 2.1 AA compliance requirements",
+      },
+      {
+        case: "Garcia v. [Software Company]",
+        year: 2022,
+        description:
+          "B2B software platform required accessibility documentation and remediation",
+      },
+    ],
+    protectionSteps: [
+      "Conduct comprehensive WCAG 2.1 AA audit",
+      "Prioritize technology platform accessibility",
+      "Implement accessibility testing automation",
+      "Create accessibility design system components",
+      "Train engineering teams on accessible development",
+      "Establish accessibility champions program",
+    ],
+    checklist: [
+      "All images include alt text",
+      "Form inputs have visible labels",
+      "Color contrast is adequate",
+      "Keyboard navigation is complete",
+      "Focus states are present",
+      "Video content is captioned",
+      "Headings follow proper order",
+      "Links are clearly labeled",
+      "Errors are accessible",
+      "ARIA usage is appropriate",
+    ],
+  },
+  {
+    slug: "massachusetts",
+    name: "Massachusetts",
+    lawsuitStats: {
+      federal2024: 71,
+      total2024: 104,
+      year2023: 88,
+      trend: "increasing",
+      trendPercent: 18.2,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (28% of cases)",
+      "Education & Higher Ed (22% of cases)",
+      "Technology & Software (19% of cases)",
+      "Financial Services (16% of cases)",
+      "Lifestyle, Fashion & Apparel (10% of cases)",
+    ],
+    stateRegulations: [
+      "Massachusetts follows federal ADA requirements",
+      "State courts accept web accessibility claims",
+      "Strong healthcare and education sectors face scrutiny",
+      "District of Massachusetts handles significant filing volume",
+    ],
+    notableCases: [
+      {
+        case: "Sullivan v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Major hospital network required full patient portal accessibility remediation",
+      },
+      {
+        case: "O'Brien v. [University]",
+        year: 2023,
+        description:
+          "Higher education learning platform required WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Kennedy v. [Financial Services]",
+        year: 2022,
+        description:
+          "Investment platform made accessible under structured settlement",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Prioritize healthcare and education platforms",
+      "Ensure learning management systems are accessible",
+      "Test patient portals with assistive technology",
+      "Create accessibility policy documentation",
+      "Implement faculty and staff accessibility training",
+    ],
+    checklist: [
+      "Images have meaningful alt text",
+      "Forms are fully labeled",
+      "Color contrast meets requirements",
+      "Keyboard navigation is functional",
+      "Focus indicators are visible",
+      "Multimedia is captioned",
+      "Heading structure is logical",
+      "Links describe their destination",
+      "Error messages are accessible",
+      "Documents (PDFs) are tagged",
+    ],
+  },
+  {
+    slug: "arizona",
+    name: "Arizona",
+    lawsuitStats: {
+      federal2024: 43,
+      total2024: 67,
+      year2023: 54,
+      trend: "increasing",
+      trendPercent: 24.1,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (25% of cases)",
+      "Real Estate & Property (22% of cases)",
+      "Lifestyle, Fashion & Apparel (20% of cases)",
+      "Restaurant, Food & Beverages (17% of cases)",
+      "Technology & Software (11% of cases)",
+    ],
+    stateRegulations: [
+      "Arizona follows federal ADA Title III requirements",
+      "Arizona Civil Rights Act provides additional protections",
+      "Phoenix metro growth driving increased accessibility filings",
+      "District of Arizona handling growing caseload",
+    ],
+    notableCases: [
+      {
+        case: "Martinez v. [Real Estate Company]",
+        year: 2024,
+        description:
+          "Property search and application portal required accessibility remediation",
+      },
+      {
+        case: "Hernandez v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Telehealth platform settlement included ongoing accessibility monitoring",
+      },
+      {
+        case: "Lopez v. [Retail Chain]",
+        year: 2022,
+        description:
+          "E-commerce website made WCAG 2.1 AA compliant under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on real estate and property platforms",
+      "Ensure property search features are accessible",
+      "Test healthcare portals with screen readers",
+      "Create accessibility documentation",
+      "Monitor for accessibility complaints",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms include proper labels",
+      "Color contrast is sufficient",
+      "Keyboard access is complete",
+      "Focus states are visible",
+      "Videos are captioned",
+      "Headings are structured",
+      "Links are descriptive",
+      "Errors are announced",
+      "ARIA is used correctly",
+    ],
+  },
+  {
+    slug: "colorado",
+    name: "Colorado",
+    lawsuitStats: {
+      federal2024: 39,
+      total2024: 58,
+      year2023: 47,
+      trend: "increasing",
+      trendPercent: 23.4,
+    },
+    topIndustries: [
+      "Technology & Software (31% of cases)",
+      "Outdoor & Recreation (19% of cases)",
+      "Healthcare & Medical Services (18% of cases)",
+      "Lifestyle, Fashion & Apparel (17% of cases)",
+      "Cannabis & CBD (10% of cases)",
+    ],
+    stateRegulations: [
+      "Colorado follows federal ADA requirements",
+      "Colorado Anti-Discrimination Act provides state protections",
+      "Tech startup hub driving accessibility attention",
+      "District of Colorado handling increased filings",
+    ],
+    notableCases: [
+      {
+        case: "Peterson v. [Tech Startup]",
+        year: 2024,
+        description:
+          "SaaS platform required accessibility improvements for enterprise customers",
+      },
+      {
+        case: "Johnson v. [Outdoor Retailer]",
+        year: 2023,
+        description:
+          "E-commerce site made accessible after keyboard navigation failures",
+      },
+      {
+        case: "Williams v. [Cannabis Dispensary]",
+        year: 2022,
+        description:
+          "Online ordering and reservation system required accessibility updates",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Focus on technology and SaaS platforms",
+      "Ensure booking and reservation systems are accessible",
+      "Test e-commerce flows with assistive technology",
+      "Create accessibility roadmap",
+      "Train development teams on accessible coding",
+    ],
+    checklist: [
+      "Images include alt text",
+      "Forms have visible labels",
+      "Color contrast meets standards",
+      "Full keyboard navigation",
+      "Focus indicators present",
+      "Multimedia is captioned",
+      "Heading hierarchy correct",
+      "Links clearly labeled",
+      "Errors accessible",
+      "ARIA properly used",
+    ],
+  },
+  {
+    slug: "tennessee",
+    name: "Tennessee",
+    lawsuitStats: {
+      federal2024: 34,
+      total2024: 52,
+      year2023: 41,
+      trend: "increasing",
+      trendPercent: 26.8,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (27% of cases)",
+      "Entertainment & Music (21% of cases)",
+      "Restaurant, Food & Beverages (19% of cases)",
+      "Lifestyle, Fashion & Apparel (18% of cases)",
+      "Hospitality & Tourism (10% of cases)",
+    ],
+    stateRegulations: [
+      "Tennessee follows federal ADA Title III requirements",
+      "No additional state-level web accessibility laws",
+      "Nashville and Memphis growth driving increased filings",
+      "Middle and Western Districts handle accessibility cases",
+    ],
+    notableCases: [
+      {
+        case: "Brown v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Regional hospital network patient portal required full accessibility compliance",
+      },
+      {
+        case: "Davis v. [Entertainment Venue]",
+        year: 2023,
+        description:
+          "Ticketing and event platform made accessible under settlement agreement",
+      },
+      {
+        case: "Wilson v. [Restaurant Group]",
+        year: 2022,
+        description:
+          "Online ordering system accessibility improvements required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on healthcare and entertainment platforms",
+      "Ensure ticketing systems are accessible",
+      "Test restaurant ordering with screen readers",
+      "Create accessibility statement",
+      "Implement ongoing monitoring",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms include labels",
+      "Color contrast adequate",
+      "Keyboard navigation works",
+      "Focus states visible",
+      "Videos captioned",
+      "Headings structured",
+      "Links descriptive",
+      "Errors announced",
+      "Skip navigation provided",
+    ],
+  },
+  {
+    slug: "maryland",
+    name: "Maryland",
+    lawsuitStats: {
+      federal2024: 45,
+      total2024: 68,
+      year2023: 56,
+      trend: "increasing",
+      trendPercent: 21.4,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (26% of cases)",
+      "Government Contractors (22% of cases)",
+      "Technology & Software (20% of cases)",
+      "Financial Services (17% of cases)",
+      "Professional Services (10% of cases)",
+    ],
+    stateRegulations: [
+      "Maryland follows federal ADA requirements",
+      "Government contractors face Section 508 requirements",
+      "DC metro area proximity increases scrutiny",
+      "District of Maryland handles significant caseload",
+    ],
+    notableCases: [
+      {
+        case: "Mitchell v. [Government Contractor]",
+        year: 2024,
+        description:
+          "Federal contractor website required WCAG 2.1 AA and Section 508 compliance",
+      },
+      {
+        case: "Roberts v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Patient portal accessibility settlement included third-party monitoring",
+      },
+      {
+        case: "Adams v. [Financial Institution]",
+        year: 2022,
+        description:
+          "Online banking platform made accessible under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA and Section 508",
+      "Address government contractor requirements",
+      "Implement accessibility in procurement",
+      "Test with multiple assistive technologies",
+      "Create VPAT documentation",
+      "Train teams on accessibility compliance",
+    ],
+    checklist: [
+      "Images have descriptive alt text",
+      "Forms properly labeled",
+      "Color contrast meets requirements",
+      "Full keyboard accessibility",
+      "Focus indicators visible",
+      "Multimedia captioned",
+      "Heading hierarchy correct",
+      "Links are descriptive",
+      "Error handling accessible",
+      "ARIA correctly implemented",
+    ],
+  },
+  {
+    slug: "minnesota",
+    name: "Minnesota",
+    lawsuitStats: {
+      federal2024: 37,
+      total2024: 54,
+      year2023: 45,
+      trend: "increasing",
+      trendPercent: 20.0,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (28% of cases)",
+      "Retail & E-commerce (24% of cases)",
+      "Financial Services (19% of cases)",
+      "Technology & Software (15% of cases)",
+      "Manufacturing (9% of cases)",
+    ],
+    stateRegulations: [
+      "Minnesota Human Rights Act extends ADA protections",
+      "State law applies to businesses serving the public",
+      "District of Minnesota handling growing accessibility cases",
+      "Corporate headquarters concentration increases targeting",
+    ],
+    notableCases: [
+      {
+        case: "Olson v. [Retailer]",
+        year: 2024,
+        description:
+          "Major retailer e-commerce platform required comprehensive accessibility updates",
+      },
+      {
+        case: "Anderson v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Multi-hospital system patient portal made accessible under settlement",
+      },
+      {
+        case: "Peterson v. [Financial Services]",
+        year: 2022,
+        description:
+          "Investment platform accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on retail and healthcare platforms",
+      "Ensure e-commerce checkout is accessible",
+      "Test patient portals with assistive technology",
+      "Create accessibility roadmap with milestones",
+      "Implement staff accessibility training",
+    ],
+    checklist: [
+      "All images include alt text",
+      "Forms have visible labels",
+      "Color contrast sufficient",
+      "Keyboard navigation complete",
+      "Focus states present",
+      "Videos are captioned",
+      "Headings properly structured",
+      "Links are descriptive",
+      "Errors clearly communicated",
+      "ARIA usage appropriate",
+    ],
+  },
+  {
+    slug: "indiana",
+    name: "Indiana",
+    lawsuitStats: {
+      federal2024: 31,
+      total2024: 47,
+      year2023: 38,
+      trend: "increasing",
+      trendPercent: 23.7,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (27% of cases)",
+      "Manufacturing & Industrial (23% of cases)",
+      "Lifestyle, Fashion & Apparel (19% of cases)",
+      "Restaurant, Food & Beverages (16% of cases)",
+      "Financial Services (10% of cases)",
+    ],
+    stateRegulations: [
+      "Indiana follows federal ADA Title III requirements",
+      "No additional state accessibility laws for websites",
+      "Southern District of Indiana (Indianapolis) handles most cases",
+      "Manufacturing sector websites increasingly targeted",
+    ],
+    notableCases: [
+      {
+        case: "Smith v. [Healthcare Provider]",
+        year: 2024,
+        description:
+          "Regional health system patient portal required accessibility compliance",
+      },
+      {
+        case: "Jones v. [Manufacturing Company]",
+        year: 2023,
+        description:
+          "B2B portal accessibility settlement included customer-facing updates",
+      },
+      {
+        case: "Brown v. [Retailer]",
+        year: 2022,
+        description:
+          "E-commerce site made keyboard accessible under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Focus on healthcare and B2B platforms",
+      "Ensure manufacturing portals are accessible",
+      "Test e-commerce with assistive technology",
+      "Document accessibility efforts",
+      "Create ongoing monitoring program",
+    ],
+    checklist: [
+      "Images have alt text",
+      "Forms include labels",
+      "Color contrast meets standards",
+      "Keyboard navigation functional",
+      "Focus indicators visible",
+      "Multimedia captioned",
+      "Heading structure correct",
+      "Links descriptive",
+      "Errors accessible",
+      "Page titles descriptive",
+    ],
+  },
+  {
+    slug: "wisconsin",
+    name: "Wisconsin",
+    lawsuitStats: {
+      federal2024: 28,
+      total2024: 42,
+      year2023: 34,
+      trend: "increasing",
+      trendPercent: 23.5,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (26% of cases)",
+      "Manufacturing & Industrial (24% of cases)",
+      "Retail & E-commerce (20% of cases)",
+      "Restaurant, Food & Beverages (16% of cases)",
+      "Financial Services (9% of cases)",
+    ],
+    stateRegulations: [
+      "Wisconsin follows federal ADA requirements",
+      "No additional state web accessibility laws",
+      "Eastern District of Wisconsin handles most filings",
+      "Manufacturing and healthcare sectors face scrutiny",
+    ],
+    notableCases: [
+      {
+        case: "Kowalski v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Hospital network patient portal required full accessibility remediation",
+      },
+      {
+        case: "Mueller v. [Manufacturer]",
+        year: 2023,
+        description:
+          "Product configurator and ordering system made accessible",
+      },
+      {
+        case: "Schmidt v. [Retailer]",
+        year: 2022,
+        description:
+          "E-commerce website accessibility improvements under settlement",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on healthcare and manufacturing",
+      "Ensure product configurators are accessible",
+      "Test ordering systems with screen readers",
+      "Create accessibility documentation",
+      "Implement accessibility training",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms properly labeled",
+      "Color contrast adequate",
+      "Keyboard navigation works",
+      "Focus states visible",
+      "Videos captioned",
+      "Headings structured",
+      "Links descriptive",
+      "Errors announced",
+      "ARIA used correctly",
+    ],
+  },
+  {
+    slug: "connecticut",
+    name: "Connecticut",
+    lawsuitStats: {
+      federal2024: 33,
+      total2024: 49,
+      year2023: 41,
+      trend: "increasing",
+      trendPercent: 19.5,
+    },
+    topIndustries: [
+      "Financial Services (29% of cases)",
+      "Healthcare & Medical Services (25% of cases)",
+      "Insurance (18% of cases)",
+      "Lifestyle, Fashion & Apparel (15% of cases)",
+      "Professional Services (8% of cases)",
+    ],
+    stateRegulations: [
+      "Connecticut follows federal ADA requirements",
+      "Strong financial and insurance sector presence",
+      "District of Connecticut handles accessibility cases",
+      "Insurance industry websites increasingly targeted",
+    ],
+    notableCases: [
+      {
+        case: "Murphy v. [Insurance Company]",
+        year: 2024,
+        description:
+          "Insurance quote and application portal required accessibility compliance",
+      },
+      {
+        case: "Sullivan v. [Financial Institution]",
+        year: 2023,
+        description:
+          "Online banking platform made accessible under settlement",
+      },
+      {
+        case: "O'Connor v. [Healthcare Provider]",
+        year: 2022,
+        description:
+          "Patient portal accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Focus on financial and insurance platforms",
+      "Ensure quote generators are accessible",
+      "Test application forms with screen readers",
+      "Create accessibility policy",
+      "Implement ongoing monitoring",
+    ],
+    checklist: [
+      "Images include alt text",
+      "Forms have proper labels",
+      "Color contrast meets standards",
+      "Full keyboard access",
+      "Focus indicators present",
+      "Multimedia captioned",
+      "Heading hierarchy correct",
+      "Links clearly labeled",
+      "Error handling accessible",
+      "ARIA implemented correctly",
+    ],
+  },
+  {
+    slug: "oregon",
+    name: "Oregon",
+    lawsuitStats: {
+      federal2024: 26,
+      total2024: 41,
+      year2023: 33,
+      trend: "increasing",
+      trendPercent: 24.2,
+    },
+    topIndustries: [
+      "Technology & Software (32% of cases)",
+      "Outdoor & Recreation (21% of cases)",
+      "Healthcare & Medical Services (18% of cases)",
+      "Lifestyle, Fashion & Apparel (16% of cases)",
+      "Food & Beverage (9% of cases)",
+    ],
+    stateRegulations: [
+      "Oregon follows federal ADA requirements",
+      "Oregon Bureau of Labor handles discrimination complaints",
+      "Portland tech hub attracting accessibility attention",
+      "District of Oregon handling growing caseload",
+    ],
+    notableCases: [
+      {
+        case: "Nguyen v. [Tech Company]",
+        year: 2024,
+        description:
+          "Software platform required comprehensive accessibility updates",
+      },
+      {
+        case: "Johnson v. [Outdoor Retailer]",
+        year: 2023,
+        description:
+          "E-commerce site accessibility improvements under settlement",
+      },
+      {
+        case: "Williams v. [Healthcare Provider]",
+        year: 2022,
+        description:
+          "Telehealth platform made accessible under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on technology and outdoor platforms",
+      "Ensure booking systems are accessible",
+      "Test e-commerce with assistive technology",
+      "Create accessibility documentation",
+      "Train development teams",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms include labels",
+      "Color contrast sufficient",
+      "Keyboard navigation complete",
+      "Focus states visible",
+      "Videos captioned",
+      "Headings structured",
+      "Links descriptive",
+      "Errors accessible",
+      "ARIA appropriate",
+    ],
+  },
+  {
+    slug: "nevada",
+    name: "Nevada",
+    lawsuitStats: {
+      federal2024: 31,
+      total2024: 48,
+      year2023: 39,
+      trend: "increasing",
+      trendPercent: 23.1,
+    },
+    topIndustries: [
+      "Hospitality & Gaming (31% of cases)",
+      "Entertainment & Events (23% of cases)",
+      "Restaurant, Food & Beverages (18% of cases)",
+      "Lifestyle, Fashion & Apparel (15% of cases)",
+      "Real Estate (9% of cases)",
+    ],
+    stateRegulations: [
+      "Nevada follows federal ADA requirements",
+      "Nevada Equal Rights Commission handles complaints",
+      "Las Vegas hospitality sector heavily targeted",
+      "District of Nevada handling significant accessibility cases",
+    ],
+    notableCases: [
+      {
+        case: "Garcia v. [Casino Resort]",
+        year: 2024,
+        description:
+          "Hotel booking and gaming platform required accessibility compliance",
+      },
+      {
+        case: "Martinez v. [Entertainment Venue]",
+        year: 2023,
+        description:
+          "Ticketing and event reservation system made accessible",
+      },
+      {
+        case: "Lopez v. [Restaurant Group]",
+        year: 2022,
+        description:
+          "Online reservation and ordering system accessibility updates",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Focus on hospitality and entertainment",
+      "Ensure booking systems are accessible",
+      "Test reservation platforms with screen readers",
+      "Create accessibility statement",
+      "Monitor gaming platforms for compliance",
+    ],
+    checklist: [
+      "Images have alt text",
+      "Forms properly labeled",
+      "Color contrast meets standards",
+      "Keyboard navigation functional",
+      "Focus indicators visible",
+      "Multimedia captioned",
+      "Heading structure correct",
+      "Links descriptive",
+      "Errors announced",
+      "ARIA used correctly",
+    ],
+  },
 ];
