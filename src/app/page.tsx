@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import EmailCapture from "@/components/EmailCapture";
 
 type AxeNode = {
   target?: string[];
@@ -158,6 +159,11 @@ export default function Home() {
                 <p className="text-lg font-semibold text-white">SOC 2 Ready</p>
                 <p>Enterprise security</p>
               </div>
+            </div>
+
+            {/* Newsletter signup */}
+            <div className="mt-8">
+              <EmailCapture variant="newsletter" />
             </div>
           </div>
 

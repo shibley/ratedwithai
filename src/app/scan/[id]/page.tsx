@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Footer from '@/components/Footer';
 import ScoreCircle from '@/components/ScoreCircle';
+import EmailCapture from '@/components/EmailCapture';
 
 interface ScanResult {
   id: string;
@@ -147,6 +148,11 @@ export default function ScanResultPage() {
           >
             {copied ? '✓ Copied!' : 'Share Results'}
           </button>
+        </div>
+
+        {/* Email Capture */}
+        <div className="max-w-xl mx-auto mb-12">
+          <EmailCapture scanId={result.id} variant="full" />
         </div>
 
         {/* CTA for Monitoring */}
