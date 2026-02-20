@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 type AxeNode = {
@@ -105,31 +106,7 @@ export default function Home() {
         <div className="absolute -top-40 right-0 h-96 w-96 rounded-full bg-gradient-to-br from-sky-500/40 via-blue-500/20 to-purple-500/40 blur-3xl" />
         <div className="absolute -bottom-40 left-0 h-96 w-96 rounded-full bg-gradient-to-tr from-indigo-500/30 via-blue-500/10 to-purple-500/30 blur-3xl" />
 
-        <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-8">
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 via-blue-400 to-purple-500 text-slate-900 font-bold">
-              R
-            </span>
-            <div>
-              <p className="text-lg font-semibold tracking-tight">RatedWithAI</p>
-              <p className="text-xs text-slate-400">Accessibility scanner</p>
-            </div>
-          </div>
-          <nav className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-            <a className="transition hover:text-white" href="#how-it-works">
-              How it works
-            </a>
-            <a className="transition hover:text-white" href="#pricing">
-              Pricing
-            </a>
-            <a className="transition hover:text-white" href="#why">
-              Why RatedWithAI
-            </a>
-          </nav>
-          <button className="rounded-full border border-slate-700/60 px-4 py-2 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white">
-            Sign in
-          </button>
-        </header>
+        <Header />
 
         <section className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-24 pt-10 lg:flex-row lg:items-center">
           <div className="flex-1 space-y-6">
