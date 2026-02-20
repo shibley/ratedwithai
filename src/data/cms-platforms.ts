@@ -239,4 +239,79 @@ export const cmsPlatforms: CmsPlatform[] = [
       "Validate contrast on text and buttons",
     ],
   },
+  {
+    slug: "nextjs",
+    name: "Next.js",
+    overview:
+      "Next.js is a powerful React framework for production. Since developers have full control over markup, accessibility depends entirely on implementation choices.",
+    knownIssues: [
+      "Client-side routing breaking screen reader announcements",
+      "Missing focus management after page transitions",
+      "Image components used without meaningful alt text",
+      "Custom components lacking ARIA attributes",
+    ],
+    tools: [
+      "eslint-plugin-jsx-a11y",
+      "@axe-core/react",
+      "React Aria or Radix UI for accessible primitives",
+    ],
+    fixSteps: [
+      "Install eslint-plugin-jsx-a11y and fix linting errors",
+      "Add route change announcements for screen readers",
+      "Use next/image with descriptive alt text on all images",
+      "Implement focus management on client-side navigation",
+      "Use accessible component libraries like Radix or React Aria",
+      "Test with keyboard and screen reader before deploying",
+    ],
+  },
+  {
+    slug: "bubble",
+    name: "Bubble",
+    overview:
+      "Bubble is a popular no-code platform for building web apps. Accessibility is often overlooked since the visual builder abstracts away HTML semantics.",
+    knownIssues: [
+      "Generated markup lacks semantic HTML structure",
+      "Form inputs missing associated labels",
+      "Custom popups and modals without focus trapping",
+      "Keyboard navigation issues on interactive elements",
+    ],
+    tools: [
+      "Bubble Accessibility Plugin by Zeroqode",
+      "WAVE browser extension",
+      "axe DevTools for manual auditing",
+    ],
+    fixSteps: [
+      "Add aria-label attributes to all interactive elements",
+      "Use the accessibility plugin to add skip links and landmarks",
+      "Manually associate labels with form inputs in element settings",
+      "Ensure popups trap focus and can be closed with Escape",
+      "Test tab order and fix using Bubble's index settings",
+      "Run WAVE or axe audits and address critical issues",
+    ],
+  },
+  {
+    slug: "carrd",
+    name: "Carrd",
+    overview:
+      "Carrd is a simple one-page website builder. Its minimalist approach means fewer built-in accessibility features, requiring manual attention to basics.",
+    knownIssues: [
+      "Images often lack alt text by default",
+      "Low contrast text on image backgrounds",
+      "Form elements without visible labels",
+      "No built-in skip links or landmark regions",
+    ],
+    tools: [
+      "N/A - use manual techniques and browser extensions",
+      "WAVE browser extension",
+      "Lighthouse Accessibility Audit",
+    ],
+    fixSteps: [
+      "Add alt text to every image in the image settings",
+      "Ensure text has sufficient contrast against backgrounds",
+      "Use visible labels on all form fields, not just placeholders",
+      "Structure content with a logical heading hierarchy",
+      "Test the page with keyboard-only navigation",
+      "Run Lighthouse audit and fix flagged issues before publishing",
+    ],
+  },
 ];
