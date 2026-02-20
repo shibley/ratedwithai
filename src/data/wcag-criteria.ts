@@ -498,4 +498,129 @@ export const wcagCriteria: WcagCriterion[] = [
       "4-1-2-name-role-value",
     ],
   },
+  {
+    id: "1.4.10",
+    slug: "1-4-10-reflow",
+    name: "Reflow",
+    level: "AA",
+    description:
+      "Content should reflow to a single column at 320px width without requiring horizontal scrolling or losing information.",
+    whyItMatters:
+      "Users who zoom in or use narrow viewports need content to reflow without horizontal scrolling, which is disorienting.",
+    commonViolations: [
+      "Fixed-width layouts that require horizontal scrolling",
+      "Tables that overflow their containers",
+      "Two-dimensional scrolling required at 400% zoom",
+      "Content cut off or hidden at narrow widths",
+    ],
+    badExample: "<div style=\"width: 1200px; overflow: hidden\">...</div>",
+    goodExample: "<div class=\"max-w-full overflow-x-auto\">...</div>",
+    howToFix:
+      "Use responsive layouts with relative units, allow tables to scroll horizontally within containers, and test at 320px viewport width.",
+    relatedCriteria: [
+      "1-4-4-resize-text",
+      "1-4-3-contrast-minimum",
+      "2-4-3-focus-order",
+    ],
+  },
+  {
+    id: "2.4.7",
+    slug: "2-4-7-focus-visible",
+    name: "Focus Visible",
+    level: "AA",
+    description:
+      "Any keyboard-operable user interface must have a visible focus indicator.",
+    whyItMatters:
+      "Keyboard users need to see where focus is at all times to navigate effectively. Hidden focus is like hiding the mouse cursor.",
+    commonViolations: [
+      "CSS that removes outline without replacement",
+      "Focus indicators that blend into the background",
+      "Focus styles overridden by component libraries",
+      "Low-contrast focus rings",
+    ],
+    badExample: "button:focus { outline: none; }",
+    goodExample: "button:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }",
+    howToFix:
+      "Never remove focus outlines without providing a visible alternative. Use focus-visible for cleaner mouse interactions while preserving keyboard visibility.",
+    relatedCriteria: [
+      "2-1-1-keyboard",
+      "2-4-3-focus-order",
+      "1-4-11-non-text-contrast",
+    ],
+  },
+  {
+    id: "3.2.1",
+    slug: "3-2-1-on-focus",
+    name: "On Focus",
+    level: "A",
+    description:
+      "When a component receives focus, it should not trigger a change of context automatically.",
+    whyItMatters:
+      "Unexpected changes when tabbing through a page disorient users, especially screen reader and keyboard users.",
+    commonViolations: [
+      "Forms that submit when a field receives focus",
+      "Dropdowns that navigate away on focus",
+      "Modals that open automatically when focusing a link",
+      "Page content that changes when tabbing to an element",
+    ],
+    badExample: "<select onfocus=\"window.location = this.value\">...</select>",
+    goodExample: "<select onchange=\"handleChange()\">...</select>\n<button type=\"submit\">Go</button>",
+    howToFix:
+      "Trigger context changes only on explicit user actions like clicks or submissions, not on focus events.",
+    relatedCriteria: [
+      "3-2-2-on-input",
+      "2-1-1-keyboard",
+      "2-4-3-focus-order",
+    ],
+  },
+  {
+    id: "3.2.2",
+    slug: "3-2-2-on-input",
+    name: "On Input",
+    level: "A",
+    description:
+      "Changing a form control's value should not automatically cause a change of context unless the user is warned beforehand.",
+    whyItMatters:
+      "Automatic submissions or navigations when typing or selecting options can cause users to lose work or become disoriented.",
+    commonViolations: [
+      "Select menus that navigate immediately on change",
+      "Search fields that submit on every keystroke",
+      "Radio buttons that auto-submit forms",
+      "Checkboxes that trigger page reloads",
+    ],
+    badExample: "<select onchange=\"this.form.submit()\">...</select>",
+    goodExample: "<select name=\"category\">...</select>\n<button type=\"submit\">Apply</button>",
+    howToFix:
+      "Provide explicit submit buttons for form actions. If auto-submission is necessary, warn users in advance with clear instructions.",
+    relatedCriteria: [
+      "3-2-1-on-focus",
+      "3-3-2-labels-or-instructions",
+      "2-1-1-keyboard",
+    ],
+  },
+  {
+    id: "3.3.1",
+    slug: "3-3-1-error-identification",
+    name: "Error Identification",
+    level: "A",
+    description:
+      "When an input error is detected, the error must be identified and described to the user in text.",
+    whyItMatters:
+      "Users need clear text descriptions of errors to understand what went wrong and how to fix it, not just color changes or icons.",
+    commonViolations: [
+      "Errors indicated only by red borders",
+      "Generic error messages like 'Invalid input'",
+      "Error icons without text descriptions",
+      "Errors not associated with their fields",
+    ],
+    badExample: "<input class=\"border-red-500\" aria-invalid=\"true\">",
+    goodExample: "<input aria-invalid=\"true\" aria-describedby=\"email-error\">\n<p id=\"email-error\" class=\"text-red-500\">Please enter a valid email address</p>",
+    howToFix:
+      "Provide specific text descriptions for each error, associate them with form fields using aria-describedby, and ensure errors are announced to screen readers.",
+    relatedCriteria: [
+      "3-3-2-labels-or-instructions",
+      "1-4-1-use-of-color",
+      "4-1-3-status-messages",
+    ],
+  },
 ];
