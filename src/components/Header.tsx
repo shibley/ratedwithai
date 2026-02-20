@@ -1,13 +1,68 @@
 "use client";
 
 import Link from "next/link";
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+import dynamic from "next/dynamic";
+
+const hasClerk = !!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
+// Dynamically import Clerk components only when key is present
+const ClerkComponents = hasClerk
+  ? {
+      SignInButton: dynamic(() => import("@clerk/nextjs").then((m) => m.SignInButton)),
+      SignUpButton: dynamic(() => import("@clerk/nextjs").then((m) => m.SignUpButton)),
+      SignedIn: dynamic(() => import("@clerk/nextjs").then((m) => m.SignedIn)),
+      SignedOut: dynamic(() => import("@clerk/nextjs").then((m) => m.SignedOut)),
+      UserButton: dynamic(() => import("@clerk/nextjs").then((m) => m.UserButton)),
+    }
+  : null;
+
+function AuthButtons() {
+  if (!hasClerk || !ClerkComponents) {
+    // No auth configured - show simple CTA
+    return (
+      <Link
+        href="/scan"
+        className="rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:scale-[1.02]"
+      >
+        Free Scan
+      </Link>
+    );
+  }
+
+  const { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } = ClerkComponents;
+
+  return (
+    <>
+      <SignedOut>
+        <SignInButton mode="modal">
+          <button className="rounded-full border border-slate-700/60 px-4 py-2 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white">
+            Sign in
+          </button>
+        </SignInButton>
+        <SignUpButton mode="modal">
+          <button className="hidden rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] sm:block">
+            Get started
+          </button>
+        </SignUpButton>
+      </SignedOut>
+      <SignedIn>
+        <Link
+          href="/dashboard"
+          className="rounded-full border border-slate-700/60 px-4 py-2 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white"
+        >
+          Dashboard
+        </Link>
+        <UserButton
+          appearance={{
+            elements: {
+              avatarBox: "h-9 w-9",
+            },
+          }}
+        />
+      </SignedIn>
+    </>
+  );
+}
 
 export default function Header() {
   return (
@@ -33,33 +88,7 @@ export default function Header() {
         </Link>
       </nav>
       <div className="flex items-center gap-3">
-        <SignedOut>
-          <SignInButton mode="modal">
-            <button className="rounded-full border border-slate-700/60 px-4 py-2 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white">
-              Sign in
-            </button>
-          </SignInButton>
-          <SignUpButton mode="modal">
-            <button className="hidden rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] sm:block">
-              Get started
-            </button>
-          </SignUpButton>
-        </SignedOut>
-        <SignedIn>
-          <Link
-            href="/dashboard"
-            className="rounded-full border border-slate-700/60 px-4 py-2 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white"
-          >
-            Dashboard
-          </Link>
-          <UserButton
-            appearance={{
-              elements: {
-                avatarBox: "h-9 w-9",
-              },
-            }}
-          />
-        </SignedIn>
+        <AuthButtons />
       </div>
     </header>
   );

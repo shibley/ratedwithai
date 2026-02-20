@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { auth } from "@clerk/nextjs/server";
 import Stripe from "stripe";
 
 // Lazy initialize Stripe to avoid build-time errors
@@ -18,10 +17,32 @@ function getPriceIds() {
   };
 }
 
+// Get authenticated user - handles missing Clerk gracefully
+async function getAuthUserId(): Promise<string | null> {
+  if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+    return null;
+  }
+  try {
+    const { auth } = await import("@clerk/nextjs/server");
+    const { userId } = await auth();
+    return userId;
+  } catch {
+    return null;
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
+    // Check if auth is configured
+    if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+      return NextResponse.json(
+        { error: "Authentication not configured. Please try again later." },
+        { status: 503 }
+      );
+    }
+
     // Verify user is authenticated
-    const { userId } = await auth();
+    const userId = await getAuthUserId();
     if (!userId) {
       return NextResponse.json(
         { error: "Unauthorized. Please sign in." },
