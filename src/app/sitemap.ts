@@ -21,22 +21,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...brands.map((brand) => ({
       url: `${baseUrl}/check/${brand.slug}`,
-      changeFrequency: "weekly",
+      changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
     ...wcagCriteria.map((criterion) => ({
       url: `${baseUrl}/wcag/${criterion.slug}`,
-      changeFrequency: "monthly",
+      changeFrequency: "monthly" as const,
       priority: 0.5,
     })),
     ...industries.map((industry) => ({
       url: `${baseUrl}/industry/${industry.slug}`,
-      changeFrequency: "monthly",
+      changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
     ...cmsPlatforms.map((platform) => ({
       url: `${baseUrl}/cms/${platform.slug}`,
-      changeFrequency: "monthly",
+      changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
   ];
