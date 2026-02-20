@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import { brands } from "@/data/brands";
 import { cmsPlatforms } from "@/data/cms-platforms";
 import { industries } from "@/data/industries";
+import { states } from "@/data/states";
 import { wcagCriteria } from "@/data/wcag-criteria";
 
 const baseUrl = "https://ratedwithai.com";
@@ -38,6 +39,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/cms/${platform.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.6,
+    })),
+    ...states.map((state) => ({
+      url: `${baseUrl}/state/${state.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
   ];
 }
