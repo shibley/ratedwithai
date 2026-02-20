@@ -2,12 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Footer from '@/components/Footer';
+import ScoreCircle from '@/components/ScoreCircle';
 
 interface ScanResult {
   id: string;
   url: string;
   score: number;
-  grade: string;
+  grade: 'A' | 'B' | 'C' | 'D' | 'F';
   violations: Array<{
     id: string;
     impact: string;
@@ -39,22 +41,6 @@ export default function ScanResultPage() {
       setResult(JSON.parse(storedResult));
     }
   }, []);
-
-  const getScoreColor = (grade: string) => {
-    switch (grade) {
-      case 'A':
-        return 'text-green-400 border-green-400';
-      case 'B':
-        return 'text-yellow-400 border-yellow-400';
-      case 'C':
-        return 'text-orange-400 border-orange-400';
-      case 'D':
-      case 'F':
-        return 'text-red-400 border-red-400';
-      default:
-        return 'text-slate-400 border-slate-400';
-    }
-  };
 
   const getImpactColor = (impact: string) => {
     switch (impact) {
@@ -119,11 +105,8 @@ export default function ScanResultPage() {
       <div className="container mx-auto px-4 py-12">
         {/* Score Circle */}
         <div className="text-center mb-12">
-          <div className={`inline-block w-48 h-48 rounded-full border-8 ${getScoreColor(result.grade)} flex items-center justify-center mb-6`}>
-            <div>
-              <div className="text-6xl font-bold">{result.grade}</div>
-              <div className="text-3xl font-semibold mt-2">{result.score}</div>
-            </div>
+          <div className="mb-6">
+            <ScoreCircle grade={result.grade} score={result.score} size="lg" />
           </div>
           <h2 className="text-3xl font-bold mb-2">Accessibility Score</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
@@ -328,12 +311,7 @@ export default function ScanResultPage() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 border-t border-slate-800 py-8 mt-12">
-        <div className="container mx-auto px-4 text-center text-slate-500 text-sm">
-          <p>&copy; 2024 RatedWithAI. <a href="/" className="text-blue-400 hover:text-blue-300">Scan another site</a></p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
