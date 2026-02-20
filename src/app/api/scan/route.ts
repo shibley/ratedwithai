@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { chromium } from "playwright";
-import AxeBuilder from "@axe-core/playwright";
+import { AxeBuilder } from "@axe-core/playwright";
 import { randomUUID } from "crypto";
 
 type AxeViolation = {
