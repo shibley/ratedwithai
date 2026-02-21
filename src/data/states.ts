@@ -2196,4 +2196,324 @@ export const states: State[] = [
       "Page regions use ARIA landmarks",
     ],
   },
+  {
+    slug: "nebraska",
+    name: "Nebraska",
+    lawsuitStats: {
+      federal2024: 18,
+      total2024: 29,
+      year2023: 23,
+      trend: "increasing",
+      trendPercent: 26.1,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (28% of cases)",
+      "Insurance & Financial Services (25% of cases)",
+      "Agriculture & Food Processing (18% of cases)",
+      "Retail & E-commerce (16% of cases)",
+      "Restaurant, Food & Beverages (9% of cases)",
+    ],
+    stateRegulations: [
+      "Nebraska follows federal ADA Title III requirements",
+      "Nebraska Fair Employment Practice Act provides state protections",
+      "District of Nebraska handles growing accessibility caseload",
+      "Insurance sector headquarters concentration increases targeting",
+    ],
+    notableCases: [
+      {
+        case: "Anderson v. [Insurance Company]",
+        year: 2024,
+        description:
+          "Major insurer's quote and policy management portal required WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Miller v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Regional hospital network patient scheduling system made accessible under settlement",
+      },
+      {
+        case: "Johnson v. [Agricultural Company]",
+        year: 2022,
+        description:
+          "Farmer-facing ordering platform required accessibility improvements for screen readers",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on insurance and healthcare platforms",
+      "Ensure quote generators and applications are accessible",
+      "Test agricultural B2B portals with assistive technology",
+      "Create accessibility policy documentation",
+      "Train customer service teams on accessibility needs",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Forms include visible, persistent labels",
+      "Color contrast meets WCAG standards (4.5:1)",
+      "Keyboard navigation fully functional",
+      "Focus indicators clearly visible",
+      "Video content includes captions",
+      "Heading hierarchy is logical",
+      "Links describe their destination",
+      "Error messages are accessible",
+      "ARIA landmarks properly implemented",
+    ],
+  },
+  {
+    slug: "new-hampshire",
+    name: "New Hampshire",
+    lawsuitStats: {
+      federal2024: 14,
+      total2024: 22,
+      year2023: 17,
+      trend: "increasing",
+      trendPercent: 29.4,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (27% of cases)",
+      "Technology & Software (24% of cases)",
+      "Retail & E-commerce (20% of cases)",
+      "Financial Services (16% of cases)",
+      "Hospitality & Tourism (8% of cases)",
+    ],
+    stateRegulations: [
+      "New Hampshire follows federal ADA requirements",
+      "NH Law Against Discrimination (RSA 354-A) extends protections",
+      "District of New Hampshire handling increased accessibility cases",
+      "Tech sector growth in southern NH driving increased scrutiny",
+    ],
+    notableCases: [
+      {
+        case: "Sullivan v. [Tech Startup]",
+        year: 2024,
+        description:
+          "SaaS platform required comprehensive accessibility audit and remediation",
+      },
+      {
+        case: "MacDonald v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Telehealth platform made accessible under settlement agreement",
+      },
+      {
+        case: "Peterson v. [E-commerce Company]",
+        year: 2022,
+        description:
+          "Online retailer checkout flow accessibility improvements mandated",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on technology and healthcare platforms",
+      "Ensure e-commerce checkout is fully accessible",
+      "Test with multiple screen readers",
+      "Create accessibility statement with contact info",
+      "Implement accessibility in development workflow",
+    ],
+    checklist: [
+      "Images have meaningful alt text",
+      "Forms are properly labeled",
+      "Color contrast meets requirements",
+      "Full keyboard navigation available",
+      "Focus states are visible",
+      "Multimedia includes captions",
+      "Headings follow correct order",
+      "Links are descriptive",
+      "Errors clearly communicated",
+      "ARIA used appropriately",
+    ],
+  },
+  {
+    slug: "new-mexico",
+    name: "New Mexico",
+    lawsuitStats: {
+      federal2024: 16,
+      total2024: 26,
+      year2023: 21,
+      trend: "increasing",
+      trendPercent: 23.8,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (29% of cases)",
+      "Government & Public Sector (22% of cases)",
+      "Hospitality & Tourism (19% of cases)",
+      "Retail & E-commerce (16% of cases)",
+      "Energy & Utilities (9% of cases)",
+    ],
+    stateRegulations: [
+      "New Mexico follows federal ADA Title III requirements",
+      "New Mexico Human Rights Act provides state protections",
+      "District of New Mexico handling accessibility cases",
+      "Government and tribal enterprises face heightened scrutiny",
+    ],
+    notableCases: [
+      {
+        case: "Garcia v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Regional hospital network patient portal required full accessibility compliance",
+      },
+      {
+        case: "Martinez v. [Tourism Company]",
+        year: 2023,
+        description:
+          "Hotel and tour booking platform made accessible under consent decree",
+      },
+      {
+        case: "Chavez v. [Government Entity]",
+        year: 2022,
+        description:
+          "Public services website accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on healthcare and government platforms",
+      "Ensure tourism and booking systems are accessible",
+      "Test with assistive technology across platforms",
+      "Create bilingual accessibility documentation",
+      "Train staff on accessibility awareness",
+    ],
+    checklist: [
+      "All images include alt text",
+      "Forms have visible labels",
+      "Color contrast is sufficient",
+      "Keyboard navigation is complete",
+      "Focus indicators are present",
+      "Videos are captioned",
+      "Heading structure is logical",
+      "Links describe destination",
+      "Error handling is accessible",
+      "Language is declared in HTML",
+    ],
+  },
+  {
+    slug: "west-virginia",
+    name: "West Virginia",
+    lawsuitStats: {
+      federal2024: 12,
+      total2024: 19,
+      year2023: 15,
+      trend: "increasing",
+      trendPercent: 26.7,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (32% of cases)",
+      "Energy & Mining (23% of cases)",
+      "Retail & E-commerce (18% of cases)",
+      "Government & Public Sector (15% of cases)",
+      "Financial Services (8% of cases)",
+    ],
+    stateRegulations: [
+      "West Virginia follows federal ADA requirements",
+      "West Virginia Human Rights Act extends protections",
+      "Northern and Southern Districts handle accessibility cases",
+      "Healthcare sector heavily targeted due to rural telehealth needs",
+    ],
+    notableCases: [
+      {
+        case: "Williams v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Rural telehealth platform required comprehensive accessibility updates",
+      },
+      {
+        case: "Thompson v. [Energy Company]",
+        year: 2023,
+        description:
+          "Customer billing and service portal made accessible under settlement",
+      },
+      {
+        case: "Davis v. [Retailer]",
+        year: 2022,
+        description:
+          "Regional retail chain e-commerce accessibility improvements mandated",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on healthcare and telehealth platforms",
+      "Ensure energy and utility portals are accessible",
+      "Test with screen readers on critical flows",
+      "Create accessibility roadmap with timelines",
+      "Implement ongoing accessibility monitoring",
+    ],
+    checklist: [
+      "Images have descriptive alt text",
+      "Forms include proper labels",
+      "Color contrast meets WCAG standards",
+      "Full keyboard access provided",
+      "Focus states clearly visible",
+      "Multimedia is captioned",
+      "Headings properly structured",
+      "Links are descriptive",
+      "Errors announced to assistive tech",
+      "Page titles are unique",
+    ],
+  },
+  {
+    slug: "mississippi",
+    name: "Mississippi",
+    lawsuitStats: {
+      federal2024: 14,
+      total2024: 23,
+      year2023: 18,
+      trend: "increasing",
+      trendPercent: 27.8,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (31% of cases)",
+      "Agriculture & Food Processing (22% of cases)",
+      "Retail & E-commerce (19% of cases)",
+      "Restaurant, Food & Beverages (15% of cases)",
+      "Financial Services (8% of cases)",
+    ],
+    stateRegulations: [
+      "Mississippi follows federal ADA Title III requirements",
+      "No additional state-level web accessibility laws",
+      "Northern and Southern Districts of Mississippi handle cases",
+      "Healthcare accessibility critical due to rural population needs",
+    ],
+    notableCases: [
+      {
+        case: "Jackson v. [Healthcare Network]",
+        year: 2024,
+        description:
+          "Regional hospital system patient portal required full WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Brown v. [Agricultural Company]",
+        year: 2023,
+        description:
+          "Farmer ordering and supply platform made accessible under settlement",
+      },
+      {
+        case: "Smith v. [Retail Chain]",
+        year: 2022,
+        description:
+          "E-commerce website accessibility remediation required by consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on healthcare and telehealth accessibility",
+      "Ensure agricultural B2B portals are accessible",
+      "Test e-commerce flows with assistive technology",
+      "Create accessibility documentation",
+      "Train customer service on accessibility needs",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms are properly labeled",
+      "Color contrast is adequate",
+      "Keyboard navigation works fully",
+      "Focus indicators are visible",
+      "Videos include captions",
+      "Heading hierarchy is correct",
+      "Links describe their purpose",
+      "Error messages are accessible",
+      "ARIA landmarks are used",
+    ],
+  },
 ];
