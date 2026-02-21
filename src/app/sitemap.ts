@@ -8,6 +8,19 @@ import { wcagCriteria } from "@/data/wcag-criteria";
 
 const baseUrl = "https://ratedwithai.com";
 
+// Blog posts - add new posts here
+const blogPosts = [
+  "ada-compliance-checklist-2026",
+  "ada-lawsuit-settlements-2026",
+  "banking-accessibility-compliance",
+  "ecommerce-accessibility-guide",
+  "healthcare-accessibility-compliance",
+  "how-to-fix-common-wcag-failures",
+  "law-firm-accessibility-compliance",
+  "wcag-2-1-vs-2-2",
+  "website-accessibility-testing-guide",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -20,6 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    ...blogPosts.map((post) => ({
+      url: `${baseUrl}/blog/${post}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     ...brands.map((brand) => ({
       url: `${baseUrl}/check/${brand.slug}`,
       changeFrequency: "weekly" as const,
