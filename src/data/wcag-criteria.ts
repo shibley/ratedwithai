@@ -186,6 +186,131 @@ export const wcagCriteria: WcagCriterion[] = [
     ],
   },
   {
+    id: "2.1.2",
+    slug: "2-1-2-no-keyboard-trap",
+    name: "No Keyboard Trap",
+    level: "A",
+    description:
+      "Users must be able to navigate away from any component using only the keyboard.",
+    whyItMatters:
+      "Keyboard users can become trapped in components with no way to escape, forcing a browser restart or abandonment.",
+    commonViolations: [
+      "Modal dialogs with no close mechanism via keyboard",
+      "Embedded media players that capture all key events",
+      "Custom widgets that don't release focus",
+      "Infinite tab loops within components",
+    ],
+    badExample: "<div tabindex=\"0\" onkeydown=\"event.preventDefault()\">Trapped content</div>",
+    goodExample: "<dialog>\n  <button onclick=\"this.closest('dialog').close()\">Close</button>\n  Content here\n</dialog>",
+    howToFix:
+      "Ensure all interactive components allow users to exit via Tab, Escape, or arrow keys. Document non-standard exit methods if used.",
+    relatedCriteria: [
+      "2-1-1-keyboard",
+      "2-4-3-focus-order",
+      "4-1-2-name-role-value",
+    ],
+  },
+  {
+    id: "2.2.1",
+    slug: "2-2-1-timing-adjustable",
+    name: "Timing Adjustable",
+    level: "A",
+    description:
+      "For time limits set by content, users must be able to turn off, adjust, or extend the time.",
+    whyItMatters:
+      "Users with disabilities often need more time to read, understand, and interact with content. Strict time limits create barriers.",
+    commonViolations: [
+      "Session timeouts without warning",
+      "Auto-advancing carousels or slideshows",
+      "Forms that expire without option to extend",
+      "Timed quizzes with no accommodation",
+    ],
+    badExample: "<div data-timeout=\"30000\">Complete within 30 seconds</div>",
+    goodExample: "<div role=\"alert\">Session expires in 2 minutes. <button>Extend session</button></div>",
+    howToFix:
+      "Provide warnings before timeouts, allow users to extend time limits by at least 10x, or offer the option to disable time limits entirely.",
+    relatedCriteria: [
+      "2-2-2-pause-stop-hide",
+      "3-2-1-on-focus",
+      "4-1-3-status-messages",
+    ],
+  },
+  {
+    id: "2.2.2",
+    slug: "2-2-2-pause-stop-hide",
+    name: "Pause, Stop, Hide",
+    level: "A",
+    description:
+      "For moving, blinking, scrolling, or auto-updating content, users must be able to pause, stop, or hide it.",
+    whyItMatters:
+      "Animated content can distract users with attention disorders and prevent screen reader users from reading static content.",
+    commonViolations: [
+      "Auto-playing carousels without pause controls",
+      "Background videos that cannot be stopped",
+      "Scrolling news tickers without controls",
+      "Live updating feeds without pause option",
+    ],
+    badExample: "<div class=\"animate-scroll\">Breaking news ticker...</div>",
+    goodExample: "<div class=\"carousel\">\n  <button aria-label=\"Pause slideshow\">⏸</button>\n  Slide content\n</div>",
+    howToFix:
+      "Add visible pause/stop controls for all moving content. Respect prefers-reduced-motion media query. Avoid auto-play unless essential.",
+    relatedCriteria: [
+      "2-2-1-timing-adjustable",
+      "1-4-3-contrast-minimum",
+      "2-3-1-three-flashes",
+    ],
+  },
+  {
+    id: "2.4.5",
+    slug: "2-4-5-multiple-ways",
+    name: "Multiple Ways",
+    level: "AA",
+    description:
+      "Provide more than one way to locate a web page within a set of pages, except when the page is a step in a process.",
+    whyItMatters:
+      "Different users prefer different navigation methods. Some use search, others use sitemaps, and some browse hierarchically.",
+    commonViolations: [
+      "No search functionality on large sites",
+      "Missing sitemap or site index",
+      "No breadcrumb navigation",
+      "Single navigation path to all content",
+    ],
+    badExample: "<!-- Site with only main menu navigation -->",
+    goodExample: "<nav aria-label=\"Breadcrumb\">...</nav>\n<form role=\"search\">...</form>\n<nav aria-label=\"Main\">...</nav>",
+    howToFix:
+      "Implement multiple navigation methods: main menu, search, sitemap, breadcrumbs, or related links. At least two methods should be available.",
+    relatedCriteria: [
+      "2-4-1-bypass-blocks",
+      "2-4-2-page-titled",
+      "3-2-3-consistent-navigation",
+    ],
+  },
+  {
+    id: "3.2.3",
+    slug: "3-2-3-consistent-navigation",
+    name: "Consistent Navigation",
+    level: "AA",
+    description:
+      "Navigation mechanisms that appear on multiple pages should be presented in the same relative order each time.",
+    whyItMatters:
+      "Consistent navigation helps users predict where to find links and reduces cognitive load when moving between pages.",
+    commonViolations: [
+      "Navigation items in different order on different pages",
+      "Footer links that vary by page",
+      "Sidebar navigation that changes position",
+      "Search boxes in inconsistent locations",
+    ],
+    badExample: "<!-- Page 1: Home | About | Contact -->\n<!-- Page 2: Contact | Home | About -->",
+    goodExample: "<!-- All pages: Home | About | Contact -->",
+    howToFix:
+      "Use shared navigation components across all pages. Keep menu items in the same order. New items can be added but existing order should remain.",
+    relatedCriteria: [
+      "3-2-4-consistent-identification",
+      "2-4-5-multiple-ways",
+      "2-4-1-bypass-blocks",
+    ],
+  },
+  {
     id: "2.4.1",
     slug: "2-4-1-bypass-blocks",
     name: "Bypass Blocks",
