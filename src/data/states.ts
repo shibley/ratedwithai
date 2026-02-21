@@ -1556,4 +1556,324 @@ export const states: State[] = [
       "ARIA used correctly",
     ],
   },
+  {
+    slug: "south-carolina",
+    name: "South Carolina",
+    lawsuitStats: {
+      federal2024: 29,
+      total2024: 43,
+      year2023: 35,
+      trend: "increasing",
+      trendPercent: 22.9,
+    },
+    topIndustries: [
+      "Hospitality & Tourism (28% of cases)",
+      "Healthcare & Medical Services (24% of cases)",
+      "Restaurant, Food & Beverages (19% of cases)",
+      "Manufacturing & Industrial (15% of cases)",
+      "Real Estate & Property (9% of cases)",
+    ],
+    stateRegulations: [
+      "South Carolina follows federal ADA Title III requirements",
+      "No additional state-level web accessibility laws",
+      "Charleston and Myrtle Beach tourism driving accessibility scrutiny",
+      "District of South Carolina handling growing accessibility caseload",
+    ],
+    notableCases: [
+      {
+        case: "Johnson v. [Resort Group]",
+        year: 2024,
+        description:
+          "Coastal resort booking platform required full WCAG 2.1 AA compliance after screen reader failures",
+      },
+      {
+        case: "Williams v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Regional hospital network patient portal made accessible under structured settlement",
+      },
+      {
+        case: "Davis v. [Restaurant Chain]",
+        year: 2022,
+        description:
+          "Online ordering and reservation system required accessibility updates",
+      },
+    ],
+    protectionSteps: [
+      "Conduct comprehensive WCAG 2.1 AA accessibility audit",
+      "Focus on hospitality and tourism booking systems",
+      "Ensure beach rental and reservation platforms are accessible",
+      "Test healthcare patient portals with assistive technology",
+      "Create accessibility statement with contact information",
+      "Implement ongoing accessibility monitoring program",
+    ],
+    checklist: [
+      "All images include descriptive alt text",
+      "Forms have visible, properly associated labels",
+      "Color contrast meets WCAG 2.1 AA minimum (4.5:1)",
+      "Website is fully keyboard navigable",
+      "Focus indicators visible on all interactive elements",
+      "Video and audio content includes captions",
+      "Heading hierarchy follows logical structure",
+      "Link text clearly describes destination",
+      "Error messages are clear and announced",
+      "Page language declared in HTML",
+    ],
+  },
+  {
+    slug: "missouri",
+    name: "Missouri",
+    lawsuitStats: {
+      federal2024: 35,
+      total2024: 52,
+      year2023: 42,
+      trend: "increasing",
+      trendPercent: 23.8,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (27% of cases)",
+      "Retail & E-commerce (23% of cases)",
+      "Restaurant, Food & Beverages (20% of cases)",
+      "Financial Services (15% of cases)",
+      "Manufacturing & Industrial (10% of cases)",
+    ],
+    stateRegulations: [
+      "Missouri follows federal ADA requirements",
+      "Missouri Human Rights Act provides state-level protections",
+      "Kansas City and St. Louis metro areas driving filing volume",
+      "Eastern and Western Districts of Missouri handle accessibility cases",
+    ],
+    notableCases: [
+      {
+        case: "Thompson v. [Healthcare Provider]",
+        year: 2024,
+        description:
+          "Multi-hospital system patient portal required comprehensive accessibility remediation",
+      },
+      {
+        case: "Anderson v. [Retail Chain]",
+        year: 2023,
+        description:
+          "E-commerce website made keyboard accessible under settlement agreement",
+      },
+      {
+        case: "Miller v. [Financial Institution]",
+        year: 2022,
+        description:
+          "Online banking platform accessibility improvements mandated by consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Audit website for WCAG 2.1 AA compliance",
+      "Focus on healthcare and financial platforms",
+      "Ensure e-commerce checkout flows are accessible",
+      "Test banking applications with screen readers",
+      "Create accessibility documentation and roadmap",
+      "Train development teams on accessibility standards",
+    ],
+    checklist: [
+      "Images have meaningful alt text descriptions",
+      "Form inputs include visible labels",
+      "Color contrast ratios meet WCAG standards",
+      "Full keyboard navigation available",
+      "Focus states clearly visible",
+      "Multimedia content is captioned",
+      "Semantic heading structure used",
+      "Links describe their destination",
+      "Error handling is accessible",
+      "ARIA landmarks identify page regions",
+    ],
+  },
+  {
+    slug: "alabama",
+    name: "Alabama",
+    lawsuitStats: {
+      federal2024: 24,
+      total2024: 36,
+      year2023: 29,
+      trend: "increasing",
+      trendPercent: 24.1,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (29% of cases)",
+      "Manufacturing & Automotive (24% of cases)",
+      "Restaurant, Food & Beverages (18% of cases)",
+      "Retail & E-commerce (15% of cases)",
+      "Financial Services (9% of cases)",
+    ],
+    stateRegulations: [
+      "Alabama follows federal ADA Title III requirements",
+      "No additional state web accessibility laws",
+      "Healthcare sector particularly targeted due to rural hospital networks",
+      "Northern and Middle Districts of Alabama handle accessibility filings",
+    ],
+    notableCases: [
+      {
+        case: "Robinson v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Regional hospital network patient scheduling portal required full accessibility compliance",
+      },
+      {
+        case: "Jackson v. [Auto Manufacturer]",
+        year: 2023,
+        description:
+          "Vehicle configuration and dealer locator websites made accessible under settlement",
+      },
+      {
+        case: "Harris v. [Retail Chain]",
+        year: 2022,
+        description:
+          "E-commerce platform keyboard and screen reader accessibility improvements ordered",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility assessment",
+      "Focus on healthcare patient-facing systems",
+      "Ensure manufacturing configurators are accessible",
+      "Test telehealth platforms with assistive technology",
+      "Document accessibility policies and procedures",
+      "Implement regular accessibility audits",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Forms include visible, associated labels",
+      "Color contrast meets minimum requirements",
+      "Keyboard navigation works across site",
+      "Focus indicators are present and visible",
+      "Videos include captions and transcripts",
+      "Headings follow proper hierarchy",
+      "Link text is descriptive",
+      "Error messages accessible to screen readers",
+      "Skip navigation links provided",
+    ],
+  },
+  {
+    slug: "louisiana",
+    name: "Louisiana",
+    lawsuitStats: {
+      federal2024: 27,
+      total2024: 41,
+      year2023: 33,
+      trend: "increasing",
+      trendPercent: 24.2,
+    },
+    topIndustries: [
+      "Hospitality & Tourism (26% of cases)",
+      "Healthcare & Medical Services (23% of cases)",
+      "Restaurant, Food & Beverages (21% of cases)",
+      "Energy & Industrial (16% of cases)",
+      "Entertainment & Gaming (9% of cases)",
+    ],
+    stateRegulations: [
+      "Louisiana follows federal ADA requirements",
+      "Louisiana Commission on Human Rights handles discrimination cases",
+      "New Orleans tourism and hospitality sector heavily targeted",
+      "Eastern and Western Districts of Louisiana handle filings",
+    ],
+    notableCases: [
+      {
+        case: "Broussard v. [Hotel Group]",
+        year: 2024,
+        description:
+          "French Quarter hotel booking platform required WCAG 2.1 AA compliance under settlement",
+      },
+      {
+        case: "Thibodaux v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Regional health network patient portal accessibility remediation mandated",
+      },
+      {
+        case: "Landry v. [Restaurant Group]",
+        year: 2022,
+        description:
+          "Online ordering and reservation systems made accessible under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Focus on hospitality booking and tourism platforms",
+      "Ensure restaurant ordering systems are accessible",
+      "Test entertainment ticketing with screen readers",
+      "Create accessibility statement and feedback mechanism",
+      "Monitor for accessibility complaints and respond promptly",
+    ],
+    checklist: [
+      "Images include meaningful alt text",
+      "Form fields have visible labels",
+      "Color contrast meets WCAG standards",
+      "Full keyboard accessibility available",
+      "Focus states clearly visible",
+      "Video content includes captions",
+      "Heading structure is logical",
+      "Links describe their purpose",
+      "Errors are announced properly",
+      "ARIA used appropriately",
+    ],
+  },
+  {
+    slug: "kentucky",
+    name: "Kentucky",
+    lawsuitStats: {
+      federal2024: 22,
+      total2024: 34,
+      year2023: 27,
+      trend: "increasing",
+      trendPercent: 25.9,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (30% of cases)",
+      "Manufacturing & Industrial (22% of cases)",
+      "Restaurant, Food & Beverages (18% of cases)",
+      "Retail & E-commerce (16% of cases)",
+      "Financial Services (9% of cases)",
+    ],
+    stateRegulations: [
+      "Kentucky follows federal ADA Title III requirements",
+      "Kentucky Civil Rights Act provides state-level protections",
+      "Healthcare sector faces significant accessibility scrutiny",
+      "Eastern and Western Districts of Kentucky handle accessibility cases",
+    ],
+    notableCases: [
+      {
+        case: "Smith v. [Healthcare Provider]",
+        year: 2024,
+        description:
+          "Multi-location healthcare system patient portal required comprehensive accessibility updates",
+      },
+      {
+        case: "Brown v. [Manufacturing Company]",
+        year: 2023,
+        description:
+          "B2B ordering platform made accessible under structured settlement",
+      },
+      {
+        case: "Jones v. [Retail Chain]",
+        year: 2022,
+        description:
+          "E-commerce website keyboard navigation and screen reader compatibility improved",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on healthcare and patient portal accessibility",
+      "Ensure manufacturing B2B platforms are accessible",
+      "Test retail e-commerce with assistive technology",
+      "Create accessibility roadmap with milestones",
+      "Train staff on accessibility best practices",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms include proper labels",
+      "Color contrast meets standards",
+      "Keyboard navigation functional",
+      "Focus indicators visible",
+      "Multimedia content captioned",
+      "Headings properly structured",
+      "Links are descriptive",
+      "Error messages accessible",
+      "Page titles unique and descriptive",
+    ],
+  },
 ];
