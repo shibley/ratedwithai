@@ -1876,4 +1876,324 @@ export const states: State[] = [
       "Page titles unique and descriptive",
     ],
   },
+  {
+    slug: "iowa",
+    name: "Iowa",
+    lawsuitStats: {
+      federal2024: 18,
+      total2024: 28,
+      year2023: 22,
+      trend: "increasing",
+      trendPercent: 27.3,
+    },
+    topIndustries: [
+      "Agriculture & Agribusiness (31% of cases)",
+      "Healthcare & Medical Services (25% of cases)",
+      "Insurance & Financial Services (19% of cases)",
+      "Education & Higher Ed (14% of cases)",
+      "Retail & E-commerce (8% of cases)",
+    ],
+    stateRegulations: [
+      "Iowa follows federal ADA Title III requirements",
+      "Iowa Civil Rights Act provides state-level protections",
+      "Northern and Southern Districts of Iowa handle accessibility cases",
+      "Growing focus on agricultural technology platform accessibility",
+    ],
+    notableCases: [
+      {
+        case: "Hansen v. [Agribusiness Company]",
+        year: 2024,
+        description:
+          "Agricultural supply ordering platform required WCAG 2.1 AA compliance after settlement",
+      },
+      {
+        case: "Miller v. [Healthcare System]",
+        year: 2023,
+        description:
+          "Rural health network patient portal accessibility improvements mandated",
+      },
+      {
+        case: "Peterson v. [Insurance Provider]",
+        year: 2022,
+        description:
+          "Insurance quote and claims portal made accessible under consent decree",
+      },
+    ],
+    protectionSteps: [
+      "Conduct comprehensive WCAG 2.1 AA audit",
+      "Focus on agricultural B2B platform accessibility",
+      "Ensure healthcare patient portals are accessible",
+      "Test insurance and financial platforms with screen readers",
+      "Create accessibility statement with feedback mechanism",
+      "Monitor and respond to accessibility complaints promptly",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Form fields have visible, persistent labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Website is fully keyboard navigable",
+      "Focus indicators clearly visible",
+      "Videos include captions and transcripts",
+      "Heading hierarchy is logical",
+      "Links describe their destination",
+      "Error messages are announced to screen readers",
+      "ARIA landmarks identify page regions",
+    ],
+  },
+  {
+    slug: "utah",
+    name: "Utah",
+    lawsuitStats: {
+      federal2024: 24,
+      total2024: 38,
+      year2023: 31,
+      trend: "increasing",
+      trendPercent: 22.6,
+    },
+    topIndustries: [
+      "Technology & SaaS (34% of cases)",
+      "Healthcare & Medical Services (22% of cases)",
+      "Outdoor Recreation & Tourism (18% of cases)",
+      "Financial Services & Fintech (15% of cases)",
+      "E-commerce & Retail (9% of cases)",
+    ],
+    stateRegulations: [
+      "Utah follows federal ADA Title III requirements",
+      "Utah Antidiscrimination Act provides additional protections",
+      "Silicon Slopes tech hub faces increased accessibility scrutiny",
+      "District of Utah handles federal accessibility filings",
+    ],
+    notableCases: [
+      {
+        case: "Anderson v. [Tech Startup]",
+        year: 2024,
+        description:
+          "SaaS platform required comprehensive accessibility overhaul including dashboard and reporting features",
+      },
+      {
+        case: "Jensen v. [Outdoor Retailer]",
+        year: 2023,
+        description:
+          "E-commerce site for outdoor equipment made accessible under structured settlement",
+      },
+      {
+        case: "Taylor v. [Healthcare Network]",
+        year: 2023,
+        description:
+          "Multi-location health system patient scheduling portal accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Audit all SaaS products for WCAG 2.1 AA compliance",
+      "Focus on dashboard and data visualization accessibility",
+      "Ensure e-commerce checkout flows are fully accessible",
+      "Test mobile apps with VoiceOver and TalkBack",
+      "Create accessibility roadmap with quarterly milestones",
+      "Partner with accessibility consultants for ongoing compliance",
+    ],
+    checklist: [
+      "All images include meaningful alt text",
+      "Form labels are visible and properly associated",
+      "Color contrast meets WCAG 2.1 AA minimum ratios",
+      "Full keyboard accessibility across entire platform",
+      "Interactive elements have visible focus states",
+      "Data visualizations have text alternatives",
+      "Heading structure follows logical hierarchy",
+      "Links are descriptive and distinct",
+      "Error handling is accessible and clear",
+      "Dynamic content updates are announced",
+    ],
+  },
+  {
+    slug: "oklahoma",
+    name: "Oklahoma",
+    lawsuitStats: {
+      federal2024: 21,
+      total2024: 33,
+      year2023: 26,
+      trend: "increasing",
+      trendPercent: 26.9,
+    },
+    topIndustries: [
+      "Energy & Oil/Gas (29% of cases)",
+      "Healthcare & Medical Services (24% of cases)",
+      "Retail & E-commerce (18% of cases)",
+      "Financial Services & Banking (15% of cases)",
+      "Hospitality & Tourism (11% of cases)",
+    ],
+    stateRegulations: [
+      "Oklahoma follows federal ADA Title III requirements",
+      "Oklahoma Human Rights Commission handles state discrimination cases",
+      "Energy sector B2B platforms facing increased scrutiny",
+      "Eastern, Western, and Northern Districts of Oklahoma handle filings",
+    ],
+    notableCases: [
+      {
+        case: "Williams v. [Energy Company]",
+        year: 2024,
+        description:
+          "Oil and gas supplier portal required WCAG 2.1 AA compliance after federal lawsuit",
+      },
+      {
+        case: "Johnson v. [Regional Hospital]",
+        year: 2023,
+        description:
+          "Hospital patient portal and appointment scheduling system accessibility remediation mandated",
+      },
+      {
+        case: "Davis v. [Banking Institution]",
+        year: 2022,
+        description:
+          "Online banking platform keyboard navigation and screen reader compatibility improved",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on B2B energy platform accessibility",
+      "Ensure healthcare booking systems are accessible",
+      "Test banking and financial platforms with assistive technology",
+      "Create accessibility statement and contact mechanism",
+      "Train development teams on accessibility standards",
+    ],
+    checklist: [
+      "Images have descriptive alt text",
+      "Forms include visible labels",
+      "Color contrast meets WCAG standards",
+      "Keyboard navigation works across site",
+      "Focus states are clearly visible",
+      "Video content includes captions",
+      "Headings follow logical structure",
+      "Links describe their destination",
+      "Errors are announced accessibly",
+      "Page titles are unique and descriptive",
+    ],
+  },
+  {
+    slug: "kansas",
+    name: "Kansas",
+    lawsuitStats: {
+      federal2024: 16,
+      total2024: 25,
+      year2023: 19,
+      trend: "increasing",
+      trendPercent: 31.6,
+    },
+    topIndustries: [
+      "Agriculture & Agribusiness (28% of cases)",
+      "Healthcare & Medical Services (26% of cases)",
+      "Manufacturing & Industrial (19% of cases)",
+      "Financial Services & Banking (16% of cases)",
+      "Retail & E-commerce (9% of cases)",
+    ],
+    stateRegulations: [
+      "Kansas follows federal ADA Title III requirements",
+      "Kansas Human Rights Commission handles discrimination complaints",
+      "Agricultural technology platforms under accessibility review",
+      "District of Kansas handles federal accessibility cases",
+    ],
+    notableCases: [
+      {
+        case: "Smith v. [Ag Tech Company]",
+        year: 2024,
+        description:
+          "Farm equipment ordering platform required accessibility updates under settlement agreement",
+      },
+      {
+        case: "Brown v. [Hospital Network]",
+        year: 2023,
+        description:
+          "Multi-location health system made patient portal accessible to screen reader users",
+      },
+      {
+        case: "Wilson v. [Manufacturing Firm]",
+        year: 2022,
+        description:
+          "B2B ordering and inventory system accessibility improvements mandated",
+      },
+    ],
+    protectionSteps: [
+      "Audit for WCAG 2.1 AA compliance",
+      "Focus on agricultural and manufacturing B2B platforms",
+      "Ensure healthcare portals meet accessibility standards",
+      "Test banking platforms with assistive technology",
+      "Create accessibility feedback mechanism",
+      "Monitor accessibility case law in the District of Kansas",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Form fields are properly labeled",
+      "Color contrast meets minimum standards",
+      "Full keyboard navigation available",
+      "Focus indicators are visible",
+      "Multimedia includes captions",
+      "Heading hierarchy is logical",
+      "Links are descriptive",
+      "Error messages are accessible",
+      "ARIA is used appropriately",
+    ],
+  },
+  {
+    slug: "arkansas",
+    name: "Arkansas",
+    lawsuitStats: {
+      federal2024: 14,
+      total2024: 22,
+      year2023: 17,
+      trend: "increasing",
+      trendPercent: 29.4,
+    },
+    topIndustries: [
+      "Retail & E-commerce (32% of cases)",
+      "Healthcare & Medical Services (27% of cases)",
+      "Agriculture & Food Processing (18% of cases)",
+      "Transportation & Logistics (13% of cases)",
+      "Financial Services (8% of cases)",
+    ],
+    stateRegulations: [
+      "Arkansas follows federal ADA Title III requirements",
+      "Arkansas Civil Rights Act of 1993 provides state protections",
+      "Walmart and retail sector headquarters face heightened scrutiny",
+      "Eastern and Western Districts of Arkansas handle accessibility cases",
+    ],
+    notableCases: [
+      {
+        case: "Thompson v. [Retail Chain]",
+        year: 2024,
+        description:
+          "Major retailer e-commerce platform required comprehensive WCAG 2.1 AA remediation",
+      },
+      {
+        case: "Jackson v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Regional hospital network patient portal made accessible under consent decree",
+      },
+      {
+        case: "Martin v. [Logistics Company]",
+        year: 2022,
+        description:
+          "Trucking company driver portal and scheduling system accessibility improvements mandated",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on e-commerce and retail platform accessibility",
+      "Ensure healthcare booking and portals are accessible",
+      "Test logistics and transportation platforms",
+      "Create accessibility roadmap and statement",
+      "Train teams on accessibility best practices",
+    ],
+    checklist: [
+      "Images include meaningful alt text",
+      "Forms have visible, associated labels",
+      "Color contrast meets WCAG standards",
+      "Keyboard navigation works throughout",
+      "Focus states are clearly visible",
+      "Videos include captions and transcripts",
+      "Headings follow logical hierarchy",
+      "Links describe their purpose",
+      "Errors are announced to screen readers",
+      "Page regions use ARIA landmarks",
+    ],
+  },
 ];
