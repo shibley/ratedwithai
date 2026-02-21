@@ -12,6 +12,7 @@ const baseUrl = "https://ratedwithai.com";
 const blogPosts = [
   "ada-compliance-checklist-2026",
   "ada-lawsuit-settlements-2026",
+  "ada-title-ii-compliance-guide",
   "banking-accessibility-compliance",
   "ecommerce-accessibility-guide",
   "healthcare-accessibility-compliance",
@@ -19,6 +20,11 @@ const blogPosts = [
   "law-firm-accessibility-compliance",
   "wcag-2-1-vs-2-2",
   "website-accessibility-testing-guide",
+];
+
+// Tool landing pages
+const toolPages = [
+  "ada-title-ii-compliance-checker",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -33,6 +39,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    ...toolPages.map((tool) => ({
+      url: `${baseUrl}/tools/${tool}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
     ...blogPosts.map((post) => ({
       url: `${baseUrl}/blog/${post}`,
       changeFrequency: "monthly" as const,
