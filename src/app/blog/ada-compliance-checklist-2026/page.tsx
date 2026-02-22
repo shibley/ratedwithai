@@ -53,9 +53,7 @@ export default function AdaComplianceChecklistPage() {
 
           <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-8">
             <Link href="/" className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 via-blue-400 to-purple-500 text-slate-900 font-bold">
-                R
-              </span>
+              <img src="/logo-40.png" alt="RatedWithAI" width={40} height={40} className="h-10 w-10 rounded-2xl" />
               <div>
                 <p className="text-lg font-semibold tracking-tight">RatedWithAI</p>
                 <p className="text-xs text-slate-400">Blog</p>
