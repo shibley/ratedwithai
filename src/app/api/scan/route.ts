@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-core';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
 export const runtime = 'nodejs';
+export const maxDuration = 60; // Allow up to 60s for scan
 
 // Simple in-memory rate limiting (5 scans per IP per hour)
 const rateLimitMap = new Map<string, number[]>();
@@ -101,12 +102,22 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    const browserlessToken = process.env.BROWSERLESS_TOKEN;
+    if (!browserlessToken) {
+      console.error('BROWSERLESS_TOKEN not configured');
+      return NextResponse.json(
+        { error: 'Scanner not configured. Please contact support.' },
+        { status: 503 }
+      );
+    }
     
     let browser;
     try {
-      browser = await chromium.launch({
-        headless: true,
-      });
+      // Connect to Browserless.io via CDP
+      browser = await chromium.connectOverCDP(
+        `wss://production-sfo.browserless.io?token=${browserlessToken}`
+      );
       
       const context = await browser.newContext({
         userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -116,7 +127,7 @@ export async function POST(request: NextRequest) {
       
       await page.goto(url, {
         waitUntil: 'domcontentloaded',
-        timeout: 15000,
+        timeout: 30000,
       });
       
       await page.waitForTimeout(2000);
@@ -194,8 +205,9 @@ export async function POST(request: NextRequest) {
       }
       
       const errorMessage = browserError instanceof Error ? browserError.message : '';
+      console.error('Browser error:', errorMessage);
       
-      if (errorMessage.includes('Timeout')) {
+      if (errorMessage.includes('Timeout') || errorMessage.includes('timeout')) {
         return NextResponse.json(
           { error: 'Website took too long to load. Please try again.' },
           { status: 408 }
