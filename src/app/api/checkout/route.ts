@@ -33,22 +33,8 @@ async function getAuthUserId(): Promise<string | null> {
 
 export async function POST(request: NextRequest) {
   try {
-    // Check if auth is configured
-    if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
-      return NextResponse.json(
-        { error: "Authentication not configured. Please try again later." },
-        { status: 503 }
-      );
-    }
-
-    // Verify user is authenticated
+    // Auth is optional — allow guest checkout when Clerk isn't configured
     const userId = await getAuthUserId();
-    if (!userId) {
-      return NextResponse.json(
-        { error: "Unauthorized. Please sign in." },
-        { status: 401 }
-      );
-    }
 
     const body = await request.json();
     const { plan } = body;
@@ -81,12 +67,14 @@ export async function POST(request: NextRequest) {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard?checkout=success`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing?checkout=cancelled`,
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://ratedwithai.com'}/pricing?checkout=success`,
+      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://ratedwithai.com'}/pricing?checkout=cancelled`,
       metadata: {
-        userId,
+        ...(userId ? { userId } : {}),
         plan,
       },
+      // Collect email for guest checkout (needed to identify customer)
+      customer_email: undefined,
       // Allow promotion codes
       allow_promotion_codes: true,
       // Collect billing address
