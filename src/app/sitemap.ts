@@ -10,15 +10,20 @@ const baseUrl = "https://ratedwithai.com";
 
 // Blog posts - add new posts here
 const blogPosts = [
+  "accessibility-audit-checklist-2026",
+  "ada-compliance-by-industry",
   "ada-compliance-checklist-2026",
   "ada-lawsuit-settlements-2026",
   "ada-title-ii-compliance-guide",
   "banking-accessibility-compliance",
   "ecommerce-accessibility-guide",
   "healthcare-accessibility-compliance",
+  "how-to-check-website-ada-compliant",
   "how-to-fix-common-wcag-failures",
   "law-firm-accessibility-compliance",
+  "top-10-wcag-failures",
   "wcag-2-1-vs-2-2",
+  "wcag-22-complete-guide",
   "website-accessibility-testing-guide",
 ];
 
