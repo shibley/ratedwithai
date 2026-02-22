@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { chromium } from 'playwright-core';
-import { readFileSync } from 'fs';
-import { join } from 'path';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60; // Allow up to 60s for scan
+
+// axe-core CDN URL - pinned to specific version for stability
+const AXE_CORE_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js';
 
 // Simple in-memory rate limiting (5 scans per IP per hour)
 const rateLimitMap = new Map<string, number[]>();
@@ -132,15 +133,10 @@ export async function POST(request: NextRequest) {
       
       await page.waitForTimeout(2000);
       
-      // Read and inject axe-core from node_modules
-      const axePath = join(process.cwd(), 'node_modules', 'axe-core', 'axe.min.js');
-      const axeSource = readFileSync(axePath, 'utf8');
+      // Inject axe-core from CDN
+      await page.addScriptTag({ url: AXE_CORE_CDN });
       
-      await page.evaluate((source) => {
-        eval(source);
-      }, axeSource);
-      
-      await page.waitForTimeout(500); // Wait for axe to initialize
+      await page.waitForTimeout(1000); // Wait for axe to initialize
       
       const results = await page.evaluate(async () => {
         // @ts-expect-error - axe is loaded dynamically
