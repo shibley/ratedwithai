@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "RatedWithAI vs WAVE: Which Accessibility Tool Is Right for You? | Comparison 2026",
@@ -49,21 +50,7 @@ export default function RatedWithAIvsWAVEPage() {
           <div className="absolute -top-40 right-0 h-96 w-96 rounded-full bg-gradient-to-br from-sky-500/30 via-blue-500/20 to-purple-500/30 blur-3xl" />
           <div className="absolute -bottom-40 left-0 h-96 w-96 rounded-full bg-gradient-to-tr from-indigo-500/30 via-blue-500/10 to-purple-500/30 blur-3xl" />
 
-          <header className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-8">
-            <Link href="/" className="flex items-center gap-3">
-              <img src="/logo-40.png" alt="RatedWithAI" width={40} height={40} className="h-10 w-10 rounded-2xl" />
-              <div>
-                <p className="text-lg font-semibold tracking-tight">RatedWithAI</p>
-                <p className="text-xs text-slate-400">Compare</p>
-              </div>
-            </Link>
-            <Link
-              className="rounded-full border border-slate-700/60 px-4 py-2 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white"
-              href="/"
-            >
-              Try free scan
-            </Link>
-          </header>
+          <Header />
 
           <section className="relative z-10 mx-auto w-full max-w-4xl px-6 pb-14 pt-4">
             <p className="text-sm uppercase tracking-[0.3em] text-slate-400">
