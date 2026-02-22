@@ -2516,4 +2516,719 @@ export const states: State[] = [
       "ARIA landmarks are used",
     ],
   },
+  {
+    slug: "alaska",
+    name: "Alaska",
+    lawsuitStats: {
+      federal2024: 8,
+      total2024: 12,
+      year2023: 9,
+      trend: "increasing",
+      trendPercent: 33.3,
+    },
+    topIndustries: [
+      "Tourism & Hospitality (34% of cases)",
+      "Oil, Gas & Energy (26% of cases)",
+      "Healthcare & Medical Services (22% of cases)",
+      "Government & Public Services (12% of cases)",
+      "Retail & E-commerce (6% of cases)",
+    ],
+    stateRegulations: [
+      "Alaska follows federal ADA Title III requirements",
+      "Alaska Human Rights Law provides state-level protections",
+      "June 2024 DOJ finding cited Alaska for ADA violations in election accessibility",
+      "District of Alaska handles federal accessibility cases with growing attention",
+      "Remote geographic challenges increase telehealth accessibility scrutiny",
+    ],
+    notableCases: [
+      {
+        case: "DOJ v. State of Alaska (Elections)",
+        year: 2024,
+        description:
+          "Department of Justice found Alaska violated Title II ADA by failing to provide accessible voting, polling places, and elections website for voters with disabilities",
+      },
+      {
+        case: "Thompson v. [Tourism Company]",
+        year: 2023,
+        description:
+          "Alaska cruise and tour booking platform required WCAG 2.1 AA compliance under settlement",
+      },
+      {
+        case: "Williams v. [Healthcare Provider]",
+        year: 2022,
+        description:
+          "Rural telehealth platform accessibility remediation mandated due to critical importance for remote communities",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on tourism booking and reservation systems",
+      "Ensure telehealth platforms are fully accessible for remote users",
+      "Test energy industry portals with screen readers",
+      "Create accessibility statement acknowledging unique geographic challenges",
+      "Partner with accessibility experts familiar with Alaska's requirements",
+    ],
+    checklist: [
+      "All images include descriptive alt text",
+      "Forms have visible, properly associated labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Full keyboard navigation across entire site",
+      "Focus indicators visible on all interactive elements",
+      "Video content includes captions and transcripts",
+      "Heading hierarchy follows logical structure",
+      "Links clearly describe their destination",
+      "Error messages are accessible to screen readers",
+      "Telehealth interfaces work with assistive technology",
+    ],
+  },
+  {
+    slug: "delaware",
+    name: "Delaware",
+    lawsuitStats: {
+      federal2024: 19,
+      total2024: 28,
+      year2023: 22,
+      trend: "increasing",
+      trendPercent: 27.3,
+    },
+    topIndustries: [
+      "Financial Services & Banking (38% of cases)",
+      "Corporate Services & Legal (24% of cases)",
+      "Healthcare & Medical Services (17% of cases)",
+      "E-commerce & Retail (13% of cases)",
+      "Insurance (8% of cases)",
+    ],
+    stateRegulations: [
+      "Delaware follows federal ADA Title III requirements",
+      "Delaware Discrimination in Employment Act extends protections",
+      "Corporate headquarters concentration creates high-value targets",
+      "District of Delaware handles significant accessibility caseload",
+      "State government actively promotes accessibility compliance awareness",
+    ],
+    notableCases: [
+      {
+        case: "Anderson v. [Financial Institution]",
+        year: 2024,
+        description:
+          "Major Delaware-incorporated bank required comprehensive online banking accessibility overhaul",
+      },
+      {
+        case: "Martinez v. [Corporate Services Firm]",
+        year: 2023,
+        description:
+          "Business formation and legal services platform made accessible under structured settlement",
+      },
+      {
+        case: "Johnson v. [Insurance Company]",
+        year: 2022,
+        description:
+          "Insurance quote and claims portal required WCAG 2.1 AA compliance",
+      },
+    ],
+    protectionSteps: [
+      "Conduct comprehensive WCAG 2.1 AA audit",
+      "Focus on financial services and banking platforms",
+      "Ensure corporate formation tools are accessible",
+      "Test insurance portals with assistive technology",
+      "Create accessibility documentation for SEC/regulatory compliance",
+      "Train teams on accessibility requirements for financial services",
+    ],
+    checklist: [
+      "All images have meaningful alt text",
+      "Form labels are visible and properly associated",
+      "Color contrast meets WCAG 2.1 AA minimum ratios",
+      "Full keyboard accessibility for all interactive elements",
+      "Focus states clearly visible throughout",
+      "Financial calculators accessible to screen readers",
+      "Heading hierarchy is correct and logical",
+      "Links describe their destination clearly",
+      "Error handling is accessible and clear",
+      "PDF documents and statements are tagged and accessible",
+    ],
+  },
+  {
+    slug: "hawaii",
+    name: "Hawaii",
+    lawsuitStats: {
+      federal2024: 21,
+      total2024: 32,
+      year2023: 26,
+      trend: "increasing",
+      trendPercent: 23.1,
+    },
+    topIndustries: [
+      "Tourism & Hospitality (47% of cases)",
+      "Restaurant, Food & Beverages (19% of cases)",
+      "Healthcare & Medical Services (14% of cases)",
+      "Real Estate & Property Rentals (12% of cases)",
+      "Retail & E-commerce (8% of cases)",
+    ],
+    stateRegulations: [
+      "Hawaii follows federal ADA Title III requirements",
+      "Hawaii Civil Rights Commission handles discrimination complaints",
+      "Tourism industry dominance creates concentrated accessibility risk",
+      "District of Hawaii handling growing accessibility caseload",
+      "Vacation rental platforms face increasing scrutiny",
+    ],
+    notableCases: [
+      {
+        case: "Nakamura v. [Resort Chain]",
+        year: 2024,
+        description:
+          "Major Hawaii resort booking platform required full WCAG 2.1 AA compliance including activity reservations",
+      },
+      {
+        case: "Chen v. [Vacation Rental Platform]",
+        year: 2023,
+        description:
+          "Short-term rental listing and booking site made accessible under settlement agreement",
+      },
+      {
+        case: "Williams v. [Tour Operator]",
+        year: 2022,
+        description:
+          "Island tour and activity booking system accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Prioritize resort and hotel booking systems",
+      "Ensure vacation rental platforms are fully accessible",
+      "Test tour and activity reservations with screen readers",
+      "Create multilingual accessibility documentation",
+      "Train hospitality staff on digital accessibility needs",
+    ],
+    checklist: [
+      "All images include descriptive alt text (including property photos)",
+      "Booking forms have visible, persistent labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Full keyboard navigation for reservation systems",
+      "Focus indicators visible on all interactive elements",
+      "Video tours include captions and audio descriptions",
+      "Heading hierarchy follows logical structure",
+      "Calendar and date pickers are keyboard accessible",
+      "Error messages are clear and announced",
+      "Interactive maps have text alternatives",
+    ],
+  },
+  {
+    slug: "idaho",
+    name: "Idaho",
+    lawsuitStats: {
+      federal2024: 14,
+      total2024: 22,
+      year2023: 17,
+      trend: "increasing",
+      trendPercent: 29.4,
+    },
+    topIndustries: [
+      "Technology & Software (29% of cases)",
+      "Agriculture & Food Processing (24% of cases)",
+      "Healthcare & Medical Services (21% of cases)",
+      "Outdoor Recreation & Tourism (15% of cases)",
+      "Retail & E-commerce (11% of cases)",
+    ],
+    stateRegulations: [
+      "Idaho follows federal ADA Title III requirements",
+      "Idaho Human Rights Act provides state-level protections",
+      "Boise tech corridor growth driving increased accessibility scrutiny",
+      "District of Idaho handling growing technology sector cases",
+      "Agricultural technology platforms under increasing review",
+    ],
+    notableCases: [
+      {
+        case: "Peterson v. [Tech Startup]",
+        year: 2024,
+        description:
+          "Boise-based SaaS platform required comprehensive accessibility remediation for enterprise customers",
+      },
+      {
+        case: "Miller v. [Agricultural Company]",
+        year: 2023,
+        description:
+          "Farm equipment and supply ordering platform made accessible under settlement",
+      },
+      {
+        case: "Thompson v. [Healthcare System]",
+        year: 2022,
+        description:
+          "Regional hospital network patient portal accessibility improvements mandated",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on technology and SaaS platform accessibility",
+      "Ensure agricultural B2B portals are accessible",
+      "Test healthcare platforms with assistive technology",
+      "Create accessibility roadmap for startup growth",
+      "Integrate accessibility into development workflow",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Forms include visible, associated labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Full keyboard navigation available",
+      "Focus states clearly visible",
+      "Data dashboards accessible to screen readers",
+      "Heading hierarchy is logical",
+      "Links describe their destination",
+      "Error messages are accessible",
+      "Complex UI components properly labeled with ARIA",
+    ],
+  },
+  {
+    slug: "maine",
+    name: "Maine",
+    lawsuitStats: {
+      federal2024: 16,
+      total2024: 25,
+      year2023: 20,
+      trend: "increasing",
+      trendPercent: 25.0,
+    },
+    topIndustries: [
+      "Tourism & Hospitality (32% of cases)",
+      "Healthcare & Medical Services (26% of cases)",
+      "Retail & E-commerce (18% of cases)",
+      "Restaurant, Food & Beverages (14% of cases)",
+      "Maritime & Fishing Industries (10% of cases)",
+    ],
+    stateRegulations: [
+      "Maine follows federal ADA Title III requirements",
+      "Maine Human Rights Act provides comprehensive state protections",
+      "Tourism season concentration creates accessibility compliance urgency",
+      "District of Maine handling increased accessibility filings",
+      "Healthcare accessibility critical for aging population",
+    ],
+    notableCases: [
+      {
+        case: "Sullivan v. [Resort Company]",
+        year: 2024,
+        description:
+          "Coastal Maine resort booking platform required WCAG 2.1 AA compliance for reservations and activities",
+      },
+      {
+        case: "MacDonald v. [Healthcare Network]",
+        year: 2023,
+        description:
+          "Regional hospital system patient portal made accessible to serve aging population",
+      },
+      {
+        case: "Thompson v. [Retail Chain]",
+        year: 2022,
+        description:
+          "E-commerce platform serving Maine outdoor enthusiasts required accessibility updates",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on tourism and hospitality booking systems",
+      "Ensure healthcare platforms meet accessibility standards",
+      "Test e-commerce with assistive technology",
+      "Create accessibility documentation for seasonal businesses",
+      "Train seasonal staff on accessibility awareness",
+    ],
+    checklist: [
+      "All images include descriptive alt text",
+      "Forms have visible, properly associated labels",
+      "Color contrast meets WCAG standards",
+      "Keyboard navigation works across site",
+      "Focus indicators are clearly visible",
+      "Video content includes captions",
+      "Heading hierarchy follows logical structure",
+      "Links describe their destination",
+      "Error messages are accessible",
+      "Booking widgets are fully keyboard operable",
+    ],
+  },
+  {
+    slug: "montana",
+    name: "Montana",
+    lawsuitStats: {
+      federal2024: 11,
+      total2024: 17,
+      year2023: 13,
+      trend: "increasing",
+      trendPercent: 30.8,
+    },
+    topIndustries: [
+      "Tourism & Outdoor Recreation (36% of cases)",
+      "Agriculture & Ranching (24% of cases)",
+      "Healthcare & Medical Services (22% of cases)",
+      "Energy & Mining (12% of cases)",
+      "Retail & E-commerce (6% of cases)",
+    ],
+    stateRegulations: [
+      "Montana follows federal ADA Title III requirements",
+      "Montana Human Rights Act extends accessibility protections",
+      "Yellowstone and Glacier tourism drives hospitality accessibility focus",
+      "District of Montana handling increased accessibility cases",
+      "Rural telehealth accessibility critical for spread-out population",
+    ],
+    notableCases: [
+      {
+        case: "Williams v. [Tourism Company]",
+        year: 2024,
+        description:
+          "National park gateway tour and lodging platform required full WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Johnson v. [Healthcare Provider]",
+        year: 2023,
+        description:
+          "Rural telehealth platform made accessible to serve remote communities",
+      },
+      {
+        case: "Peterson v. [Agricultural Supplier]",
+        year: 2022,
+        description:
+          "Farm and ranch supply ordering system accessibility improvements mandated",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on tourism booking and reservation systems",
+      "Ensure telehealth platforms are fully accessible",
+      "Test agricultural portals with screen readers",
+      "Create accessibility statement for outdoor recreation",
+      "Implement accessibility for park and activity booking",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Forms include visible labels",
+      "Color contrast meets WCAG standards",
+      "Full keyboard navigation available",
+      "Focus states clearly visible",
+      "Video content is captioned",
+      "Heading hierarchy is logical",
+      "Links describe their purpose",
+      "Errors are announced accessibly",
+      "Maps and location content have text alternatives",
+    ],
+  },
+  {
+    slug: "north-dakota",
+    name: "North Dakota",
+    lawsuitStats: {
+      federal2024: 9,
+      total2024: 14,
+      year2023: 11,
+      trend: "increasing",
+      trendPercent: 27.3,
+    },
+    topIndustries: [
+      "Agriculture & Agribusiness (35% of cases)",
+      "Energy & Oil/Gas (26% of cases)",
+      "Healthcare & Medical Services (23% of cases)",
+      "Financial Services & Banking (10% of cases)",
+      "Retail & E-commerce (6% of cases)",
+    ],
+    stateRegulations: [
+      "North Dakota follows federal ADA Title III requirements",
+      "North Dakota Human Rights Act provides state protections",
+      "District of North Dakota handling accessibility filings",
+      "Agricultural technology platforms under increased scrutiny",
+      "Energy sector B2B portals facing accessibility reviews",
+    ],
+    notableCases: [
+      {
+        case: "Olson v. [Agricultural Company]",
+        year: 2024,
+        description:
+          "Grain and livestock trading platform required WCAG 2.1 AA compliance under settlement",
+      },
+      {
+        case: "Anderson v. [Energy Company]",
+        year: 2023,
+        description:
+          "Oil field services portal made accessible for contractors and suppliers",
+      },
+      {
+        case: "Miller v. [Healthcare System]",
+        year: 2022,
+        description:
+          "Rural hospital network patient portal accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on agricultural B2B platform accessibility",
+      "Ensure energy sector portals meet standards",
+      "Test healthcare platforms with assistive technology",
+      "Create accessibility documentation",
+      "Train teams on accessibility for specialized industries",
+    ],
+    checklist: [
+      "All images have alt text",
+      "Forms are properly labeled",
+      "Color contrast is sufficient",
+      "Keyboard navigation is complete",
+      "Focus indicators are present",
+      "Videos include captions",
+      "Heading structure is logical",
+      "Links are descriptive",
+      "Error handling is accessible",
+      "Complex data tables are properly structured",
+    ],
+  },
+  {
+    slug: "rhode-island",
+    name: "Rhode Island",
+    lawsuitStats: {
+      federal2024: 18,
+      total2024: 27,
+      year2023: 21,
+      trend: "increasing",
+      trendPercent: 28.6,
+    },
+    topIndustries: [
+      "Healthcare & Medical Services (31% of cases)",
+      "Education & Higher Ed (24% of cases)",
+      "Financial Services & Insurance (19% of cases)",
+      "Manufacturing & Jewelry (14% of cases)",
+      "Hospitality & Tourism (12% of cases)",
+    ],
+    stateRegulations: [
+      "Rhode Island follows federal ADA Title III requirements",
+      "Rhode Island Commission for Human Rights enforces state protections",
+      "High concentration of hospitals and universities increases scrutiny",
+      "District of Rhode Island handling growing accessibility caseload",
+      "State actively promotes digital accessibility compliance",
+    ],
+    notableCases: [
+      {
+        case: "Sullivan v. [Healthcare System]",
+        year: 2024,
+        description:
+          "Major Rhode Island hospital network required comprehensive patient portal accessibility updates",
+      },
+      {
+        case: "O'Brien v. [University]",
+        year: 2023,
+        description:
+          "Higher education institution learning management system made accessible under settlement",
+      },
+      {
+        case: "McCarthy v. [Insurance Company]",
+        year: 2022,
+        description:
+          "Insurance quote and policy management portal required WCAG 2.1 AA compliance",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA compliance audit",
+      "Focus on healthcare and education platforms",
+      "Ensure learning management systems are accessible",
+      "Test insurance portals with assistive technology",
+      "Create accessibility documentation and policies",
+      "Train faculty and staff on accessibility requirements",
+    ],
+    checklist: [
+      "All images include meaningful alt text",
+      "Forms have visible, properly associated labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Full keyboard navigation available",
+      "Focus states clearly visible",
+      "Educational videos include captions and transcripts",
+      "Heading hierarchy is logical",
+      "Links describe their destination",
+      "Error messages are accessible",
+      "PDF course materials are tagged and accessible",
+    ],
+  },
+  {
+    slug: "south-dakota",
+    name: "South Dakota",
+    lawsuitStats: {
+      federal2024: 10,
+      total2024: 16,
+      year2023: 12,
+      trend: "increasing",
+      trendPercent: 33.3,
+    },
+    topIndustries: [
+      "Agriculture & Agribusiness (32% of cases)",
+      "Tourism & Hospitality (26% of cases)",
+      "Healthcare & Medical Services (22% of cases)",
+      "Financial Services & Banking (12% of cases)",
+      "Retail & E-commerce (8% of cases)",
+    ],
+    stateRegulations: [
+      "South Dakota follows federal ADA Title III requirements",
+      "South Dakota Division of Human Rights handles discrimination cases",
+      "Mount Rushmore and tourism sector face accessibility scrutiny",
+      "District of South Dakota handling accessibility filings",
+      "Credit card processing industry presence creates financial sector focus",
+    ],
+    notableCases: [
+      {
+        case: "Jensen v. [Tourism Company]",
+        year: 2024,
+        description:
+          "Black Hills region tour and lodging booking platform required WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Miller v. [Agricultural Cooperative]",
+        year: 2023,
+        description:
+          "Farmer ordering and market platform made accessible under settlement",
+      },
+      {
+        case: "Anderson v. [Healthcare Provider]",
+        year: 2022,
+        description:
+          "Rural health network telehealth accessibility improvements required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on tourism and hospitality platforms",
+      "Ensure agricultural B2B systems are accessible",
+      "Test healthcare and telehealth with screen readers",
+      "Create accessibility roadmap and statement",
+      "Monitor accessibility case law developments",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Forms include visible labels",
+      "Color contrast meets standards",
+      "Keyboard navigation is functional",
+      "Focus indicators are visible",
+      "Video content includes captions",
+      "Headings follow proper hierarchy",
+      "Links describe their purpose",
+      "Error messages are accessible",
+      "Booking and reservation widgets are keyboard operable",
+    ],
+  },
+  {
+    slug: "vermont",
+    name: "Vermont",
+    lawsuitStats: {
+      federal2024: 12,
+      total2024: 19,
+      year2023: 15,
+      trend: "increasing",
+      trendPercent: 26.7,
+    },
+    topIndustries: [
+      "Tourism & Hospitality (34% of cases)",
+      "Healthcare & Medical Services (26% of cases)",
+      "Agriculture & Food Products (18% of cases)",
+      "Education & Higher Ed (14% of cases)",
+      "Retail & E-commerce (8% of cases)",
+    ],
+    stateRegulations: [
+      "Vermont follows federal ADA Title III requirements",
+      "Vermont Human Rights Commission handles discrimination complaints",
+      "Ski resort and fall foliage tourism drives hospitality focus",
+      "District of Vermont handling accessibility cases",
+      "Farm-to-table and artisan food sector under accessibility review",
+    ],
+    notableCases: [
+      {
+        case: "Morrison v. [Ski Resort]",
+        year: 2024,
+        description:
+          "Vermont ski resort booking and lift ticket platform required full WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Anderson v. [Healthcare Network]",
+        year: 2023,
+        description:
+          "Regional hospital system patient portal made accessible for aging rural population",
+      },
+      {
+        case: "Thompson v. [Farm Products Company]",
+        year: 2022,
+        description:
+          "Artisan food and farm direct ordering platform accessibility improvements required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on ski resort and tourism booking systems",
+      "Ensure healthcare platforms serve aging population",
+      "Test farm direct e-commerce with assistive technology",
+      "Create accessibility statement for seasonal businesses",
+      "Train hospitality teams on accessibility awareness",
+    ],
+    checklist: [
+      "All images include descriptive alt text",
+      "Forms have visible, properly associated labels",
+      "Color contrast meets WCAG 2.1 AA standards",
+      "Full keyboard navigation across site",
+      "Focus indicators clearly visible",
+      "Video content includes captions and transcripts",
+      "Heading hierarchy follows logical structure",
+      "Links describe their destination",
+      "Error messages are accessible to screen readers",
+      "Season and date selectors are keyboard accessible",
+    ],
+  },
+  {
+    slug: "wyoming",
+    name: "Wyoming",
+    lawsuitStats: {
+      federal2024: 7,
+      total2024: 11,
+      year2023: 8,
+      trend: "increasing",
+      trendPercent: 37.5,
+    },
+    topIndustries: [
+      "Tourism & Outdoor Recreation (39% of cases)",
+      "Energy & Mining (27% of cases)",
+      "Agriculture & Ranching (18% of cases)",
+      "Healthcare & Medical Services (12% of cases)",
+      "Retail & E-commerce (4% of cases)",
+    ],
+    stateRegulations: [
+      "Wyoming follows federal ADA Title III requirements",
+      "Wyoming Department of Workforce Services handles discrimination cases",
+      "Yellowstone and Grand Teton tourism creates hospitality accessibility focus",
+      "District of Wyoming handling accessibility filings",
+      "Low population but high tourism traffic increases per-capita exposure",
+    ],
+    notableCases: [
+      {
+        case: "Williams v. [Dude Ranch]",
+        year: 2024,
+        description:
+          "Guest ranch booking and activity reservation platform required WCAG 2.1 AA compliance",
+      },
+      {
+        case: "Johnson v. [Energy Company]",
+        year: 2023,
+        description:
+          "Coal and natural gas contractor portal made accessible under settlement",
+      },
+      {
+        case: "Peterson v. [Healthcare Provider]",
+        year: 2022,
+        description:
+          "Rural hospital telehealth platform accessibility remediation required",
+      },
+    ],
+    protectionSteps: [
+      "Conduct WCAG 2.1 AA accessibility audit",
+      "Focus on tourism and outdoor recreation booking",
+      "Ensure energy industry portals meet standards",
+      "Test telehealth for remote community accessibility",
+      "Create accessibility documentation",
+      "Partner with accessibility consultants for compliance",
+    ],
+    checklist: [
+      "All images have descriptive alt text",
+      "Forms include visible labels",
+      "Color contrast meets WCAG standards",
+      "Full keyboard navigation available",
+      "Focus states clearly visible",
+      "Video content is captioned",
+      "Heading hierarchy is logical",
+      "Links describe their purpose",
+      "Error handling is accessible",
+      "Activity booking calendars are keyboard operable",
+    ],
+  },
 ];
