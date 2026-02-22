@@ -948,4 +948,304 @@ export const wcagCriteria: WcagCriterion[] = [
       "4-1-2-name-role-value",
     ],
   },
+  {
+    id: "1.4.2",
+    slug: "1-4-2-audio-control",
+    name: "Audio Control",
+    level: "A",
+    description:
+      "If any audio on a web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.",
+    whyItMatters:
+      "Screen reader users hear their assistive technology through audio output. Auto-playing audio can drown out the screen reader, making the page impossible to navigate. Users with cognitive disabilities may also find unexpected audio disorienting.",
+    commonViolations: [
+      "Background music that plays on page load with no controls",
+      "Auto-playing video ads with audio and no mute button",
+      "Embedded media players that start playing without user interaction",
+      "Audio that can only be stopped by muting the entire system",
+    ],
+    badExample: "<audio src=\"background-music.mp3\" autoplay loop></audio>",
+    goodExample: "<audio src=\"background-music.mp3\" controls>\n  Your browser does not support the audio element.\n</audio>\n<!-- Or provide a dedicated mute/pause button -->",
+    howToFix:
+      "Never autoplay audio for more than 3 seconds. If autoplay is necessary, provide a visible pause/stop button and volume control at the top of the page. Prefer not autoplaying audio at all.",
+    relatedCriteria: [
+      "1-4-1-use-of-color",
+      "2-2-2-pause-stop-hide",
+      "1-2-1-audio-only-video-only",
+    ],
+  },
+  {
+    id: "2.1.4",
+    slug: "2-1-4-character-key-shortcuts",
+    name: "Character Key Shortcuts",
+    level: "A",
+    description:
+      "If a keyboard shortcut is implemented using only letter, punctuation, number, or symbol characters, then at least one of the following is true: the shortcut can be turned off, remapped to include a modifier key (Ctrl, Alt), or is only active when the relevant component has focus.",
+    whyItMatters:
+      "Speech input users may accidentally trigger shortcuts when dictating text. Users with motor impairments may accidentally press keys. Single-character shortcuts can cause chaos for these users.",
+    commonViolations: [
+      "Single-key shortcuts (e.g., 'j' for next, 'k' for previous) that cannot be disabled",
+      "Keyboard shortcuts that conflict with speech input commands",
+      "Character shortcuts active even when user is typing in a text field",
+      "No settings panel to remap or disable shortcuts",
+    ],
+    badExample: "document.addEventListener('keydown', (e) => {\n  if (e.key === 'j') nextItem();\n  if (e.key === 'k') prevItem();\n});",
+    goodExample: "document.addEventListener('keydown', (e) => {\n  if (!shortcutsEnabled) return;\n  if (e.target.matches('input, textarea')) return;\n  if (e.key === 'j' && e.ctrlKey) nextItem();\n});",
+    howToFix:
+      "Allow users to disable or remap single-character shortcuts. Require modifier keys (Ctrl, Alt, Shift) for global shortcuts. Ensure shortcuts are inactive when focus is in text input fields.",
+    relatedCriteria: [
+      "2-1-1-keyboard",
+      "2-1-2-no-keyboard-trap",
+      "2-4-3-focus-order",
+    ],
+  },
+  {
+    id: "2.3.1",
+    slug: "2-3-1-three-flashes",
+    name: "Three Flashes or Below Threshold",
+    level: "A",
+    description:
+      "Web pages do not contain anything that flashes more than three times in any one-second period, or the flash is below the general flash and red flash thresholds.",
+    whyItMatters:
+      "Flashing content can trigger seizures in people with photosensitive epilepsy. This is a safety-critical requirement — violations can cause real physical harm.",
+    commonViolations: [
+      "Rapidly flashing animations or GIFs",
+      "Video content with strobe effects",
+      "CSS animations with rapid color alternation",
+      "Banner ads with fast blinking effects",
+    ],
+    badExample: "@keyframes flash {\n  0%, 100% { opacity: 1; }\n  25% { opacity: 0; }\n  50% { opacity: 1; }\n  75% { opacity: 0; }\n}\n.alert { animation: flash 0.5s infinite; }",
+    goodExample: "@keyframes pulse {\n  0%, 100% { opacity: 1; }\n  50% { opacity: 0.7; }\n}\n.alert { animation: pulse 2s ease-in-out infinite; }\n@media (prefers-reduced-motion: reduce) {\n  .alert { animation: none; }\n}",
+    howToFix:
+      "Limit flashing to fewer than 3 times per second. Use smooth transitions instead of abrupt flashes. Respect prefers-reduced-motion. Test video content with photosensitive epilepsy analysis tools like PEAT.",
+    relatedCriteria: [
+      "2-2-2-pause-stop-hide",
+      "2-2-1-timing-adjustable",
+      "1-4-1-use-of-color",
+    ],
+  },
+  {
+    id: "2.5.1",
+    slug: "2-5-1-pointer-gestures",
+    name: "Pointer Gestures",
+    level: "A",
+    description:
+      "All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
+    whyItMatters:
+      "Users with motor impairments, those using head pointers or mouth sticks, and users of assistive technology may not be able to perform complex gestures like pinch-to-zoom or swipe paths.",
+    commonViolations: [
+      "Maps that only support pinch-to-zoom with no zoom buttons",
+      "Carousels that only advance by swiping",
+      "Drawing interfaces with no alternative input method",
+      "Multi-finger gestures required to access content",
+    ],
+    badExample: "<div class=\"carousel\" ontouchstart=\"handleSwipe(event)\">\n  <!-- No buttons to navigate slides -->\n</div>",
+    goodExample: "<div class=\"carousel\">\n  <button aria-label=\"Previous slide\" onclick=\"prevSlide()\">←</button>\n  <div class=\"slides\">...</div>\n  <button aria-label=\"Next slide\" onclick=\"nextSlide()\">→</button>\n</div>",
+    howToFix:
+      "Provide single-tap or click alternatives for all multipoint gestures. Add buttons for zoom, navigation, and rotation. Ensure all gesture-driven actions have button equivalents.",
+    relatedCriteria: [
+      "2-5-2-pointer-cancellation",
+      "2-1-1-keyboard",
+      "2-5-4-motion-actuation",
+    ],
+  },
+  {
+    id: "2.5.2",
+    slug: "2-5-2-pointer-cancellation",
+    name: "Pointer Cancellation",
+    level: "A",
+    description:
+      "For functionality that can be operated using a single pointer, at least one of the following is true: the down-event is not used to execute the function, the function completes on the up-event with the ability to abort or undo, the up-event reverses the outcome of the down-event, or completing the function on the down-event is essential.",
+    whyItMatters:
+      "Users with motor impairments often accidentally touch or click the wrong target. Pointer cancellation gives users the chance to correct mistakes by moving away before releasing.",
+    commonViolations: [
+      "Buttons that trigger actions on mousedown/touchstart instead of click",
+      "Drag operations with no undo mechanism",
+      "Links that navigate on pointer down rather than pointer up",
+      "Destructive actions with no confirmation or reversal",
+    ],
+    badExample: "<button onmousedown=\"deleteAccount()\">Delete Account</button>",
+    goodExample: "<button onclick=\"deleteAccount()\">Delete Account</button>\n<!-- onclick fires on pointer up, allowing user to move away to cancel -->",
+    howToFix:
+      "Use click events (which fire on pointer up) instead of mousedown or touchstart for actions. For complex interactions, provide an undo mechanism or confirmation step.",
+    relatedCriteria: [
+      "2-5-1-pointer-gestures",
+      "3-3-4-error-prevention",
+      "2-1-1-keyboard",
+    ],
+  },
+  {
+    id: "2.5.4",
+    slug: "2-5-4-motion-actuation",
+    name: "Motion Actuation",
+    level: "A",
+    description:
+      "Functionality that can be operated by device motion or user motion can also be operated by user interface components, and responding to the motion can be disabled to prevent accidental actuation, unless the motion is essential or disabling would invalidate the activity.",
+    whyItMatters:
+      "Users with motor impairments who have devices mounted to wheelchairs cannot shake or tilt their device. Others may have tremors causing unintended motion. A UI alternative ensures everyone can access the functionality.",
+    commonViolations: [
+      "Shake-to-undo with no alternative undo button",
+      "Tilt-to-scroll with no scroll controls",
+      "Device rotation required to change views",
+      "Motion gestures as the only way to dismiss content",
+    ],
+    badExample: "window.addEventListener('devicemotion', (e) => {\n  if (Math.abs(e.acceleration.x) > 15) undoLastAction();\n});",
+    goodExample: "window.addEventListener('devicemotion', (e) => {\n  if (!motionEnabled) return;\n  if (Math.abs(e.acceleration.x) > 15) undoLastAction();\n});\n// Plus a visible undo button in the UI",
+    howToFix:
+      "Provide UI controls (buttons, menus) for every motion-triggered action. Add a setting to disable motion responses. Never rely on device motion as the sole interaction method.",
+    relatedCriteria: [
+      "2-5-1-pointer-gestures",
+      "2-1-1-keyboard",
+      "2-5-3-label-in-name",
+    ],
+  },
+  {
+    id: "1.2.4",
+    slug: "1-2-4-captions-live",
+    name: "Captions (Live)",
+    level: "AA",
+    description:
+      "Captions are provided for all live audio content in synchronized media, including live broadcasts, webinars, and streaming events.",
+    whyItMatters:
+      "Deaf and hard-of-hearing users cannot access live audio content without real-time captions. Unlike prerecorded content, live events cannot be captioned in advance.",
+    commonViolations: [
+      "Live webinars without real-time captioning",
+      "Streaming events with no caption support",
+      "Live customer support video calls without captions",
+      "Conference live streams missing CART services",
+    ],
+    badExample: "<video id=\"live-stream\" autoplay>\n  <source src=\"stream-url\">\n  <!-- No live caption track -->\n</video>",
+    goodExample: "<video id=\"live-stream\" autoplay>\n  <source src=\"stream-url\">\n  <track kind=\"captions\" src=\"live-captions-endpoint\" srclang=\"en\" label=\"English captions\" default>\n</video>\n<!-- Using a live captioning service like CART or AI-powered captions -->",
+    howToFix:
+      "Use professional CART (Communication Access Realtime Translation) services or AI-powered live captioning tools. Integrate caption APIs for streaming platforms. Test caption accuracy and latency.",
+    relatedCriteria: [
+      "1-2-2-captions-prerecorded",
+      "1-2-1-audio-only-video-only",
+      "1-2-5-audio-description-prerecorded",
+    ],
+  },
+  {
+    id: "1.4.12",
+    slug: "1-4-12-text-spacing",
+    name: "Text Spacing",
+    level: "AA",
+    description:
+      "No loss of content or functionality occurs when users override text spacing properties: line height to at least 1.5 times the font size, paragraph spacing to at least 2 times the font size, letter spacing to at least 0.12 times the font size, and word spacing to at least 0.16 times the font size.",
+    whyItMatters:
+      "Users with dyslexia and low vision often need increased text spacing to read comfortably. If content breaks or clips when spacing is adjusted, these users lose access to information.",
+    commonViolations: [
+      "Text that overflows or gets clipped in fixed-height containers",
+      "Content that overlaps when line-height is increased",
+      "Buttons or labels that break with increased letter spacing",
+      "Important text hidden behind other elements after spacing changes",
+    ],
+    badExample: ".card-text {\n  height: 60px;\n  overflow: hidden;\n  line-height: 1.2;\n}",
+    goodExample: ".card-text {\n  min-height: 60px;\n  overflow: visible;\n  line-height: inherit;\n}",
+    howToFix:
+      "Use min-height instead of fixed height. Avoid overflow: hidden on text containers. Test with a bookmarklet that applies the four spacing overrides. Use relative units for spacing and ensure layouts accommodate text expansion.",
+    relatedCriteria: [
+      "1-4-4-resize-text",
+      "1-4-10-reflow",
+      "1-4-3-contrast-minimum",
+    ],
+  },
+  {
+    id: "1.4.13",
+    slug: "1-4-13-content-on-hover-or-focus",
+    name: "Content on Hover or Focus",
+    level: "AA",
+    description:
+      "Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the additional content is dismissable without moving focus, hoverable so the user can move the pointer over it, and persistent until dismissed or no longer valid.",
+    whyItMatters:
+      "Tooltips and popups that disappear when users try to read them or that cover other content create barriers. Screen magnifier users especially need to hover over tooltip content to read it.",
+    commonViolations: [
+      "Tooltips that disappear when the pointer moves toward them",
+      "Popups that cannot be dismissed without moving focus",
+      "Hover content that covers other interactive elements",
+      "Content that disappears too quickly to read",
+    ],
+    badExample: "<div class=\"tooltip-trigger\" title=\"Info\">\n  Hover me\n</div>\n<!-- Native title tooltips fail all three requirements -->",
+    goodExample: "<div class=\"tooltip-trigger\" aria-describedby=\"tip1\">\n  Hover me\n  <div id=\"tip1\" role=\"tooltip\" class=\"tooltip\">\n    Additional info\n  </div>\n</div>\n<style>\n  .tooltip { pointer-events: auto; } /* hoverable */\n</style>\n<!-- Dismiss on Escape, stays visible while hovered -->",
+    howToFix:
+      "Make hover/focus content dismissable (Escape key), hoverable (pointer can move to it without it disappearing), and persistent (stays visible until user dismisses or moves away). Avoid title attributes for important information.",
+    relatedCriteria: [
+      "2-4-7-focus-visible",
+      "1-4-3-contrast-minimum",
+      "2-1-1-keyboard",
+    ],
+  },
+  {
+    id: "3.2.4",
+    slug: "3-2-4-consistent-identification",
+    name: "Consistent Identification",
+    level: "AA",
+    description:
+      "Components that have the same functionality within a set of web pages are identified consistently. Icons, labels, and text alternatives for equivalent functions must match across pages.",
+    whyItMatters:
+      "Users with cognitive disabilities rely on consistent labeling to understand and navigate interfaces. Inconsistent naming forces users to relearn functionality on each page.",
+    commonViolations: [
+      "Search labeled 'Search' on one page and 'Find' on another",
+      "Print icon using different alt text across pages",
+      "Navigation links with different labels for the same destination",
+      "Form submit buttons labeled 'Submit', 'Send', and 'Go' across different forms",
+    ],
+    badExample: "<!-- Page 1 -->\n<button aria-label=\"Search\">🔍</button>\n<!-- Page 2 -->\n<button aria-label=\"Find\">🔍</button>",
+    goodExample: "<!-- Page 1 -->\n<button aria-label=\"Search\">🔍</button>\n<!-- Page 2 -->\n<button aria-label=\"Search\">🔍</button>",
+    howToFix:
+      "Create a shared component library with consistent labels. Document standard naming conventions for common actions (Search, Print, Save, Close). Audit across pages to find inconsistencies.",
+    relatedCriteria: [
+      "3-2-3-consistent-navigation",
+      "2-4-4-link-purpose",
+      "2-5-3-label-in-name",
+    ],
+  },
+  {
+    id: "3.3.3",
+    slug: "3-3-3-error-suggestion",
+    name: "Error Suggestion",
+    level: "AA",
+    description:
+      "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
+    whyItMatters:
+      "Users with cognitive and learning disabilities may not understand generic error messages. Specific suggestions help all users correct mistakes quickly and reduce form abandonment.",
+    commonViolations: [
+      "Date fields that say 'invalid format' without specifying the expected format",
+      "Email validation that says 'invalid' without suggesting corrections",
+      "Password fields that list requirements only after failed submission",
+      "Dropdown selections that error without suggesting valid options",
+    ],
+    badExample: "<input type=\"email\" aria-invalid=\"true\">\n<p class=\"error\">Invalid input</p>",
+    goodExample: "<input type=\"email\" aria-invalid=\"true\" aria-describedby=\"email-err\">\n<p id=\"email-err\" class=\"error\">Please enter a valid email address, e.g., name@example.com</p>",
+    howToFix:
+      "Provide specific, actionable suggestions when errors are detected. Show expected formats, offer 'did you mean?' corrections, and list valid options when possible. Always associate suggestions with the relevant field.",
+    relatedCriteria: [
+      "3-3-1-error-identification",
+      "3-3-2-labels-or-instructions",
+      "3-3-4-error-prevention",
+    ],
+  },
+  {
+    id: "3.3.4",
+    slug: "3-3-4-error-prevention",
+    name: "Error Prevention (Legal, Financial, Data)",
+    level: "AA",
+    description:
+      "For web pages that cause legal commitments or financial transactions, that modify or delete user-controllable data, or that submit test responses, at least one of the following is true: submissions are reversible, data is checked for errors and the user can correct them, or a mechanism is available to review, confirm, and correct before finalizing.",
+    whyItMatters:
+      "Accidental submissions of financial, legal, or data-deletion actions can have serious consequences. Users with disabilities are more prone to input errors and need safeguards.",
+    commonViolations: [
+      "One-click purchases with no confirmation step",
+      "Account deletion without confirmation dialog",
+      "Financial transfers with no review page",
+      "Legal agreements submitted without summary review",
+    ],
+    badExample: "<button onclick=\"processPayment()\">Pay $500</button>\n<!-- Immediate payment with no review or confirmation -->",
+    goodExample: "<h2>Review Your Order</h2>\n<p>Total: $500</p>\n<p>Shipping to: 123 Main St</p>\n<button onclick=\"showConfirm()\">Confirm and Pay</button>\n<button onclick=\"editOrder()\">Edit Order</button>",
+    howToFix:
+      "Add confirmation steps before irreversible actions. Provide a review page for financial and legal submissions. Allow users to undo or reverse actions within a reasonable timeframe. Validate data and present errors before final submission.",
+    relatedCriteria: [
+      "3-3-1-error-identification",
+      "3-3-3-error-suggestion",
+      "3-3-2-labels-or-instructions",
+    ],
+  },
 ];
