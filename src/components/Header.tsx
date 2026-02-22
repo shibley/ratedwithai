@@ -116,10 +116,10 @@ export default function Header() {
 
   const complianceItems = [
     { href: "/industry", label: "By Industry", desc: "33 industry-specific guides" },
-    { href: "/state/new-york", label: "By State", desc: "ADA lawsuits in all 50 states" },
-    { href: "/wcag/1-1-1-non-text-content", label: "WCAG Criteria", desc: "All Level A & AA criteria" },
-    { href: "/check/amazon", label: "Brand Checks", desc: "75+ accessibility audits" },
-    { href: "/compare/ratedwithai-vs-accessibe", label: "Comparisons", desc: "How we compare" },
+    { href: "/state", label: "By State", desc: "ADA lawsuits in all 50 states" },
+    { href: "/wcag", label: "WCAG Criteria", desc: "All Level A & AA criteria" },
+    { href: "/check", label: "Brand Checks", desc: "75+ accessibility audits" },
+    { href: "/blog", label: "Blog", desc: "Guides, tutorials & resources" },
   ];
 
   return (
