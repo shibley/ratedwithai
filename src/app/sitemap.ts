@@ -17,6 +17,7 @@ const blogPosts = [
   "ada-title-ii-compliance-guide",
   "banking-accessibility-compliance",
   "ecommerce-accessibility-guide",
+  "european-accessibility-act-2025",
   "healthcare-accessibility-compliance",
   "how-to-check-website-ada-compliant",
   "how-to-fix-common-wcag-failures",
