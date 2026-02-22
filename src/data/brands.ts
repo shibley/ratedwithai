@@ -845,4 +845,337 @@ export const brands: Brand[] = [
     grade: gradeForScore(72),
     topViolations: violationsForIndustry("grocery"),
   },
+  // Education — Section 508 + Title II compliance
+  {
+    slug: "coursera",
+    name: "Coursera",
+    url: "https://www.coursera.org",
+    industry: "education",
+    score: 76,
+    grade: gradeForScore(76),
+    topViolations: violationsForIndustry("education"),
+    description:
+      "Coursera is a leading online learning platform with over 130 million registered learners, offering courses, certificates, and degrees from top universities and companies worldwide.",
+    whyAccessibilityMatters:
+      "Education is a fundamental right. Students with disabilities need accessible course content, video captions, screen-reader-compatible interfaces, and keyboard-navigable learning platforms to participate equally in online education.",
+  },
+  {
+    slug: "udemy",
+    name: "Udemy",
+    url: "https://www.udemy.com",
+    industry: "education",
+    score: 68,
+    grade: gradeForScore(68),
+    topViolations: violationsForIndustry("education"),
+    description:
+      "Udemy is the world's largest marketplace for online learning with 70+ million students and 220,000+ courses across programming, business, design, and personal development.",
+    whyAccessibilityMatters:
+      "As a massive education marketplace, Udemy must ensure learners with visual, auditory, motor, or cognitive disabilities can browse courses, watch videos with proper captions, and complete assignments through accessible interfaces.",
+  },
+  {
+    slug: "khan-academy",
+    name: "Khan Academy",
+    url: "https://www.khanacademy.org",
+    industry: "education",
+    score: 84,
+    grade: gradeForScore(84),
+    topViolations: violationsForIndustry("education"),
+    description:
+      "Khan Academy is a free online education platform providing lessons in math, science, humanities, and test prep for students of all ages worldwide.",
+    whyAccessibilityMatters:
+      "As a free educational resource committed to equity, Khan Academy has a heightened responsibility to ensure students with disabilities can access all learning materials, interactive exercises, and progress tracking features.",
+  },
+  {
+    slug: "duolingo",
+    name: "Duolingo",
+    url: "https://www.duolingo.com",
+    industry: "education",
+    score: 71,
+    grade: gradeForScore(71),
+    topViolations: violationsForIndustry("education"),
+    description:
+      "Duolingo is the world's most popular language-learning platform with over 500 million registered users, offering gamified lessons in 40+ languages.",
+    whyAccessibilityMatters:
+      "Language learning relies on audio, visual, and interactive elements. Deaf users need visual alternatives for listening exercises, blind users need accessible gamification elements, and motor-impaired users need keyboard-friendly drag-and-drop alternatives.",
+  },
+  {
+    slug: "canvas-lms",
+    name: "Canvas LMS",
+    url: "https://www.instructure.com",
+    industry: "education",
+    score: 80,
+    grade: gradeForScore(80),
+    topViolations: violationsForIndustry("education"),
+    description:
+      "Canvas by Instructure is a leading learning management system used by thousands of schools, colleges, and universities worldwide for course management and online learning.",
+    whyAccessibilityMatters:
+      "As critical educational infrastructure used by millions of students, Canvas must provide accessible assignment submission, grade viewing, discussion boards, and course navigation for students with all types of disabilities.",
+  },
+  // Government — Section 508 mandatory compliance
+  {
+    slug: "irs",
+    name: "IRS.gov",
+    url: "https://www.irs.gov",
+    industry: "government",
+    score: 72,
+    grade: gradeForScore(72),
+    topViolations: violationsForIndustry("government"),
+    description:
+      "The Internal Revenue Service website is the primary digital interface for 150+ million US taxpayers to file taxes, check refunds, make payments, and access tax forms and publications.",
+    whyAccessibilityMatters:
+      "Government websites have a legal obligation under Section 508 to be accessible. Tax filing is mandatory — inaccessible IRS forms and tools directly prevent people with disabilities from fulfilling their civic obligations.",
+  },
+  {
+    slug: "ssa",
+    name: "Social Security Administration",
+    url: "https://www.ssa.gov",
+    industry: "government",
+    score: 78,
+    grade: gradeForScore(78),
+    topViolations: violationsForIndustry("government"),
+    description:
+      "SSA.gov provides access to Social Security benefits, disability applications, retirement planning tools, and Medicare enrollment for millions of Americans.",
+    whyAccessibilityMatters:
+      "Social Security serves a disproportionately high number of users with disabilities. Inaccessible benefit applications, disability claim forms, and account management tools directly harm the most vulnerable populations.",
+  },
+  {
+    slug: "usps",
+    name: "USPS",
+    url: "https://www.usps.com",
+    industry: "government",
+    score: 65,
+    grade: gradeForScore(65),
+    topViolations: violationsForIndustry("government"),
+    description:
+      "The United States Postal Service website handles package tracking, mail forwarding, stamp purchasing, and PO Box management for hundreds of millions of users annually.",
+    whyAccessibilityMatters:
+      "Mail services are essential infrastructure. Users with disabilities need accessible package tracking, address change forms, and online purchasing to independently manage their postal needs without visiting physical locations.",
+  },
+  {
+    slug: "dmv",
+    name: "DMV.org",
+    url: "https://www.dmv.org",
+    industry: "government",
+    score: 58,
+    grade: gradeForScore(58),
+    topViolations: violationsForIndustry("government"),
+    description:
+      "DMV.org is the leading privately-operated resource for Department of Motor Vehicles information, providing state-specific guides for driver's licenses, vehicle registration, and driving records.",
+    whyAccessibilityMatters:
+      "Driving and vehicle information affects independence and mobility. Users with disabilities need accessible forms, clear navigation, and screen-reader-compatible content to manage their driving credentials and vehicle registrations online.",
+  },
+  // Fitness — growing digital presence
+  {
+    slug: "peloton",
+    name: "Peloton",
+    url: "https://www.onepeloton.com",
+    industry: "fitness",
+    score: 63,
+    grade: gradeForScore(63),
+    topViolations: violationsForIndustry("fitness"),
+    description:
+      "Peloton is a connected fitness company offering indoor bikes, treadmills, and a digital platform with thousands of live and on-demand workout classes across cardio, strength, yoga, and meditation.",
+    whyAccessibilityMatters:
+      "Fitness should be inclusive. Users with disabilities need accessible class browsing, workout scheduling, captioned instruction videos, and screen-reader-compatible performance tracking to participate in digital fitness programs.",
+  },
+  {
+    slug: "planet-fitness",
+    name: "Planet Fitness",
+    url: "https://www.planetfitness.com",
+    industry: "fitness",
+    score: 60,
+    grade: gradeForScore(60),
+    topViolations: violationsForIndustry("fitness"),
+    description:
+      "Planet Fitness is the largest gym franchise in the US with over 2,400 locations, known for its 'Judgement Free Zone' philosophy and affordable membership options.",
+    whyAccessibilityMatters:
+      "A brand built on inclusivity must extend that to digital accessibility. Members with disabilities need accessible class scheduling, membership management, location finders, and workout tracking through the website and app.",
+  },
+  {
+    slug: "myfitnesspal",
+    name: "MyFitnessPal",
+    url: "https://www.myfitnesspal.com",
+    industry: "fitness",
+    score: 66,
+    grade: gradeForScore(66),
+    topViolations: violationsForIndustry("fitness"),
+    description:
+      "MyFitnessPal is one of the most popular nutrition and calorie tracking apps with over 200 million users, offering food logging, exercise tracking, and personalized meal plans.",
+    whyAccessibilityMatters:
+      "Health and nutrition tracking is essential for many people with disabilities who manage chronic conditions. Accessible food logging, barcode scanning alternatives, and screen-reader-compatible dashboards are critical for equal health management.",
+  },
+  // Streaming/Entertainment — expanding category
+  {
+    slug: "hulu",
+    name: "Hulu",
+    url: "https://www.hulu.com",
+    industry: "saas",
+    score: 72,
+    grade: gradeForScore(72),
+    topViolations: violationsForIndustry("saas"),
+    description:
+      "Hulu is a major streaming service with 50+ million subscribers, offering current TV episodes, original series, movies, and live TV across all major devices.",
+    whyAccessibilityMatters:
+      "Streaming entertainment must be accessible to all viewers. Closed captions for deaf users, audio descriptions for blind users, and keyboard-navigable interfaces for motor-impaired users are essential for equal access to content.",
+  },
+  {
+    slug: "disney-plus",
+    name: "Disney+",
+    url: "https://www.disneyplus.com",
+    industry: "saas",
+    score: 74,
+    grade: gradeForScore(74),
+    topViolations: violationsForIndustry("saas"),
+    description:
+      "Disney+ is Disney's flagship streaming platform with over 150 million subscribers worldwide, featuring content from Disney, Pixar, Marvel, Star Wars, and National Geographic.",
+    whyAccessibilityMatters:
+      "Disney content reaches families with children who have disabilities. Accessible browsing, profile management, parental controls, and consistent captioning/audio description across the vast content library are essential for inclusive family entertainment.",
+  },
+  {
+    slug: "hbo-max",
+    name: "Max (HBO)",
+    url: "https://www.max.com",
+    industry: "saas",
+    score: 70,
+    grade: gradeForScore(70),
+    topViolations: violationsForIndustry("saas"),
+    description:
+      "Max (formerly HBO Max) is Warner Bros. Discovery's premium streaming platform offering HBO originals, movies, reality shows, and live sports content.",
+    whyAccessibilityMatters:
+      "Premium content demands premium accessibility. HBO's critically acclaimed shows must include proper captions, audio descriptions, and accessible player controls to serve subscribers with disabilities who pay the same subscription fees.",
+  },
+  // Travel — expanding high-search category
+  {
+    slug: "booking-com",
+    name: "Booking.com",
+    url: "https://www.booking.com",
+    industry: "travel",
+    score: 71,
+    grade: gradeForScore(71),
+    topViolations: violationsForIndustry("travel"),
+    description:
+      "Booking.com is the world's largest online travel agency, offering reservations for over 28 million accommodations, flights, car rentals, and travel experiences in 220+ countries.",
+    whyAccessibilityMatters:
+      "Travel planning involves complex date pickers, filter systems, maps, and multi-step booking flows. Travelers with disabilities need accessible search, clear accessibility information for properties, and keyboard-operable reservation systems.",
+  },
+  {
+    slug: "expedia",
+    name: "Expedia",
+    url: "https://www.expedia.com",
+    industry: "travel",
+    score: 67,
+    grade: gradeForScore(67),
+    topViolations: violationsForIndustry("travel"),
+    description:
+      "Expedia is one of the world's largest online travel companies, offering flights, hotels, vacation packages, car rentals, and cruises through its web and mobile platforms.",
+    whyAccessibilityMatters:
+      "Complex travel booking interfaces with date pickers, interactive maps, and multi-step checkout flows must be accessible. Travelers with disabilities deserve equal ability to search, compare, and book travel independently.",
+  },
+  {
+    slug: "tripadvisor",
+    name: "Tripadvisor",
+    url: "https://www.tripadvisor.com",
+    industry: "travel",
+    score: 64,
+    grade: gradeForScore(64),
+    topViolations: violationsForIndustry("travel"),
+    description:
+      "Tripadvisor is the world's largest travel review platform with over 1 billion reviews, helping travelers make informed decisions about hotels, restaurants, attractions, and experiences.",
+    whyAccessibilityMatters:
+      "Review platforms rely heavily on user-generated content, images, and interactive maps. Users with disabilities need accessible review reading, photo alternatives, and navigable location-based content to plan trips independently.",
+  },
+  // Food delivery — expanding category
+  {
+    slug: "grubhub",
+    name: "Grubhub",
+    url: "https://www.grubhub.com",
+    industry: "delivery",
+    score: 64,
+    grade: gradeForScore(64),
+    topViolations: violationsForIndustry("delivery"),
+    description:
+      "Grubhub is one of the largest food delivery platforms in the US, partnering with over 375,000 restaurants to offer delivery and pickup services across thousands of cities.",
+    whyAccessibilityMatters:
+      "Food ordering apps must be accessible for users who rely on delivery due to mobility impairments. Accessible menu browsing, customization options, address entry, and real-time order tracking are critical for independent living.",
+  },
+  // Real estate — expanding
+  {
+    slug: "realtor",
+    name: "Realtor.com",
+    url: "https://www.realtor.com",
+    industry: "realestate",
+    score: 66,
+    grade: gradeForScore(66),
+    topViolations: violationsForIndustry("realestate"),
+    description:
+      "Realtor.com is one of the top real estate listing platforms in the US, offering home search, property valuations, mortgage calculators, and agent connections for millions of buyers and sellers.",
+    whyAccessibilityMatters:
+      "Home buying is one of life's biggest decisions. Property search filters, mortgage calculators, map-based browsing, and virtual tour interfaces must be accessible so people with disabilities can independently search for and purchase homes.",
+  },
+  {
+    slug: "trulia",
+    name: "Trulia",
+    url: "https://www.trulia.com",
+    industry: "realestate",
+    score: 63,
+    grade: gradeForScore(63),
+    topViolations: violationsForIndustry("realestate"),
+    description:
+      "Trulia is a real estate platform owned by Zillow Group, offering home listings, neighborhood insights, crime maps, and school ratings to help buyers and renters find their ideal homes.",
+    whyAccessibilityMatters:
+      "Map-heavy real estate interfaces with interactive overlays, neighborhood data, and school information must provide accessible alternatives. Users with disabilities need equal access to housing information and search tools.",
+  },
+  // Retail/E-commerce — high-traffic brands
+  {
+    slug: "wayfair",
+    name: "Wayfair",
+    url: "https://www.wayfair.com",
+    industry: "ecommerce",
+    score: 69,
+    grade: gradeForScore(69),
+    topViolations: violationsForIndustry("ecommerce"),
+    description:
+      "Wayfair is one of the world's largest online destinations for home furnishings and décor, offering over 33 million products across furniture, lighting, rugs, and home improvement categories.",
+    whyAccessibilityMatters:
+      "Furniture shopping involves heavy visual content — room scenes, 3D views, and color swatches. Users with visual impairments need thorough alt text, accessible filtering, and screen-reader-compatible product customization for independent home furnishing.",
+  },
+  {
+    slug: "chewy",
+    name: "Chewy",
+    url: "https://www.chewy.com",
+    industry: "ecommerce",
+    score: 73,
+    grade: gradeForScore(73),
+    topViolations: violationsForIndustry("ecommerce"),
+    description:
+      "Chewy is the leading online pet supplies retailer with over 20 million active customers, offering food, toys, medications, and veterinary telehealth services for pets.",
+    whyAccessibilityMatters:
+      "Pet care is essential for millions of people with disabilities who rely on service animals and emotional support pets. Accessible autoship management, prescription ordering, and vet telehealth interfaces are critical for independent pet care.",
+  },
+  {
+    slug: "ikea",
+    name: "IKEA",
+    url: "https://www.ikea.com",
+    industry: "retail",
+    score: 70,
+    grade: gradeForScore(70),
+    topViolations: violationsForIndustry("retail"),
+    description:
+      "IKEA is the world's largest furniture retailer with 460+ stores globally, offering affordable home furnishings, kitchen products, and home accessories through its website and shopping app.",
+    whyAccessibilityMatters:
+      "IKEA's complex product configuration tools, room planners, and in-store pickup flows must be accessible. Users with disabilities need navigable product catalogs, accessible assembly instructions, and keyboard-friendly shopping experiences.",
+  },
+  {
+    slug: "zara",
+    name: "Zara",
+    url: "https://www.zara.com",
+    industry: "retail",
+    score: 61,
+    grade: gradeForScore(61),
+    topViolations: violationsForIndustry("retail"),
+    description:
+      "Zara is one of the world's largest fast-fashion retailers with over 2,000 stores globally, known for trendy designs, rapid inventory turnover, and a growing online shopping presence.",
+    whyAccessibilityMatters:
+      "Fashion e-commerce relies heavily on visual imagery and quick browsing. Users with visual impairments need descriptive alt text for clothing items, accessible size selectors, and screen-reader-compatible lookbooks to shop independently.",
+  },
 ];
