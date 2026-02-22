@@ -137,6 +137,41 @@ const violationSets: Record<string, string[]> = {
     "Keyboard support gaps in class booking",
     "Status Messages not announced",
   ],
+  socialmedia: [
+    "Non-text Content (user-uploaded images)",
+    "Captions (Prerecorded) for video content",
+    "Keyboard support gaps in infinite scroll",
+    "Name, Role, Value (interactive elements)",
+    "Status Messages not announced (notifications)",
+  ],
+  entertainment: [
+    "Captions (Prerecorded) for video/audio",
+    "Audio Description for media content",
+    "Keyboard issues in media players",
+    "Contrast (Minimum) on UI overlays",
+    "Non-text Content (poster images)",
+  ],
+  fintech: [
+    "Name, Role, Value (financial dashboards)",
+    "Labels or Instructions (transaction forms)",
+    "Status Messages not announced (balance updates)",
+    "Contrast (Minimum) on financial data",
+    "Keyboard support gaps in charts/graphs",
+  ],
+  food: [
+    "Non-text Content (menu item images)",
+    "Labels or Instructions (ordering forms)",
+    "Keyboard issues in customization UI",
+    "Focus Order in checkout flow",
+    "Contrast (Minimum) on menu boards",
+  ],
+  media: [
+    "Non-text Content (article images)",
+    "Bypass Blocks missing",
+    "Keyboard issues in video players",
+    "Contrast (Minimum) on headlines",
+    "Focus Order in navigation menus",
+  ],
 };
 
 const violationsForIndustry = (industry: string) =>
@@ -1177,5 +1212,338 @@ export const brands: Brand[] = [
       "Zara is one of the world's largest fast-fashion retailers with over 2,000 stores globally, known for trendy designs, rapid inventory turnover, and a growing online shopping presence.",
     whyAccessibilityMatters:
       "Fashion e-commerce relies heavily on visual imagery and quick browsing. Users with visual impairments need descriptive alt text for clothing items, accessible size selectors, and screen-reader-compatible lookbooks to shop independently.",
+  },
+  // Social Media platforms
+  {
+    slug: "facebook",
+    name: "Facebook",
+    url: "https://www.facebook.com",
+    industry: "socialmedia",
+    score: 74,
+    grade: gradeForScore(74),
+    topViolations: violationsForIndustry("socialmedia"),
+    description:
+      "Facebook is the world's largest social network with over 3 billion monthly active users, offering social networking, marketplace, groups, events, and business pages for personal and commercial use.",
+    whyAccessibilityMatters:
+      "Social media is essential for community participation and information access. Users with disabilities need accessible news feeds, image descriptions via auto alt-text, keyboard-navigable interfaces, and screen-reader-compatible content sharing.",
+  },
+  {
+    slug: "instagram",
+    name: "Instagram",
+    url: "https://www.instagram.com",
+    industry: "socialmedia",
+    score: 67,
+    grade: gradeForScore(67),
+    topViolations: violationsForIndustry("socialmedia"),
+    description:
+      "Instagram is a photo and video sharing platform with over 2 billion monthly active users, featuring Stories, Reels, Shopping, and direct messaging for personal and business accounts.",
+    whyAccessibilityMatters:
+      "As a visually-driven platform, Instagram must provide robust alt text for images, captions for Reels and Stories, and accessible navigation for users with visual impairments to participate equally in visual social culture.",
+  },
+  {
+    slug: "tiktok",
+    name: "TikTok",
+    url: "https://www.tiktok.com",
+    industry: "socialmedia",
+    score: 62,
+    grade: gradeForScore(62),
+    topViolations: violationsForIndustry("socialmedia"),
+    description:
+      "TikTok is a short-form video platform with over 1.5 billion monthly active users, featuring algorithmic video recommendations, duets, live streaming, and an integrated e-commerce shop.",
+    whyAccessibilityMatters:
+      "Video-first platforms must ensure auto-generated captions are accurate, navigation is keyboard-accessible, and content descriptions are available for users who cannot see video content. TikTok's rapid scrolling interface poses unique accessibility challenges.",
+  },
+  {
+    slug: "linkedin",
+    name: "LinkedIn",
+    url: "https://www.linkedin.com",
+    industry: "socialmedia",
+    score: 76,
+    grade: gradeForScore(76),
+    topViolations: violationsForIndustry("socialmedia"),
+    description:
+      "LinkedIn is the world's largest professional networking platform with over 1 billion members, offering job search, recruiting, professional content, and business networking tools.",
+    whyAccessibilityMatters:
+      "Professional networking and job searching are critical life activities. LinkedIn's job application flows, messaging, content posting, and profile management must be fully accessible to ensure equal employment opportunities for people with disabilities.",
+  },
+  {
+    slug: "reddit",
+    name: "Reddit",
+    url: "https://www.reddit.com",
+    industry: "socialmedia",
+    score: 68,
+    grade: gradeForScore(68),
+    topViolations: violationsForIndustry("socialmedia"),
+    description:
+      "Reddit is a community discussion platform with over 1.7 billion monthly visits, featuring topic-based subreddits, threaded discussions, voting, and a robust content moderation system.",
+    whyAccessibilityMatters:
+      "Threaded discussions, nested comment trees, and community-driven content require careful accessible markup. Users with screen readers need clear comment hierarchy, accessible voting controls, and navigable community interfaces.",
+  },
+  // Entertainment & Streaming
+  {
+    slug: "spotify",
+    name: "Spotify",
+    url: "https://www.spotify.com",
+    industry: "entertainment",
+    score: 75,
+    grade: gradeForScore(75),
+    topViolations: violationsForIndustry("entertainment"),
+    description:
+      "Spotify is the world's largest audio streaming service with 640+ million users, offering music, podcasts, audiobooks, and personalized playlists across mobile, desktop, and smart devices.",
+    whyAccessibilityMatters:
+      "Audio streaming interfaces must be keyboard-navigable, with accessible playback controls, readable playlist management, and screen-reader-compatible search and browse features. Podcast transcripts benefit deaf and hard-of-hearing users.",
+  },
+  {
+    slug: "netflix",
+    name: "Netflix",
+    url: "https://www.netflix.com",
+    industry: "entertainment",
+    score: 79,
+    grade: gradeForScore(79),
+    topViolations: violationsForIndustry("entertainment"),
+    description:
+      "Netflix is the world's leading streaming entertainment service with over 280 million paid subscribers across 190+ countries, offering original films, series, documentaries, and games.",
+    whyAccessibilityMatters:
+      "Video streaming must include closed captions, audio descriptions, accessible media players, and keyboard-navigable content browsing. Netflix has been a leader in audio description but still faces challenges in UI accessibility.",
+  },
+  {
+    slug: "twitch",
+    name: "Twitch",
+    url: "https://www.twitch.tv",
+    industry: "entertainment",
+    score: 63,
+    grade: gradeForScore(63),
+    topViolations: violationsForIndustry("entertainment"),
+    description:
+      "Twitch is the leading live streaming platform for gamers and creators with over 140 million monthly active users, featuring live chat, subscriptions, and interactive viewer participation.",
+    whyAccessibilityMatters:
+      "Live streaming with real-time chat presents unique accessibility challenges. Chat interfaces need screen reader support, live captions are essential for deaf users, and interactive overlays must have keyboard alternatives.",
+  },
+  // Fintech
+  {
+    slug: "paypal",
+    name: "PayPal",
+    url: "https://www.paypal.com",
+    industry: "fintech",
+    score: 77,
+    grade: gradeForScore(77),
+    topViolations: violationsForIndustry("fintech"),
+    description:
+      "PayPal is a global digital payments platform processing over $1.5 trillion in annual payment volume, offering person-to-person payments, merchant checkout, and financial services.",
+    whyAccessibilityMatters:
+      "Financial transactions require the highest level of accessibility. Users with disabilities must be able to independently send money, review transactions, manage accounts, and complete checkout flows without assistance.",
+  },
+  {
+    slug: "venmo",
+    name: "Venmo",
+    url: "https://www.venmo.com",
+    industry: "fintech",
+    score: 68,
+    grade: gradeForScore(68),
+    topViolations: violationsForIndustry("fintech"),
+    description:
+      "Venmo is a mobile payment service owned by PayPal with over 90 million active accounts, popular for peer-to-peer payments, splitting bills, and social payment feeds.",
+    whyAccessibilityMatters:
+      "Mobile-first payment apps must ensure touch targets are adequately sized, payment flows are screen-reader-compatible, and social feed features are accessible. Financial independence requires accessible money management tools.",
+  },
+  {
+    slug: "robinhood",
+    name: "Robinhood",
+    url: "https://www.robinhood.com",
+    industry: "fintech",
+    score: 64,
+    grade: gradeForScore(64),
+    topViolations: violationsForIndustry("fintech"),
+    description:
+      "Robinhood is a commission-free trading platform with over 23 million funded accounts, offering stocks, ETFs, options, and cryptocurrency trading for retail investors.",
+    whyAccessibilityMatters:
+      "Financial trading platforms with real-time data, interactive charts, and time-sensitive order forms must provide accessible alternatives. Users with disabilities deserve equal access to investment tools and market information.",
+  },
+  {
+    slug: "square",
+    name: "Square",
+    url: "https://www.squareup.com",
+    industry: "fintech",
+    score: 72,
+    grade: gradeForScore(72),
+    topViolations: violationsForIndustry("fintech"),
+    description:
+      "Square (now Block) provides payment processing, point-of-sale, and business management tools for millions of sellers, from small businesses to large enterprises.",
+    whyAccessibilityMatters:
+      "Small business owners with disabilities use Square's dashboard for sales tracking, inventory management, and payment processing. Accessible merchant tools are essential for entrepreneurial independence.",
+  },
+  // Food & Restaurant chains
+  {
+    slug: "mcdonalds",
+    name: "McDonald's",
+    url: "https://www.mcdonalds.com",
+    industry: "food",
+    score: 69,
+    grade: gradeForScore(69),
+    topViolations: violationsForIndustry("food"),
+    description:
+      "McDonald's is the world's largest fast-food restaurant chain with over 40,000 locations globally, offering mobile ordering, delivery, loyalty rewards, and drive-thru services.",
+    whyAccessibilityMatters:
+      "Restaurant chains with online ordering, menu customization, and loyalty programs must ensure users with disabilities can independently browse menus, customize orders, and complete checkout. Mobile ordering accessibility is especially critical.",
+  },
+  {
+    slug: "starbucks",
+    name: "Starbucks",
+    url: "https://www.starbucks.com",
+    industry: "food",
+    score: 73,
+    grade: gradeForScore(73),
+    topViolations: violationsForIndustry("food"),
+    description:
+      "Starbucks operates over 38,000 stores globally with a leading mobile app for ordering, payments, and rewards, generating significant revenue through its digital ordering platform.",
+    whyAccessibilityMatters:
+      "Mobile ordering with drink customization, store locators, and rewards management must be accessible. Users with disabilities should be able to independently customize drinks, manage rewards, and use the mobile order-ahead feature.",
+  },
+  {
+    slug: "chipotle",
+    name: "Chipotle",
+    url: "https://www.chipotle.com",
+    industry: "food",
+    score: 65,
+    grade: gradeForScore(65),
+    topViolations: violationsForIndustry("food"),
+    description:
+      "Chipotle Mexican Grill operates over 3,500 restaurants with a popular digital ordering platform, offering customizable burritos, bowls, and tacos with online ordering and delivery.",
+    whyAccessibilityMatters:
+      "Build-your-own meal interfaces with step-by-step ingredient selection must be accessible. The multi-step customization flow, catering orders, and nutrition information need to work with assistive technologies.",
+  },
+  {
+    slug: "dominos",
+    name: "Domino's Pizza",
+    url: "https://www.dominos.com",
+    industry: "food",
+    score: 71,
+    grade: gradeForScore(71),
+    topViolations: violationsForIndustry("food"),
+    description:
+      "Domino's is the world's largest pizza delivery company with over 20,000 locations, known for its pizza tracker, online ordering platform, and technology-forward delivery approach.",
+    whyAccessibilityMatters:
+      "Domino's was the defendant in the landmark ADA web accessibility case (Robles v. Domino's, 2019), which established that websites must be accessible under the ADA. Their ordering interface accessibility remains closely watched as legal precedent.",
+  },
+  // Media & News
+  {
+    slug: "nytimes",
+    name: "The New York Times",
+    url: "https://www.nytimes.com",
+    industry: "media",
+    score: 80,
+    grade: gradeForScore(80),
+    topViolations: violationsForIndustry("media"),
+    description:
+      "The New York Times is the most subscribed digital news source globally with over 10 million subscribers, offering journalism, Wordle, The Athletic, cooking guides, and audio content.",
+    whyAccessibilityMatters:
+      "News is essential public information. Article layouts, subscription flows, interactive data visualizations, and multimedia stories must be accessible so people with disabilities can stay informed and participate in civic discourse.",
+  },
+  {
+    slug: "cnn",
+    name: "CNN",
+    url: "https://www.cnn.com",
+    industry: "media",
+    score: 66,
+    grade: gradeForScore(66),
+    topViolations: violationsForIndustry("media"),
+    description:
+      "CNN is a leading global news network with one of the most-visited news websites, offering breaking news, video coverage, live TV streaming, and in-depth reporting across politics, business, and culture.",
+    whyAccessibilityMatters:
+      "Breaking news websites with auto-updating content, video players, and live blogs must ensure screen readers can track updates, videos have captions, and users can navigate rapidly changing content with keyboard controls.",
+  },
+  // Automotive — expanding from 2 to 5
+  {
+    slug: "tesla",
+    name: "Tesla",
+    url: "https://www.tesla.com",
+    industry: "automotive",
+    score: 70,
+    grade: gradeForScore(70),
+    topViolations: violationsForIndustry("automotive"),
+    description:
+      "Tesla is the world's most valuable automaker, selling electric vehicles directly to consumers through its website with an online configuration, ordering, and financing process — no traditional dealerships.",
+    whyAccessibilityMatters:
+      "Tesla's entirely online vehicle purchasing process — from configuration to financing to delivery scheduling — must be fully accessible. As a direct-to-consumer brand, their website is the only sales channel, making web accessibility critical.",
+  },
+  {
+    slug: "honda",
+    name: "Honda",
+    url: "https://www.honda.com",
+    industry: "automotive",
+    score: 67,
+    grade: gradeForScore(67),
+    topViolations: violationsForIndustry("automotive"),
+    description:
+      "Honda is a major global automaker with vehicle configuration tools, dealer locators, financing calculators, and online service scheduling for its automobile, motorcycle, and power equipment divisions.",
+    whyAccessibilityMatters:
+      "Vehicle configuration tools with 360-degree views, color selectors, and trim comparisons must provide accessible alternatives. Financing calculators and dealer locator maps need keyboard navigation and screen reader support.",
+  },
+  {
+    slug: "bmw",
+    name: "BMW",
+    url: "https://www.bmw.com",
+    industry: "automotive",
+    score: 65,
+    grade: gradeForScore(65),
+    topViolations: violationsForIndustry("automotive"),
+    description:
+      "BMW is a premium German automaker offering luxury vehicles with an interactive online configurator, connected vehicle services, and digital service scheduling across global markets.",
+    whyAccessibilityMatters:
+      "Luxury automotive sites with immersive visual experiences, 3D configurators, and AR features must ensure equivalent accessible experiences. Users with disabilities need equal access to vehicle exploration and purchase tools.",
+  },
+  // Telecom — expanding from 2 to 4
+  {
+    slug: "t-mobile",
+    name: "T-Mobile",
+    url: "https://www.t-mobile.com",
+    industry: "telecom",
+    score: 72,
+    grade: gradeForScore(72),
+    topViolations: violationsForIndustry("telecom"),
+    description:
+      "T-Mobile is the second-largest wireless carrier in the US with over 100 million customers, offering wireless plans, devices, home internet, and business solutions.",
+    whyAccessibilityMatters:
+      "Wireless carrier websites handle essential communication services. Plan comparison tools, device selection, account management, and billing interfaces must be accessible for users with disabilities to maintain independent communication access.",
+  },
+  {
+    slug: "comcast",
+    name: "Comcast/Xfinity",
+    url: "https://www.xfinity.com",
+    industry: "telecom",
+    score: 64,
+    grade: gradeForScore(64),
+    topViolations: violationsForIndustry("telecom"),
+    description:
+      "Comcast's Xfinity is the largest cable internet provider in the US, offering internet, TV, mobile, and home security services with online account management and self-service tools.",
+    whyAccessibilityMatters:
+      "Internet and communication services are essential utilities. Account management, bill payment, service troubleshooting, and plan changes must be accessible. Comcast has faced multiple accessibility complaints regarding their web and streaming interfaces.",
+  },
+  // Insurance — expanding from 2 to 4
+  {
+    slug: "progressive",
+    name: "Progressive",
+    url: "https://www.progressive.com",
+    industry: "insurance",
+    score: 70,
+    grade: gradeForScore(70),
+    topViolations: violationsForIndustry("insurance"),
+    description:
+      "Progressive is the third-largest auto insurance company in the US, known for its online quote comparison tools, Snapshot usage-based insurance, and Flo marketing campaigns.",
+    whyAccessibilityMatters:
+      "Insurance quote tools with multi-step forms, comparison tables, and policy management dashboards must be accessible. People with disabilities need independent access to obtain quotes, file claims, and manage coverage.",
+  },
+  {
+    slug: "geico",
+    name: "GEICO",
+    url: "https://www.geico.com",
+    industry: "insurance",
+    score: 68,
+    grade: gradeForScore(68),
+    topViolations: violationsForIndustry("insurance"),
+    description:
+      "GEICO is the second-largest auto insurer in the US with over 17 million policies, offering online quotes, claims filing, policy management, and a widely used mobile app.",
+    whyAccessibilityMatters:
+      "Insurance is a legally required service for drivers. Online quote calculators, claims filing with photo upload, and policy document management must be fully accessible for policyholders with disabilities to maintain independent coverage.",
   },
 ];
