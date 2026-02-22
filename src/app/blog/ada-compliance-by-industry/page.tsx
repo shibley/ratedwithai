@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "ADA Website Compliance Requirements by Industry (2026 Guide) | RatedWithAI",

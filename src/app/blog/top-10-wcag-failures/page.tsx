@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Top 10 Most Common WCAG Failures (And How to Fix Them) | RatedWithAI",

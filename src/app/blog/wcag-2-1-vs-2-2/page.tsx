@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "WCAG 2.1 vs 2.2: What Changed and What It Means for Your Website | RatedWithAI",
