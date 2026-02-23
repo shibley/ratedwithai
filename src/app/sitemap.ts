@@ -15,22 +15,39 @@ const blogPosts = [
   "ada-compliance-checklist-2026",
   "ada-lawsuit-settlements-2026",
   "ada-title-ii-compliance-guide",
+  "ada-title-ii-deadline-countdown-2026",
   "banking-accessibility-compliance",
+  "best-website-accessibility-checker-tools-2026",
   "ecommerce-accessibility-guide",
   "european-accessibility-act-2025",
   "healthcare-accessibility-compliance",
   "how-to-check-website-ada-compliant",
   "how-to-fix-common-wcag-failures",
   "law-firm-accessibility-compliance",
+  "small-business-accessibility-guide",
   "top-10-wcag-failures",
   "wcag-2-1-vs-2-2",
   "wcag-22-complete-guide",
+  "website-accessibility-lawsuit-statistics-2026",
   "website-accessibility-testing-guide",
 ];
 
 // Tool landing pages
 const toolPages = [
   "ada-title-ii-compliance-checker",
+  "accessibe-alternative",
+  "accessibe-review",
+  "free-accessibility-checker",
+  "vpat-template",
+  "accessibility-statement-generator",
+];
+
+// Comparison pages
+const comparePages = [
+  "ratedwithai-vs-accessibe",
+  "ratedwithai-vs-audioeye",
+  "ratedwithai-vs-userway",
+  "ratedwithai-vs-wave",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -49,6 +66,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/tools/${tool}`,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    ...comparePages.map((page) => ({
+      url: `${baseUrl}/compare/${page}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
     ...blogPosts.map((post) => ({
       url: `${baseUrl}/blog/${post}`,
