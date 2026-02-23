@@ -36,6 +36,7 @@ const blogPosts = [
   "wcag-compliance-guide",
   "accessibe-alternative",
   "accessibility-testing-services",
+  "healthcare-website-accessibility-may-2026",
 ];
 
 // Tool landing pages

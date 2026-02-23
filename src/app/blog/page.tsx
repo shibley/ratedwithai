@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "healthcare-website-accessibility-may-2026",
+    title: "Healthcare Website Accessibility: The May 2026 HHS Deadline That Could Cut Your Federal Funding",
+    description:
+      "The HHS Section 504 deadline hits May 11, 2026. Healthcare providers accepting Medicare/Medicaid must meet WCAG 2.1 AA or risk losing federal funding. Complete guide.",
+    category: "Deadline",
+  },
+  {
     slug: "accessibe-alternative",
     title: "7 Best accessiBe Alternatives in 2026 (After the $1M FTC Fine)",
     description:
@@ -188,6 +195,7 @@ const categoryColors: Record<string, string> = {
   Legal: "bg-rose-500/15 text-rose-300 border-rose-500/30",
   Industry: "bg-indigo-500/15 text-indigo-300 border-indigo-500/30",
   Comparison: "bg-orange-500/15 text-orange-300 border-orange-500/30",
+  Deadline: "bg-red-500/15 text-red-300 border-red-500/30",
 };
 
 export default function BlogIndexPage() {
