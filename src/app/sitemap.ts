@@ -30,6 +30,8 @@ const blogPosts = [
   "wcag-22-complete-guide",
   "website-accessibility-lawsuit-statistics-2026",
   "website-accessibility-testing-guide",
+  "section-508-compliance-guide",
+  "ada-lawsuit-reform-2026",
 ];
 
 // Tool landing pages
