@@ -35,6 +35,7 @@ const blogPosts = [
   "ada-website-compliance-guide",
   "wcag-compliance-guide",
   "accessibe-alternative",
+  "accessibility-testing-services",
 ];
 
 // Tool landing pages
@@ -43,6 +44,7 @@ const toolPages = [
   "accessibe-alternative",
   "accessibe-review",
   "free-accessibility-checker",
+  "is-my-website-ada-compliant",
   "vpat-template",
   "accessibility-statement-generator",
 ];
