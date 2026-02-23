@@ -34,6 +34,7 @@ const blogPosts = [
   "ada-lawsuit-reform-2026",
   "ada-website-compliance-guide",
   "wcag-compliance-guide",
+  "accessibe-alternative",
 ];
 
 // Tool landing pages

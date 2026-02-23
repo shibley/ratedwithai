@@ -17,6 +17,55 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "accessibe-alternative",
+    title: "7 Best accessiBe Alternatives in 2026 (After the $1M FTC Fine)",
+    description:
+      "Compare 7 real accessibility solutions after the FTC fine and overlay backlash. Code-based scanners that fix issues at the source — starting at $29/mo.",
+    category: "Comparison",
+  },
+  {
+    slug: "ada-website-compliance-guide",
+    title: "ADA Website Compliance: The Definitive Guide for 2026",
+    description:
+      "Everything you need to know about ADA website compliance in 2026. Requirements, April deadline, lawsuits, checklist, and how to achieve compliance.",
+    category: "Compliance",
+  },
+  {
+    slug: "wcag-compliance-guide",
+    title: "WCAG Compliance: The Complete Guide for 2026",
+    description:
+      "Master WCAG compliance with our comprehensive guide. WCAG versions, conformance levels, POUR principles, testing methodology, and a 20-item checklist.",
+    category: "WCAG",
+  },
+  {
+    slug: "section-508-compliance-guide",
+    title: "Section 508 Compliance: The Complete Guide for 2026",
+    description:
+      "Everything you need to know about Section 508 compliance. Requirements, checklist, testing methods, VPAT documentation, and how it connects to WCAG and ADA.",
+    category: "Compliance",
+  },
+  {
+    slug: "ada-lawsuit-reform-2026",
+    title: "ADA Lawsuit Reform 2026: Missouri HB 1694 and Utah SB 68",
+    description:
+      "Two landmark bills could reshape ADA website accessibility lawsuits in 2026. Analysis of Missouri HB 1694 and Utah SB 68 and what they mean for businesses.",
+    category: "Legal",
+  },
+  {
+    slug: "small-business-accessibility-guide",
+    title: "Small Business Website Accessibility Guide 2026",
+    description:
+      "Affordable, actionable guide to making your small business website ADA compliant. Avoid lawsuits, reach more customers, and improve your SEO.",
+    category: "Getting Started",
+  },
+  {
+    slug: "website-accessibility-lawsuit-statistics-2026",
+    title: "Website Accessibility Lawsuit Statistics 2026: 8,667 Cases and Counting",
+    description:
+      "The latest website accessibility lawsuit statistics and trends for 2026. Industry breakdown, state data, and how to protect your business.",
+    category: "Legal",
+  },
+  {
     slug: "ada-compliance-checklist-2026",
     title: "ADA Compliance Checklist 2026: The Complete Guide for Business Owners",
     description:
@@ -138,6 +187,7 @@ const categoryColors: Record<string, string> = {
   Testing: "bg-teal-500/15 text-teal-300 border-teal-500/30",
   Legal: "bg-rose-500/15 text-rose-300 border-rose-500/30",
   Industry: "bg-indigo-500/15 text-indigo-300 border-indigo-500/30",
+  Comparison: "bg-orange-500/15 text-orange-300 border-orange-500/30",
 };
 
 export default function BlogIndexPage() {
