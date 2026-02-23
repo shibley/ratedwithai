@@ -1,0 +1,49 @@
+# RatedWithAI — AI-Powered Website Accessibility Scanner
+
+> RatedWithAI is a free, automated website accessibility scanner that checks any URL against WCAG 2.1 AA and AAA standards. It identifies accessibility violations, provides severity ratings, remediation guidance, and generates shareable compliance reports.
+
+## Free Tools
+
+- [Color Contrast Checker](https://ratedwithai.com/tools/color-contrast-checker): Test color combinations against WCAG 2.1 contrast ratio requirements (AA and AAA). Supports hex, RGB input with live preview.
+- [Free Accessibility Checker](https://ratedwithai.com/tools/free-accessibility-checker): Scan any URL for WCAG violations. Powered by axe-core.
+- [Accessibility Statement Generator](https://ratedwithai.com/tools/accessibility-statement-generator): Generate a W3C-aligned accessibility statement for your website.
+- [VPAT Template](https://ratedwithai.com/tools/vpat-template): Download VPAT 2.5 templates for all four editions (WCAG, Section 508, EU, INT).
+
+## Key Resources
+
+- [ADA Compliance Checklist 2026](https://ratedwithai.com/blog/ada-compliance-checklist-2026)
+- [WCAG Compliance Guide](https://ratedwithai.com/blog/wcag-compliance-guide)
+- [Section 508 Compliance Guide](https://ratedwithai.com/blog/section-508-compliance-guide)
+- [Website Accessibility Lawsuit Statistics 2026](https://ratedwithai.com/blog/website-accessibility-lawsuit-statistics-2026)
+- [ADA Website Compliance Guide](https://ratedwithai.com/blog/ada-website-compliance-guide)
+- [Healthcare Accessibility: May 2026 HHS Deadline](https://ratedwithai.com/blog/healthcare-website-accessibility-may-2026-hhs-deadline)
+- [Best accessiBe Alternatives 2026](https://ratedwithai.com/blog/accessibe-alternatives-2026)
+
+## Brand Accessibility Checks
+
+RatedWithAI provides accessibility check pages for 126+ major brands including Amazon, Google, Apple, Netflix, Spotify, and more. Each page shows the brand's current accessibility score with detailed WCAG findings.
+
+Browse all: https://ratedwithai.com/check/amazon
+
+## WCAG Criteria Reference
+
+Complete reference for all 50 WCAG 2.1 Level A and AA success criteria with explanations, examples, and testing procedures.
+
+Browse: https://ratedwithai.com/wcag/1-1-1-non-text-content
+
+## State ADA Lawsuit Guides
+
+Guides for all 50 US states covering ADA website accessibility lawsuit trends, enforcement patterns, and compliance requirements.
+
+Browse: https://ratedwithai.com/state/california
+
+## Pricing
+
+- Free: 5 scans/month, basic reports
+- Pro ($29/mo): 100 scans, monitoring alerts, PDF/CSV export
+- Business ($99/mo): Unlimited scans, API access, white-label reports
+
+## Contact
+
+Website: https://ratedwithai.com
+Built by Bity LLC: https://saasintegrate.com

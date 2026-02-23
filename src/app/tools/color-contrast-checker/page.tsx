@@ -74,15 +74,34 @@ export default function ColorContrastCheckerPage() {
       "@type": "WebApplication",
       name: "Color Contrast Checker",
       applicationCategory: "DesignApplication",
+      applicationSubCategory: "Accessibility Tool",
       operatingSystem: "Any (web-based)",
+      browserRequirements: "Requires JavaScript",
       offers: {
         "@type": "Offer",
         price: "0",
         priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
       },
       description:
         "Free color contrast checker tool. Test foreground and background colors against WCAG 2.1 AA and AAA contrast ratio requirements with live preview.",
       url: "https://ratedwithai.com/tools/color-contrast-checker",
+      featureList: [
+        "Real-time WCAG contrast ratio calculation",
+        "AA and AAA pass/fail testing for normal and large text",
+        "Live text preview with selected colors",
+        "Hex, RGB, and color picker input",
+        "Swap foreground and background colors",
+        "Copy contrast ratio to clipboard",
+        "No signup required",
+      ],
+      screenshot: "https://ratedwithai.com/og-color-contrast-checker.png",
+      creator: {
+        "@type": "Organization",
+        name: "RatedWithAI",
+        url: "https://ratedwithai.com",
+      },
+      aggregateRating: undefined,
     },
     {
       "@context": "https://schema.org",
@@ -95,6 +114,73 @@ export default function ColorContrastCheckerPage() {
           text: item.a,
         },
       })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "How to Check Color Contrast for WCAG Compliance",
+      description:
+        "Use the free Color Contrast Checker to test your color combinations against WCAG 2.1 AA and AAA requirements.",
+      step: [
+        {
+          "@type": "HowToStep",
+          position: 1,
+          name: "Enter your foreground (text) color",
+          text: "Use the color picker or type a hex code (e.g., #333333) for your text color. You can also enter individual R, G, B values.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 2,
+          name: "Enter your background color",
+          text: "Use the color picker or type a hex code (e.g., #FFFFFF) for your background color.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 3,
+          name: "Review your contrast ratio",
+          text: "The tool instantly calculates the contrast ratio and shows pass/fail results for WCAG AA Normal (4.5:1), AA Large (3:1), AAA Normal (7:1), and AAA Large (4.5:1).",
+        },
+        {
+          "@type": "HowToStep",
+          position: 4,
+          name: "Check the live preview",
+          text: "Review the live text preview to see how your color combination looks at different text sizes — large, normal, small, and on buttons.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 5,
+          name: "Adjust colors until compliant",
+          text: "If any level fails, adjust your colors until you achieve the required contrast ratio. Use the swap button to quickly test reversed combinations.",
+        },
+      ],
+      tool: {
+        "@type": "HowToTool",
+        name: "RatedWithAI Color Contrast Checker",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://ratedwithai.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Tools",
+          item: "https://ratedwithai.com/tools",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Color Contrast Checker",
+          item: "https://ratedwithai.com/tools/color-contrast-checker",
+        },
+      ],
     },
   ];
 
