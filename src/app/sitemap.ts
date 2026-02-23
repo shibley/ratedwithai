@@ -48,6 +48,7 @@ const toolPages = [
   "is-my-website-ada-compliant",
   "vpat-template",
   "accessibility-statement-generator",
+  "color-contrast-checker",
 ];
 
 // Comparison pages

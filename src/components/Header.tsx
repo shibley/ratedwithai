@@ -106,6 +106,13 @@ export default function Header() {
     setOpenMenu(openMenu === menu ? null : menu);
   };
 
+  const toolsItems = [
+    { href: "/tools/free-accessibility-checker", label: "Free Accessibility Checker", desc: "Scan any URL for WCAG violations" },
+    { href: "/tools/color-contrast-checker", label: "Color Contrast Checker", desc: "Test WCAG contrast ratios" },
+    { href: "/tools/accessibility-statement-generator", label: "Accessibility Statement Generator", desc: "Generate a compliance statement" },
+    { href: "/tools/vpat-template", label: "VPAT Template", desc: "Free VPAT/ACR template" },
+  ];
+
   const resourcesItems = [
     { href: "/blog/ada-compliance-checklist-2026", label: "ADA Compliance Checklist", desc: "Step-by-step compliance guide" },
     { href: "/blog/how-to-check-website-ada-compliant", label: "How to Check ADA Compliance", desc: "Beginner-friendly guide" },
@@ -138,6 +145,12 @@ export default function Header() {
           <Link className="transition hover:text-white" href="/scan">
             Scanner
           </Link>
+          <DropdownMenu
+            label="Tools"
+            items={toolsItems}
+            isOpen={openMenu === "tools"}
+            onToggle={() => toggleMenu("tools")}
+          />
           <DropdownMenu
             label="Resources"
             items={resourcesItems}
@@ -178,6 +191,14 @@ export default function Header() {
         <div className="lg:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-6 py-4 relative z-20">
           <nav className="flex flex-col gap-3 text-sm">
             <Link href="/scan" className="py-2 text-slate-200 hover:text-white" onClick={() => setMobileOpen(false)}>Scanner</Link>
+            <div className="border-t border-slate-800 pt-2">
+              <p className="text-xs uppercase tracking-wider text-slate-500 mb-2">Tools</p>
+              {toolsItems.map((item) => (
+                <Link key={item.href} href={item.href} className="block py-1.5 text-slate-300 hover:text-white" onClick={() => setMobileOpen(false)}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
             <div className="border-t border-slate-800 pt-2">
               <p className="text-xs uppercase tracking-wider text-slate-500 mb-2">Resources</p>
               {resourcesItems.map((item) => (
