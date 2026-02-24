@@ -260,6 +260,27 @@ export default function EcommerceAccessibilityGuide() {
           <h2 className="text-2xl font-semibold text-white mb-6">Related Resources</h2>
           <div className="grid gap-4 md:grid-cols-3">
             <Link
+              href="/tools/color-contrast-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
+            >
+              <p className="font-semibold text-sky-400">Color Contrast Checker</p>
+              <p className="mt-2 text-sm text-slate-400">Test your product page color contrast against WCAG AA and AAA standards.</p>
+            </Link>
+            <Link
+              href="/tools/free-accessibility-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
+            >
+              <p className="font-semibold text-sky-400">Free Accessibility Checker</p>
+              <p className="mt-2 text-sm text-slate-400">Scan your e-commerce site for WCAG violations in seconds.</p>
+            </Link>
+            <Link
+              href="/tools/alt-text-generator"
+              className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
+            >
+              <p className="font-semibold text-sky-400">Alt Text Generator</p>
+              <p className="mt-2 text-sm text-slate-400">Generate WCAG-compliant alt text for your product images with AI.</p>
+            </Link>
+            <Link
               href="/blog/how-to-fix-common-wcag-failures"
               className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
             >

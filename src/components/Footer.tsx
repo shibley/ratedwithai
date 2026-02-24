@@ -22,10 +22,12 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">Product</h4>
             <div className="flex flex-col gap-2 text-sm text-slate-400">
-              <Link className="transition hover:text-white" href="/scan">Free Scanner</Link>
+              <Link className="transition hover:text-white" href="/tools/free-accessibility-checker">Free Accessibility Checker</Link>
+              <Link className="transition hover:text-white" href="/tools/color-contrast-checker">Color Contrast Checker</Link>
+              <Link className="transition hover:text-white" href="/tools/alt-text-generator">Alt Text Generator</Link>
               <Link className="transition hover:text-white" href="/pricing">Pricing</Link>
+              <Link className="transition hover:text-white" href="/tools/accessibe-alternative">accessiBe Alternative</Link>
               <Link className="transition hover:text-white" href="/compare/ratedwithai-vs-accessibe">vs accessiBe</Link>
-              <Link className="transition hover:text-white" href="/compare/ratedwithai-vs-wave">vs WAVE</Link>
             </div>
           </div>
 
@@ -34,10 +36,11 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-white mb-4">Resources</h4>
             <div className="flex flex-col gap-2 text-sm text-slate-400">
               <Link className="transition hover:text-white" href="/blog/ada-compliance-checklist-2026">ADA Compliance Checklist</Link>
+              <Link className="transition hover:text-white" href="/blog/web-accessibility-service">Web Accessibility Service</Link>
               <Link className="transition hover:text-white" href="/blog/top-10-wcag-failures">Top WCAG Failures</Link>
-              <Link className="transition hover:text-white" href="/blog/european-accessibility-act-2025">European Accessibility Act</Link>
-              <Link className="transition hover:text-white" href="/wcag/1-1-1-non-text-content">WCAG Criteria Guide</Link>
-              <Link className="transition hover:text-white" href="/industry">Industry Guides</Link>
+              <Link className="transition hover:text-white" href="/tools/accessibe-review">accessiBe Review</Link>
+              <Link className="transition hover:text-white" href="/wcag">WCAG Criteria Guide</Link>
+              <Link className="transition hover:text-white" href="/blog">Blog</Link>
             </div>
           </div>
 

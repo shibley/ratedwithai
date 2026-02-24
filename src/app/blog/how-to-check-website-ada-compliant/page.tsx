@@ -431,6 +431,24 @@ export default function HowToCheckAdaCompliantPage() {
             <h2 className="text-2xl font-semibold text-white">Related Resources</h2>
             <div className="grid gap-4 md:grid-cols-2">
               <Link
+                href="/tools/free-accessibility-checker"
+                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
+              >
+                <p className="text-sm text-sky-400">Free Tool</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  Free Accessibility Checker
+                </p>
+              </Link>
+              <Link
+                href="/tools/color-contrast-checker"
+                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
+              >
+                <p className="text-sm text-sky-400">Free Tool</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  Color Contrast Checker
+                </p>
+              </Link>
+              <Link
                 href="/blog/ada-compliance-checklist-2026"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
@@ -446,24 +464,6 @@ export default function HowToCheckAdaCompliantPage() {
                 <p className="text-sm text-slate-400">Guide</p>
                 <p className="mt-2 text-lg font-semibold text-white">
                   How to Fix Common WCAG Failures
-                </p>
-              </Link>
-              <Link
-                href="/wcag/1-1-1-non-text-content"
-                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
-              >
-                <p className="text-sm text-slate-400">WCAG Criterion</p>
-                <p className="mt-2 text-lg font-semibold text-white">
-                  Non-text Content (1.1.1)
-                </p>
-              </Link>
-              <Link
-                href="/state/new-york"
-                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
-              >
-                <p className="text-sm text-slate-400">State Guide</p>
-                <p className="mt-2 text-lg font-semibold text-white">
-                  New York ADA Compliance
                 </p>
               </Link>
             </div>

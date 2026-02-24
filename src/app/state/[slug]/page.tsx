@@ -337,6 +337,54 @@ export default function StatePage({ params }: PageProps) {
           </div>
         </section>
 
+        {/* Tools & Guides */}
+        <section className="grid gap-6 rounded-3xl border border-slate-800/70 bg-slate-900/60 p-8">
+          <h2 className="text-2xl font-semibold text-white">
+            Accessibility Tools &amp; Guides
+          </h2>
+          <p className="text-sm text-slate-300">
+            Protect your {state.name} business with these free compliance tools and guides:
+          </p>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Link
+              href="/tools/free-accessibility-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Free accessibility checker — scan any URL for WCAG violations
+            </Link>
+            <Link
+              href="/tools/color-contrast-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Color contrast checker — test WCAG contrast ratios
+            </Link>
+            <Link
+              href="/blog/ada-compliance-checklist-2026"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              ADA compliance checklist 2026
+            </Link>
+            <Link
+              href="/blog/ada-lawsuit-settlements-2026"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              ADA lawsuit settlement amounts &amp; costs
+            </Link>
+            <Link
+              href="/blog/how-to-fix-common-wcag-failures"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              How to fix common WCAG failures
+            </Link>
+            <Link
+              href="/blog/web-accessibility-service"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Web accessibility service guide
+            </Link>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="rounded-3xl border border-slate-800/70 bg-gradient-to-r from-slate-900 via-slate-900/70 to-slate-950 p-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -353,7 +401,7 @@ export default function StatePage({ params }: PageProps) {
               </p>
             </div>
             <Link
-              href="/"
+              href="/tools/free-accessibility-checker"
               className="whitespace-nowrap rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:opacity-90"
             >
               Start a free scan

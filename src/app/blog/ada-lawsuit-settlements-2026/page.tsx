@@ -322,6 +322,13 @@ export default function ADALawsuitSettlementsGuide() {
           <h2 className="text-2xl font-semibold text-white mb-6">Related Resources</h2>
           <div className="grid gap-4 md:grid-cols-3">
             <Link
+              href="/tools/free-accessibility-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
+            >
+              <p className="font-semibold text-sky-400">Free Accessibility Checker</p>
+              <p className="mt-2 text-sm text-slate-400">Scan your site for WCAG violations before they become legal problems.</p>
+            </Link>
+            <Link
               href="/state/california"
               className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
             >
@@ -341,6 +348,20 @@ export default function ADALawsuitSettlementsGuide() {
             >
               <p className="font-semibold text-white">Fix Common WCAG Failures</p>
               <p className="mt-2 text-sm text-slate-400">Remediation guide for the most-cited accessibility violations.</p>
+            </Link>
+            <Link
+              href="/blog/web-accessibility-service"
+              className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
+            >
+              <p className="font-semibold text-white">Web Accessibility Service Guide</p>
+              <p className="mt-2 text-sm text-slate-400">Compare manual audits, automated scanning, and overlay widgets.</p>
+            </Link>
+            <Link
+              href="/tools/accessibility-statement-generator"
+              className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
+            >
+              <p className="font-semibold text-sky-400">Accessibility Statement Generator</p>
+              <p className="mt-2 text-sm text-slate-400">Create a compliance statement documenting your accessibility efforts.</p>
             </Link>
           </div>
         </section>

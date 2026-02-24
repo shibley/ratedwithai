@@ -587,6 +587,24 @@ export default function EuropeanAccessibilityActPage() {
             <h2 className="text-2xl font-semibold text-white">Related Resources</h2>
             <div className="grid gap-4 md:grid-cols-2">
               <Link
+                href="/tools/free-accessibility-checker"
+                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
+              >
+                <p className="text-sm text-sky-400">Free Tool</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  Free Accessibility Checker
+                </p>
+              </Link>
+              <Link
+                href="/tools/color-contrast-checker"
+                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
+              >
+                <p className="text-sm text-sky-400">Free Tool</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  Color Contrast Checker
+                </p>
+              </Link>
+              <Link
                 href="/blog/how-to-check-website-ada-compliant"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
@@ -596,30 +614,12 @@ export default function EuropeanAccessibilityActPage() {
                 </p>
               </Link>
               <Link
-                href="/blog/accessibility-audit-checklist-2026"
-                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
-              >
-                <p className="text-sm text-slate-400">Checklist</p>
-                <p className="mt-2 text-lg font-semibold text-white">
-                  Website Accessibility Audit Checklist 2026
-                </p>
-              </Link>
-              <Link
                 href="/blog/top-10-wcag-failures"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
                 <p className="text-sm text-slate-400">Practical Fixes</p>
                 <p className="mt-2 text-lg font-semibold text-white">
                   Top 10 Most Common WCAG Failures
-                </p>
-              </Link>
-              <Link
-                href="/blog/ada-compliance-by-industry"
-                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
-              >
-                <p className="text-sm text-slate-400">Industry Guide</p>
-                <p className="mt-2 text-lg font-semibold text-white">
-                  ADA Compliance by Industry
                 </p>
               </Link>
             </div>

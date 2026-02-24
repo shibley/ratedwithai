@@ -566,21 +566,21 @@ export default function AccessibilityAuditChecklistPage() {
                 </p>
               </Link>
               <Link
-                href="/state/california"
+                href="/tools/free-accessibility-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">State Guide</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  California ADA Compliance
+                  Free Accessibility Checker
                 </p>
               </Link>
               <Link
-                href="/wcag/2-1-1-keyboard"
+                href="/tools/color-contrast-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">WCAG Criterion</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  Keyboard Accessibility (2.1.1)
+                  Color Contrast Checker
                 </p>
               </Link>
             </div>

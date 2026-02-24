@@ -479,21 +479,21 @@ export default function AdaTitleIIComplianceGuidePage() {
                 </p>
               </Link>
               <Link
-                href="/blog/ada-lawsuit-settlements-2026"
+                href="/tools/free-accessibility-checker"
                 className="rounded-xl border border-slate-700/70 bg-slate-900/40 p-5 transition hover:border-sky-500/50 hover:bg-slate-900/70"
               >
-                <h3 className="font-semibold text-sky-300">ADA Lawsuit Settlements 2026</h3>
+                <h3 className="font-semibold text-sky-400">Free Accessibility Checker</h3>
                 <p className="mt-2 text-sm text-slate-400">
-                  Recent accessibility lawsuits and what they cost
+                  Scan your government website for WCAG 2.1 AA violations
                 </p>
               </Link>
               <Link
-                href="/blog/wcag-2-1-vs-2-2"
+                href="/tools/vpat-template"
                 className="rounded-xl border border-slate-700/70 bg-slate-900/40 p-5 transition hover:border-sky-500/50 hover:bg-slate-900/70"
               >
-                <h3 className="font-semibold text-sky-300">WCAG 2.1 vs 2.2: What's Changed</h3>
+                <h3 className="font-semibold text-sky-400">VPAT Template</h3>
                 <p className="mt-2 text-sm text-slate-400">
-                  Understanding the differences between WCAG versions
+                  Free VPAT/ACR template for documenting Title II compliance
                 </p>
               </Link>
             </div>

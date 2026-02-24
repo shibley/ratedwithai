@@ -621,12 +621,21 @@ export default function LawFirmAccessibilityCompliancePage() {
                 </p>
               </Link>
               <Link
-                href="/blog/website-accessibility-testing-guide"
+                href="/tools/free-accessibility-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">Blog Post</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  Website Accessibility Testing Guide
+                  Free Accessibility Checker
+                </p>
+              </Link>
+              <Link
+                href="/tools/accessibility-statement-generator"
+                className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
+              >
+                <p className="text-sm text-sky-400">Free Tool</p>
+                <p className="mt-2 text-lg font-semibold text-white">
+                  Accessibility Statement Generator
                 </p>
               </Link>
             </div>

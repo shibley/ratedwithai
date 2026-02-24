@@ -156,6 +156,69 @@ export default function IndustryPage({ params }: PageProps) {
           </div>
         </section>
 
+        <section className="grid gap-6 rounded-3xl border border-slate-800/70 bg-slate-900/60 p-8">
+          <h2 className="text-2xl font-semibold text-white">Free accessibility tools</h2>
+          <p className="text-sm text-slate-300">
+            Use these free tools to check and improve your {industry.name.toLowerCase()} website accessibility:
+          </p>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Link
+              href="/tools/free-accessibility-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Free accessibility checker — scan any URL for WCAG violations
+            </Link>
+            <Link
+              href="/tools/color-contrast-checker"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Color contrast checker — test WCAG contrast ratios
+            </Link>
+            <Link
+              href="/tools/accessibility-statement-generator"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Accessibility statement generator — create a compliance statement
+            </Link>
+            <Link
+              href="/tools/alt-text-generator"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Alt text generator — AI-powered image descriptions
+            </Link>
+          </div>
+        </section>
+
+        <section className="grid gap-6 rounded-3xl border border-slate-800/70 bg-slate-900/60 p-8">
+          <h2 className="text-2xl font-semibold text-white">Guides &amp; articles</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Link
+              href="/blog/ada-compliance-checklist-2026"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              ADA compliance checklist 2026
+            </Link>
+            <Link
+              href="/blog/how-to-fix-common-wcag-failures"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              How to fix common WCAG failures
+            </Link>
+            <Link
+              href="/blog/website-accessibility-lawsuit-statistics-2026"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Website accessibility lawsuit statistics 2026
+            </Link>
+            <Link
+              href="/blog/web-accessibility-service"
+              className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-4 text-sm text-slate-200 transition hover:border-slate-500"
+            >
+              Web accessibility service guide
+            </Link>
+          </div>
+        </section>
+
         <section className="rounded-3xl border border-slate-800/70 bg-gradient-to-r from-slate-900 via-slate-900/70 to-slate-950 p-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
@@ -165,7 +228,7 @@ export default function IndustryPage({ params }: PageProps) {
               </h3>
             </div>
             <Link
-              href="/"
+              href="/tools/free-accessibility-checker"
               className="rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-6 py-3 text-sm font-semibold text-slate-950"
             >
               Start a free scan

@@ -482,13 +482,13 @@ export default function SmallBusinessAccessibilityGuide() {
                 <p className="text-sm font-semibold text-white mb-1">How to Fix Common WCAG Failures</p>
                 <p className="text-sm text-slate-400">Practical fixes for the most frequent accessibility violations.</p>
               </Link>
-              <Link href="/blog/ada-lawsuit-settlements-2026" className="rounded-xl border border-slate-800/50 bg-slate-900/30 p-5 hover:border-sky-800/50 transition block">
-                <p className="text-sm font-semibold text-white mb-1">ADA Lawsuit Settlements 2026</p>
-                <p className="text-sm text-slate-400">Recent cases and what they mean for your business.</p>
+              <Link href="/tools/free-accessibility-checker" className="rounded-xl border border-slate-800/50 bg-slate-900/30 p-5 hover:border-sky-800/50 transition block">
+                <p className="text-sm font-semibold text-sky-400 mb-1">Free Accessibility Checker</p>
+                <p className="text-sm text-slate-400">Scan your small business site for WCAG violations — free.</p>
               </Link>
-              <Link href="/blog/ecommerce-accessibility-guide" className="rounded-xl border border-slate-800/50 bg-slate-900/30 p-5 hover:border-sky-800/50 transition block">
-                <p className="text-sm font-semibold text-white mb-1">E-commerce Accessibility Guide</p>
-                <p className="text-sm text-slate-400">Complete ADA compliance guide for online stores.</p>
+              <Link href="/tools/color-contrast-checker" className="rounded-xl border border-slate-800/50 bg-slate-900/30 p-5 hover:border-sky-800/50 transition block">
+                <p className="text-sm font-semibold text-sky-400 mb-1">Color Contrast Checker</p>
+                <p className="text-sm text-slate-400">Check your brand colors meet WCAG contrast requirements.</p>
               </Link>
             </div>
           </section>

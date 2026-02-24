@@ -675,21 +675,21 @@ button {
                 </p>
               </Link>
               <Link
-                href="/check/amazon"
+                href="/tools/color-contrast-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">Brand Analysis</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  Amazon Accessibility Score
+                  Color Contrast Checker
                 </p>
               </Link>
               <Link
-                href="/blog/ada-compliance-checklist-2026"
+                href="/tools/free-accessibility-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">Blog Post</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  ADA Compliance Checklist 2026
+                  Free Accessibility Checker
                 </p>
               </Link>
             </div>

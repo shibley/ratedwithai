@@ -793,21 +793,21 @@ export default function AccessibilityTestingGuidePage() {
                 </p>
               </Link>
               <Link
-                href="/wcag/1-4-3-contrast-minimum"
+                href="/tools/free-accessibility-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">WCAG Criterion</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  1.4.3 Contrast Minimum
+                  Free Accessibility Checker
                 </p>
               </Link>
               <Link
-                href="/industry/healthcare"
+                href="/tools/color-contrast-checker"
                 className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-600 hover:bg-slate-900"
               >
-                <p className="text-sm text-slate-400">Industry Guide</p>
+                <p className="text-sm text-sky-400">Free Tool</p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  Healthcare Website Compliance
+                  Color Contrast Checker
                 </p>
               </Link>
             </div>
