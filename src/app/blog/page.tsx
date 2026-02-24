@@ -24,6 +24,13 @@ const blogPosts = [
     category: "Legal",
   },
   {
+    slug: "digital-accessibility-platform",
+    title: "Digital Accessibility Platform: The Complete Buyer's Guide for 2026",
+    description:
+      "Compare 8 digital accessibility platforms — from free tools to enterprise solutions. Features, pricing, use cases, and why overlays don't count as platforms.",
+    category: "Platform Guide",
+  },
+  {
     slug: "best-ada-compliance-software",
     title: "10 Best ADA Compliance Software in 2026 (Tested & Compared)",
     description:

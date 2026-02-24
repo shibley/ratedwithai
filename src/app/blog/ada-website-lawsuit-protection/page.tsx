@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Small businesses are getting sued for $200K+. Here's the 5-step protection plan to avoid ADA website lawsuits — before plaintiff attorneys find your site.",
     type: "article",
-    publishedTime: "2026-06-27T00:00:00.000Z",
+    publishedTime: "2026-02-24T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
   keywords: [
@@ -51,8 +51,8 @@ export default function ADAWebsiteLawsuitProtectionPage() {
         url: "https://ratedwithai.com/logo.png",
       },
     },
-    datePublished: "2026-06-27T00:00:00.000Z",
-    dateModified: "2026-06-27T00:00:00.000Z",
+    datePublished: "2026-02-24T00:00:00.000Z",
+    dateModified: "2026-02-24T00:00:00.000Z",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://ratedwithai.com/blog/ada-website-lawsuit-protection",
@@ -139,7 +139,7 @@ export default function ADAWebsiteLawsuitProtectionPage() {
             <span className="inline-block rounded-full border border-red-500/30 bg-red-500/15 px-3 py-1 text-xs font-medium text-red-300">
               Legal &amp; Compliance
             </span>
-            <span className="text-sm text-slate-500">June 2026</span>
+            <span className="text-sm text-slate-500">February 2026</span>
             <span className="text-sm text-slate-500">•</span>
             <span className="text-sm text-slate-500">12 min read</span>
           </div>

@@ -47,6 +47,9 @@ const blogPosts = [
   "shopify-accessibility-apps",
   "ada-compliance-tool-comparison-2026",
   "best-ada-compliance-software",
+  "ada-website-lawsuit-protection",
+  "ada-website-compliance-deadline-2025-2026",
+  "digital-accessibility-platform",
 ];
 
 // Tool landing pages
