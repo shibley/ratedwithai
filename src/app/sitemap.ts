@@ -38,6 +38,8 @@ const blogPosts = [
   "accessibility-testing-services",
   "healthcare-website-accessibility-may-2026",
   "accessibe-review-2026",
+  "accessibility-certification-guide",
+  "siteimprove-alternative-2026",
 ];
 
 // Tool landing pages

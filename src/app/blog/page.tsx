@@ -17,6 +17,20 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "accessibility-certification-guide",
+    title: "Accessibility Certification Guide 2026: IAAP, Section 508, Deque & More",
+    description:
+      "Complete guide to all major accessibility certifications — CPACC, WAS, CPWA, Section 508 Trusted Tester, DHS ICT, W3C WAI, and Deque University. Costs, difficulty, study resources, and career impact.",
+    category: "Career Guide",
+  },
+  {
+    slug: "siteimprove-alternative-2026",
+    title: "Best Siteimprove Alternative 2026: Save 90% on Accessibility Testing",
+    description:
+      "Siteimprove charges $300-500/mo for accessibility testing. Compare features, pricing, and alternatives — starting at $29/mo with no annual contract.",
+    category: "Comparison",
+  },
+  {
     slug: "accessibe-review",
     title: "accessiBe Review 2026: Honest Assessment After the $1M FTC Fine",
     description:
@@ -204,6 +218,7 @@ const categoryColors: Record<string, string> = {
   Comparison: "bg-orange-500/15 text-orange-300 border-orange-500/30",
   Review: "bg-red-500/15 text-red-300 border-red-500/30",
   Deadline: "bg-rose-500/15 text-rose-300 border-rose-500/30",
+  "Career Guide": "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
 };
 
 export default function BlogIndexPage() {
