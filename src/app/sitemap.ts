@@ -42,6 +42,8 @@ const blogPosts = [
   "siteimprove-alternative-2026",
   "web-accessibility-service",
   "audioeye-review-2026",
+  "shopify-ada-compliance",
+  "wordpress-accessibility-guide",
 ];
 
 // Tool landing pages

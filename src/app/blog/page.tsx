@@ -17,6 +17,27 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "shopify-accessibility-apps",
+    title: "7 Best Shopify Accessibility Apps in 2026 (Tested & Compared)",
+    description:
+      "We tested the top Shopify accessibility apps for ADA and WCAG compliance. Overlay widgets vs code-based scanners, pricing, real WCAG coverage, and what actually protects your store.",
+    category: "Comparison",
+  },
+  {
+    slug: "shopify-ada-compliance",
+    title: "Shopify ADA Compliance: How to Make Your Store Accessible in 2026",
+    description:
+      "Is your Shopify store ADA compliant? Common accessibility issues, best themes, step-by-step fixes, legal risks, and how to test for WCAG compliance.",
+    category: "Platform Guide",
+  },
+  {
+    slug: "wordpress-accessibility-guide",
+    title: "WordPress Accessibility: How to Make Your Site ADA Compliant in 2026",
+    description:
+      "Complete WordPress accessibility guide covering themes, plugins, Gutenberg tips, WooCommerce, testing methods, and ADA lawsuit prevention.",
+    category: "Platform Guide",
+  },
+  {
     slug: "web-accessibility-service",
     title: "Web Accessibility Service: What It Includes, Costs & How to Choose (2026)",
     description:
@@ -230,6 +251,7 @@ const categoryColors: Record<string, string> = {
   Legal: "bg-rose-500/15 text-rose-300 border-rose-500/30",
   Industry: "bg-indigo-500/15 text-indigo-300 border-indigo-500/30",
   Comparison: "bg-orange-500/15 text-orange-300 border-orange-500/30",
+  "Platform Guide": "bg-violet-500/15 text-violet-300 border-violet-500/30",
   Review: "bg-red-500/15 text-red-300 border-red-500/30",
   Deadline: "bg-rose-500/15 text-rose-300 border-rose-500/30",
   "Career Guide": "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
