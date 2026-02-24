@@ -49,6 +49,7 @@ const toolPages = [
   "vpat-template",
   "accessibility-statement-generator",
   "color-contrast-checker",
+  "pdf-accessibility-checker",
 ];
 
 // Comparison pages
