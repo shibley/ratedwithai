@@ -17,6 +17,20 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "web-accessibility-service",
+    title: "Web Accessibility Service: What It Includes, Costs & How to Choose (2026)",
+    description:
+      "Everything you need to know about web accessibility services in 2026. Compare manual audits ($5K-$25K), automated scanning ($29/mo), and overlay widgets. Find the right approach for your budget and compliance needs.",
+    category: "Service Guide",
+  },
+  {
+    slug: "audioeye-review-2026",
+    title: "AudioEye Review 2026: Is the Hybrid Overlay Approach Worth $199–$799/Month?",
+    description:
+      "Honest AudioEye review covering pricing ($199-$799/mo), the lawsuit controversy, FTC scrutiny, pros and cons, and how it compares to code-based alternatives.",
+    category: "Review",
+  },
+  {
     slug: "accessibility-certification-guide",
     title: "Accessibility Certification Guide 2026: IAAP, Section 508, Deque & More",
     description:
@@ -219,6 +233,7 @@ const categoryColors: Record<string, string> = {
   Review: "bg-red-500/15 text-red-300 border-red-500/30",
   Deadline: "bg-rose-500/15 text-rose-300 border-rose-500/30",
   "Career Guide": "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
+  "Service Guide": "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
 };
 
 export default function BlogIndexPage() {

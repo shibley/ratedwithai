@@ -40,6 +40,8 @@ const blogPosts = [
   "accessibe-review-2026",
   "accessibility-certification-guide",
   "siteimprove-alternative-2026",
+  "web-accessibility-service",
+  "audioeye-review-2026",
 ];
 
 // Tool landing pages
