@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "ada-website-lawsuit-protection",
+    title: "How to Protect Your Small Business from ADA Website Lawsuits in 2026",
+    description:
+      "15,000+ ADA website lawsuits in 4 years. Learn the 5-step protection plan to avoid lawsuits, why overlays won't save you, and how continuous monitoring costs 517x less than a single lawsuit.",
+    category: "Legal",
+  },
+  {
     slug: "best-ada-compliance-software",
     title: "10 Best ADA Compliance Software in 2026 (Tested & Compared)",
     description:
