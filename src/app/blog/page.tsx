@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "tabnav-alternative-2026",
+    title: "Best Tabnav Alternative in 2026: Why Continuous Monitoring Beats One-Time Scans",
+    description:
+      "Tabnav offers free scans and an overlay widget — but is a one-page check enough? Compare Tabnav vs RatedWithAI on pricing, scanning engines, monitoring, and why code-level fixes beat overlays.",
+    category: "Comparison",
+  },
+  {
     slug: "ada-website-lawsuit-protection",
     title: "How to Protect Your Small Business from ADA Website Lawsuits in 2026",
     description:

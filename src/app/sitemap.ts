@@ -50,6 +50,7 @@ const blogPosts = [
   "ada-website-lawsuit-protection",
   "ada-website-compliance-deadline-2025-2026",
   "digital-accessibility-platform",
+  "tabnav-alternative-2026",
 ];
 
 // Tool landing pages
