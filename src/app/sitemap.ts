@@ -52,6 +52,7 @@ const blogPosts = [
   "digital-accessibility-platform",
   "tabnav-alternative-2026",
   "accessibilitychecker-alternative-2026",
+  "accessibe-pricing-2026",
 ];
 
 // Tool landing pages

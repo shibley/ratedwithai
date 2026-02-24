@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "accessibe-pricing-2026",
+    title: "accessiBe Pricing 2026: Full Breakdown & Cheaper Alternatives",
+    description:
+      "accessiBe charges $490-1,490+/year for an overlay widget. Here's exactly what each plan includes, hidden costs, what overlays can't fix, and code-level alternatives starting at $29/mo.",
+    category: "Pricing",
+  },
+  {
     slug: "accessibilitychecker-alternative-2026",
     title: "AccessibilityChecker.org Alternative 2026: Same WCAG Scanning, 58% Less",
     description:
