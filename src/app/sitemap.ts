@@ -60,6 +60,10 @@ const toolPages = [
   "color-contrast-checker",
   "pdf-accessibility-checker",
   "alt-text-generator",
+  "userway-alternative",
+  "wcag-compliance-tool",
+  "ada-compliance-checker",
+  "audioeye-alternative",
 ];
 
 // Comparison pages
