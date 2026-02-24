@@ -111,6 +111,7 @@ export default function Header() {
     { href: "/tools/pdf-accessibility-checker", label: "PDF Accessibility Checker", desc: "Check PDFs for WCAG & 508 compliance" },
     { href: "/tools/color-contrast-checker", label: "Color Contrast Checker", desc: "Test WCAG contrast ratios" },
     { href: "/tools/accessibility-statement-generator", label: "Accessibility Statement Generator", desc: "Generate a compliance statement" },
+    { href: "/tools/alt-text-generator", label: "Alt Text Generator", desc: "AI-powered WCAG alt text" },
     { href: "/tools/vpat-template", label: "VPAT Template", desc: "Free VPAT/ACR template" },
   ];
 

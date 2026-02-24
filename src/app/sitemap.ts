@@ -37,6 +37,7 @@ const blogPosts = [
   "accessibe-alternative",
   "accessibility-testing-services",
   "healthcare-website-accessibility-may-2026",
+  "accessibe-review-2026",
 ];
 
 // Tool landing pages
@@ -50,6 +51,7 @@ const toolPages = [
   "accessibility-statement-generator",
   "color-contrast-checker",
   "pdf-accessibility-checker",
+  "alt-text-generator",
 ];
 
 // Comparison pages
