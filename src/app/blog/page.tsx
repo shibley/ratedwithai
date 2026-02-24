@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "best-ada-compliance-software",
+    title: "10 Best ADA Compliance Software in 2026 (Tested & Compared)",
+    description:
+      "We tested the top ADA compliance software for 2026. Compare pricing, WCAG coverage, automation accuracy, and real compliance capabilities — from free tools to enterprise platforms.",
+    category: "Roundup",
+  },
+  {
     slug: "shopify-accessibility-apps",
     title: "7 Best Shopify Accessibility Apps in 2026 (Tested & Compared)",
     description:
@@ -256,6 +263,7 @@ const categoryColors: Record<string, string> = {
   Deadline: "bg-rose-500/15 text-rose-300 border-rose-500/30",
   "Career Guide": "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
   "Service Guide": "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
+  Roundup: "bg-sky-500/15 text-sky-300 border-sky-500/30",
 };
 
 export default function BlogIndexPage() {

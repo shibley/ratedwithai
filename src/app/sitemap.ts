@@ -46,6 +46,7 @@ const blogPosts = [
   "wordpress-accessibility-guide",
   "shopify-accessibility-apps",
   "ada-compliance-tool-comparison-2026",
+  "best-ada-compliance-software",
 ];
 
 // Tool landing pages
