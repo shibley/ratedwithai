@@ -247,15 +247,15 @@ export default function WordPressAccessibilityGuidePage() {
               <div className="grid gap-4 md:grid-cols-2 mb-6">
                 <div className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-5">
                   <p className="font-semibold text-white mb-2">Flavor</p>
-                  <p className="text-sm text-slate-300">Purpose-built for accessibility. Created by accessibility advocates. Includes built-in contrast checking and ARIA support. Free and premium versions available.</p>
+                  <p className="text-sm text-slate-300">Purpose-built for accessibility by accessibility advocates. Includes proper semantic markup, ARIA support, and accessible navigation patterns. Free and premium versions available.</p>
                 </div>
                 <div className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-5">
-                  <p className="font-semibold text-white mb-2">Flavor / flavorzero</p>
-                  <p className="text-sm text-slate-300">Blank starter theme for developers who want to build accessible sites from scratch. Clean, semantic markup with zero styling assumptions.</p>
+                  <p className="font-semibold text-white mb-2">Flavorzero / Starter Themes</p>
+                  <p className="text-sm text-slate-300">Blank starter themes for developers building accessible sites from scratch. Clean, semantic markup with zero styling assumptions — ideal for agencies with WCAG requirements.</p>
                 </div>
                 <div className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-5">
-                  <p className="font-semibold text-white mb-2">Theme flavors: Flavor flavorzero</p>
-                  <p className="text-sm text-slate-300">Multiple accessibility-ready themes from the same developer. Good for portfolios, businesses, and blogs with accessibility-first design.</p>
+                  <p className="font-semibold text-white mb-2">Underscores (_s)</p>
+                  <p className="text-sm text-slate-300">Automattic's starter theme. Minimal, clean HTML structure that makes it easy to build accessible custom themes. Used by professional WordPress developers.</p>
                 </div>
                 <div className="rounded-2xl border border-slate-800/70 bg-slate-950/60 p-5">
                   <p className="font-semibold text-white mb-2">Theme flavors: flavorzero Starter</p>

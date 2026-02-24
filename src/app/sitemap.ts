@@ -44,6 +44,8 @@ const blogPosts = [
   "audioeye-review-2026",
   "shopify-ada-compliance",
   "wordpress-accessibility-guide",
+  "shopify-accessibility-apps",
+  "ada-compliance-tool-comparison-2026",
 ];
 
 // Tool landing pages
