@@ -127,6 +127,7 @@ export default function Header() {
     { href: "/industry", label: "By Industry", desc: "33 industry-specific guides" },
     { href: "/state", label: "By State", desc: "ADA lawsuits in all 50 states" },
     { href: "/wcag", label: "WCAG Criteria", desc: "All Level A & AA criteria" },
+    { href: "/government", label: "Government (508)", desc: "Section 508 & ADA compliance" },
     { href: "/check", label: "Brand Checks", desc: "75+ accessibility audits" },
     { href: "/blog", label: "Blog", desc: "Guides, tutorials & resources" },
   ];

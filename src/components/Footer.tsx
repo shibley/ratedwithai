@@ -53,6 +53,7 @@ export default function Footer() {
               <Link className="transition hover:text-white" href="/state/florida">Florida ADA Lawsuits</Link>
               <Link className="transition hover:text-white" href="/industry/healthcare">Healthcare Compliance</Link>
               <Link className="transition hover:text-white" href="/industry/ecommerce">E-Commerce Compliance</Link>
+              <Link className="transition hover:text-white" href="/government">Government (Section 508)</Link>
               <Link className="transition hover:text-white" href="/check/amazon">Brand Checks</Link>
             </div>
           </div>

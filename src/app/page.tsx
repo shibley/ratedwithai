@@ -122,6 +122,10 @@ export default function Home() {
               insights. Spot critical issues, understand WCAG criteria, and unlock monitoring
               alerts in minutes.
             </p>
+            <div className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/5 px-4 py-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse" />
+              <span className="text-sm text-sky-200">10x more affordable than enterprise tools like Siteimprove</span>
+            </div>
             <form
               onSubmit={handleScan}
               className="flex flex-col gap-3 rounded-2xl border border-slate-800/70 bg-slate-900/60 p-4 backdrop-blur md:flex-row md:items-center"
@@ -312,6 +316,53 @@ export default function Home() {
             <button className="mt-6 w-full rounded-xl bg-slate-100 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-white">
               See monitoring plans
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* The Math — ROI Section */}
+      <section id="the-math" className="mx-auto w-full max-w-6xl px-6 pb-24">
+        <div className="rounded-3xl border border-slate-800/70 bg-gradient-to-br from-slate-900/80 via-slate-900/40 to-slate-900/80 p-8 md:p-12">
+          <p className="text-sm uppercase tracking-[0.3em] text-slate-400 text-center">
+            The math
+          </p>
+          <h2 className="mt-3 text-center text-3xl font-semibold text-white sm:text-4xl">
+            The cheapest insurance policy you&apos;ll ever buy
+          </h2>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            <div className="rounded-2xl border border-rose-500/30 bg-rose-500/5 p-6 text-center">
+              <p className="text-4xl font-bold text-rose-300 sm:text-5xl">$15,000+</p>
+              <p className="mt-3 text-sm text-slate-300">Average ADA lawsuit settlement</p>
+            </div>
+            <div className="rounded-2xl border border-sky-400/30 bg-sky-400/5 p-6 text-center">
+              <p className="text-4xl font-bold text-sky-300 sm:text-5xl">$29<span className="text-lg font-normal text-slate-400">/mo</span></p>
+              <p className="mt-3 text-sm text-slate-300">RatedWithAI continuous monitoring</p>
+            </div>
+            <div className="rounded-2xl border border-emerald-400/30 bg-emerald-400/5 p-6 text-center">
+              <p className="text-4xl font-bold sm:text-5xl">
+                <span className="bg-gradient-to-r from-emerald-300 to-teal-200 bg-clip-text text-transparent">517x</span>
+              </p>
+              <p className="mt-3 text-sm text-slate-300">Return on investment</p>
+            </div>
+          </div>
+
+          <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-slate-400">
+            15,000+ ADA website lawsuits filed in the past 4 years. 90% target small businesses.
+            Continuous accessibility monitoring is the cheapest insurance policy you&apos;ll ever buy.
+          </p>
+
+          <div className="mt-8 flex justify-center">
+            <a
+              href="#"
+              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-8 py-3.5 text-sm font-semibold text-slate-950 transition hover:scale-[1.02]"
+            >
+              Start Your Free Scan
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
