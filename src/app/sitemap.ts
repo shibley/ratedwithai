@@ -53,6 +53,12 @@ const blogPosts = [
   "tabnav-alternative-2026",
   "accessibilitychecker-alternative-2026",
   "accessibe-pricing-2026",
+  "ada-website-lawsuit-statistics-2026",
+  "shopify-ada-compliance-guide-2026",
+  "doj-ada-title-ii-rule-changes-2026",
+  "accessibe-review",
+  "best-accessibility-testing-tools",
+  "wcag-22-checklist",
 ];
 
 // Tool landing pages
