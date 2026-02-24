@@ -87,6 +87,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/government`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...toolPages.map((tool) => ({
       url: `${baseUrl}/tools/${tool}`,
       changeFrequency: "monthly" as const,
