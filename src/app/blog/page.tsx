@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "accessibilitychecker-alternative-2026",
+    title: "AccessibilityChecker.org Alternative 2026: Same WCAG Scanning, 58% Less",
+    description:
+      "AccessibilityChecker.org charges $69-299/mo for WCAG scanning. RatedWithAI offers the same axe-core-powered scanning and continuous monitoring at $29/mo. Full feature, pricing, and engine comparison.",
+    category: "Comparison",
+  },
+  {
     slug: "tabnav-alternative-2026",
     title: "Best Tabnav Alternative in 2026: Why Continuous Monitoring Beats One-Time Scans",
     description:
