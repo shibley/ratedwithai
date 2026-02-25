@@ -4,8 +4,15 @@ import { chromium } from 'playwright-core';
 export const runtime = 'nodejs';
 export const maxDuration = 60; // Allow up to 60s for scan
 
-// axe-core CDN URL - pinned to specific version for stability
-const AXE_CORE_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js';
+// Fetch and cache axe-core source at runtime for CSP-safe injection
+let axeCoreSource: string | null = null;
+async function getAxeCoreSource(): Promise<string> {
+  if (!axeCoreSource) {
+    const res = await fetch('https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.0/axe.min.js');
+    axeCoreSource = await res.text();
+  }
+  return axeCoreSource;
+}
 
 // Simple in-memory rate limiting (5 scans per IP per hour)
 const rateLimitMap = new Map<string, number[]>();
@@ -133,8 +140,9 @@ export async function POST(request: NextRequest) {
       
       await page.waitForTimeout(2000);
       
-      // Inject axe-core from CDN
-      await page.addScriptTag({ url: AXE_CORE_CDN });
+      // Inject axe-core inline to bypass CSP (sites like GitHub block CDN script tags)
+      const axeSource = await getAxeCoreSource();
+      await page.addScriptTag({ content: axeSource });
       
       await page.waitForTimeout(1000); // Wait for axe to initialize
       
