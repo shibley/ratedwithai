@@ -68,6 +68,7 @@ const toolPages = [
   "ada-title-ii-compliance-checker",
   "accessibe-alternative",
   "accessibe-review",
+  "nascio-state-ada-compliance-2025-report",
   "free-accessibility-checker",
   "is-my-website-ada-compliant",
   "vpat-template",

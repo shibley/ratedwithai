@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "nascio-state-ada-compliance-2025-report",
+    title: "State Government ADA Compliance: Key Takeaways from the 2025 NASCIO Report",
+    description:
+      "Only 1 state has fully implemented an ADA compliance plan. 54% of CIOs have no dedicated funding. The NASCIO accessibility report reveals how unprepared states are for the April 2026 deadline.",
+    category: "Government",
+  },
+  {
     slug: "government-accessibility-compliance-cost-comparison-2026",
     title: "Government Accessibility Compliance Cost Comparison 2026: Enterprise vs Affordable Tools",
     description:
@@ -214,9 +221,9 @@ const blogPosts = [
   },
   {
     slug: "wcag-2-1-vs-2-2",
-    title: "WCAG 2.1 vs 2.2: What Changed and What It Means for Your Website",
+    title: "WCAG 2.1 vs 2.2: Which Standard Should You Follow in 2026?",
     description:
-      "WCAG 2.2 introduces 9 new success criteria focused on mobile accessibility and cognitive disabilities. Learn what changed and how to update.",
+      "Side-by-side comparison of WCAG 2.0, 2.1, and 2.2. Learn which standard is legally required, the 9 new criteria in 2.2, and when to target each version.",
     category: "WCAG",
   },
   {
@@ -306,6 +313,7 @@ const categoryColors: Record<string, string> = {
   "Career Guide": "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
   "Service Guide": "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
   Roundup: "bg-sky-500/15 text-sky-300 border-sky-500/30",
+  Government: "bg-amber-500/15 text-amber-300 border-amber-500/30",
 };
 
 export default function BlogIndexPage() {
