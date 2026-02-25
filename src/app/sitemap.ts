@@ -63,6 +63,7 @@ const blogPosts = [
   "wcag-22-checklist",
   "government-accessibility-compliance-cost-comparison-2026",
   "school-district-website-ada-compliance-2026",
+  "nascio-state-ada-compliance-2025-report",
 ];
 
 // Tool landing pages
@@ -70,7 +71,6 @@ const toolPages = [
   "ada-title-ii-compliance-checker",
   "accessibe-alternative",
   "accessibe-review",
-  "nascio-state-ada-compliance-2025-report",
   "free-accessibility-checker",
   "is-my-website-ada-compliant",
   "vpat-template",
