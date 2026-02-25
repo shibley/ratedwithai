@@ -60,6 +60,7 @@ const blogPosts = [
   "accessibe-review",
   "best-accessibility-testing-tools",
   "wcag-22-checklist",
+  "government-accessibility-compliance-cost-comparison-2026",
 ];
 
 // Tool landing pages

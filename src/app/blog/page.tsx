@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "government-accessibility-compliance-cost-comparison-2026",
+    title: "Government Accessibility Compliance Cost Comparison 2026: Enterprise vs Affordable Tools",
+    description:
+      "54% of state CIOs have no accessibility budget. Compare Siteimprove ($10K-50K+/yr), Level Access ($25K-100K+/yr), AudioEye, accessiBe, and RatedWithAI ($348/yr) for government WCAG compliance. Full ROI analysis and procurement guide.",
+    category: "Pricing",
+  },
+  {
     slug: "accessibe-pricing-2026",
     title: "accessiBe Pricing 2026: Full Breakdown & Cheaper Alternatives",
     description:
