@@ -140,20 +140,22 @@ export async function POST(request: NextRequest) {
       
       await page.waitForTimeout(2000);
       
-      // Inject axe-core inline to bypass CSP (sites like GitHub block CDN script tags)
+      // Inject axe-core via page.evaluate to fully bypass CSP
+      // (addScriptTag with content or URL both get blocked by strict CSP)
       const axeSource = await getAxeCoreSource();
-      await page.addScriptTag({ content: axeSource });
       
-      await page.waitForTimeout(1000); // Wait for axe to initialize
-      
-      const results = await page.evaluate(async () => {
+      const results = await page.evaluate(async (source: string) => {
+        // Execute axe-core source in page context (bypasses CSP)
+        const fn = new Function(source);
+        fn();
+        
         // @ts-expect-error - axe is loaded dynamically
         if (typeof window.axe === 'undefined') {
           throw new Error('axe-core failed to load');
         }
         // @ts-expect-error - axe is loaded dynamically
         return await window.axe.run();
-      });
+      }, axeSource);
       
       const { score, grade } = calculateScore(results.violations);
       
