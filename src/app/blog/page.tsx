@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "fashion-nova-doj-settlement-rejected-2026",
+    title: "Fashion Nova's $5.15M ADA Settlement Rejected by DOJ: Why Monitoring Is Now Non-Negotiable",
+    description:
+      "The DOJ opposed Fashion Nova's $5.15M ADA settlement because it lacked monitoring and enforcement. Learn what this means for businesses and why ongoing accessibility monitoring is now essential.",
+    category: "Legal",
+  },
+  {
     slug: "nascio-state-ada-compliance-2025-report",
     title: "State Government ADA Compliance: Key Takeaways from the 2025 NASCIO Report",
     description:

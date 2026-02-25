@@ -65,6 +65,7 @@ const blogPosts = [
   "school-district-website-ada-compliance-2026",
   "nascio-state-ada-compliance-2025-report",
   "squarespace-ada-compliance-guide-2026",
+  "fashion-nova-doj-settlement-rejected-2026",
 ];
 
 // Tool landing pages
