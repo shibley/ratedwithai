@@ -56,6 +56,7 @@ const blogPosts = [
   "ada-website-lawsuit-statistics-2026",
   "shopify-ada-compliance-guide-2026",
   "doj-ada-title-ii-rule-changes-2026",
+  "higher-education-ada-compliance-2026",
   "accessibe-review",
   "best-accessibility-testing-tools",
   "wcag-22-checklist",
