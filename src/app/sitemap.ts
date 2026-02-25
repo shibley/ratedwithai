@@ -66,6 +66,8 @@ const blogPosts = [
   "nascio-state-ada-compliance-2025-report",
   "squarespace-ada-compliance-guide-2026",
   "fashion-nova-doj-settlement-rejected-2026",
+  "utah-missouri-anti-ada-lawsuit-bills-2026",
+  "irs-form-8826-disabled-access-credit-website-accessibility",
 ];
 
 // Tool landing pages
