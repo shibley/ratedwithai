@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "california-sb-84-ada-right-to-cure-2026",
+    title: "California SB 84: 120-Day Right to Cure for ADA Violations in 2026",
+    description:
+      "California — the #1 state for ADA lawsuits (3,252 in 2025) — has introduced a 120-day right-to-cure law. Analysis of SB 84, the three-state reform movement, and what it means for businesses.",
+    category: "Legal",
+  },
+  {
     slug: "fashion-nova-doj-settlement-rejected-2026",
     title: "Fashion Nova's $5.15M ADA Settlement Rejected by DOJ: Why Monitoring Is Now Non-Negotiable",
     description:
