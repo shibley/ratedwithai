@@ -70,6 +70,7 @@ const blogPosts = [
   "irs-form-8826-disabled-access-credit-website-accessibility",
   "ada-lawsuits-ai-powered-pro-se-2025",
   "california-sb-84-ada-right-to-cure-2026",
+  "ftc-accessibe-fine-overlay-failures",
 ];
 
 // Tool landing pages
