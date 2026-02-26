@@ -71,6 +71,7 @@ const blogPosts = [
   "ada-lawsuits-ai-powered-pro-se-2025",
   "california-sb-84-ada-right-to-cure-2026",
   "ftc-accessibe-fine-overlay-failures",
+  "meta-ai-accessibility-fixes-axe-con-2026",
 ];
 
 // Tool landing pages
