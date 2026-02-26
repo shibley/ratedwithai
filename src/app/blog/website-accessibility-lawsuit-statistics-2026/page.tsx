@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "web accessibility legal risk",
     "ada lawsuit settlement",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/website-accessibility-lawsuit-statistics-2026",
+  },
 };
 
 export default function LawsuitStatisticsPage() {

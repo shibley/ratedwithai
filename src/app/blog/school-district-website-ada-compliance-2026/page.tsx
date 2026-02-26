@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "school district accessibility tools",
     "ada title ii school districts",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/school-district-website-ada-compliance-2026",
+  },
 };
 
 export default function SchoolDistrictAdaCompliancePage() {

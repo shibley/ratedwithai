@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "accessibility overlay warning",
     "accessibe ftc penalty",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ftc-accessibe-fine-overlay-failures",
+  },
 };
 
 export default function FTCAccessiBeFinePage() {

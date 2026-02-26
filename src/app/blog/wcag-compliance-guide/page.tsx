@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "web content accessibility guidelines",
     "wcag testing",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/wcag-compliance-guide",
+  },
 };
 
 export default function WcagComplianceGuidePage() {

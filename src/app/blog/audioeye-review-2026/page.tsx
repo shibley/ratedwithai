@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "audioeye ftc",
     "audioeye overlay",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/audioeye-review-2026",
+  },
 };
 
 export default function AudioEyeReviewPage() {

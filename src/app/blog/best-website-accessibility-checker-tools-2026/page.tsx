@@ -24,6 +24,9 @@ export const metadata: Metadata = {
       "Expert comparison of the best website accessibility checker tools. Free and paid options for WCAG compliance testing.",
     type: "article",
   },
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/best-website-accessibility-checker-tools-2026",
+  },
 };
 
 export default function BestAccessibilityCheckersPage() {

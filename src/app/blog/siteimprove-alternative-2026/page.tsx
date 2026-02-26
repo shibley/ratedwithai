@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     "siteimprove cost",
     "affordable accessibility scanner",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/siteimprove-alternative-2026",
+  },
 };
 
 export default function SiteimproveAlternativePage() {

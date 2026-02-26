@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "website ada compliance deadline",
     "ada digital accessibility 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-website-compliance-deadline-2025-2026",
+  },
 };
 
 export default function AdaWebsiteComplianceDeadlinePage() {

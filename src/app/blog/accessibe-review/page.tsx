@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     "accessibe alternative",
     "accessibility overlay review",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibe-review",
+  },
 };
 
 export default function AccessiBeReviewPage() {

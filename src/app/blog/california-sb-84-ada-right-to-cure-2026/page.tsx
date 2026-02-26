@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "serial ada lawsuits california",
     "california accessibility lawsuit prevention",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/california-sb-84-ada-right-to-cure-2026",
+  },
 };
 
 export default function CaliforniaSB84ADAPage() {

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     "Make your online store ADA compliant. Learn e-commerce accessibility requirements, avoid lawsuits, and improve conversions with this comprehensive WCAG 2.1 guide.",
   keywords:
     "ecommerce accessibility, online store ada compliance, wcag ecommerce, accessible checkout, ada compliant website shopping cart",
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ecommerce-accessibility-guide",
+  },
 };
 
 export default function EcommerceAccessibilityGuide() {

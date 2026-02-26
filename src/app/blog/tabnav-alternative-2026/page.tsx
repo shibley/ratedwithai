@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "free accessibility scanner",
     "best accessibility monitoring tool 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/tabnav-alternative-2026",
+  },
 };
 
 export default function TabnavAlternativePage() {

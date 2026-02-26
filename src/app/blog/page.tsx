@@ -310,6 +310,153 @@ const blogPosts = [
       "Complete guide to law firm accessibility compliance. Learn why ADA Title III applies to legal websites and how to fix common issues.",
     category: "Industry",
   },
+  {
+    slug: "accessibe-review-2026",
+    title: "accessiBe Review 2026: Honest Assessment After the $1M FTC Fine",
+    description:
+      "An honest, data-driven accessiBe review. After the FTC's $1M fine for deceptive claims, we test accessWidget against real WCAG criteria.",
+    category: "Review",
+  },
+  {
+    slug: "accessibility-testing-services",
+    title: "Accessibility Testing Services: Complete Guide for 2026",
+    description:
+      "Compare accessibility testing services — manual audits, automated scanning, and hybrid approaches. Find the right solution for your budget.",
+    category: "Service Guide",
+  },
+  {
+    slug: "accessibility-widgets",
+    title: "Accessibility Widgets: Do They Actually Work? (2026 Analysis)",
+    description:
+      "The truth about accessibility overlay widgets. Do they provide real WCAG compliance? Expert analysis of claims vs reality.",
+    category: "Analysis",
+  },
+  {
+    slug: "ada-compliance-tool-comparison-2026",
+    title: "ADA Compliance Tool Comparison 2026: 10 Tools Tested Head-to-Head",
+    description:
+      "We tested 10 ADA compliance tools head-to-head. Compare features, pricing, scanning engines, and real WCAG coverage.",
+    category: "Comparison",
+  },
+  {
+    slug: "ada-lawsuits-ai-powered-pro-se-2025",
+    title: "AI-Powered Pro Se ADA Lawsuits: The New Threat in 2025-2026",
+    description:
+      "AI tools are enabling individuals to file ADA lawsuits without lawyers. Analysis of this emerging trend and how to protect your business.",
+    category: "Legal",
+  },
+  {
+    slug: "ada-title-ii-deadline-countdown-2026",
+    title: "ADA Title II Deadline Countdown 2026: Are You Ready?",
+    description:
+      "The ADA Title II deadline for state and local government websites is approaching. Complete countdown guide with preparation checklist.",
+    category: "Deadline",
+  },
+  {
+    slug: "ada-website-compliance-deadline-2025-2026",
+    title: "ADA Website Compliance Deadlines 2025-2026: Every Date You Need to Know",
+    description:
+      "All ADA and accessibility compliance deadlines for 2025-2026. DOJ Title II, EAA, HHS Section 504, and state-level deadlines.",
+    category: "Deadline",
+  },
+  {
+    slug: "ada-website-lawsuit-statistics-2026",
+    title: "ADA Website Lawsuit Statistics 2026: Complete Data & Analysis",
+    description:
+      "Comprehensive ADA website lawsuit statistics for 2026. Filing trends, industry breakdown, state data, and settlement amounts.",
+    category: "Legal",
+  },
+  {
+    slug: "best-accessibility-testing-tools",
+    title: "Best Accessibility Testing Tools 2026: 12 Tools Compared",
+    description:
+      "Compare the 12 best accessibility testing tools for 2026. Free and paid options, browser extensions, CI/CD integrations, and enterprise platforms.",
+    category: "Roundup",
+  },
+  {
+    slug: "best-website-accessibility-checker-tools-2026",
+    title: "Best Website Accessibility Checker Tools 2026",
+    description:
+      "The best website accessibility checker tools for 2026. Compare free and paid options for WCAG compliance testing.",
+    category: "Roundup",
+  },
+  {
+    slug: "courts-fighting-back-serial-ada-plaintiffs-2026",
+    title: "Courts Fighting Back Against Serial ADA Plaintiffs in 2026",
+    description:
+      "Federal courts are pushing back against serial ADA plaintiffs. Analysis of recent rulings and what they mean for businesses.",
+    category: "Legal",
+  },
+  {
+    slug: "doj-ada-title-ii-rule-changes-2026",
+    title: "DOJ ADA Title II Rule Changes 2026: What You Need to Know",
+    description:
+      "The DOJ's new ADA Title II rule changes for 2026. Updated requirements, compliance deadlines, and implementation guidance.",
+    category: "Government",
+  },
+  {
+    slug: "ftc-accessibe-fine-overlay-failures",
+    title: "FTC accessiBe Fine: Why Overlay Widgets Failed the Test",
+    description:
+      "The FTC fined accessiBe $1M for deceptive accessibility claims. Deep dive into why overlays don't work and what to use instead.",
+    category: "Legal",
+  },
+  {
+    slug: "higher-education-ada-compliance-2026",
+    title: "Higher Education ADA Compliance 2026: Complete Guide for Universities",
+    description:
+      "Complete ADA compliance guide for colleges and universities. DOJ enforcement, OCR complaints, LMS accessibility, and implementation roadmap.",
+    category: "Industry",
+  },
+  {
+    slug: "irs-form-8826-disabled-access-credit-website-accessibility",
+    title: "IRS Form 8826: Get Tax Credits for Website Accessibility",
+    description:
+      "Small businesses can claim up to $5,000/year in tax credits for website accessibility via IRS Form 8826 Disabled Access Credit.",
+    category: "Legal",
+  },
+  {
+    slug: "meta-ai-accessibility-fixes-axe-con-2026",
+    title: "Meta's AI Accessibility Fixes Announced at axe-con 2026",
+    description:
+      "Meta announced AI-powered accessibility fixes at axe-con 2026. Analysis of automated alt text, caption generation, and what it means for the industry.",
+    category: "Industry",
+  },
+  {
+    slug: "school-district-website-ada-compliance-2026",
+    title: "School District Website ADA Compliance 2026: K-12 Guide",
+    description:
+      "Complete guide to school district website ADA compliance. Title II requirements, OCR enforcement, and affordable solutions for K-12.",
+    category: "Government",
+  },
+  {
+    slug: "shopify-ada-compliance-guide-2026",
+    title: "Shopify ADA Compliance Guide 2026: Step-by-Step",
+    description:
+      "Step-by-step Shopify ADA compliance guide for 2026. Theme accessibility, app recommendations, and legal protection strategies.",
+    category: "Platform Guide",
+  },
+  {
+    slug: "squarespace-ada-compliance-guide-2026",
+    title: "Squarespace ADA Compliance Guide 2026",
+    description:
+      "Make your Squarespace site ADA compliant. Template accessibility, custom CSS fixes, and monitoring recommendations.",
+    category: "Platform Guide",
+  },
+  {
+    slug: "utah-missouri-anti-ada-lawsuit-bills-2026",
+    title: "Utah & Missouri Anti-ADA Lawsuit Bills 2026: Reform Analysis",
+    description:
+      "Utah SB 68 and Missouri HB 1694 aim to curb serial ADA website lawsuits. Analysis of both bills and their potential impact.",
+    category: "Legal",
+  },
+  {
+    slug: "wcag-22-checklist",
+    title: "WCAG 2.2 Checklist: Every Success Criterion Explained",
+    description:
+      "Complete WCAG 2.2 checklist with all success criteria explained. Test procedures, common failures, and implementation guidance.",
+    category: "WCAG",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -328,6 +475,8 @@ const categoryColors: Record<string, string> = {
   "Service Guide": "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
   Roundup: "bg-sky-500/15 text-sky-300 border-sky-500/30",
   Government: "bg-amber-500/15 text-amber-300 border-amber-500/30",
+  Analysis: "bg-pink-500/15 text-pink-300 border-pink-500/30",
+  Pricing: "bg-lime-500/15 text-lime-300 border-lime-500/30",
 };
 
 export default function BlogIndexPage() {

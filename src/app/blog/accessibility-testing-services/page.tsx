@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "accessibility testing providers",
     "accessibility audit companies",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibility-testing-services",
+  },
 };
 
 export default function AccessibilityTestingServicesPage() {

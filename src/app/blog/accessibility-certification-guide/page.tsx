@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "DHS ICT accessibility",
     "W3C WAI certification",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibility-certification-guide",
+  },
 };
 
 export default function AccessibilityCertificationGuidePage() {

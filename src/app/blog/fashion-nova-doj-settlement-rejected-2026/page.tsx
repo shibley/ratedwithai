@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "fashion nova blind users",
     "accessibility compliance enforcement",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/fashion-nova-doj-settlement-rejected-2026",
+  },
 };
 
 export default function FashionNovaDOJSettlementPage() {

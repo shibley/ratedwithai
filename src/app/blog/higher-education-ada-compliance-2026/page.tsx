@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "higher education wcag deadline",
     "ada title ii college deadline april 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/higher-education-ada-compliance-2026",
+  },
 };
 
 export default function HigherEducationAdaCompliancePage() {

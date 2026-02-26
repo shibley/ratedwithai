@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     publishedTime: "2026-02-21T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/healthcare-accessibility-compliance",
+  },
 };
 
 export default function HealthcareAccessibilityCompliancePage() {

@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     "enterprise accessibility platform",
     "best accessibility platform 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/digital-accessibility-platform",
+  },
 };
 
 export default function DigitalAccessibilityPlatformPage() {

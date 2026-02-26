@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     "Small business website accessibility guide. Learn ADA requirements, avoid lawsuits, and make your site WCAG compliant on any budget. Practical steps for 2026.",
   keywords:
     "small business website accessibility, ada compliance small business, wcag small business, ada website requirements small business, small business ada lawsuit",
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/small-business-accessibility-guide",
+  },
 };
 
 export default function SmallBusinessAccessibilityGuide() {

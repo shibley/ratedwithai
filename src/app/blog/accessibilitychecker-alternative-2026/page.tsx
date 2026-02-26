@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "cheap accessibility scanner",
     "affordable wcag testing tool",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibilitychecker-alternative-2026",
+  },
 };
 
 export default function AccessibilityCheckerAlternativePage() {

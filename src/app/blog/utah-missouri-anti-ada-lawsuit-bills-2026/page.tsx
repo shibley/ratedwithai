@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "wcag compliance monitoring",
     "proactive accessibility monitoring",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/utah-missouri-anti-ada-lawsuit-bills-2026",
+  },
 };
 
 export default function UtahMissouriAntiADALawsuitBillsPage() {

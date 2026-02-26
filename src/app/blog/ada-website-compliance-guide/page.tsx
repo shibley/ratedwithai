@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "ada compliant website checklist",
     "website accessibility ada",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-website-compliance-guide",
+  },
 };
 
 export default function AdaWebsiteComplianceGuidePage() {

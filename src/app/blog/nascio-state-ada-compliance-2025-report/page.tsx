@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     "state accessibility coordinator",
     "government ADA deadline 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/nascio-state-ada-compliance-2025-report",
+  },
 };
 
 export default function NASCIOStateADAComplianceReportPage() {

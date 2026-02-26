@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     modifiedTime: "2026-02-25T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/wcag-2-1-vs-2-2",
+  },
 };
 
 export default function Wcag21Vs22Page() {

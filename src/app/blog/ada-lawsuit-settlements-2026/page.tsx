@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     "Real ADA website lawsuit settlement amounts, costs, and what to expect if sued. Learn settlement ranges, legal fees, and how to protect your business.",
   keywords:
     "ada website lawsuit settlement, ada lawsuit cost, website accessibility lawsuit, ada compliance lawsuit, digital accessibility settlement",
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-lawsuit-settlements-2026",
+  },
 };
 
 export default function ADALawsuitSettlementsGuide() {

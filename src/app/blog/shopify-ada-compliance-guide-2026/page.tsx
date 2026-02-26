@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "shopify ada requirements",
     "ecommerce ada compliance",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/shopify-ada-compliance-guide-2026",
+  },
 };
 
 export default function ShopifyADACompliancePage() {

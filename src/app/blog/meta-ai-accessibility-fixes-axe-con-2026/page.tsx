@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "wcag ai automation",
     "accessibility testing tools 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/meta-ai-accessibility-fixes-axe-con-2026",
+  },
 };
 
 export default function MetaAIAccessibilityPage() {

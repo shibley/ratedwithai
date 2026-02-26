@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "accessibility scanning service",
     "accessibility remediation service",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/web-accessibility-service",
+  },
 };
 
 export default function WebAccessibilityServicePage() {

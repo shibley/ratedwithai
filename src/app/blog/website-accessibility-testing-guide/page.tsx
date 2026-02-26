@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     publishedTime: "2026-01-25T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/website-accessibility-testing-guide",
+  },
 };
 
 export default function AccessibilityTestingGuidePage() {

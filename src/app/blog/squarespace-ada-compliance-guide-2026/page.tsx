@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "squarespace website accessibility",
     "squarespace section 508",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/squarespace-ada-compliance-guide-2026",
+  },
 };
 
 export default function SquarespaceADACompliancePage() {

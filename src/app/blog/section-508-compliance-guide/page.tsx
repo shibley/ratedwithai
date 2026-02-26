@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "section 508 refresh",
     "ict accessibility standards",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/section-508-compliance-guide",
+  },
 };
 
 export default function Section508ComplianceGuidePage() {

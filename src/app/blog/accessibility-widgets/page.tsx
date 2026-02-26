@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "ada compliance overlay",
     "web accessibility overlay truth",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibility-widgets",
+  },
 };
 
 export default function AccessibilityWidgetsPage() {

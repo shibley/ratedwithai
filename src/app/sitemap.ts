@@ -72,6 +72,7 @@ const blogPosts = [
   "california-sb-84-ada-right-to-cure-2026",
   "ftc-accessibe-fine-overlay-failures",
   "meta-ai-accessibility-fixes-axe-con-2026",
+  "courts-fighting-back-serial-ada-plaintiffs-2026",
 ];
 
 // Tool landing pages
@@ -108,6 +109,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/blog`,
+      changeFrequency: "weekly",
+      priority: 0.8,
+      lastModified: new Date().toISOString(),
+    },
+    {
       url: `${baseUrl}/pricing`,
       changeFrequency: "monthly",
       priority: 0.6,
@@ -131,6 +138,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/blog/${post}`,
       changeFrequency: "monthly" as const,
       priority: 0.8,
+      lastModified: new Date().toISOString(),
     })),
     ...brands.map((brand) => ({
       url: `${baseUrl}/check/${brand.slug}`,

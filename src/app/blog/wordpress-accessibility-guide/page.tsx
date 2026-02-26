@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     "wordpress accessibility checker",
     "make wordpress accessible",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/wordpress-accessibility-guide",
+  },
 };
 
 export default function WordPressAccessibilityGuidePage() {

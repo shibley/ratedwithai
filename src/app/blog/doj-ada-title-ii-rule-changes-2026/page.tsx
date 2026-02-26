@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "government website accessibility rule changes",
     "wcag 2.1 aa requirement changes",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/doj-ada-title-ii-rule-changes-2026",
+  },
 };
 
 export default function DOJAdaTitleIIRuleChangesPage() {

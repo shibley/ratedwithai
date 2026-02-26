@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "medicare medicaid accessibility",
     "healthcare accessibility compliance",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/healthcare-website-accessibility-may-2026",
+  },
 };
 
 export default function HealthcareMay2026DeadlinePage() {

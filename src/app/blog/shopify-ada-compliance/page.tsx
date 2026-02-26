@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     "shopify accessibility checker",
     "ada compliant shopify theme",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/shopify-ada-compliance",
+  },
 };
 
 export default function ShopifyAdaCompliancePage() {

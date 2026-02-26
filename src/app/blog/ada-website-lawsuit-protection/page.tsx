@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "ada lawsuit demand letter",
     "ada compliance small business",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-website-lawsuit-protection",
+  },
 };
 
 export default function ADAWebsiteLawsuitProtectionPage() {

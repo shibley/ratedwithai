@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "accessibility lawsuit statistics 2025",
     "ada serial litigation",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-lawsuit-reform-2026",
+  },
 };
 
 export default function AdaLawsuitReformPage() {

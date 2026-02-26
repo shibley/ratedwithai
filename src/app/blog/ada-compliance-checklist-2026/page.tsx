@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     publishedTime: "2026-01-15T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-compliance-checklist-2026",
+  },
 };
 
 export default function AdaComplianceChecklistPage() {

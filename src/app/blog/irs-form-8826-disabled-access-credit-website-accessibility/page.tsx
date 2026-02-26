@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "ada compliance cost offset",
     "small business ada tax credit 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/irs-form-8826-disabled-access-credit-website-accessibility",
+  },
 };
 
 export default function IRSForm8826DisabledAccessCreditPage() {

@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "federal ada title iii filings",
     "accessibility lawsuit defense",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-lawsuits-ai-powered-pro-se-2025",
+  },
 };
 
 export default function ADALawsuitsAIPoweredProSe2025Page() {

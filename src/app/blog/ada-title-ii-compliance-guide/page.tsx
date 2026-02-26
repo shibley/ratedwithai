@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "ada title ii compliance checker",
     "government accessibility deadline 2026",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-title-ii-compliance-guide",
+  },
 };
 
 export default function AdaTitleIIComplianceGuidePage() {

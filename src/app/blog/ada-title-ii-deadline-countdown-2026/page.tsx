@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "ada title ii wcag requirements",
     "government website accessibility checker",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/ada-title-ii-deadline-countdown-2026",
+  },
 };
 
 function getDaysUntilDeadline(): number {

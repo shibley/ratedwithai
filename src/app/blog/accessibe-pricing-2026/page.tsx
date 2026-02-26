@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "ada compliance tool cost",
     "website accessibility pricing",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibe-pricing-2026",
+  },
 };
 
 export default function AccessiBePricingPage() {

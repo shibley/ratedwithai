@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     publishedTime: "2026-02-21T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/wcag-22-complete-guide",
+  },
 };
 
 export default function Wcag22CompleteGuidePage() {

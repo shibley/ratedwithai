@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     "accessibe ftc fine",
     "overlay alternative accessibility",
   ],
+  alternates: {
+    canonical: "https://ratedwithai.com/blog/accessibe-alternative",
+  },
 };
 
 export default function AccessiBeAlternativePage() {
