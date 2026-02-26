@@ -17,6 +17,20 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "european-accessibility-act-eaa-compliance-us-businesses",
+    title: "European Accessibility Act (EAA): What US Businesses Need to Know in 2026",
+    description:
+      "The EAA is now enforced across all 27 EU member states — and it applies to any business selling into Europe, including US companies. Complete guide to requirements, penalties, enforcement actions, and how to comply.",
+    category: "International Compliance",
+  },
+  {
+    slug: "florida-ada-website-lawsuits-2026",
+    title: "Florida ADA Website Lawsuits 2026: Why Jacksonville, Orlando & Tampa Businesses Are Targeted",
+    description:
+      "Florida surpassed New York to become #2 in the nation for ADA website lawsuits with 1,823 filings in 2025. City-by-city breakdown, industry risk analysis, and how to protect your business.",
+    category: "Legal",
+  },
+  {
     slug: "california-sb-84-ada-right-to-cure-2026",
     title: "California SB 84: 120-Day Right to Cure for ADA Violations in 2026",
     description:
