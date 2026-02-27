@@ -77,6 +77,7 @@ const blogPosts = [
   "european-accessibility-act-eaa-compliance-us-businesses",
   "state-ada-reform-laws-tracker-2026",
   "vpat-accessibility-conformance-report-guide-2026",
+  "ecommerce-accessibility-ada-compliance-guide",
 ];
 
 // Tool landing pages
