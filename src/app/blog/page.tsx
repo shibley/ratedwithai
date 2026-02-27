@@ -395,10 +395,10 @@ const blogPosts = [
     category: "Roundup",
   },
   {
-    slug: "courts-fighting-back-serial-ada-plaintiffs-2026",
-    title: "Courts Fighting Back Against Serial ADA Plaintiffs in 2026",
+    slug: "courts-fighting-back-serial-ada-website-plaintiffs",
+    title: "Courts Fighting Back: How Judges Scrutinize Serial ADA Website Plaintiffs in 2026",
     description:
-      "Federal courts are pushing back against serial ADA plaintiffs. Analysis of recent rulings and what they mean for businesses.",
+      "Federal judges are cracking down on copy-paste ADA website lawsuits. From the Cuddle Clones ruling to Buffalo Jackson, courts now demand proof of genuine intent to purchase.",
     category: "Legal",
   },
   {

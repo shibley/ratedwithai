@@ -72,7 +72,7 @@ const blogPosts = [
   "california-sb-84-ada-right-to-cure-2026",
   "ftc-accessibe-fine-overlay-failures",
   "meta-ai-accessibility-fixes-axe-con-2026",
-  "courts-fighting-back-serial-ada-plaintiffs-2026",
+  "courts-fighting-back-serial-ada-website-plaintiffs",
   "florida-ada-website-lawsuits-2026",
   "european-accessibility-act-eaa-compliance-us-businesses",
 ];
