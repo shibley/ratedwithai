@@ -78,6 +78,7 @@ const blogPosts = [
   "state-ada-reform-laws-tracker-2026",
   "vpat-accessibility-conformance-report-guide-2026",
   "ecommerce-accessibility-ada-compliance-guide",
+  "repeat-ada-lawsuits-why-one-settlement-isnt-enough",
 ];
 
 // Tool landing pages
