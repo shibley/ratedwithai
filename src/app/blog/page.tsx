@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "state-ada-reform-laws-tracker-2026",
+    title: "State ADA Reform Laws Tracker 2026: Every Bill Fighting Website Accessibility Lawsuits",
+    description:
+      "Track every state bill reforming ADA website accessibility lawsuits. California SB 84 (120-day cure), Utah SB 68 (90-day safe harbor), Missouri's 9-bill blitz, and the federal ADA 30 Days Act. Updated as new legislation is introduced.",
+    category: "Legal",
+  },
+  {
     slug: "european-accessibility-act-eaa-compliance-us-businesses",
     title: "European Accessibility Act (EAA): What US Businesses Need to Know in 2026",
     description:

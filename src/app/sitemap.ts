@@ -75,6 +75,7 @@ const blogPosts = [
   "courts-fighting-back-serial-ada-website-plaintiffs",
   "florida-ada-website-lawsuits-2026",
   "european-accessibility-act-eaa-compliance-us-businesses",
+  "state-ada-reform-laws-tracker-2026",
 ];
 
 // Tool landing pages
