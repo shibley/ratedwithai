@@ -479,6 +479,13 @@ const blogPosts = [
     category: "Data",
   },
   {
+    slug: "online-only-stores-ada-compliance-2026",
+    title: "Online-Only Stores Must Comply with ADA: 2026 Court Rulings Confirm",
+    description:
+      "Wisconsin federal courts ruled online-only stores with no physical locations must comply with ADA. Cazares v. Acro and Hippe v. Me Too decisions analyzed.",
+    category: "Legal",
+  },
+  {
     slug: "doj-wcag-not-ada-standard-2026",
     title: "DOJ Says WCAG Is Not the ADA Standard: What This Means for Your Business",
     description:

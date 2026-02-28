@@ -82,6 +82,7 @@ const blogPosts = [
   "repeat-ada-lawsuits-why-one-settlement-isnt-enough",
   "doj-wcag-not-ada-standard-2026",
   "best-accessibility-testing-tools-compared-2026",
+  "online-only-stores-ada-compliance-2026",
 ];
 
 // Tool landing pages
