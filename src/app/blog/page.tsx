@@ -472,6 +472,13 @@ const blogPosts = [
     category: "Legal",
   },
   {
+    slug: "ada-lawsuit-state-migration-2026",
+    title: "ADA Lawsuit State Migration 2026: Why Illinois Filings Surged 65%",
+    description:
+      "State-by-state breakdown of 8,667 federal ADA lawsuits in 2025. Illinois surged 65%, New York dropped 54%, Florida overtook NY for #2. Data-driven analysis.",
+    category: "Data",
+  },
+  {
     slug: "doj-wcag-not-ada-standard-2026",
     title: "DOJ Says WCAG Is Not the ADA Standard: What This Means for Your Business",
     description:
