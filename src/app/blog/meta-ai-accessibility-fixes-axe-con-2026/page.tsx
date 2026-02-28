@@ -6,14 +6,14 @@ import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title:
-    "How Meta Used AI to Fix 2,500 Accessibility Issues — What It Means for Your Website | RatedWithAI",
+    "How Meta Used AI to Fix 7,500+ Accessibility Issues — What It Means for Your Website | RatedWithAI",
   description:
-    "At Axe-con 2026, Meta revealed AI-assisted development fixed 2,500 accessibility issues with a 90% solve rate. Learn what this means for automated accessibility testing, why scanning comes first, and how small businesses can apply Meta's approach.",
+    "At Axe-con 2026, Meta revealed AI-assisted development deployed 2,500 accessibility fixes with a 90% solve rate and 5,000 more queued — 7,500+ total. Learn what this means for automated accessibility testing and how small businesses can apply Meta's approach.",
   openGraph: {
     title:
-      "Meta Fixed 2,500 Accessibility Issues with AI — Here's What That Means for You",
+      "Meta Fixed 7,500+ Accessibility Issues with AI — Here's What That Means for You",
     description:
-      "Meta's Axe-con 2026 presentation revealed a 90% AI solve rate for accessibility issues. The key insight: automated scanning finds the problems, AI applies the fixes. Your website needs both.",
+      "Meta's Axe-con 2026 presentation revealed a 90% AI solve rate: 2,500 fixes deployed, 5,000 more queued. The key insight: automated scanning finds the problems, AI applies the fixes. Your website needs both.",
     type: "article",
     publishedTime: "2026-02-26T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
@@ -46,11 +46,11 @@ export default function MetaAIAccessibilityPage() {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline:
-      "How Meta Used AI to Fix 2,500 Accessibility Issues — What It Means for Your Website",
+      "How Meta Used AI to Fix 7,500+ Accessibility Issues — What It Means for Your Website",
     description:
-      "Analysis of Meta's Axe-con 2026 presentation on AI-assisted accessibility development, achieving a 90% solve rate across 2,500 deployed fixes with 5,000 more queued. Key lessons for businesses using automated accessibility scanning.",
+      "Analysis of Meta's Axe-con 2026 presentation on AI-assisted accessibility development, achieving a 90% solve rate across 2,500 deployed fixes with 5,000 more queued — 7,500+ total impact. Key lessons for businesses using automated accessibility scanning.",
     datePublished: "2026-02-26T00:00:00.000Z",
-    dateModified: "2026-02-26T00:00:00.000Z",
+    dateModified: "2026-02-28T00:00:00.000Z",
     author: {
       "@type": "Organization",
       name: "RatedWithAI",
@@ -171,7 +171,7 @@ export default function MetaAIAccessibilityPage() {
                 </li>
                 <li>
                   <a href="#numbers" className="hover:text-sky-400 transition-colors">
-                    The Numbers: 2,500 Fixes, 90% Solve Rate, Weeks Not Months
+                    The Numbers: 7,500+ Fixes, 90% Solve Rate, Weeks Not Months
                   </a>
                 </li>
                 <li>
@@ -228,14 +228,15 @@ export default function MetaAIAccessibilityPage() {
             </nav>
 
             <h1 className="mt-10 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-              How Meta Used AI to Fix 2,500 Accessibility Issues — What It Means for Your Website
+              How Meta Used AI to Fix 7,500+ Accessibility Issues — What It Means for Your Website
             </h1>
 
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
               At Axe-con 2026, Meta's engineering team revealed something that changes the accessibility conversation:
               they trained an AI coding tool on their design system's accessibility patterns and deployed 2,500 fixes
-              across their codebase — with a <strong className="text-white">90% solve rate</strong>. Months of manual
-              work, completed in weeks.
+              across their codebase — with a <strong className="text-white">90% solve rate</strong> — and have{" "}
+              <strong className="text-white">5,000 more fixes queued</strong>, for a combined impact of over 7,500
+              accessibility improvements. Months of manual work, completed in weeks.
             </p>
 
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
@@ -306,7 +307,7 @@ export default function MetaAIAccessibilityPage() {
               id="numbers"
               className="mb-4 mt-14 text-2xl font-bold text-white"
             >
-              2. The Numbers: 2,500 Fixes, 90% Solve Rate, Weeks Not Months
+              2. The Numbers: 7,500+ Fixes, 90% Solve Rate, Weeks Not Months
             </h2>
 
             <p className="mt-3 leading-relaxed text-slate-300">
@@ -338,6 +339,18 @@ export default function MetaAIAccessibilityPage() {
                   Time to complete what would have taken months of manual engineering work
                 </p>
               </div>
+            </div>
+
+            <div className="mt-6 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-6">
+              <p className="text-sm font-semibold uppercase tracking-wider text-emerald-400">
+                Combined Impact: 7,500+ Accessibility Improvements
+              </p>
+              <p className="mt-3 text-slate-300">
+                With 2,500 fixes already deployed and 5,000 more in the pipeline, Meta's AI-assisted accessibility
+                program has identified and addressed over <strong className="text-white">7,500 accessibility issues</strong> across
+                Facebook, Instagram, WhatsApp, and Threads. Jesse Beach revealed the 5,000 queued figure during
+                Day 2 of Axe-con 2026, tripling the initially reported scale of the project.
+              </p>
             </div>
 
             <p className="mt-6 leading-relaxed text-slate-300">
