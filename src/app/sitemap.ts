@@ -84,6 +84,7 @@ const blogPosts = [
   "best-accessibility-testing-tools-compared-2026",
   "online-only-stores-ada-compliance-2026",
   "web-accessibility-trends-2026",
+  "canada-accessible-canada-act-digital-accessibility-2027",
 ];
 
 // Tool landing pages
