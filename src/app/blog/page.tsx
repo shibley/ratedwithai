@@ -472,6 +472,41 @@ const blogPosts = [
     category: "Legal",
   },
   {
+    slug: "doj-wcag-not-ada-standard-2026",
+    title: "DOJ Says WCAG Is Not the ADA Standard: What This Means for Your Business",
+    description:
+      "The DOJ declared it does not endorse WCAG for ADA Title III. Analysis of this unprecedented footnote and why WCAG remains your best compliance framework.",
+    category: "Legal",
+  },
+  {
+    slug: "best-accessibility-testing-tools-compared-2026",
+    title: "Best Accessibility Testing Tools Compared (2026)",
+    description:
+      "12 accessibility testing tools reviewed and compared. axe-core, WAVE, Pa11y, Lighthouse, and more — find the right tool for your workflow.",
+    category: "Auditing",
+  },
+  {
+    slug: "repeat-ada-lawsuits-why-one-settlement-isnt-enough",
+    title: "Repeat ADA Lawsuits: Why One Settlement Isn't Enough in 2026",
+    description:
+      "Nearly half of ADA website lawsuit defendants get sued again. Data-driven analysis of why settlements fail and how ongoing monitoring prevents repeat litigation.",
+    category: "Legal",
+  },
+  {
+    slug: "ecommerce-accessibility-ada-compliance-guide",
+    title: "Ecommerce Accessibility: Complete ADA Compliance Guide",
+    description:
+      "70% of ADA lawsuits target e-commerce. Complete guide to accessible checkout, product pages, cart, and payment for online stores.",
+    category: "Compliance",
+  },
+  {
+    slug: "vpat-accessibility-conformance-report-guide-2026",
+    title: "VPAT Guide: How to Create an Accessibility Conformance Report (2026)",
+    description:
+      "Complete guide to Voluntary Product Accessibility Templates and Accessibility Conformance Reports for government procurement compliance.",
+    category: "Compliance",
+  },
+  {
     slug: "wcag-22-checklist",
     title: "WCAG 2.2 Checklist: Every Success Criterion Explained",
     description:

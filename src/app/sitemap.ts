@@ -79,6 +79,8 @@ const blogPosts = [
   "vpat-accessibility-conformance-report-guide-2026",
   "ecommerce-accessibility-ada-compliance-guide",
   "repeat-ada-lawsuits-why-one-settlement-isnt-enough",
+  "doj-wcag-not-ada-standard-2026",
+  "best-accessibility-testing-tools-compared-2026",
 ];
 
 // Tool landing pages
