@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "web-accessibility-trends-2026",
+    title: "7 Web Accessibility Trends Reshaping 2026: What Every Business Must Know",
+    description:
+      "AI-powered remediation, WCAG 2.2 procurement baselines, accessibility debt as business risk, global regulatory convergence, and more. The 7 trends defining digital accessibility this year — backed by WebAIM Million data and Axe-con 2026 insights.",
+    category: "Industry",
+  },
+  {
     slug: "state-ada-reform-laws-tracker-2026",
     title: "State ADA Reform Laws Tracker 2026: Every Bill Fighting Website Accessibility Lawsuits",
     description:
