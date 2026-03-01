@@ -5,15 +5,16 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "ADA Lawsuit Reform 2026: Missouri, Utah Bills Target Abusive Litigation | RatedWithAI",
+  title: "ADA Lawsuit Reform 2026: Three States Fighting Back Against Abusive Litigation | RatedWithAI",
   description:
-    "Missouri HB 1694 and Utah SB 68 propose cure periods and counter-sue provisions for ADA web accessibility lawsuits. With 8,667 federal lawsuits in 2025, states are fighting back. Here's what it means for businesses.",
+    "California SB 84, Missouri HB 1694, and Utah SB 68 propose cure periods and counter-sue provisions for ADA web accessibility lawsuits. With 8,667 federal lawsuits in 2025, three states are leading the reform movement.",
   openGraph: {
-    title: "ADA Lawsuit Reform 2026: States Fight Abusive Accessibility Lawsuits",
+    title: "ADA Lawsuit Reform 2026: Three States Fighting Back Against Abusive Accessibility Lawsuits",
     description:
-      "With 8,667 ADA lawsuits in 2025, Missouri and Utah are proposing cure periods and counter-sue rights. What businesses need to know.",
+      "California, Missouri, and Utah are proposing cure periods and counter-sue rights for ADA web accessibility lawsuits. With 8,667 lawsuits in 2025, the reform movement is gaining steam.",
     type: "article",
     publishedTime: "2026-02-22T00:00:00.000Z",
+    modifiedTime: "2026-03-01T00:00:00.000Z",
     authors: ["RatedWithAI Team"],
   },
   keywords: [
@@ -24,9 +25,12 @@ export const metadata: Metadata = {
     "ada abusive lawsuits",
     "missouri hb 1694",
     "utah sb 68",
+    "california sb 84",
+    "ada right to cure",
     "ada web accessibility lawsuit",
     "accessibility lawsuit statistics 2025",
     "ada serial litigation",
+    "state ada reform 2026",
   ],
   alternates: {
     canonical: "https://ratedwithai.com/blog/ada-lawsuit-reform-2026",
@@ -37,11 +41,11 @@ export default function AdaLawsuitReformPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    headline: "ADA Lawsuit Reform 2026: Missouri and Utah Bills Target Abusive Web Accessibility Litigation",
+    headline: "ADA Lawsuit Reform 2026: Three States Fighting Back Against Abusive Web Accessibility Litigation",
     description:
-      "Analysis of Missouri HB 1694 and Utah SB 68, two state bills proposing cure periods and counter-sue provisions for ADA web accessibility lawsuits.",
+      "Analysis of California SB 84, Missouri HB 1694, and Utah SB 68 — three state bills proposing cure periods and counter-sue provisions for ADA web accessibility lawsuits.",
     datePublished: "2026-02-22T00:00:00.000Z",
-    dateModified: "2026-02-22T00:00:00.000Z",
+    dateModified: "2026-03-01T00:00:00.000Z",
     author: {
       "@type": "Organization",
       name: "RatedWithAI",
@@ -56,11 +60,86 @@ export default function AdaLawsuitReformPage() {
     },
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is ADA lawsuit reform?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "ADA lawsuit reform refers to state-level legislation that changes how ADA web accessibility lawsuits are filed and processed. Key reforms include cure periods (giving businesses time to fix issues before being sued), counter-sue rights, and definitions of abusive litigation targeting serial plaintiffs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is California SB 84?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "California SB 84 proposes a 120-day right to cure for ADA web accessibility violations — the longest cure period of any state. Plaintiffs must provide detailed written notice of specific accessibility barriers, and businesses get 120 days to remediate before a lawsuit can proceed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many ADA lawsuits were filed in 2025?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "According to Seyfarth Shaw, 8,667 federal ADA Title III lawsuits were filed in 2025 — near the all-time high. California led with 3,252 filings (37.5%), followed by Florida (1,823) and New York (1,471).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is an ADA cure period?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An ADA cure period is a mandated window of time during which businesses can fix accessibility violations before a lawsuit can proceed. California proposes 120 days, Missouri proposes 90 days, and Utah proposes 30 days.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do cure period laws eliminate the need for accessibility?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Cure period laws change the enforcement pathway but do not eliminate the obligation to make websites accessible under the ADA. Businesses still must comply with WCAG guidelines and the ADA. The laws simply give businesses time to fix issues before facing litigation.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which states are reforming ADA web accessibility lawsuit laws?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "As of March 2026, three states have introduced ADA lawsuit reform bills: California (SB 84, 120-day cure period), Missouri (HB 1694, 90-day cure period), and Utah (SB 68, 30-day cure period with counter-sue rights). More states are expected to follow.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can businesses counter-sue under these new laws?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Currently, only Utah's SB 68 explicitly grants counter-sue rights for abusive ADA litigation. If a claim is found to be filed in bad faith, the defendant can recover attorney's fees and damages. California and Missouri's bills focus on cure periods instead.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can businesses protect themselves from ADA lawsuits?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The most effective protection is proactive compliance: regular automated scanning ($29-99/month), fixing critical violations (missing alt text, color contrast, keyboard traps, form labels), removing overlay widgets, documenting compliance efforts, and setting up ongoing monitoring. This costs a fraction of litigation ($75K-300K average).",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
       <div className="min-h-screen bg-slate-950 text-slate-100">
         <div className="relative overflow-hidden">
@@ -78,26 +157,30 @@ export default function AdaLawsuitReformPage() {
               LEGISLATIVE UPDATE
             </div>
             <h1 className="mt-4 text-4xl font-bold text-white sm:text-5xl lg:text-6xl leading-tight">
-              ADA Lawsuit Reform 2026: States Push Back Against Abusive Accessibility Litigation
+              ADA Lawsuit Reform 2026: Three States Fighting Back Against Abusive Accessibility Litigation
             </h1>
             <p className="mt-4 text-lg text-slate-300 leading-relaxed">
               In 2025, <strong className="text-white">8,667 federal ADA Title III lawsuits</strong> were filed across the
-              United States — the highest number on record. Now, states are fighting back. Missouri and Utah have introduced
-              landmark bills that would fundamentally change how ADA web accessibility lawsuits work, giving businesses a
-              chance to fix violations before facing legal action. Here's what's happening, why it matters, and what you
-              should do.
+              United States — the highest number on record. Now, three states are fighting back. California, Missouri, and Utah
+              have introduced landmark bills that would fundamentally change how ADA web accessibility lawsuits work, giving
+              businesses a chance to fix violations before facing legal action. California's entry is especially significant —
+              with <strong className="text-white">3,252 lawsuits in 2025</strong> (37.5% of all filings), the nation's ADA
+              lawsuit epicenter is proposing the <strong className="text-white">longest cure period of any state: 120 days</strong>.
+              Here's what's happening, why it matters, and what you should do.
             </p>
             <div className="mt-6 flex items-center gap-4 text-sm text-slate-400">
               <time dateTime="2026-02-22">February 22, 2026</time>
               <span>·</span>
-              <span>10 min read</span>
+              <span className="text-green-400">Updated March 1, 2026</span>
+              <span>·</span>
+              <span>14 min read</span>
               <span>·</span>
               <span className="text-orange-400">Analysis</span>
             </div>
 
             {/* Key stats box */}
             <div className="mt-10 rounded-xl border border-orange-500/30 bg-orange-500/5 p-8">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-6 text-center">
                 <div>
                   <div className="text-4xl font-bold text-orange-400">8,667</div>
                   <div className="text-sm text-slate-400 mt-1">Lawsuits in 2025</div>
@@ -105,6 +188,10 @@ export default function AdaLawsuitReformPage() {
                 <div>
                   <div className="text-4xl font-bold text-red-400">3,252</div>
                   <div className="text-sm text-slate-400 mt-1">California Alone</div>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold text-green-400">3</div>
+                  <div className="text-sm text-slate-400 mt-1">States Reforming</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-amber-400">30%</div>
@@ -196,11 +283,13 @@ export default function AdaLawsuitReformPage() {
               </p>
 
               {/* Section 2: The Reform Bills */}
-              <h2 className="text-2xl font-bold text-white mt-12">The Backlash: Two State Bills That Could Change Everything</h2>
+              <h2 className="text-2xl font-bold text-white mt-12">The Backlash: Three State Bills That Could Change Everything</h2>
               <p className="text-slate-300">
                 The sheer volume of lawsuits — many filed by a small number of serial litigants against small businesses —
-                has sparked a legislative backlash. Two states are now proposing laws to curb what they call "abusive"
-                ADA litigation, while maintaining protections for people with disabilities.
+                has sparked a legislative backlash. Three states are now proposing laws to curb what they call "abusive"
+                ADA litigation, while maintaining protections for people with disabilities. The biggest surprise?{" "}
+                <strong className="text-white">California</strong> — the state where 37.5% of all ADA lawsuits originate —
+                has joined the movement with its own reform bill.
               </p>
 
               {/* Missouri HB 1694 */}
@@ -294,6 +383,99 @@ export default function AdaLawsuitReformPage() {
                 </div>
               </div>
 
+              {/* California SB 84 */}
+              <div className="not-prose rounded-xl border border-red-500/30 bg-red-500/5 p-6 mt-4 mb-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">🐻</span>
+                  <div>
+                    <h3 className="font-bold text-white text-xl">California SB 84</h3>
+                    <p className="text-sm text-red-400">"Right to Cure for ADA Web Accessibility Violations"</p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-white text-sm mb-1">Why California Matters Most</h4>
+                    <p className="text-sm text-slate-300">
+                      California accounted for <strong className="text-white">3,252 ADA lawsuits in 2025</strong> — 37.5% of all
+                      federal filings. When the nation's #1 ADA lawsuit state proposes reform, the accessibility industry pays
+                      attention. SB 84 proposes the <strong className="text-white">longest cure period of any state: 120 days</strong>.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-white text-sm mb-1">Key Provision: 120-Day Cure Period</h4>
+                    <p className="text-sm text-slate-300">
+                      Before filing an ADA web accessibility lawsuit, plaintiffs must provide <strong className="text-white">detailed
+                      written notice</strong> identifying the specific accessibility barriers. The business then gets{" "}
+                      <strong className="text-white">120 days to remediate</strong> — four months to fix issues before any lawsuit can
+                      proceed. This is <strong className="text-white">4x longer than Utah's 30-day</strong> and{" "}
+                      <strong className="text-white">33% longer than Missouri's 90-day</strong> cure windows.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-white text-sm mb-1">Additional Provisions</h4>
+                    <ul className="text-sm text-slate-300 space-y-1">
+                      <li>• <strong className="text-white">Specific notice requirements</strong> — plaintiffs must identify the exact URL(s) and barrier(s), not vague "your website is inaccessible" claims</li>
+                      <li>• <strong className="text-white">Good faith remediation standard</strong> — businesses must show genuine progress, not just intent to fix</li>
+                      <li>• <strong className="text-white">Independent verification</strong> — courts may require third-party accessibility audit to confirm remediation</li>
+                      <li>• <strong className="text-white">Ongoing monitoring expectation</strong> — remediated businesses expected to maintain compliance going forward</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-white text-sm mb-1">Why 120 Days?</h4>
+                    <p className="text-sm text-slate-300">
+                      The extended cure period reflects the reality that web accessibility remediation is complex. Small businesses
+                      need time to hire developers, audit their sites, implement fixes, and verify compliance. The 30-day window
+                      in Utah works for simple violations, but comprehensive WCAG conformance typically takes 8-16 weeks for
+                      small-to-medium websites.
+                    </p>
+                  </div>
+
+                  <div className="pt-3 border-t border-red-500/20">
+                    <p className="text-xs text-slate-500">Status: Introduced February 2026. Committee review pending. If passed, would take effect January 2027.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Three-State Comparison */}
+              <div className="not-prose mt-8 mb-8">
+                <h3 className="text-xl font-bold text-white mb-4">Three-State Reform Comparison</h3>
+                <div className="rounded-xl border border-slate-700 overflow-hidden">
+                  <div className="grid grid-cols-4 bg-slate-800 p-4 font-semibold text-sm text-slate-300">
+                    <div>Feature</div>
+                    <div className="text-red-400">California SB 84</div>
+                    <div className="text-orange-400">Missouri HB 1694</div>
+                    <div className="text-blue-400">Utah SB 68</div>
+                  </div>
+                  {[
+                    { feature: "Cure Period", ca: "120 days", mo: "90 days", ut: "30 days" },
+                    { feature: "Counter-Sue Right", ca: "No", mo: "No", ut: "Yes" },
+                    { feature: "Notice Specificity", ca: "URL + barrier", mo: "Written notice", ut: "10+ claims = abusive" },
+                    { feature: "Good Faith Standard", ca: "Yes + verification", mo: "Yes", ut: "Presumption of dismissal" },
+                    { feature: "Serial Plaintiff Limits", ca: "Implicit", mo: "Indirect", ut: "Explicit (10+ claims)" },
+                    { feature: "2025 Lawsuits in State", ca: "3,252", mo: "~150", ut: "~80" },
+                    { feature: "Status", ca: "Committee review", mo: "Committee hearing", ut: "Passed committee" },
+                  ].map((row, i) => (
+                    <div key={i} className="grid grid-cols-4 p-4 text-sm border-t border-slate-700 bg-slate-800/50">
+                      <div className="text-slate-400 font-medium">{row.feature}</div>
+                      <div className="text-slate-300">{row.ca}</div>
+                      <div className="text-slate-300">{row.mo}</div>
+                      <div className="text-slate-300">{row.ut}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <p className="text-slate-300">
+                For a deep dive into California's bill, see our{" "}
+                <Link href="/blog/california-sb-84-ada-right-to-cure-2026" className="text-sky-400 hover:text-sky-300">
+                  complete California SB 84 analysis
+                </Link>.
+              </p>
+
               {/* Section 3: What This Means */}
               <h2 className="text-2xl font-bold text-white mt-12">What These Bills Mean for Your Business</h2>
               <p className="text-slate-300">
@@ -307,10 +489,10 @@ export default function AdaLawsuitReformPage() {
 
               <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 mb-8">
                 {[
-                  { title: "For Small Businesses", desc: "A 90-day cure period means a demand letter doesn't automatically mean a $75K settlement. You get time to fix the issue, which costs far less than litigation.", icon: "🏪" },
-                  { title: "For Serial Litigants", desc: "Counter-sue provisions and the 'abusive litigation' definition make drive-by lawsuits riskier. Filing 10+ cookie-cutter complaints could trigger consequences.", icon: "⚠️" },
-                  { title: "For Accessibility Industry", desc: "Demand for proactive compliance tools and audits will increase. Businesses will want to fix issues during the cure period, not wait for lawsuits.", icon: "✅" },
-                  { title: "For People with Disabilities", desc: "Advocates worry cure periods delay access. But the current system — where most settlements result in zero actual remediation — isn't working either.", icon: "♿" },
+                  { title: "For Small Businesses", desc: "Cure periods of 30-120 days mean a demand letter doesn't automatically mean a $75K settlement. You get time to fix the issue, which costs far less than litigation. California's 120-day window is especially generous for businesses needing to hire accessibility expertise.", icon: "🏪" },
+                  { title: "For Serial Litigants", desc: "Counter-sue provisions (Utah), notice specificity requirements (California), and 'abusive litigation' definitions make drive-by lawsuits riskier. Filing 10+ cookie-cutter complaints could trigger consequences.", icon: "⚠️" },
+                  { title: "For Accessibility Industry", desc: "Demand for proactive compliance tools and audits will increase. Businesses will want to fix issues during the cure period, not wait for lawsuits. The 120-day California window creates a natural market for accessibility monitoring services.", icon: "✅" },
+                  { title: "For People with Disabilities", desc: "Advocates worry cure periods delay access. But the current system — where most settlements result in zero actual remediation — isn't working either. California's verification requirement may actually lead to MORE real fixes.", icon: "♿" },
                 ].map((item) => (
                   <div key={item.title} className="rounded-lg border border-slate-700 bg-slate-800/50 p-5">
                     <div className="flex items-center gap-2 mb-2">
@@ -505,7 +687,11 @@ export default function AdaLawsuitReformPage() {
               <div className="not-prose mt-8 pt-8 border-t border-slate-700">
                 <p className="text-sm text-slate-400">
                   Related reading: {" "}
-                  <Link href="/blog/website-accessibility-lawsuit-statistics-2026" className="text-sky-400 hover:text-sky-300">
+                  <Link href="/blog/california-sb-84-ada-right-to-cure-2026" className="text-sky-400 hover:text-sky-300">
+                    California SB 84 Deep Dive
+                  </Link>{" "}
+                  · {" "}
+                  <Link href="/blog/ada-website-lawsuit-statistics-2026" className="text-sky-400 hover:text-sky-300">
                     Lawsuit Statistics 2026
                   </Link>{" "}
                   · {" "}
@@ -513,12 +699,12 @@ export default function AdaLawsuitReformPage() {
                     ADA Title II Deadline
                   </Link>{" "}
                   · {" "}
-                  <Link href="/state/california" className="text-sky-400 hover:text-sky-300">
-                    California Accessibility Laws
+                  <Link href="/blog/ada-lawsuit-state-migration-2026" className="text-sky-400 hover:text-sky-300">
+                    Lawsuit State Migration 2026
                   </Link>{" "}
                   · {" "}
-                  <Link href="/state/florida" className="text-sky-400 hover:text-sky-300">
-                    Florida Accessibility Laws
+                  <Link href="/blog/courts-fighting-back-serial-ada-website-plaintiffs" className="text-sky-400 hover:text-sky-300">
+                    Courts vs. Serial Plaintiffs
                   </Link>{" "}
                   · {" "}
                   <Link href="/tools/free-accessibility-checker" className="text-sky-400 hover:text-sky-300">
