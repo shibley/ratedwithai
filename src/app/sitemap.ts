@@ -88,6 +88,7 @@ const blogPosts = [
   "canada-accessible-canada-act-digital-accessibility-2027",
   "wcag-3-guide-2026",
   "university-website-accessibility-crisis-2026",
+  "wix-ada-compliance-guide-2026",
 ];
 
 // Tool landing pages
