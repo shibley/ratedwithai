@@ -728,12 +728,12 @@ export default function ADAWebsiteLawsuitProtectionPage() {
               </p>
             </Link>
             <Link
-              href="/tools/free-accessibility-checker"
+              href="/blog/how-to-respond-ada-website-lawsuit-demand-letter"
               className="rounded-2xl border border-slate-800/70 bg-slate-900/60 p-5 transition hover:border-slate-500"
             >
-              <p className="font-semibold text-sky-400">Free Accessibility Checker</p>
+              <p className="font-semibold text-sky-400">Already Got a Demand Letter?</p>
               <p className="mt-2 text-sm text-slate-400">
-                Scan your site for WCAG violations before a plaintiff's attorney does.
+                Step-by-step response guide: first 72 hours, settle vs. fight, and how to prevent repeat lawsuits.
               </p>
             </Link>
             <Link

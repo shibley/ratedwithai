@@ -807,10 +807,10 @@ export default function RepeatADALawsuitsPage() {
                     Scan Your Website Free →
                   </Link>
                   <Link
-                    href="/blog/ada-website-lawsuit-protection"
+                    href="/blog/how-to-respond-ada-website-lawsuit-demand-letter"
                     className="rounded-lg border border-slate-600 px-8 py-3 font-semibold text-slate-300 hover:border-slate-400 transition-colors"
                   >
-                    Full Lawsuit Protection Guide
+                    Got a Demand Letter? Response Guide →
                   </Link>
                 </div>
               </div>
@@ -841,6 +841,10 @@ export default function RepeatADALawsuitsPage() {
                   ·{" "}
                   <Link href="/blog/ada-website-lawsuit-protection" className="text-red-400 hover:text-red-300">
                     ADA Lawsuit Protection Guide
+                  </Link>{" "}
+                  ·{" "}
+                  <Link href="/blog/how-to-respond-ada-website-lawsuit-demand-letter" className="text-red-400 hover:text-red-300">
+                    How to Respond to a Demand Letter
                   </Link>{" "}
                   ·{" "}
                   <Link href="/blog/courts-fighting-back-serial-ada-plaintiffs-2026" className="text-red-400 hover:text-red-300">
