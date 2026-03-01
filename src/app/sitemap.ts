@@ -91,6 +91,8 @@ const blogPosts = [
   "university-website-accessibility-crisis-2026",
   "wix-ada-compliance-guide-2026",
   "ada-website-compliance-cost-2026",
+  "how-to-respond-ada-website-lawsuit-demand-letter",
+  "restaurant-website-ada-compliance-2026",
 ];
 
 // Tool landing pages

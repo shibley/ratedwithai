@@ -1767,6 +1767,11 @@ export default function EcommerceAccessibilityGuide() {
                   href: "/blog/ada-website-lawsuit-statistics-2026",
                   desc: "The latest data on ADA digital accessibility lawsuits",
                 },
+                {
+                  title: "Restaurant Website ADA Compliance 2026",
+                  href: "/blog/restaurant-website-ada-compliance-2026",
+                  desc: "Industry-specific guide for the #1 most-sued sector",
+                },
               ].map((article) => (
                 <Link
                   key={article.href}
