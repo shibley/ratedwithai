@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "wcag-3-guide-2026",
+    title: "WCAG 3.0: Everything You Need to Know About the Next Accessibility Standard",
+    description:
+      "WCAG 3.0 replaces pass/fail with graduated conformance, expands scope beyond web content to mobile, VR/XR, and operating systems, and finally addresses cognitive disabilities. Timeline, changes, and how to prepare.",
+    category: "Standards",
+  },
+  {
     slug: "web-accessibility-trends-2026",
     title: "7 Web Accessibility Trends Reshaping 2026: What Every Business Must Know",
     description:

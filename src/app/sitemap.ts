@@ -86,6 +86,7 @@ const blogPosts = [
   "online-only-stores-ada-compliance-2026",
   "web-accessibility-trends-2026",
   "canada-accessible-canada-act-digital-accessibility-2027",
+  "wcag-3-guide-2026",
 ];
 
 // Tool landing pages
