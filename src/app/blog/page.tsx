@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "university-website-accessibility-crisis-2026",
+    title: "Universities Are Scrambling: The $20 Million Accessibility Crisis Before April 2026",
+    description:
+      "Ohio State was quoted $20M just for PDF remediation. Nearly half of universities have 1-2 accessibility staff. Only 22% of faculty consider accessibility. The April deadline is 53 days away — here's what's happening and how automated monitoring can help.",
+    category: "Higher Education",
+  },
+  {
     slug: "wcag-3-guide-2026",
     title: "WCAG 3.0: Everything You Need to Know About the Next Accessibility Standard",
     description:
