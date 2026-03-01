@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "ada-website-compliance-cost-2026",
+    title: "ADA Website Compliance Cost in 2026: What Small Businesses Actually Pay",
+    description:
+      "Complete cost breakdown for ADA compliance: audits ($0-$25,000), remediation ($1,500-$50,000+), monitoring ($50-$300/month), and the $200K+ cost of doing nothing. Plus tax credits that offset 60-100%.",
+    category: "Compliance Guide",
+  },
+  {
     slug: "university-website-accessibility-crisis-2026",
     title: "Universities Are Scrambling: The $20 Million Accessibility Crisis Before April 2026",
     description:
