@@ -1565,6 +1565,15 @@ export default function CourtsFightingBackSerialADAPlaintiffsPage() {
                   Utah & Missouri Anti-ADA Lawsuit Bills
                 </p>
               </Link>
+              <Link
+                href="/blog/15000-ada-website-lawsuits-cox-media-investigation-2026"
+                className="rounded-2xl border border-slate-800/60 bg-slate-900/50 p-5 hover:border-sky-500/50 transition-colors block"
+              >
+                <p className="text-sm text-sky-400">Investigation Analysis</p>
+                <p className="text-lg font-semibold text-white mt-1">
+                  15,000 ADA Website Lawsuits: National Investigation Reveals Scale
+                </p>
+              </Link>
             </div>
           </section>
         </article>

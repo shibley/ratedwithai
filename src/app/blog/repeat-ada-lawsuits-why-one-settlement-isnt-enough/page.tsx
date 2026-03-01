@@ -849,6 +849,10 @@ export default function RepeatADALawsuitsPage() {
                   ·{" "}
                   <Link href="/blog/ada-title-ii-deadline-countdown-2026" className="text-red-400 hover:text-red-300">
                     Title II Deadline Countdown
+                  </Link>{" "}
+                  ·{" "}
+                  <Link href="/blog/15000-ada-website-lawsuits-cox-media-investigation-2026" className="text-red-400 hover:text-red-300">
+                    15,000 ADA Lawsuits: Cox Media Investigation
                   </Link>
                 </p>
               </div>

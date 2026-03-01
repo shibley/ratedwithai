@@ -1292,6 +1292,20 @@ export default function FloridaADAWebsiteLawsuitsPage() {
                   California's legislative response to serial ADA lawsuits — and what it means for other states.
                 </p>
               </Link>
+              <Link
+                href="/blog/15000-ada-website-lawsuits-cox-media-investigation-2026"
+                className="rounded-xl border border-slate-800/60 bg-slate-900/40 p-5 transition hover:border-slate-700 hover:bg-slate-900/70"
+              >
+                <p className="text-xs text-red-400 uppercase tracking-wider">
+                  Investigation
+                </p>
+                <h3 className="mt-1 font-semibold text-white">
+                  15,000 ADA Lawsuits: National Investigation
+                </h3>
+                <p className="mt-2 text-sm text-slate-400">
+                  Cox Media Group uncovers 15,000+ lawsuits in 4 years. Serial plaintiffs, $500 payouts, and the 16 firms behind 90% of cases.
+                </p>
+              </Link>
             </div>
           </section>
         </article>
