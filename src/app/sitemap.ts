@@ -98,6 +98,7 @@ const blogPosts = [
   "wordpress-accessibility-plugins-2026",
   "nonprofit-website-ada-compliance-guide-2026",
   "accessibility-statement-guide-template-2026",
+  "alt-text-guide-how-to-write-image-accessibility",
 ];
 
 // Tool landing pages

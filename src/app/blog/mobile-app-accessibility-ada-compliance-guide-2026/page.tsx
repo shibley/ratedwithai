@@ -695,7 +695,7 @@ export default function MobileAppAccessibilityGuidePage() {
 
             <div className="mb-6 rounded-xl border border-white/10 bg-zinc-900 p-6">
               <h4 className="mb-3 font-mono text-sm font-bold text-green-400">
-                // Swift — Proper Accessibility Labels
+                {"// Swift — Proper Accessibility Labels"}
               </h4>
               <pre className="overflow-x-auto text-sm text-zinc-300">
                 <code>{`// ✅ Good: Descriptive, contextual label
