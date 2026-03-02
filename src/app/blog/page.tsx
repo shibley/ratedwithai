@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "how-to-make-website-ada-compliant-2026",
+    title: "How to Make Your Website ADA Compliant: 10-Step Guide (2026)",
+    description:
+      "Step-by-step guide to making your website ADA compliant. Covers WCAG 2.1 AA, alt text, keyboard navigation, color contrast, forms, headings, multimedia — with code examples, free tools, and platform-specific instructions for WordPress, Shopify, Squarespace, and Wix.",
+    category: "Guides",
+  },
+  {
     slug: "ada-website-lawsuit-costs-small-business-2026",
     title: "The Real Cost of ADA Website Lawsuits for Small Businesses (2026 Data)",
     description:

@@ -10,6 +10,7 @@ const baseUrl = "https://ratedwithai.com";
 
 // Blog posts - add new posts here
 const blogPosts = [
+  "how-to-make-website-ada-compliant-2026",
   "accessibility-audit-checklist-2026",
   "accessibility-widgets",
   "ada-compliance-by-industry",
