@@ -173,7 +173,7 @@ export default function ShopifyADACompliancePage() {
             </h1>
             <p className="text-xl text-gray-300 mb-6">
               77% of ADA website lawsuits target e-commerce stores. This is the complete,
-              step-by-step guide to making your Shopify store WCAG 2.1 AA compliant — from
+              step-by-step guide to making your <a href="https://shopify.pxf.io/bk3Enk" target="_blank" rel="nofollow sponsored" className="text-purple-400 hover:text-purple-300 underline">Shopify</a> store WCAG 2.1 AA compliant — from
               theme audits to product images to checkout flow.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400">
@@ -332,11 +332,15 @@ export default function ShopifyADACompliancePage() {
                 </div>
               </div>
 
-              <p className="text-gray-300">
+              <p className="text-gray-300 mb-4">
                 Think of it this way: Shopify provides the infrastructure, but <strong>you build the
                 store</strong>. Every product image you upload without alt text, every custom banner
                 with poor contrast, every third-party popup you install — these are your accessibility
                 liabilities.
+              </p>
+              <p className="text-sm text-gray-400">
+                💡 If you&apos;re not yet on Shopify, its newer themes (especially Dawn) offer the best
+                accessibility baseline of any ecommerce platform. <a href="https://shopify.pxf.io/bk3Enk" target="_blank" rel="nofollow sponsored" className="text-purple-400 hover:text-purple-300 underline">Start a free Shopify trial →</a>
               </p>
             </section>
 
