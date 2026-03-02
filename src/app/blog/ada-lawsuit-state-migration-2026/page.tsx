@@ -337,7 +337,7 @@ export default function ADALawsuitStateMigration2026Page() {
               <h3 className="text-xl font-bold text-white mt-8">The New York Connection</h3>
               <p className="text-slate-300">
                 The Illinois surge didn't happen in isolation. It's directly correlated with New York's decline. As
-                federal judges in New York's Southern and Eastern Districts began <Link href="/blog/courts-fighting-back-serial-ada-plaintiffs-2026" className="text-sky-400 hover:text-sky-300">
+                federal judges in New York's Southern and Eastern Districts began <Link href="/blog/courts-fighting-back-serial-ada-website-plaintiffs" className="text-sky-400 hover:text-sky-300">
                 scrutinizing serial plaintiff standing</Link>, plaintiff attorneys needed new jurisdictions where they could
                 file with less friction.
               </p>
@@ -415,7 +415,7 @@ export default function ADALawsuitStateMigration2026Page() {
               </p>
               <p className="text-slate-300">
                 For a deeper analysis of how courts are fighting back against serial filers, see our{" "}
-                <Link href="/blog/courts-fighting-back-serial-ada-plaintiffs-2026" className="text-sky-400 hover:text-sky-300">
+                <Link href="/blog/courts-fighting-back-serial-ada-website-plaintiffs" className="text-sky-400 hover:text-sky-300">
                   comprehensive analysis of judicial scrutiny of serial ADA plaintiffs
                 </Link>.
               </p>
@@ -758,7 +758,7 @@ export default function ADALawsuitStateMigration2026Page() {
                     ADA Website Lawsuit Statistics 2026
                   </Link>{" "}
                   · {" "}
-                  <Link href="/blog/courts-fighting-back-serial-ada-plaintiffs-2026" className="text-sky-400 hover:text-sky-300">
+                  <Link href="/blog/courts-fighting-back-serial-ada-website-plaintiffs" className="text-sky-400 hover:text-sky-300">
                     Courts Fighting Back Against Serial Plaintiffs
                   </Link>{" "}
                   · {" "}

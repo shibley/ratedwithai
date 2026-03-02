@@ -1160,7 +1160,7 @@ export default function WixADACompliancePage() {
             <p className="text-lg leading-relaxed">
               For a deeper dive into testing tools, see our{" "}
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="text-sky-400 hover:text-sky-300 underline"
               >
                 best accessibility testing tools comparison
@@ -1436,7 +1436,7 @@ export default function WixADACompliancePage() {
                 </p>
               </Link>
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="rounded-xl border border-slate-700/50 bg-slate-900/50 p-5 hover:border-sky-500/50 transition-colors block"
               >
                 <p className="text-sky-400 font-semibold">

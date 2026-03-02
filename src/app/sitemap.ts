@@ -83,7 +83,7 @@ const blogPosts = [
   "ecommerce-accessibility-ada-compliance-guide",
   "repeat-ada-lawsuits-why-one-settlement-isnt-enough",
   "doj-wcag-not-ada-standard-2026",
-  "best-accessibility-testing-tools-compared-2026",
+  "mobile-app-accessibility-ada-compliance-guide-2026",
   "online-only-stores-ada-compliance-2026",
   "web-accessibility-trends-2026",
   "canada-accessible-canada-act-digital-accessibility-2027",
@@ -96,6 +96,8 @@ const blogPosts = [
   "ada-compliance-audit-guide-2026",
   "pdf-accessibility-ada-compliance-guide-2026",
   "wordpress-accessibility-plugins-2026",
+  "nonprofit-website-ada-compliance-guide-2026",
+  "accessibility-statement-guide-template-2026",
 ];
 
 // Tool landing pages

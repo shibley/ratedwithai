@@ -1133,7 +1133,7 @@ export default function ShopifyADACompliancePage() {
                   Free Accessibility Scan →
                 </Link>
                 <Link
-                  href="/blog/best-shopify-accessibility-apps"
+                  href="/blog/shopify-accessibility-apps"
                   className="px-8 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition"
                 >
                   Best Shopify A11y Apps
@@ -1152,7 +1152,7 @@ export default function ShopifyADACompliancePage() {
                 {[
                   {
                     title: "7 Best Shopify Accessibility Apps 2026",
-                    href: "/blog/best-shopify-accessibility-apps",
+                    href: "/blog/shopify-accessibility-apps",
                     desc: "Detailed app comparison: features, pricing, pros/cons",
                   },
                   {

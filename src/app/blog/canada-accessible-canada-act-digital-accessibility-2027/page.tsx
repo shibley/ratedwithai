@@ -1134,7 +1134,7 @@ export default function CanadaAccessibleCanadaActPage() {
                   contrast, and heading structure. These are the issues that
                   affect the most users and are flagged by{" "}
                   <Link
-                    href="/blog/best-accessibility-testing-tools-compared-2026"
+                    href="/blog/best-accessibility-testing-tools"
                     className="text-sky-400 hover:text-sky-300 underline"
                   >
                     automated testing tools

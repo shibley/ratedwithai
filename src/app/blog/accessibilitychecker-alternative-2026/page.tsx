@@ -1304,7 +1304,7 @@ export default function AccessibilityCheckerAlternativePage() {
                   </p>
                 </Link>
                 <Link
-                  href="/blog/siteimprove-alternative"
+                  href="/blog/siteimprove-alternative-2026"
                   className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-blue-500/50 transition-colors block"
                 >
                   <h3 className="text-white font-semibold mb-2">

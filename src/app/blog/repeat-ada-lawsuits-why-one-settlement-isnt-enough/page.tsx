@@ -847,7 +847,7 @@ export default function RepeatADALawsuitsPage() {
                     How to Respond to a Demand Letter
                   </Link>{" "}
                   ·{" "}
-                  <Link href="/blog/courts-fighting-back-serial-ada-plaintiffs-2026" className="text-red-400 hover:text-red-300">
+                  <Link href="/blog/courts-fighting-back-serial-ada-website-plaintiffs" className="text-red-400 hover:text-red-300">
                     Courts Fighting Back
                   </Link>{" "}
                   ·{" "}

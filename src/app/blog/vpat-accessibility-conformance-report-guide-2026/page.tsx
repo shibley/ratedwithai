@@ -698,7 +698,7 @@ export default function VPATAccessibilityConformanceReportGuidePage() {
                   government procurement officers increasingly demand ACRs from
                   vendors.{" "}
                   <Link
-                    href="/blog/higher-education-ada-compliance-guide-2026"
+                    href="/blog/higher-education-ada-compliance-2026"
                     className="text-sky-400 hover:text-sky-300 underline"
                   >
                     Higher education institutions

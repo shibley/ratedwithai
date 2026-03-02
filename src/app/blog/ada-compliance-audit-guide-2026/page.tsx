@@ -518,7 +518,7 @@ export default function ADAComplianceAuditGuidePage() {
               Automated tools crawl your website and test each page against a
               set of programmatically checkable WCAG rules. Tools like{" "}
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="text-blue-600 hover:underline"
               >
                 axe-core, WAVE, and Lighthouse
@@ -2102,7 +2102,7 @@ export default function ADAComplianceAuditGuidePage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <h3 className="font-semibold text-gray-900">

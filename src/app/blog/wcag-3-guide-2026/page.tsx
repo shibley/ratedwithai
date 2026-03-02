@@ -1106,7 +1106,7 @@ export default function WCAG3GuidePage() {
                 <p className="text-slate-300">
                   Since WCAG 3.0 is still in development, no testing tools fully support it yet.
                   Current tools like{" "}
-                  <Link href="/blog/best-accessibility-testing-tools-compared-2026" className="text-violet-300 underline hover:text-violet-200">
+                  <Link href="/blog/best-accessibility-testing-tools" className="text-violet-300 underline hover:text-violet-200">
                     axe-core, WAVE, Lighthouse, and Pa11y
                   </Link>{" "}
                   test against WCAG 2.x criteria. As WCAG 3.0 methods are finalized, tools
@@ -1167,7 +1167,7 @@ export default function WCAG3GuidePage() {
                 <p className="font-semibold text-white">Section 508 Compliance: The Complete Guide for 2026</p>
                 <p className="text-sm text-slate-400 mt-1">Federal accessibility requirements and how to meet them</p>
               </Link>
-              <Link href="/blog/best-accessibility-testing-tools-compared-2026" className="rounded-xl border border-slate-700/50 bg-slate-900/40 p-5 hover:border-violet-500/50 transition-colors">
+              <Link href="/blog/best-accessibility-testing-tools" className="rounded-xl border border-slate-700/50 bg-slate-900/40 p-5 hover:border-violet-500/50 transition-colors">
                 <p className="font-semibold text-white">Best Accessibility Testing Tools Compared (2026)</p>
                 <p className="text-sm text-slate-400 mt-1">12 tools reviewed for automated and manual testing</p>
               </Link>

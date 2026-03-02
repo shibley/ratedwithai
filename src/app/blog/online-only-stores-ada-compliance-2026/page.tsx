@@ -581,7 +581,7 @@ export default function OnlineOnlyStoresAdaPage() {
             Understanding which barriers trigger lawsuits helps you prioritize
             remediation. Based on{" "}
             <Link
-              href="/blog/best-accessibility-testing-tools-compared-2026"
+              href="/blog/best-accessibility-testing-tools"
               className="text-blue-600 hover:text-blue-800"
             >
               accessibility testing data

@@ -606,7 +606,7 @@ export default function WebAccessibilityTrends2026Page() {
                     2028 for private sector websites, documents, and apps. Based on EN 301 549 (WCAG 2.1
                     AA alignment).{" "}
                     <Link
-                      href="/blog/canada-accessible-canada-act-digital-accessibility"
+                      href="/blog/canada-accessible-canada-act-digital-accessibility-2027"
                       className="text-sky-400 hover:text-sky-300"
                     >
                       Full ACA guide →
@@ -904,7 +904,7 @@ export default function WebAccessibilityTrends2026Page() {
                   <span>
                     <strong className="text-white">Courts are also pushing back:</strong>{" "}
                     <Link
-                      href="/blog/courts-fighting-back-serial-ada-plaintiffs-2026"
+                      href="/blog/courts-fighting-back-serial-ada-website-plaintiffs"
                       className="text-sky-400 hover:text-sky-300"
                     >
                       Some judges are scrutinizing serial plaintiffs

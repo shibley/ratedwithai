@@ -389,7 +389,7 @@ export default function UniversityAccessibilityCrisisPage() {
               first time, the rule mandates specific, enforceable technical
               standards for digital accessibility:{" "}
               <Link
-                href="/blog/wcag-2-1-vs-2-2-comparison"
+                href="/blog/wcag-2-1-vs-2-2"
                 className="text-sky-400 underline hover:text-sky-300"
               >
                 WCAG 2.1 Level AA
@@ -401,7 +401,7 @@ export default function UniversityAccessibilityCrisisPage() {
               Public colleges and universities serving populations of 50,000 or
               more must comply by{" "}
               <Link
-                href="/blog/ada-title-ii-april-2026-deadline"
+                href="/blog/ada-title-ii-deadline-countdown-2026"
                 className="text-sky-400 underline hover:text-sky-300"
               >
                 April 24, 2026
@@ -1360,7 +1360,7 @@ export default function UniversityAccessibilityCrisisPage() {
                   Start Monitoring Your Campus →
                 </Link>
                 <Link
-                  href="/blog/best-accessibility-testing-tools-compared-2026"
+                  href="/blog/best-accessibility-testing-tools"
                   className="inline-flex items-center justify-center rounded-xl border border-sky-500/50 px-6 py-3 text-sky-300 font-semibold hover:bg-sky-500/10 transition"
                 >
                   Compare Testing Tools
@@ -1548,7 +1548,7 @@ export default function UniversityAccessibilityCrisisPage() {
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
               <Link
-                href="/blog/ada-title-ii-april-2026-deadline"
+                href="/blog/ada-title-ii-deadline-countdown-2026"
                 className="rounded-xl border border-slate-700/50 bg-slate-900/80 p-5 hover:border-sky-500/50 transition group"
               >
                 <p className="text-sky-400 text-sm">Deadline Guide</p>
@@ -1566,7 +1566,7 @@ export default function UniversityAccessibilityCrisisPage() {
                 </p>
               </Link>
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="rounded-xl border border-slate-700/50 bg-slate-900/80 p-5 hover:border-sky-500/50 transition group"
               >
                 <p className="text-sky-400 text-sm">Tools</p>

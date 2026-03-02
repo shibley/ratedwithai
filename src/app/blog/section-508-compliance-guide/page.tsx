@@ -701,7 +701,7 @@ export default function Section508ComplianceGuidePage() {
               <p className="text-slate-300">
                 See our full{" "}
                 <Link
-                  href="/blog/best-accessibility-testing-tools-compared-2026"
+                  href="/blog/best-accessibility-testing-tools"
                   className="text-sky-400 hover:text-sky-300"
                 >
                   comparison of accessibility testing tools
@@ -1321,7 +1321,7 @@ export default function Section508ComplianceGuidePage() {
                   </Link>{" "}
                   ·{" "}
                   <Link
-                    href="/blog/best-accessibility-testing-tools-compared-2026"
+                    href="/blog/best-accessibility-testing-tools"
                     className="text-sky-400 hover:text-sky-300"
                   >
                     Best Testing Tools Compared

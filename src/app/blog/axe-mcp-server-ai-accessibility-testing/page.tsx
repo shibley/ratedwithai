@@ -1041,7 +1041,7 @@ export default function AxeMCPServerPage() {
             <p className="text-lg leading-relaxed">
               For a comprehensive comparison of all available tools, see our{" "}
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="text-sky-400 hover:text-sky-300 underline"
               >
                 Best Accessibility Testing Tools Compared (2026)
@@ -1262,7 +1262,7 @@ export default function AxeMCPServerPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Link
-                href="/blog/best-accessibility-testing-tools-compared-2026"
+                href="/blog/best-accessibility-testing-tools"
                 className="rounded-2xl border border-slate-800/60 bg-slate-900/50 p-5 hover:border-sky-500/50 transition-colors block"
               >
                 <p className="text-sm text-sky-400">Tools Guide</p>
@@ -1280,7 +1280,7 @@ export default function AxeMCPServerPage() {
                 </p>
               </Link>
               <Link
-                href="/blog/section-508-compliance-guide-2026"
+                href="/blog/section-508-compliance-guide"
                 className="text-sky-400 hover:text-sky-300 rounded-2xl border border-slate-800/60 bg-slate-900/50 p-5 hover:border-sky-500/50 transition-colors block"
               >
                 <p className="text-sm text-sky-400">Compliance Guide</p>
