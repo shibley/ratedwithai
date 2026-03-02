@@ -107,7 +107,10 @@ export default function Wcag22CompleteGuidePage() {
               </div>
             </div>
             <p className="text-base text-slate-300 mt-4">
-              The biggest changes focus on <strong>cognitive accessibility</strong>, <strong>mobile usability</strong>, and <strong>authentication flows</strong>—areas that WCAG 2.1 didn't address thoroughly.
+              The biggest changes focus on <strong>cognitive accessibility</strong>, <strong>mobile usability</strong>, and <strong>authentication flows</strong>—areas that WCAG 2.1 didn't address thoroughly. For a practical implementation checklist, see our{" "}
+              <Link href="/blog/ada-compliance-checklist-2026" className="text-sky-400 hover:underline">
+                ADA compliance checklist for 2026
+              </Link>.
             </p>
           </section>
 
@@ -117,7 +120,11 @@ export default function Wcag22CompleteGuidePage() {
               Why WCAG 2.2 Matters
             </h2>
             <p className="text-lg leading-relaxed">
-              If your organization currently targets WCAG 2.1 AA compliance, you're likely wondering: <em>Do we need to update?</em>
+              If your organization currently targets WCAG 2.1 AA compliance (see our{" "}
+              <Link href="/blog/ada-website-compliance-guide" className="text-sky-400 hover:underline">
+                ADA website compliance guide
+              </Link>{" "}
+              for the full picture), you're likely wondering: <em>Do we need to update?</em>
             </p>
             <p className="text-lg leading-relaxed">
               The short answer: <strong>Yes, eventually.</strong> Here's why:
@@ -421,7 +428,10 @@ export default function Wcag22CompleteGuidePage() {
               How to Update from WCAG 2.1 to 2.2
             </h2>
             <p className="text-lg leading-relaxed">
-              If you're already WCAG 2.1 AA compliant, here's your upgrade checklist:
+              If you're already WCAG 2.1 AA compliant, here's your upgrade checklist. For a more comprehensive step-by-step audit process, check our{" "}
+              <Link href="/blog/accessibility-audit-checklist-2026" className="text-sky-400 hover:underline">
+                website accessibility audit checklist
+              </Link>.
             </p>
             <ol className="space-y-4 text-lg">
               <li className="flex gap-4">

@@ -228,8 +228,12 @@ export default function AccessibilityTestingServicesPage() {
               <p className="text-slate-300 mb-4 leading-relaxed">
                 Accessibility testing isn't just about avoiding lawsuits — though with 8,667 ADA lawsuits filed in 2025
                 alone, that's reason enough. It's about ensuring the 61 million Americans with disabilities (and the
-                1.3 billion globally) can actually use your website. But let's be pragmatic about why businesses invest
-                in testing:
+                1.3 billion globally) can actually use your website. And no, overlay widgets aren't the answer — read
+                our{" "}
+                <Link href="/blog/accessibe-review" className="text-sky-400 hover:text-sky-300">
+                  in-depth accessiBe review
+                </Link>{" "}
+                to understand why. But let's be pragmatic about why businesses invest in testing:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="rounded-xl border border-red-500/20 bg-red-500/5 p-4">
@@ -265,7 +269,11 @@ export default function AccessibilityTestingServicesPage() {
                 <p className="text-sm text-slate-300">
                   <strong className="text-white">Bottom line:</strong> Testing is cheaper than lawsuits, captures more market,
                   improves SEO, and is increasingly required by law. The question isn't <em>whether</em> to test —
-                  it's <em>how</em>.
+                  it's <em>how</em>. For a hands-on comparison of specific tools, see our{" "}
+                  <Link href="/blog/best-accessibility-testing-tools" className="text-sky-400 hover:text-sky-300">
+                    best accessibility testing tools
+                  </Link>{" "}
+                  roundup.
                 </p>
               </div>
             </section>
@@ -452,7 +460,10 @@ export default function AccessibilityTestingServicesPage() {
               </h2>
               <p className="text-slate-300 mb-6 leading-relaxed">
                 Here's how the leading accessibility testing services stack up in 2026. We've categorized
-                them by their primary approach.
+                them by their primary approach. For a deeper feature-by-feature breakdown, see our{" "}
+                <Link href="/blog/ada-compliance-tool-comparison-2026" className="text-sky-400 hover:text-sky-300">
+                  ADA compliance tool comparison
+                </Link>.
               </p>
 
               <h3 className="text-lg font-semibold text-white mb-4">Automated Scanning Tools</h3>

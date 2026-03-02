@@ -228,7 +228,12 @@ export default function AccessibilityCertificationGuidePage() {
             The accessibility profession has reached an inflection point. With the <strong>ADA Title II deadline requiring
             state and local government websites to meet WCAG 2.1 AA</strong>, the <strong>European Accessibility Act
             now in full effect</strong>, and <strong>over 4,600 digital accessibility lawsuits filed annually</strong> in the U.S.
-            alone, demand for qualified accessibility professionals has never been higher.
+            alone, demand for qualified accessibility professionals has never been higher. If you're new to the field,
+            start with our{" "}
+            <Link href="/blog/ada-compliance-checklist-2026" className="text-sky-400 hover:underline">
+              ADA compliance checklist
+            </Link>{" "}
+            to understand the practical requirements these certifications prepare you for.
           </p>
 
           <p>
@@ -352,7 +357,11 @@ export default function AccessibilityCertificationGuidePage() {
           <p>
             The <strong>WAS</strong> is IAAP's technical certification, designed for professionals who implement
             and test accessibility in web content. This is the certification that proves you can actually <em>do</em> accessibility
-            work at a code level.
+            work at a code level. WAS candidates should have a strong grasp of{" "}
+            <Link href="/blog/wcag-22-complete-guide" className="text-sky-400 hover:underline">
+              WCAG 2.2 and its 9 new success criteria
+            </Link>{" "}
+            before attempting the exam.
           </p>
 
           <ul>
@@ -873,7 +882,11 @@ export default function AccessibilityCertificationGuidePage() {
             <li>
               <strong>Practice testing real websites:</strong> Use tools like{" "}
               <Link href="/scan" className="text-sky-400 hover:underline">RatedWithAI's free scanner</Link>,
-              axe DevTools, and WAVE to evaluate real-world websites and understand common issues.
+              axe DevTools, and WAVE to evaluate real-world websites and understand common issues. See our{" "}
+              <Link href="/blog/best-ada-compliance-software" className="text-sky-400 hover:underline">
+                comparison of the best ADA compliance software
+              </Link>{" "}
+              for more options.
             </li>
             <li>
               <strong>Join the accessibility community:</strong> Follow the #a11y hashtag on social media, join

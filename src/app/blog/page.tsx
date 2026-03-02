@@ -17,6 +17,55 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "15000-ada-website-lawsuits-cox-media-investigation-2026",
+    title: "15,000 ADA Website Lawsuits in 4 Years: Inside the Cox Media Investigation",
+    description:
+      "A national investigation found 15,000+ ADA website lawsuits filed in 4 years, with 90% from just 16 law firms. One plaintiff filed 383 cases. Here's what businesses need to know.",
+    category: "Legal",
+  },
+  {
+    slug: "ada-compliance-audit-guide-2026",
+    title: "How to Conduct an ADA Website Accessibility Audit (2026 Guide)",
+    description:
+      "Complete step-by-step guide to conducting an ADA website accessibility audit in 2026. Covers automated scanning, manual testing, assistive technology evaluation, WCAG 2.1 AA compliance, costs, and remediation prioritization.",
+    category: "Auditing",
+  },
+  {
+    slug: "axe-mcp-server-ai-accessibility-testing",
+    title: "Axe MCP Server: AI-Powered Accessibility Testing in Your IDE (2026 Guide)",
+    description:
+      "Deque's Axe MCP Server brings accessibility testing directly into GitHub Copilot, Cursor, Claude Code, and VS Code. Analyze, remediate, and validate WCAG compliance without leaving your editor.",
+    category: "Testing",
+  },
+  {
+    slug: "canada-accessible-canada-act-digital-accessibility-2027",
+    title: "Canada's Accessible Canada Act: Digital Accessibility Deadlines 2027-2028",
+    description:
+      "Canada's Accessible Canada Act mandates WCAG 2.1 AA compliance by December 2027-2028 for federally regulated organizations. Complete guide covering deadlines, CAN/ASC-EN 301 549 standard, and what US businesses with Canadian operations need to know.",
+    category: "International Compliance",
+  },
+  {
+    slug: "how-to-respond-ada-website-lawsuit-demand-letter",
+    title: "How to Respond to an ADA Website Lawsuit or Demand Letter (2026 Guide)",
+    description:
+      "Just received an ADA website demand letter? Don't panic. This step-by-step guide covers what to do in the first 72 hours, when to settle vs. fight, typical costs, and how to prevent repeat lawsuits.",
+    category: "Legal",
+  },
+  {
+    slug: "restaurant-website-ada-compliance-2026",
+    title: "Restaurant Website ADA Compliance Guide 2026: Avoid the #1 Sued Industry",
+    description:
+      "Restaurants are the most-sued industry for ADA website violations — 30% of all lawsuits. Learn how to make your restaurant website accessible, avoid demand letters, and comply with WCAG 2.1 AA.",
+    category: "Industry",
+  },
+  {
+    slug: "wix-ada-compliance-guide-2026",
+    title: "Wix ADA Compliance Guide 2026: Make Your Wix Website Accessible",
+    description:
+      "Complete guide to making your Wix website ADA compliant in 2026. Learn how to use the Accessibility Wizard, fix WCAG issues in Wix Editor, avoid overlays, and protect your business from lawsuits.",
+    category: "Platform Guide",
+  },
+  {
     slug: "ada-website-compliance-cost-2026",
     title: "ADA Website Compliance Cost in 2026: What Small Businesses Actually Pay",
     description:
@@ -519,13 +568,6 @@ const blogPosts = [
     description:
       "The DOJ declared it does not endorse WCAG for ADA Title III. Analysis of this unprecedented footnote and why WCAG remains your best compliance framework.",
     category: "Legal",
-  },
-  {
-    slug: "best-accessibility-testing-tools-compared-2026",
-    title: "Best Accessibility Testing Tools Compared (2026)",
-    description:
-      "12 accessibility testing tools reviewed and compared. axe-core, WAVE, Pa11y, Lighthouse, and more — find the right tool for your workflow.",
-    category: "Auditing",
   },
   {
     slug: "repeat-ada-lawsuits-why-one-settlement-isnt-enough",
