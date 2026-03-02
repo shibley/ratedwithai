@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "ada-website-lawsuit-costs-small-business-2026",
+    title: "The Real Cost of ADA Website Lawsuits for Small Businesses (2026 Data)",
+    description:
+      "ADA website lawsuits cost small businesses $6,500 to $200,000+ in settlements. Data from 15,000+ lawsuits reveals the true financial impact — settlement costs, hidden fees, repeat lawsuit risk, and why prevention costs 90% less than litigation.",
+    category: "Legal",
+  },
+  {
     slug: "15000-ada-website-lawsuits-cox-media-investigation-2026",
     title: "15,000 ADA Website Lawsuits in 4 Years: Inside the Cox Media Investigation",
     description:

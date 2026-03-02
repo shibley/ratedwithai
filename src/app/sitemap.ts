@@ -69,6 +69,7 @@ const blogPosts = [
   "utah-missouri-anti-ada-lawsuit-bills-2026",
   "irs-form-8826-disabled-access-credit-website-accessibility",
   "ada-lawsuits-ai-powered-pro-se-2025",
+  "ada-website-lawsuit-costs-small-business-2026",
   "15000-ada-website-lawsuits-cox-media-investigation-2026",
   "ada-lawsuit-state-migration-2026",
   "california-sb-84-ada-right-to-cure-2026",

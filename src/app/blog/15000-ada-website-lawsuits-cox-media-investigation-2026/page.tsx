@@ -926,6 +926,10 @@ export default function CoxMediaADAInvestigationPage() {
               Related Reading
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
+              <Link href="/blog/ada-website-lawsuit-costs-small-business-2026" className="rounded-xl border border-slate-800/60 bg-slate-900/50 p-5 hover:border-sky-500/30 transition">
+                <p className="font-semibold text-white text-sm">The Real Cost of ADA Website Lawsuits for Small Businesses</p>
+                <p className="text-slate-400 text-xs mt-1">Settlement data from $6,500 to $200,000+ — what businesses actually pay</p>
+              </Link>
               <Link href="/blog/courts-fighting-back-serial-ada-website-plaintiffs" className="rounded-xl border border-slate-800/60 bg-slate-900/50 p-5 hover:border-sky-500/30 transition">
                 <p className="font-semibold text-white text-sm">Courts Fighting Back: Serial ADA Plaintiffs Under Scrutiny</p>
                 <p className="text-slate-400 text-xs mt-1">How judges are pushing back against high-volume filers</p>
