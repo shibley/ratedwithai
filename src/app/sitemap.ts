@@ -93,6 +93,7 @@ const blogPosts = [
   "ada-website-compliance-cost-2026",
   "how-to-respond-ada-website-lawsuit-demand-letter",
   "restaurant-website-ada-compliance-2026",
+  "ada-compliance-audit-guide-2026",
 ];
 
 // Tool landing pages
