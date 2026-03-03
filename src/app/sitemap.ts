@@ -102,6 +102,7 @@ const blogPosts = [
   "accessibility-statement-guide-template-2026",
   "alt-text-guide-how-to-write-image-accessibility",
   "gainesville-ada-lawsuits-small-business-lessons-2026",
+  "iaap-accessibility-certification-guide-2026",
 ];
 
 // Tool landing pages

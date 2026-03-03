@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "iaap-accessibility-certification-guide-2026",
+    title: "IAAP Accessibility Certification Guide 2026: CPACC, WAS & CPWA Compared",
+    description:
+      "Complete guide to IAAP accessibility certifications. Compare CPACC, WAS, and CPWA — exam costs ($385–$530), study plans, pass rates, salary impact ($101K–$121K average), and career paths for accessibility professionals.",
+    category: "Career",
+  },
+  {
     slug: "how-to-make-website-ada-compliant-2026",
     title: "How to Make Your Website ADA Compliant: 10-Step Guide (2026)",
     description:
