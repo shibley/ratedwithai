@@ -105,6 +105,7 @@ const blogPosts = [
   "iaap-accessibility-certification-guide-2026",
   "email-accessibility-guide-2026",
   "screen-reader-testing-guide-2026",
+  "audioeye-pricing-2026",
 ];
 
 // Tool landing pages

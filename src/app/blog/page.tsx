@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "audioeye-pricing-2026",
+    title: "AudioEye Pricing 2026: Plans, Costs & What They Don't Tell You",
+    description:
+      "Complete AudioEye pricing breakdown for 2026. Compare Pro ($45/mo), Managed ($99–$599/mo), and Enterprise ($5K–$15K+/yr) plans. Hidden costs, overlay limitations, Adrian Roselli controversy, AEYE financials ($40M ARR), and better alternatives for genuine WCAG compliance.",
+    category: "Pricing",
+  },
+  {
     slug: "screen-reader-testing-guide-2026",
     title: "Screen Reader Testing Guide 2026: How to Test with NVDA, JAWS & VoiceOver",
     description:
