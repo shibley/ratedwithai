@@ -104,6 +104,7 @@ const blogPosts = [
   "gainesville-ada-lawsuits-small-business-lessons-2026",
   "iaap-accessibility-certification-guide-2026",
   "email-accessibility-guide-2026",
+  "screen-reader-testing-guide-2026",
 ];
 
 // Tool landing pages

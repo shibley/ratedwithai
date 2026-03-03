@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "screen-reader-testing-guide-2026",
+    title: "Screen Reader Testing Guide 2026: How to Test with NVDA, JAWS & VoiceOver",
+    description:
+      "Complete guide to screen reader testing for web accessibility. Setup guides for NVDA, JAWS, and VoiceOver, essential keyboard shortcuts, step-by-step testing methodology, 15 common issues, and a comprehensive testing checklist. Based on WebAIM Survey #10 data from 1,539 real users.",
+    category: "Testing",
+  },
+  {
     slug: "iaap-accessibility-certification-guide-2026",
     title: "IAAP Accessibility Certification Guide 2026: CPACC, WAS & CPWA Compared",
     description:
