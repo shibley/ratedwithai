@@ -107,6 +107,7 @@ const blogPosts = [
   "screen-reader-testing-guide-2026",
   "audioeye-pricing-2026",
   "accessible-website-examples-2026",
+  "userway-pricing-review-2026",
 ];
 
 // Tool landing pages
