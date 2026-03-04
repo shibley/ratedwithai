@@ -125,7 +125,7 @@ export default function Article() {
       <article className="max-w-4xl mx-auto px-6 py-12">
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            15,000+ ADA Website Lawsuits Since 2022: Inside the "Sue-and-Settle" Business Model
+            15,000+ ADA Website Lawsuits Since 2022: Inside the &ldquo;Sue-and-Settle&rdquo; Business Model
           </h1>
           
           <div className="flex items-center gap-4 text-gray-600 text-sm mb-6">
@@ -489,16 +489,16 @@ export default function Article() {
 
           <ol className="text-sm space-y-1">
             <li>
-              <strong>Boston 25 News (Cox Media Group):</strong> "Investigation: 15,000+ ADA Lawsuits Filed Since 2022" — February 25-26, 2026 investigative series
+              <strong>Boston 25 News (Cox Media Group):</strong> &ldquo;Investigation: 15,000+ ADA Lawsuits Filed Since 2022&rdquo; — February 25-26, 2026 investigative series
             </li>
             <li>
               <strong>Seyfarth Shaw LLP:</strong> <Link href="/blog/ada-lawsuits-ai-powered-pro-se-2025" className="text-blue-600 hover:underline">Annual Website Accessibility Lawsuit Report 2025</Link>
             </li>
             <li>
-              <strong>National Retail Federation:</strong> "ADA Website Litigation Reform Position Paper" — 2026
+              <strong>National Retail Federation:</strong> &ldquo;ADA Website Litigation Reform Position Paper&rdquo; — 2026
             </li>
             <li>
-              <strong>Nayan Padrai:</strong> "Blind Sighted" (documentary) — 2026
+              <strong>Nayan Padrai:</strong> &ldquo;Blind Sighted&rdquo; (documentary) — 2026
             </li>
             <li>
               <strong>RatedWithAI Research:</strong> <Link href="/blog/state-ada-reform-laws-tracker-2026" className="text-blue-600 hover:underline">State ADA Reform Laws Tracker 2026</Link>
@@ -542,7 +542,7 @@ export default function Article() {
               <div>
                 <h4 className="font-semibold mb-2">Can you get sued again after fixing accessibility issues?</h4>
                 <p className="mb-0">
-                  Yes. Sara Campbell was sued three times despite achieving compliance after her first lawsuit. Accessibility requires ongoing monitoring—a single fix doesn't guarantee immunity from future lawsuits.
+                  Yes. Sara Campbell was sued three times despite achieving compliance after her first lawsuit. Accessibility requires ongoing monitoring—a single fix doesn&apos;t guarantee immunity from future lawsuits.
                 </p>
               </div>
 
@@ -561,9 +561,9 @@ export default function Article() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-2">What is the documentary "Blind Sighted" about?</h4>
+                <h4 className="font-semibold mb-2">What is the documentary &ldquo;Blind Sighted&rdquo; about?</h4>
                 <p className="mb-0">
-                  "Blind Sighted" is a documentary by Nayan Padrai exploring how the ADA has been weaponized into a profit-driven lawsuit industry that often fails to improve actual accessibility for people with disabilities.
+                  &ldquo;Blind Sighted&rdquo; is a documentary by Nayan Padrai exploring how the ADA has been weaponized into a profit-driven lawsuit industry that often fails to improve actual accessibility for people with disabilities.
                 </p>
               </div>
 
@@ -591,7 +591,7 @@ export default function Article() {
               </li>
               <li>
                 <Link href="/blog/repeat-ada-lawsuits-why-one-settlement-isnt-enough" className="text-blue-600 hover:underline">
-                  Read: Why One Settlement Isn't Enough
+                  Read: Why One Settlement Isn&apos;t Enough
                 </Link>
               </li>
               <li>
