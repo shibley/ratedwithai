@@ -159,7 +159,7 @@ export default function Article() {
           </p>
 
           <p>
-            For context, previous industry reports tracked 8,667 federal lawsuits in <em>just the first nine months of 2025</em> (Seyfarth Shaw data). The Boston 25 four-year dataset confirms this isn't slowing down—it's <em>accelerating</em>.
+            For context, previous industry reports tracked 8,667 federal lawsuits in <em>just the first nine months of 2025</em> (Seyfarth Shaw data). The Boston 25 four-year dataset confirms this isn&apos;t slowing down—it&apos;s <em>accelerating</em>.
           </p>
 
           <div className="bg-gray-50 p-6 rounded-lg my-8">
@@ -187,7 +187,7 @@ export default function Article() {
           </p>
 
           <p>
-            Ariza isn't alone. The investigation found dozens of serial plaintiffs filing <strong>50-100+ lawsuits each</strong>, concentrated primarily in:
+            Ariza isn&apos;t alone. The investigation found dozens of serial plaintiffs filing <strong>50-100+ lawsuits each</strong>, concentrated primarily in:
           </p>
 
           <ul>
@@ -252,11 +252,11 @@ export default function Article() {
           </ul>
 
           <p>
-            The math is straightforward: For a serial plaintiff filing 100 lawsuits/year at $500 each, that's <strong>$50,000/year</strong> in settlement income. For the law firms, it's exponentially more lucrative—potentially <strong>$500,000-$1M+ per attorney annually</strong>.
+            The math is straightforward: For a serial plaintiff filing 100 lawsuits/year at $500 each, that&apos;s <strong>$50,000/year</strong> in settlement income. For the law firms, it&apos;s exponentially more lucrative—potentially <strong>$500,000-$1M+ per attorney annually</strong>.
           </p>
 
           <p>
-            This economic model incentivizes <em>volume over impact</em>. The goal isn't to improve accessibility for disabled users—it's to maximize settlements. Businesses that settle quickly (to avoid higher legal costs) perpetuate the cycle.
+            This economic model incentivizes <em>volume over impact</em>. The goal isn&apos;t to improve accessibility for disabled users—it&apos;s to maximize settlements. Businesses that settle quickly (to avoid higher legal costs) perpetuate the cycle.
           </p>
 
           <h3>Why Businesses Settle Instead of Fighting</h3>
@@ -347,7 +347,7 @@ export default function Article() {
 
           <ul>
             <li><strong>Small business owners</strong> sued multiple times despite good-faith compliance efforts</li>
-            <li><strong>Accessibility advocates</strong> frustrated that lawsuits don't improve real-world usability</li>
+            <li><strong>Accessibility advocates</strong> frustrated that lawsuits don&apos;t improve real-world usability</li>
             <li><strong>Legal experts</strong> analyzing the economic incentives behind serial litigation</li>
             <li><strong>People with disabilities</strong> who question whether this system actually helps them</li>
           </ul>
@@ -359,7 +359,7 @@ export default function Article() {
           <h2>What Businesses Should Do Right Now</h2>
 
           <p>
-            The Boston 25 investigation makes one thing clear: <strong>This isn't stopping.</strong> If anything, the lawsuit industry is growing more sophisticated, more aggressive, and more profitable.
+            The Boston 25 investigation makes one thing clear: <strong>This isn&apos;t stopping.</strong> If anything, the lawsuit industry is growing more sophisticated, more aggressive, and more profitable.
           </p>
 
           <p>
@@ -466,7 +466,7 @@ export default function Article() {
             <li><strong>Scan regularly</strong> — Weekly or monthly automated scans</li>
             <li><strong>Fix issues immediately</strong> — Before demand letters arrive</li>
             <li><strong>Train staff</strong> — On accessible content practices (alt text, headings, labels)</li>
-            <li><strong>Monitor continuously</strong> — Accessibility isn't a project, it's a process</li>
+            <li><strong>Monitor continuously</strong> — Accessibility isn&apos;t a project, it&apos;s a process</li>
           </ul>
 
           <p>
