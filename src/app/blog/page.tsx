@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "hhs-section-504-healthcare-digital-accessibility-deadline-may-2026",
+    title: "HHS Section 504: Healthcare Digital Accessibility Deadline May 2026 — Complete Compliance Guide",
+    description:
+      "HHS Section 504 healthcare accessibility deadline is May 11, 2026 (69 days away). Complete compliance guide for hospitals, clinics, insurers, medical schools. Patient portals, telehealth, kiosks, and websites must meet WCAG 2.1 AA. Separate from ADA Title II/III — enforcement starts soon.",
+    category: "Healthcare",
+  },
+  {
     slug: "audioeye-pricing-2026",
     title: "AudioEye Pricing 2026: Plans, Costs & What They Don't Tell You",
     description:
