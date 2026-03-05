@@ -19,32 +19,23 @@ function getPriceIds() {
   };
 }
 
-// Get authenticated user - handles missing Clerk gracefully
-async function getAuthUserId(): Promise<string | null> {
-  if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
-    return null;
-  }
-  try {
-    const { auth } = await import("@clerk/nextjs/server");
-    const { userId } = await auth();
-    return userId;
-  } catch {
-    return null;
-  }
-}
-
 export async function POST(request: NextRequest) {
   try {
-    // Auth is optional — allow guest checkout when Clerk isn't configured
-    const userId = await getAuthUserId();
-
     const body = await request.json();
-    const { plan } = body;
+    const { plan, email } = body;
+    const normalizedEmail = typeof email === "string" ? email.trim() : "";
 
     const priceIds = getPriceIds();
     if (!plan || !priceIds[plan as keyof typeof priceIds]) {
       return NextResponse.json(
         { error: "Invalid plan selected" },
+        { status: 400 }
+      );
+    }
+
+    if (!normalizedEmail) {
+      return NextResponse.json(
+        { error: "Email is required" },
         { status: 400 }
       );
     }
@@ -72,11 +63,10 @@ export async function POST(request: NextRequest) {
       success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://ratedwithai.com'}/pricing?checkout=success`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://ratedwithai.com'}/pricing?checkout=cancelled`,
       metadata: {
-        ...(userId ? { userId } : {}),
         plan,
       },
       // Collect email for guest checkout (needed to identify customer)
-      customer_email: undefined,
+      customer_email: normalizedEmail,
       // Allow promotion codes
       allow_promotion_codes: true,
       // Collect billing address

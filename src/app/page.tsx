@@ -53,6 +53,7 @@ const gradeStyles: Record<ScanResult["grade"], string> = {
 
 export default function Home() {
   const [url, setUrl] = useState("");
+  const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
@@ -80,7 +81,8 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/scan", {
+      const query = email ? `?email=${encodeURIComponent(email.trim())}` : "";
+      const response = await fetch(`/api/scan${query}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
@@ -147,6 +149,20 @@ export default function Home() {
                 {loading ? "Scanning..." : "Scan Now"}
               </button>
             </form>
+            <details className="max-w-2xl rounded-2xl border border-slate-800/70 bg-slate-900/40 p-4">
+              <summary className="cursor-pointer select-none text-sm text-slate-400 transition hover:text-slate-200">
+                Have a Pro account? Enter your email for unlimited scans
+              </summary>
+              <div className="mt-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  placeholder="you@company.com"
+                  className="w-full rounded-xl border border-slate-800 bg-slate-950/80 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+                />
+              </div>
+            </details>
             {error && (
               <p className="text-sm text-rose-300">{error}</p>
             )}

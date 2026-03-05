@@ -908,7 +908,7 @@ export default function GovernmentPage() {
               </ul>
 
               <Link
-                href="/sign-up?plan=pro"
+                href="/pricing"
                 className="mt-8 block w-full rounded-xl border border-slate-700/60 py-3 text-center text-sm font-semibold text-slate-200 transition hover:border-slate-400 hover:text-white"
               >
                 Start Starter Plan
@@ -976,7 +976,7 @@ export default function GovernmentPage() {
               </ul>
 
               <Link
-                href="/sign-up?plan=business"
+                href="/pricing"
                 className="mt-8 block w-full rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 py-3 text-center text-sm font-semibold text-slate-950 transition hover:opacity-90"
               >
                 Start Pro Plan

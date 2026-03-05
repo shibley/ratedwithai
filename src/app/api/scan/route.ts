@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import Stripe from "stripe";
 import { chromium } from 'playwright-core';
 
 export const runtime = 'nodejs';
@@ -16,6 +17,16 @@ async function getAxeCoreSource(): Promise<string> {
 
 // Simple in-memory rate limiting (5 scans per IP per hour)
 const rateLimitMap = new Map<string, number[]>();
+const proDailyLimitMap = new Map<string, number>();
+
+function getStripe() {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error("STRIPE_SECRET_KEY not configured");
+  }
+  return new Stripe(process.env.STRIPE_SECRET_KEY, {
+    httpClient: Stripe.createFetchHttpClient(),
+  });
+}
 
 function checkRateLimit(ip: string): boolean {
   const now = Date.now();
@@ -31,6 +42,19 @@ function checkRateLimit(ip: string): boolean {
   recentScans.push(now);
   rateLimitMap.set(ip, recentScans);
   
+  return true;
+}
+
+function checkProDailyLimit(email: string): boolean {
+  const dayKey = new Date().toISOString().slice(0, 10);
+  const key = `${email.toLowerCase()}|${dayKey}`;
+  const current = proDailyLimitMap.get(key) ?? 0;
+
+  if (current >= 100) {
+    return false;
+  }
+
+  proDailyLimitMap.set(key, current + 1);
   return true;
 }
 
@@ -81,19 +105,82 @@ function calculateScore(violations: ViolationWithImpact[]): { score: number; gra
   return { score, grade };
 }
 
+type ActivePlan = "pro" | "business" | null;
+
+async function getActivePlanForEmail(email: string): Promise<ActivePlan> {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    return null;
+  }
+
+  const proPriceId = process.env.STRIPE_PRO_PRICE_ID;
+  const businessPriceId = process.env.STRIPE_BUSINESS_PRICE_ID;
+  const stripe = getStripe();
+
+  const customers = await stripe.customers.list({ email, limit: 10 });
+  if (!customers.data.length) {
+    return null;
+  }
+
+  let foundPlan: ActivePlan = null;
+
+  for (const customer of customers.data) {
+    const subs = await stripe.subscriptions.list({
+      customer: customer.id,
+      status: "active",
+      limit: 100,
+    });
+
+    for (const sub of subs.data) {
+      for (const item of sub.items.data) {
+        const priceId = item.price?.id;
+        if (businessPriceId && priceId === businessPriceId) {
+          return "business";
+        }
+        if (proPriceId && priceId === proPriceId) {
+          foundPlan = "pro";
+        }
+      }
+    }
+  }
+
+  return foundPlan;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const ip = request.headers.get('x-forwarded-for')?.split(',')[0] || 
                request.headers.get('x-real-ip') || 
                'unknown';
-    
-    if (!checkRateLimit(ip)) {
-      return NextResponse.json(
-        { error: 'Rate limit exceeded. Maximum 5 scans per hour.' },
-        { status: 429 }
-      );
+
+    const emailParam = request.nextUrl.searchParams.get("email")?.trim() || "";
+    const email = emailParam.includes("@") ? emailParam.toLowerCase() : "";
+    let activePlan: ActivePlan = null;
+
+    if (email) {
+      try {
+        activePlan = await getActivePlanForEmail(email);
+      } catch (error) {
+        console.error("Stripe lookup failed:", error);
+        activePlan = null;
+      }
     }
-    
+
+    if (activePlan === "pro") {
+      if (!checkProDailyLimit(email)) {
+        return NextResponse.json(
+          { error: "Daily Pro scan limit reached (100/day)." },
+          { status: 429 }
+        );
+      }
+    } else if (activePlan !== "business") {
+      if (!checkRateLimit(ip)) {
+        return NextResponse.json(
+          { error: 'Rate limit exceeded. Maximum 5 scans per hour.' },
+          { status: 429 }
+        );
+      }
+    }
+
     const body = await request.json();
     const { url } = body;
     

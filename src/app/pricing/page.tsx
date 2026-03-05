@@ -1,61 +1,10 @@
+"use client";
+
+import { Suspense, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const plans = [
-  {
-    name: "Free",
-    price: "$0",
-    period: "forever",
-    description: "Perfect for trying out RatedWithAI",
-    features: [
-      "5 scans per month",
-      "Basic accessibility report",
-      "WCAG 2.1 AA coverage",
-      "Shareable report link",
-      "Email support",
-    ],
-    cta: "Start Free",
-    href: "/sign-up",
-    highlight: false,
-  },
-  {
-    name: "Pro",
-    price: "$29",
-    period: "/month",
-    description: "For teams serious about accessibility",
-    features: [
-      "100 scans per month",
-      "Detailed reports with remediation guides",
-      "Monitoring alerts (daily/weekly)",
-      "Severity trend tracking",
-      "Export to PDF & CSV",
-      "Priority email support",
-    ],
-    cta: "Start Pro Trial",
-    href: "/sign-up?plan=pro",
-    highlight: true,
-    badge: "Most Popular",
-  },
-  {
-    name: "Business",
-    price: "$99",
-    period: "/month",
-    description: "For agencies and enterprise teams",
-    features: [
-      "Unlimited scans",
-      "API access for CI/CD integration",
-      "White-label reports (your branding)",
-      "Multi-user team workspace",
-      "Custom monitoring schedules",
-      "Priority support + onboarding call",
-      "SSO & advanced security",
-    ],
-    cta: "Contact Sales",
-    href: "mailto:hello@ratedwithai.com?subject=Business Plan Inquiry",
-    highlight: false,
-  },
-];
 
 const faqs = [
   {
@@ -95,7 +44,40 @@ const faqs = [
   },
 ];
 
-export default function PricingPage() {
+function PricingContent() {
+  const searchParams = useSearchParams();
+  const checkoutStatus = useMemo(() => searchParams.get("checkout"), [searchParams]);
+  const [proEmail, setProEmail] = useState("");
+  const [proLoading, setProLoading] = useState(false);
+  const [proError, setProError] = useState<string | null>(null);
+
+  const handleProCheckout = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setProError(null);
+    setProLoading(true);
+
+    try {
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ plan: "pro", email: proEmail }),
+      });
+
+      const payload = await response.json();
+
+      if (!response.ok || !payload?.url) {
+        throw new Error(payload?.error || "Unable to start checkout.");
+      }
+
+      window.location.href = payload.url as string;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Checkout failed.";
+      setProError(message);
+    } finally {
+      setProLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <div className="relative overflow-hidden">
@@ -104,7 +86,7 @@ export default function PricingPage() {
 
         <Header />
 
-        <section className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 pt-12">
+        <section className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-12 pt-12">
           <div className="text-center">
             <p className="text-sm uppercase tracking-[0.3em] text-slate-400">
               Simple, transparent pricing
@@ -117,66 +99,170 @@ export default function PricingPage() {
               All plans include our full WCAG 2.1 AA audit engine.
             </p>
           </div>
+
+          {checkoutStatus === "success" && (
+            <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-emerald-400/40 bg-emerald-500/10 px-5 py-4 text-sm text-emerald-100">
+              Welcome to Pro! Enter your email when scanning to unlock 100 scans/month.
+            </div>
+          )}
+          {checkoutStatus === "cancelled" && (
+            <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-slate-700/70 bg-slate-900/60 px-5 py-4 text-sm text-slate-300">
+              Checkout was cancelled. You can restart anytime when you are ready.
+            </div>
+          )}
         </section>
 
         <section className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-24">
           <div className="grid gap-6 lg:grid-cols-3">
-            {plans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`relative rounded-3xl border p-8 ${
-                  plan.highlight
-                    ? "border-sky-400/60 bg-gradient-to-br from-slate-900 via-slate-900/80 to-slate-950 shadow-xl shadow-sky-500/10"
-                    : "border-slate-800/70 bg-slate-900/60"
-                }`}
-              >
-                {plan.badge && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-1 text-xs font-semibold text-slate-950">
-                    {plan.badge}
-                  </span>
-                )}
-                <p className="text-sm text-slate-400">{plan.name}</p>
-                <div className="mt-4 flex items-baseline gap-1">
-                  <span className="text-4xl font-bold text-white">
-                    {plan.price}
-                  </span>
-                  <span className="text-sm text-slate-400">{plan.period}</span>
-                </div>
-                <p className="mt-2 text-sm text-slate-300">{plan.description}</p>
-
-                <ul className="mt-8 space-y-3">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <svg
-                        className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      <span className="text-sm text-slate-300">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Link
-                  href={plan.href}
-                  className={`mt-8 block w-full rounded-xl py-3 text-center text-sm font-semibold transition ${
-                    plan.highlight
-                      ? "bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 text-slate-950 hover:opacity-90"
-                      : "border border-slate-700/60 text-slate-200 hover:border-slate-400 hover:text-white"
-                  }`}
-                >
-                  {plan.cta}
-                </Link>
+            <div className="relative rounded-3xl border border-slate-800/70 bg-slate-900/60 p-8">
+              <p className="text-sm text-slate-400">Free</p>
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-white">$0</span>
+                <span className="text-sm text-slate-400">forever</span>
               </div>
-            ))}
+              <p className="mt-2 text-sm text-slate-300">
+                Perfect for trying out RatedWithAI
+              </p>
+              <ul className="mt-8 space-y-3">
+                {[
+                  "5 scans per month",
+                  "Basic accessibility report",
+                  "WCAG 2.1 AA coverage",
+                  "Shareable report link",
+                  "Email support",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <svg
+                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-sm text-slate-300">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/"
+                className="mt-8 block w-full rounded-xl border border-slate-700/60 py-3 text-center text-sm font-semibold text-slate-200 transition hover:border-slate-400 hover:text-white"
+              >
+                Start Free
+              </Link>
+            </div>
+
+            <div className="relative rounded-3xl border border-sky-400/60 bg-gradient-to-br from-slate-900 via-slate-900/80 to-slate-950 p-8 shadow-xl shadow-sky-500/10">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-1 text-xs font-semibold text-slate-950">
+                Most Popular
+              </span>
+              <p className="text-sm text-slate-400">Pro</p>
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-white">$29</span>
+                <span className="text-sm text-slate-400">/month</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-300">
+                For teams serious about accessibility
+              </p>
+              <ul className="mt-8 space-y-3">
+                {[
+                  "100 scans per month",
+                  "Detailed reports with remediation guides",
+                  "Monitoring alerts (daily/weekly)",
+                  "Severity trend tracking",
+                  "Export to PDF & CSV",
+                  "Priority email support",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <svg
+                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-sm text-slate-300">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <form onSubmit={handleProCheckout} className="mt-8 space-y-3">
+                <input
+                  type="email"
+                  required
+                  value={proEmail}
+                  onChange={(event) => setProEmail(event.target.value)}
+                  placeholder="you@company.com"
+                  className="w-full rounded-xl border border-slate-800 bg-slate-950/80 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-sky-400 focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  disabled={proLoading}
+                  className="w-full rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 py-3 text-sm font-semibold text-slate-950 transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70"
+                >
+                  {proLoading ? "Redirecting..." : "Subscribe"}
+                </button>
+                {proError && (
+                  <p className="text-xs text-rose-300">{proError}</p>
+                )}
+              </form>
+            </div>
+
+            <div className="relative rounded-3xl border border-slate-800/70 bg-slate-900/60 p-8">
+              <p className="text-sm text-slate-400">Business</p>
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-white">$99</span>
+                <span className="text-sm text-slate-400">/month</span>
+              </div>
+              <p className="mt-2 text-sm text-slate-300">
+                For agencies and enterprise teams
+              </p>
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Unlimited scans",
+                  "API access for CI/CD integration",
+                  "White-label reports (your branding)",
+                  "Multi-user team workspace",
+                  "Custom monitoring schedules",
+                  "Priority support + onboarding call",
+                  "SSO & advanced security",
+                ].map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <svg
+                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-sky-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-sm text-slate-300">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="mailto:shibley@saasintegrate.com?subject=Business Plan Inquiry"
+                className="mt-8 block w-full rounded-xl border border-slate-700/60 py-3 text-center text-sm font-semibold text-slate-200 transition hover:border-slate-400 hover:text-white"
+              >
+                Contact Sales
+              </a>
+            </div>
           </div>
 
           <p className="mt-8 text-center text-sm text-slate-400">
@@ -237,22 +323,30 @@ export default function PricingPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/sign-up"
+              href="/"
               className="rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-8 py-3 text-sm font-semibold text-slate-950 transition hover:opacity-90"
             >
               Start free scan
             </Link>
-            <Link
+            <a
               href="mailto:hello@ratedwithai.com?subject=Demo Request"
               className="rounded-xl border border-slate-700/60 px-8 py-3 text-sm text-slate-200 transition hover:border-slate-400 hover:text-white"
             >
               Request a demo
-            </Link>
+            </a>
           </div>
         </div>
       </section>
 
       <Footer />
     </div>
+  );
+}
+
+export default function PricingPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-950 text-slate-100" />}>
+      <PricingContent />
+    </Suspense>
   );
 }

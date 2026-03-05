@@ -11,6 +11,43 @@ function getStripe() {
   });
 }
 
+const RESEND_API_KEY = process.env.RESEND_API_KEY || "re_4MRdkoe5_LqmGfhpGvN7uGtghDN3zNx1k";
+const RESEND_FROM = "shibley@apistatuscheck.com";
+
+async function sendWelcomeEmail(to: string) {
+  const payload = {
+    from: RESEND_FROM,
+    to,
+    subject: "Welcome to RatedWithAI Pro!",
+    html: `
+      <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+        <h2>Welcome to RatedWithAI Pro!</h2>
+        <p>Thanks for subscribing. You now have access to Pro scan limits.</p>
+        <p>When you run a scan, enter this email address to unlock your Pro scans.</p>
+        <p>If you need help, just reply to this email.</p>
+      </div>
+    `,
+  };
+
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      const text = await response.text();
+      console.error("Resend error:", response.status, text);
+    }
+  } catch (error) {
+    console.error("Resend request failed:", error);
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.text();
@@ -101,55 +138,36 @@ export async function POST(request: NextRequest) {
 
 // Handler functions - implement these based on your database/user management
 async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
-  const userId = session.metadata?.userId;
   const plan = session.metadata?.plan;
   const customerId = session.customer as string;
   const subscriptionId = session.subscription as string;
+  const email = session.customer_details?.email || session.customer_email || "";
 
-  console.log("Checkout complete:", { userId, plan, customerId, subscriptionId });
+  console.log("Checkout complete:", { plan, customerId, subscriptionId, email });
 
-  // TODO: Update user record with subscription info
-  // Example:
-  // await db.user.update({
-  //   where: { clerkId: userId },
-  //   data: {
-  //     stripeCustomerId: customerId,
-  //     stripeSubscriptionId: subscriptionId,
-  //     plan: plan,
-  //     subscriptionStatus: 'active',
-  //   },
-  // });
+  if (email) {
+    await sendWelcomeEmail(email);
+  } else {
+    console.warn("Checkout completed without customer email.");
+  }
 }
 
 async function handleSubscriptionCreated(subscription: Stripe.Subscription) {
   console.log("Subscription created:", subscription.id);
-  
-  // TODO: Update user subscription status
 }
 
 async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
   console.log("Subscription updated:", subscription.id, subscription.status);
-
-  // TODO: Handle plan changes, status updates
-  // subscription.status can be: 'active', 'past_due', 'unpaid', 'canceled', 'incomplete', etc.
 }
 
 async function handleSubscriptionCancelled(subscription: Stripe.Subscription) {
   console.log("Subscription cancelled:", subscription.id);
-
-  // TODO: Downgrade user to free plan
-  // Update user record to remove subscription benefits
 }
 
 async function handlePaymentSucceeded(invoice: Stripe.Invoice) {
   console.log("Payment succeeded for invoice:", invoice.id);
-
-  // TODO: Could send receipt email, update billing history, etc.
 }
 
 async function handlePaymentFailed(invoice: Stripe.Invoice) {
   console.log("Payment failed for invoice:", invoice.id);
-
-  // TODO: Notify user of failed payment
-  // Consider grace period before downgrading
 }
