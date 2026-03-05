@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -25,7 +26,7 @@ export default function BlogPost() {
         "name": "Do private physician practices have to comply with HHS Section 504?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, if you accept Medicare, Medicaid, CHIP, or any other HHS funding. The exception: practices with fewer than 15 employees have until May 11, 2028. If you're part of a larger health system or hospital-affiliated, the 2026 deadline applies."
+          "text": "Yes, if you accept Medicare, Medicaid, CHIP, or any other HHS funding. The exception: practices with fewer than 15 employees have until May 11, 2028. If you&apos;re part of a larger health system or hospital-affiliated, the 2026 deadline applies."
         }
       },
       {
@@ -62,10 +63,10 @@ export default function BlogPost() {
       },
       {
         "@type": "Question",
-        "name": "What if my vendor (Epic, Cerner) isn't compliant?",
+        "name": "What if my vendor (Epic, Cerner) isn&apos;t compliant?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You're still responsible. Request a VPAT (Voluntary Product Accessibility Template) from your vendor. If they're not compliant, ask for a remediation plan with timelines. If they refuse, you may need to budget for custom fixes or switch vendors. Review your contract for accessibility guarantees."
+          "text": "You're still responsible. Request a VPAT (Voluntary Product Accessibility Template) from your vendor. If they&apos;re not compliant, ask for a remediation plan with timelines. If they refuse, you may need to budget for custom fixes or switch vendors. Review your contract for accessibility guarantees."
         }
       },
       {
@@ -170,7 +171,7 @@ export default function BlogPost() {
             <li><strong>Laboratory and diagnostic centers</strong> — patient result portals</li>
           </ul>
           <p>
-            If your organization receives <em>any</em> HHS funding — Medicare reimbursements, Medicaid payments, NIH grants, HRSA grants, CDC funding — you're covered. The funding doesn't have to be your primary revenue source.
+            If your organization receives <em>any</em> HHS funding — Medicare reimbursements, Medicaid payments, NIH grants, HRSA grants, CDC funding — you&apos;re covered. The funding doesn&apos;t have to be your primary revenue source.
           </p>
 
           <h2>Section 504 vs. ADA: Key Differences</h2>
@@ -223,7 +224,7 @@ export default function BlogPost() {
           </div>
 
           <p>
-            <strong>Bottom line:</strong> If you're a hospital accepting Medicare, you likely need to comply with <em>both</em> Section 504 (HHS) <em>and</em> ADA Title II or III (DOJ). Different agencies, different deadlines, same technical standard (WCAG 2.1 AA).
+            <strong>Bottom line:</strong> If you&apos;re a hospital accepting Medicare, you likely need to comply with <em>both</em> Section 504 (HHS) <em>and</em> ADA Title II or III (DOJ). Different agencies, different deadlines, same technical standard (WCAG 2.1 AA).
           </p>
 
           <h2>What Digital Properties Must Be Accessible?</h2>
@@ -310,7 +311,7 @@ export default function BlogPost() {
             Healthcare providers with <strong>fewer than 15 employees</strong> have until <strong>May 11, 2028</strong> to comply (a 2-year extension). This applies to small physician practices, solo practitioners, and small clinics.
           </p>
           <p>
-            However, if you're part of a larger health system or accept Medicare/Medicaid, the 2026 deadline likely still applies. Consult legal counsel to determine your classification.
+            However, if you&apos;re part of a larger health system or accept Medicare/Medicaid, the 2026 deadline likely still applies. Consult legal counsel to determine your classification.
           </p>
 
           <h3>2. Undue Burden or Fundamental Alteration</h3>
@@ -361,7 +362,7 @@ export default function BlogPost() {
             Section 504 does <em>not</em> create a private right of action for monetary damages. Patients cannot sue for cash settlements like they can under ADA Title III.
           </p>
           <p>
-            However, patients <em>can</em> sue for <strong>injunctive relief</strong> (court orders requiring compliance) and attorney's fees. So while you won't face $10,000 settlements, you could face expensive litigation and court-ordered remediation.
+            However, patients <em>can</em> sue for <strong>injunctive relief</strong> (court orders requiring compliance) and attorney's fees. So while you won&apos;t face $10,000 settlements, you could face expensive litigation and court-ordered remediation.
           </p>
 
           <h2>Current State of Healthcare Accessibility</h2>
@@ -458,9 +459,9 @@ export default function BlogPost() {
             If you use third-party platforms (Epic, Cerner, Zoom, etc.), contact them <em>immediately</em>:
           </p>
           <ul>
-            <li><strong>Request VPAT</strong> (Voluntary Product Accessibility Template) — vendor's documented WCAG conformance</li>
+            <li><strong>Request VPAT</strong> (Voluntary Product Accessibility Template) — vendor&apos;s documented WCAG conformance</li>
             <li><strong>Ask about remediation plans</strong> — Are they releasing accessibility updates before May 11?</li>
-            <li><strong>Review contracts</strong> — Does your SLA include accessibility guarantees? Who's liable if the vendor doesn't comply?</li>
+            <li><strong>Review contracts</strong> — Does your SLA include accessibility guarantees? Who's liable if the vendor doesn&apos;t comply?</li>
           </ul>
           <p>
             For custom-built platforms, allocate budget for developer remediation work. Expect 40-120 hours of development time per major platform depending on current state.
@@ -492,7 +493,7 @@ export default function BlogPost() {
 
           <h3>Step 5: Document Compliance Efforts (Weeks 9-10)</h3>
           <p>
-            Even if you're not 100% compliant by May 11, <strong>document what you've done</strong>:
+            Even if you&apos;re not 100% compliant by May 11, <strong>document what you've done</strong>:
           </p>
           <ul>
             <li>Accessibility audit reports (before/after)</li>
@@ -507,7 +508,7 @@ export default function BlogPost() {
 
           <h2>Long-Term Accessibility Strategy</h2>
           <p>
-            May 11, 2026 is not the finish line — it's the starting line. Healthcare accessibility is an ongoing responsibility.
+            May 11, 2026 is not the finish line — it&apos;s the starting line. Healthcare accessibility is an ongoing responsibility.
           </p>
 
           <h3>Build an Accessibility Program</h3>
@@ -573,7 +574,7 @@ export default function BlogPost() {
             Overlay widgets (accessiBe, AudioEye, UserWay) <strong>do not provide Section 504 compliance</strong>. They add a JavaScript toolbar that claims to "fix" accessibility, but:
           </p>
           <ul>
-            <li>They don't address underlying code issues</li>
+            <li>They don&apos;t address underlying code issues</li>
             <li>Screen reader users often find them disruptive or broken</li>
             <li>The FTC <Link href="/blog/ftc-accessibe-fine-overlay-failures">fined accessiBe $1 million</Link> for false advertising about compliance guarantees</li>
             <li>OCR will evaluate the <em>actual experience</em> for users with disabilities — not marketing claims</li>
@@ -584,7 +585,7 @@ export default function BlogPost() {
 
           <h3>2. Ignoring Third-Party Content</h3>
           <p>
-            If you embed third-party tools (appointment schedulers, payment gateways, chatbots), <strong>you're still responsible</strong> for their accessibility. Just because it's a vendor's code doesn't shield you from OCR enforcement.
+            If you embed third-party tools (appointment schedulers, payment gateways, chatbots), <strong>you&apos;re still responsible</strong> for their accessibility. Just because it&apos;s a vendor&apos;s code doesn&apos;t shield you from OCR enforcement.
           </p>
           <p>
             Solution: Include accessibility requirements in all vendor contracts. Request VPATs before signing.
@@ -620,7 +621,7 @@ export default function BlogPost() {
 
           <h3>Do private physician practices have to comply?</h3>
           <p>
-            Yes, <em>if</em> you accept Medicare, Medicaid, CHIP, or any other HHS funding. The exception: practices with fewer than 15 employees have until May 11, 2028. If you're part of a larger health system or hospital-affiliated, the 2026 deadline applies.
+            Yes, <em>if</em> you accept Medicare, Medicaid, CHIP, or any other HHS funding. The exception: practices with fewer than 15 employees have until May 11, 2028. If you&apos;re part of a larger health system or hospital-affiliated, the 2026 deadline applies.
           </p>
 
           <h3>Does Section 504 apply to telehealth platforms?</h3>
@@ -643,9 +644,9 @@ export default function BlogPost() {
             No. Overlay widgets (accessiBe, AudioEye, UserWay) do not provide compliance. They often introduce new barriers for screen reader users. OCR will evaluate the actual user experience, not vendor marketing claims. Fix the underlying code.
           </p>
 
-          <h3>What if my vendor (Epic, Cerner) isn't compliant?</h3>
+          <h3>What if my vendor (Epic, Cerner) isn&apos;t compliant?</h3>
           <p>
-            You're still responsible. Request a VPAT (Voluntary Product Accessibility Template) from your vendor. If they're not compliant, ask for a remediation plan with timelines. If they refuse, you may need to budget for custom fixes or switch vendors. Review your contract for accessibility guarantees.
+            You're still responsible. Request a VPAT (Voluntary Product Accessibility Template) from your vendor. If they&apos;re not compliant, ask for a remediation plan with timelines. If they refuse, you may need to budget for custom fixes or switch vendors. Review your contract for accessibility guarantees.
           </p>
 
           <h3>What happens if I'm not compliant by May 11, 2026?</h3>
