@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "webaim-million-2025-report-analysis",
+    title: "WebAIM Million 2025: Why 94.8% of Websites Still Fail Accessibility (7-Year Analysis)",
+    description:
+      "51 million accessibility errors found across 1 million websites in February 2025. After 7 years, 94.8% still have WCAG failures. WebAIM Million 2025 report breakdown: the same 6 issues dominate, ARIA makes things worse, and why progress has been so slow.",
+    category: "Research",
+  },
+  {
     slug: "hhs-section-504-healthcare-digital-accessibility-deadline-may-2026",
     title: "HHS Section 504: Healthcare Digital Accessibility Deadline May 2026 — Complete Compliance Guide",
     description:
