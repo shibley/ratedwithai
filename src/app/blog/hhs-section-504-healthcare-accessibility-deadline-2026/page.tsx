@@ -1,53 +1,159 @@
-import { BlogPost } from '@/components/BlogPost';
-import { generateBlogMetadata } from '@/lib/blog-metadata';
+/* eslint-disable react/no-unescaped-entities */
+import type { Metadata } from "next";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
-export const metadata = generateBlogMetadata({
-  title: "HHS Section 504 Healthcare Accessibility Deadline May 2026: Complete Compliance Guide",
-  description: "HHS requires WCAG 2.1 compliance for healthcare websites, patient portals, telehealth platforms, and kiosks by May 11, 2026. Complete guide to Section 504 digital accessibility requirements.",
-  slug: "hhs-section-504-healthcare-accessibility-deadline-2026",
-  publishDate: "2026-03-05",
-});
+export const metadata: Metadata = {
+  title:
+    "HHS Section 504 Healthcare Accessibility Deadline May 2026: Complete Compliance Guide | RatedWithAI",
+  description:
+    "HHS requires WCAG 2.1 compliance for healthcare websites, patient portals, telehealth platforms, and kiosks by May 11, 2026. Complete guide to Section 504 digital accessibility requirements for hospitals, clinics, insurers, and medical schools.",
+  openGraph: {
+    title:
+      "HHS Section 504 Healthcare Accessibility Deadline May 2026: Complete Compliance Guide",
+    description:
+      "Healthcare organizations with 15+ employees must comply with WCAG 2.1 AA by May 11, 2026. Complete Section 504 compliance roadmap covering patient portals, telehealth, kiosks, and enforcement.",
+    type: "article",
+    publishedTime: "2026-03-05T00:00:00.000Z",
+    authors: ["RatedWithAI Team"],
+  },
+  keywords: [
+    "hhs section 504",
+    "section 504 healthcare",
+    "hhs section 504 deadline",
+    "healthcare digital accessibility",
+    "section 504 compliance",
+    "hhs accessibility requirements",
+    "patient portal accessibility",
+    "telehealth accessibility",
+    "healthcare kiosk accessibility",
+    "wcag 2.1 healthcare",
+    "section 504 may 2026",
+    "hhs ocr accessibility",
+    "healthcare website accessibility",
+    "section 504 enforcement",
+    "healthcare ada compliance",
+    "medical website accessibility",
+    "hospital website accessibility",
+    "en 301 549 kiosks",
+    "section 504 penalties",
+    "healthcare accessibility audit",
+  ],
+  alternates: {
+    canonical:
+      "https://ratedwithai.com/blog/hhs-section-504-healthcare-accessibility-deadline-2026",
+  },
+};
 
 export default function HHSSection504DeadlinePost() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline:
+      "HHS Section 504 Healthcare Accessibility Deadline May 2026: Complete Compliance Guide",
+    description:
+      "Comprehensive guide to HHS Section 504 digital accessibility requirements for healthcare organizations. Covers WCAG 2.1 compliance for websites, patient portals, telehealth platforms, and kiosks by May 11, 2026 deadline.",
+    datePublished: "2026-03-05T00:00:00.000Z",
+    dateModified: "2026-03-05T00:00:00.000Z",
+    author: {
+      "@type": "Organization",
+      name: "RatedWithAI",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "RatedWithAI",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://ratedwithai.com/logo.png",
+      },
+    },
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the HHS Section 504 May 2026 deadline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The U.S. Department of Health and Human Services (HHS) requires that healthcare organizations with 15 or more employees receiving federal funding must ensure their websites, mobile apps, patient portals, telehealth platforms, and kiosks comply with WCAG 2.1 Level A and AA standards by May 11, 2026. Organizations with fewer than 15 employees have until May 10, 2027.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who is covered by the HHS Section 504 digital accessibility rule?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Any entity receiving federal financial assistance from HHS must comply. This includes hospitals, clinics, research institutions, medical schools, health insurers, long-term care facilities, mental health providers, community health centers, and other health or social service organizations. The rule applies regardless of whether you operate a physical facility or provide services entirely online.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What accessibility standard does Section 504 require?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Section 504 requires compliance with Web Content Accessibility Guidelines (WCAG) 2.1 Level A and Level AA. While 2.1 is the legal minimum, many organizations are adopting WCAG 2.2 AA (released October 2023) to future-proof their systems, as content meeting 2.2 automatically meets 2.1.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do patient portals need to comply with Section 504?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Patient portals, appointment schedulers, billing systems, telehealth platforms, and any digital tool used to apply for, access, or receive healthcare services must meet WCAG 2.1 AA by your compliance deadline. This includes third-party platforms contracted by your organization.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What are the kiosk accessibility requirements under Section 504?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kiosks used for check-in, payment, wayfinding, or other services must provide equal access, convenience, and confidentiality to patients with disabilities. The software layer must meet WCAG 2.1 AA. For hardware accessibility, HHS recommends EN 301 549 (the European ICT accessibility standard) until the U.S. publishes a formal kiosk standard.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happens if we don't comply with Section 504 by May 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Noncompliance can result in loss of federal funding, enforcement actions by HHS Office for Civil Rights (OCR) including investigations and compliance reviews, and lawsuits. Section 504 provides a private right of action, allowing individuals to sue directly. Given the thousands of ADA website lawsuits filed annually, healthcare accessibility litigation is expected to increase significantly after the deadline.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are there any exceptions to the Section 504 web accessibility requirements?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Five categories are exempt: (1) archived web content clearly labeled and not updated, (2) pre-existing conventional documents (PDFs, Word docs) posted before your deadline and not actively used for services, (3) third-party content not under your control (like public forum posts), (4) individualized password-protected documents (which must be provided in accessible format upon request), and (5) pre-existing social media posts made before your deadline.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How should healthcare organizations prepare for the Section 504 deadline?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Start with a comprehensive accessibility audit of all patient-facing websites, mobile apps, portals, and kiosks. Prioritize high-traffic, high-risk areas. Update vendor contracts to require WCAG 2.1 AA compliance. Train staff on accessibility requirements. Implement regular testing and monitoring. Document your remediation plan and progress. Many organizations are starting now because retrofitting all digital systems by May 2026 is a major undertaking.",
+        },
+      },
+    ],
+  };
+
   return (
-    <BlogPost
-      metadata={metadata}
-      schemaType="NewsArticle"
-      faq={[
-        {
-          question: "What is the HHS Section 504 May 2026 deadline?",
-          answer: "The U.S. Department of Health and Human Services (HHS) requires that healthcare organizations with 15 or more employees receiving federal funding must ensure their websites, mobile apps, patient portals, telehealth platforms, and kiosks comply with WCAG 2.1 Level A and AA standards by May 11, 2026. Organizations with fewer than 15 employees have until May 10, 2027."
-        },
-        {
-          question: "Who is covered by the HHS Section 504 digital accessibility rule?",
-          answer: "Any entity receiving federal financial assistance from HHS must comply. This includes hospitals, clinics, research institutions, medical schools, health insurers, long-term care facilities, mental health providers, community health centers, and other health or social service organizations. The rule applies regardless of whether you operate a physical facility or provide services entirely online."
-        },
-        {
-          question: "What accessibility standard does Section 504 require?",
-          answer: "Section 504 requires compliance with Web Content Accessibility Guidelines (WCAG) 2.1 Level A and Level AA. While 2.1 is the legal minimum, many organizations are adopting WCAG 2.2 AA (released October 2023) to future-proof their systems, as content meeting 2.2 automatically meets 2.1."
-        },
-        {
-          question: "Do patient portals need to comply with Section 504?",
-          answer: "Yes. Patient portals, appointment schedulers, billing systems, telehealth platforms, and any digital tool used to apply for, access, or receive healthcare services must meet WCAG 2.1 AA by your compliance deadline. This includes third-party platforms contracted by your organization."
-        },
-        {
-          question: "What are the kiosk accessibility requirements under Section 504?",
-          answer: "Kiosks used for check-in, payment, wayfinding, or other services must provide equal access, convenience, and confidentiality to patients with disabilities. The software layer must meet WCAG 2.1 AA. For hardware accessibility, HHS recommends EN 301 549 (the European ICT accessibility standard) until the U.S. publishes a formal kiosk standard."
-        },
-        {
-          question: "What happens if we don't comply with Section 504 by May 2026?",
-          answer: "Noncompliance can result in loss of federal funding, enforcement actions by HHS Office for Civil Rights (OCR) including investigations and compliance reviews, and lawsuits. Section 504 provides a private right of action, allowing individuals to sue directly. Given the thousands of ADA website lawsuits filed annually, healthcare accessibility litigation is expected to increase significantly after the deadline."
-        },
-        {
-          question: "Are there any exceptions to the Section 504 web accessibility requirements?",
-          answer: "Yes. Five categories are exempt: (1) archived web content clearly labeled and not updated, (2) pre-existing conventional documents (PDFs, Word docs) posted before your deadline and not actively used for services, (3) third-party content not under your control (like public forum posts), (4) individualized password-protected documents (which must be provided in accessible format upon request), and (5) pre-existing social media posts made before your deadline."
-        },
-        {
-          question: "How should healthcare organizations prepare for the Section 504 deadline?",
-          answer: "Start with a comprehensive accessibility audit of all patient-facing websites, mobile apps, portals, and kiosks. Prioritize high-traffic, high-risk areas. Update vendor contracts to require WCAG 2.1 AA compliance. Train staff on accessibility requirements. Implement regular testing and monitoring. Document your remediation plan and progress. Many organizations are starting now because retrofitting all digital systems by May 2026 is a major undertaking."
-        }
-      ]}
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <Header />
+      <main className="container mx-auto px-4 py-8 max-w-4xl">
+        <article className="prose prose-lg max-w-none">
       <p className="lead">
         On May 9, 2024, the U.S. Department of Health and Human Services (HHS) published the first full rewrite of its Section 504 regulations in nearly 50 years. The updated rule sets a hard deadline: <strong>May 11, 2026</strong> for organizations with 15 or more employees to ensure their websites, mobile apps, patient portals, telehealth platforms, and kiosks meet WCAG 2.1 Level A and AA accessibility standards.
       </p>
@@ -847,6 +953,9 @@ export default function HHSSection504DeadlinePost() {
         <li><a href="/blog/ada-title-ii-april-2026-deadline">ADA Title II April 2026 Deadline</a> — State and local government accessibility requirements</li>
         <li><a href="/blog/vpat-accessibility-conformance-report-guide-2026">VPAT Guide</a> — How to read and request accessibility conformance reports</li>
       </ul>
-    </BlogPost>
+        </article>
+      </main>
+      <Footer />
+    </>
   );
 }
