@@ -61,7 +61,7 @@ export default function GainesvilleADALawsuitsPage() {
       },
     },
     datePublished: "2026-03-02T00:00:00.000Z",
-    dateModified: "2026-03-02T00:00:00.000Z",
+    dateModified: "2026-03-06T03:00:00.000Z",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id":
@@ -78,7 +78,7 @@ export default function GainesvilleADALawsuitsPage() {
         name: "What happened with the Gainesville ADA lawsuits?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Between September 2024 and February 2026, a single legally blind plaintiff named Makeda Evans filed 50 ADA website accessibility lawsuits against businesses in and around Gainesville, Florida. 43 were in Alachua County, with the remainder in Orlando, Ocala, Lake City, and Colorado. The lawsuits alleged that business websites failed to work properly with screen-reading software. At least 26 businesses settled with confidential agreements, 12 cases remain pending, and one business (Satchel's Pizza) is fighting back.",
+          text: "Between September 2024 and February 2026, a single legally blind plaintiff named Makeda Evans filed 50 ADA website accessibility lawsuits against businesses in and around Gainesville, Florida. 43 were in Alachua County, with the remainder in Orlando, Ocala, Lake City, and Colorado. The lawsuits alleged that business websites failed to work properly with screen-reading software. At least 26 businesses settled with confidential agreements, 12 cases remain pending, and Satchel's Pizza WON its case — lawsuit dismissed with prejudice on March 5, 2026, marking a rare defendant victory in ADA litigation.",
         },
       },
       {
@@ -102,7 +102,7 @@ export default function GainesvilleADALawsuitsPage() {
         name: "Can a small business fight back against a serial ADA lawsuit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, but it's expensive and risky. Satchel's Pizza in Gainesville hired an IT professional who certified the website was compliant, then filed a motion to dismiss accusing the plaintiff of being a 'serial litigator.' Defense costs typically run $15,000–$75,000+. Fighting makes more strategic sense when the website is genuinely accessible, the plaintiff has filed many identical suits, or courts in your jurisdiction are scrutinizing serial filers. Most businesses settle because it's cheaper than litigation.",
+          text: "Yes — and Satchel's Pizza just proved it. On March 5, 2026, Satchel's lawsuit was dismissed WITH PREJUDICE after the restaurant hired an IT professional to certify compliance and filed a motion highlighting the plaintiff's 50+ serial lawsuits. Defense costs were $12,000-$15,000 — more than double the typical $6,500 settlement — but Satchel's won permanently. Fighting makes strategic sense when: (1) your website is genuinely accessible, (2) the plaintiff is a documented serial filer, (3) you can afford legal fees, and (4) you're willing to fight on principle. However, 99%+ of cases still settle because it's cheaper and faster than litigation.",
         },
       },
       {
@@ -226,8 +226,10 @@ export default function GainesvilleADALawsuitsPage() {
                 numbers — all fixable issues
               </li>
               <li>
-                <strong>One business fighting back:</strong> Satchel's Pizza
-                filed a motion to dismiss, calling Evans a "serial litigator"
+                <strong>🎉 VICTORY UPDATE (Mar 5):</strong> Satchel's Pizza WON! 
+                Lawsuit dismissed WITH PREJUDICE after motion to dismiss. One of 
+                the rarest outcomes in ADA litigation — proving that fighting can work when 
+                you have genuine compliance + serial plaintiff pattern
               </li>
               <li>
                 <strong>The lesson:</strong> A 30-minute accessibility check
@@ -765,6 +767,52 @@ export default function GainesvilleADALawsuitsPage() {
               , which is why most businesses take the settlement route even when
               they believe the lawsuit lacks merit.
             </p>
+
+            <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-500 dark:border-green-700 rounded-xl p-6 my-8">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">🎉</span>
+                <div>
+                  <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mt-0 mb-3">
+                    UPDATE — March 5, 2026: Satchel's Pizza Wins! Lawsuit Dismissed With Prejudice
+                  </h3>
+                  <p className="text-green-800 dark:text-green-200 mb-3">
+                    <strong>Breaking:</strong> In a stunning reversal, the federal lawsuit against 
+                    Satchel's Pizza was <strong>dismissed with prejudice</strong> on March 5, 2026 — 
+                    just 15 days after Satchel Raye filed his motion to dismiss. This is an 
+                    extraordinarily rare outcome in ADA website litigation, where 99%+ of cases settle.
+                  </p>
+                  <p className="text-green-800 dark:text-green-200 mb-3">
+                    <strong>What "with prejudice" means:</strong> The case is over permanently. Evans cannot 
+                    refile the same claim against Satchel's. The dismissal validates Raye's decision to 
+                    fight rather than settle — though his legal costs are estimated at $12,000-$15,000, 
+                    more than double what most businesses paid to settle ($6,500).
+                  </p>
+                  <p className="text-green-800 dark:text-green-200 mb-3">
+                    <strong>Why Satchel's won:</strong> The dismissal came after Raye's IT consultant 
+                    certified the website met accessibility standards, and his motion highlighted Evans' 
+                    pattern of filing 50+ lawsuits through a single attorney. The court's decision 
+                    suggests either (1) the technical compliance evidence was convincing, (2) the serial 
+                    litigation pattern undermined standing, or (3) both.
+                  </p>
+                  <p className="text-green-800 dark:text-green-200 mb-3">
+                    <strong>The precedent:</strong> This dismissal could embolden other Gainesville 
+                    businesses still fighting active cases — proving that defending on the merits is 
+                    occasionally viable, not just theoretical. However, it's worth noting that only 3 
+                    of the original 52 businesses sued are still fighting. The other 49 either settled 
+                    or had their cases dismissed without Satchel's level of vindication.
+                  </p>
+                  <p className="text-green-800 dark:text-green-200 mb-0">
+                    <strong>When to fight vs. settle:</strong> Satchel's victory illustrates the rare 
+                    conditions where fighting makes strategic sense: (1) you have genuine technical 
+                    compliance or can demonstrate it quickly, (2) the plaintiff is a documented serial 
+                    filer (50+ cases), (3) you can afford $12K-$15K in legal fees, and (4) you're 
+                    willing to spend weeks in litigation rather than settling in days. For most small 
+                    businesses, the $6,500 settlement route remains the economically rational choice — 
+                    but Satchel's win proves that "sue and settle" isn't inevitable.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Section 7: Both Sides */}
@@ -1505,8 +1553,9 @@ export default function GainesvilleADALawsuitsPage() {
                   Gainesville, Florida. 43 were in Alachua County, with the
                   remainder in Orlando, Ocala, Lake City, and Colorado. At least
                   26 businesses settled with confidential agreements, 12 cases
-                  remain pending, and Satchel's Pizza is fighting back with a
-                  motion to dismiss.
+                  remain pending, and <strong>Satchel's Pizza WON its case — lawsuit 
+                  dismissed with prejudice on March 5, 2026</strong> (a rare defendant 
+                  victory in ADA litigation).
                 </p>
               </div>
 
@@ -1542,13 +1591,15 @@ export default function GainesvilleADALawsuitsPage() {
                   Can a small business fight back against a serial ADA lawsuit?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-0">
-                  Yes, but it's expensive and risky. Satchel's Pizza hired an IT
-                  professional to certify its website was compliant, then filed a
-                  motion to dismiss. Defense costs typically run $15,000–$75,000+.
-                  Fighting may make sense when your website is genuinely
-                  accessible, the plaintiff is a known serial filer, or courts in
-                  your jurisdiction are scrutinizing these cases. Most businesses
-                  settle because it's cheaper than litigation.
+                  <strong>Yes — and Satchel's Pizza just proved it.</strong> On March 5, 2026, 
+                  Satchel's lawsuit was dismissed WITH PREJUDICE after the restaurant hired an IT 
+                  professional to certify compliance and filed a motion highlighting the plaintiff's 
+                  50+ serial lawsuits. Defense costs were $12,000-$15,000 — more than double the 
+                  typical $6,500 settlement — but Satchel's won permanently. Fighting makes strategic 
+                  sense when: (1) your website is genuinely accessible, (2) the plaintiff is a 
+                  documented serial filer, (3) you can afford legal fees, and (4) you're willing to 
+                  fight on principle. However, 99%+ of cases still settle because it's cheaper and 
+                  faster than litigation.
                 </p>
               </div>
 
