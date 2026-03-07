@@ -1,6 +1,8 @@
-import React from 'react';
+/* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next';
-import BlogPostLayout from '@/components/BlogPostLayout';
+import Link from 'next/link';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Miami University DOJ Settlement: What Every College Must Do Before April 2026 | RatedWithAI',
@@ -119,15 +121,27 @@ const jsonLd = {
 export default function MiamiUniversityDOJSettlement() {
   return (
     <>
+      <Header />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <BlogPostLayout
-        title="Miami University DOJ Settlement: What Every College Must Do Before April 2026"
-        publishDate="March 7, 2026"
-        modifiedDate="March 7, 2026"
-      >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd['@graph'][1]) }}
+      />
+      <main className="min-h-screen bg-gray-50">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <header className="mb-12">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Miami University DOJ Settlement: What Every College Must Do Before April 2026
+            </h1>
+            <div className="flex items-center gap-4 text-gray-600 mb-6">
+              <time dateTime="2026-03-07">Published: March 7, 2026</time>
+              <span>•</span>
+              <span>Updated: March 7, 2026</span>
+            </div>
+          </header>
         <p className="text-xl text-gray-700 mb-6">
           On March 3, 2026, the Department of Justice published a consent decree resolving a 12-year lawsuit against Miami University. It's the first comprehensive DOJ enforcement action targeting higher ed digital infrastructure — and it sets a precedent every college needs to understand before the April 24, 2026 ADA Title II deadline (just 49 days away).
         </p>
@@ -780,7 +794,9 @@ export default function MiamiUniversityDOJSettlement() {
           The good news? You still have time — <strong>49 days until April 24</strong> — to start building the foundation. Hire the right people, audit your systems, train your faculty, and start fixing the highest-impact issues. The Miami settlement shows exactly what DOJ expects. Now it's up to you to deliver.
         </p>
 
-      </BlogPostLayout>
+        </article>
+      </main>
+      <Footer />
     </>
   );
 }
