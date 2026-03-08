@@ -117,7 +117,7 @@ const jsonLd = {
 
 export default function ThreeTVInvestigationsPage() {
   return (
-    <>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -584,6 +584,6 @@ export default function ThreeTVInvestigationsPage() {
         </div>
 
       </article>
-    </>
+    </div>
   );
 }
