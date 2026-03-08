@@ -1,6 +1,8 @@
-import { Metadata } from 'next'
+/* eslint-disable react/no-unescaped-entities */
+import type { Metadata } from 'next'
 import Link from 'next/link'
-import BlogLayout from '@/components/BlogLayout'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Three Major TV Stations Expose ADA Lawsuit "Wipeout Machine" - National Investigation Pattern 2026',
@@ -16,7 +18,8 @@ export const metadata: Metadata = {
 
 export default function ADALawsuitNationalInvestigationPattern() {
   return (
-    <BlogLayout>
+    <>
+      <Header />
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Breadcrumbs */}
         <nav className="mb-8 text-sm">
@@ -815,6 +818,8 @@ export default function ADALawsuitNationalInvestigationPattern() {
 
       </article>
 
+      <Footer />
+
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -952,6 +957,6 @@ export default function ADALawsuitNationalInvestigationPattern() {
           })
         }}
       />
-    </BlogLayout>
+    </>
   )
 }
