@@ -117,12 +117,12 @@ const jsonLd = {
 
 export default function ThreeTVInvestigationsPage() {
   return (
-    <div>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <article className="prose prose-lg max-w-4xl mx-auto">
+      <article className="max-w-4xl mx-auto px-6 py-12">
         <h1>Three Major TV Stations Expose ADA Lawsuit "Wipeout Machine": National Investigation Pattern Emerges</h1>
         
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-8">
@@ -584,6 +584,6 @@ export default function ThreeTVInvestigationsPage() {
         </div>
 
       </article>
-    </div>
+    </>
   );
 }
