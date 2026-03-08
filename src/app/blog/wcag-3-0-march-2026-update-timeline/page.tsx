@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'WCAG 3.0 March 2026 Update: Timeline, Changes & Business Impact',
-    description: 'New W3C update (March 3): Bronze/Silver/Gold conformance, process assertions, cognitive accessibility. Timeline: Not before 2028. Don't wait — comply with WCAG 2.2 now.',
+    description: "New W3C update (March 3): Bronze/Silver/Gold conformance, process assertions, cognitive accessibility. Timeline: Not before 2028. Don't wait — comply with WCAG 2.2 now.",
     type: 'article',
     publishedTime: '2026-03-08T17:00:00.000Z',
     modifiedTime: '2026-03-08T17:00:00.000Z',
