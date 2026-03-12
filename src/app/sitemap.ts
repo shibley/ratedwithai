@@ -108,6 +108,20 @@ const blogPosts = [
   "audioeye-pricing-2026",
   "accessible-website-examples-2026",
   "userway-pricing-review-2026",
+  "ada-lawsuit-business-model-boston-25-investigation",
+  "ada-lawsuit-national-investigation-pattern",
+  "ada-title-ii-rule-under-threat-2026",
+  "hhs-section-504-healthcare-accessibility-compliance-2026",
+  "hhs-section-504-healthcare-accessibility-deadline-2026",
+  "hhs-section-504-healthcare-digital-accessibility-deadline-may-2026",
+  "miami-university-doj-settlement-college-accessibility-2026",
+  "miami-university-doj-settlement-title-ii-compliance",
+  "national-ada-lawsuit-investigation-pattern",
+  "state-of-accessibility-2026-level-access-report",
+  "three-states-push-back-ada-website-lawsuits-2026",
+  "washington-state-ada-lawsuit-surge-kiro7-investigation-2026",
+  "wcag-3-0-march-2026-update-timeline",
+  "webaim-million-2025-report-analysis",
 ];
 
 // Tool landing pages

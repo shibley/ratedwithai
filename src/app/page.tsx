@@ -383,6 +383,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Latest Blog Posts — internal linking to blog content */}
+      <section className="mx-auto w-full max-w-6xl px-6 pb-24">
+        <div className="mb-8 flex items-end justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Latest guides</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white">From the Blog</h2>
+          </div>
+          <a href="/blog" className="text-sm text-sky-400 transition hover:text-sky-300">
+            View all posts →
+          </a>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              href: "/blog/wcag-3-0-march-2026-update-timeline",
+              title: "WCAG 3.0 March 2026 Update: Timeline & Should You Wait?",
+              category: "Standards",
+            },
+            {
+              href: "/blog/ada-title-ii-rule-under-threat-2026",
+              title: "ADA Title II Web Rule Under Threat: April 2026 Deadline at Risk",
+              category: "Legal",
+            },
+            {
+              href: "/blog/hhs-section-504-healthcare-digital-accessibility-deadline-may-2026",
+              title: "HHS Section 504: Healthcare Accessibility Deadline May 2026",
+              category: "Healthcare",
+            },
+            {
+              href: "/blog/state-of-accessibility-2026-level-access-report",
+              title: "State of Accessibility 2026: 82% of Teams Using AI",
+              category: "Research",
+            },
+            {
+              href: "/blog/washington-state-ada-lawsuit-surge-kiro7-investigation-2026",
+              title: "Washington ADA Lawsuit Surge: KIRO 7 Investigation",
+              category: "Legal",
+            },
+            {
+              href: "/blog/miami-university-doj-settlement-college-accessibility-2026",
+              title: "Miami University DOJ Settlement: College Accessibility Blueprint",
+              category: "Higher Education",
+            },
+          ].map((post) => (
+            <a
+              key={post.href}
+              href={post.href}
+              className="group rounded-2xl border border-slate-800/70 bg-slate-900/60 p-6 transition hover:border-slate-700 hover:bg-slate-900/80"
+            >
+              <span className="inline-block rounded-full border border-sky-500/30 bg-sky-500/10 px-2.5 py-0.5 text-xs text-sky-300 mb-3">
+                {post.category}
+              </span>
+              <h3 className="text-sm font-semibold text-slate-100 transition group-hover:text-white leading-snug">
+                {post.title}
+              </h3>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <section id="pricing" className="mx-auto w-full max-w-6xl px-6 pb-24">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>

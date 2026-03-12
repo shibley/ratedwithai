@@ -17,6 +17,153 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "wcag-3-0-march-2026-update-timeline",
+    title: "WCAG 3.0 Update March 2026: What Changed, Timeline & Should You Wait?",
+    description:
+      "W3C published new WCAG 3.0 Working Draft March 3, 2026. Bronze/Silver/Gold levels, assertions, cognitive accessibility expanded. Timeline: Q4 2027 Candidate, 2028+ final. Should you comply with 2.2 now or wait?",
+    category: "Standards",
+  },
+  {
+    slug: "washington-state-ada-lawsuit-surge-kiro7-investigation-2026",
+    title: "Washington State ADA Lawsuit Surge: Starbucks, Nordstrom & Eddie Bauer Sued | KIRO 7 Investigation",
+    description:
+      "KIRO 7 investigation reveals 4,000 ADA website lawsuits in 2025, targeting major Washington brands like Starbucks, Nordstrom, and Eddie Bauer. 90% from 16 law firms. $500/plaintiff payments exposed.",
+    category: "Legal",
+  },
+  {
+    slug: "three-states-push-back-ada-website-lawsuits-2026",
+    title: "Three States Push Back Against ADA Website Lawsuits: CA, GA & Federal Bills 2026",
+    description:
+      "California AB 2190 targets overlay vendors for false compliance claims. Georgia HB 1470 creates anti-abusive litigation law. Federal HR 7328 adds administrative requirements. Complete analysis of the 2026 legislative wave.",
+    category: "Legal",
+  },
+  {
+    slug: "state-of-accessibility-2026-level-access-report",
+    title: "State of Accessibility 2026: Why 82% of Teams Are Using AI (Level Access Report)",
+    description:
+      "Level Access surveyed 1,600+ professionals and found 82% are incorporating AI tools for accessibility testing. 91% say accessibility improves UX. 7x more revenue when executives support accessibility.",
+    category: "Research",
+  },
+  {
+    slug: "national-ada-lawsuit-investigation-pattern",
+    title: 'Three Major TV Stations Expose ADA Lawsuit "Wipeout Machine" — National Investigation Pattern 2026',
+    description:
+      'Boston 25, KIRO 7 Seattle, and WSB-TV Atlanta all expose the same ADA lawsuit business model: 15,000+ lawsuits, serial plaintiffs, and the "sue-and-settle" machine.',
+    category: "Legal",
+  },
+  {
+    slug: "ada-lawsuit-national-investigation-pattern",
+    title: 'Three Major TV Stations Expose ADA Lawsuit "Wipeout Machine" — National Investigation Pattern',
+    description:
+      'Boston 25, KIRO 7 Seattle, and WSB-TV Atlanta expose the same ADA lawsuit business model: 15,000+ lawsuits, serial plaintiffs filing 383 cases, law firms profiting from $500 settlements.',
+    category: "Legal",
+  },
+  {
+    slug: "ada-lawsuit-business-model-boston-25-investigation",
+    title: '15,000+ ADA Website Lawsuits Since 2022: Inside the "Sue-and-Settle" Business Model',
+    description:
+      "Boston 25 News investigation reveals 15,332 ADA lawsuits filed since 2022. How serial plaintiffs, law firms, and a $500 settlement system fuel the accessibility lawsuit industry.",
+    category: "Legal",
+  },
+  {
+    slug: "ada-title-ii-rule-under-threat-2026",
+    title: "ADA Title II Web Rule Under Threat: DOJ May Delay or Weaken April 2026 Deadline",
+    description:
+      "The DOJ's Interim Final Rule could delay or weaken the April 24, 2026 ADA Title II web accessibility deadline. Legal experts warn the IFR bypasses public comment. Here's what changed and what to do now.",
+    category: "Legal",
+  },
+  {
+    slug: "miami-university-doj-settlement-college-accessibility-2026",
+    title: "Miami University DOJ Settlement: What Every College Must Do Before April 2026",
+    description:
+      "DOJ consent decree sets new precedent for higher ed digital accessibility. All web content must meet WCAG 2.0 AA within 6-18 months. Complete compliance roadmap for universities.",
+    category: "Higher Education",
+  },
+  {
+    slug: "miami-university-doj-settlement-title-ii-compliance",
+    title: "Miami University DOJ Settlement: Title II Compliance Blueprint for Higher Ed",
+    description:
+      "DOJ consent decree resolves 12-year Miami University lawsuit. Comprehensive WCAG 2.0 AA requirements, staffing mandates, training obligations, and timeline analysis for higher ed compliance.",
+    category: "Higher Education",
+  },
+  {
+    slug: "hhs-section-504-healthcare-accessibility-compliance-2026",
+    title: "HHS Section 504: Healthcare Digital Accessibility Deadline May 2026",
+    description:
+      "May 11, 2026 deadline approaching for healthcare providers receiving HHS funding. Complete guide to Section 504 web, mobile app, and kiosk accessibility requirements under WCAG 2.1 AA.",
+    category: "Healthcare",
+  },
+  {
+    slug: "hhs-section-504-healthcare-accessibility-deadline-2026",
+    title: "HHS Section 504 Healthcare Accessibility Deadline May 2026: Compliance Guide",
+    description:
+      "Healthcare organizations with 15+ employees must comply with WCAG 2.1 AA by May 11, 2026. Complete Section 504 compliance roadmap covering patient portals, telehealth, kiosks, and enforcement.",
+    category: "Healthcare",
+  },
+  {
+    slug: "mobile-app-accessibility-ada-compliance-guide-2026",
+    title: "Mobile App Accessibility: Complete ADA & WCAG Compliance Guide (2026)",
+    description:
+      "Complete guide to mobile app accessibility for ADA and WCAG 2.1 compliance in 2026. Covers iOS VoiceOver, Android TalkBack, Title II requirements, testing tools, and remediation.",
+    category: "Compliance",
+  },
+  {
+    slug: "pdf-accessibility-ada-compliance-guide-2026",
+    title: "PDF Accessibility: How to Make ADA-Compliant PDFs (2026 Guide)",
+    description:
+      "Complete guide to PDF accessibility and ADA compliance in 2026. Learn how to create, test, and remediate accessible PDFs for WCAG 2.1 AA, Section 508, and PDF/UA standards.",
+    category: "Compliance",
+  },
+  {
+    slug: "nonprofit-website-ada-compliance-guide-2026",
+    title: "Nonprofit Website ADA Compliance Guide 2026: Accessibility for Charities & NGOs",
+    description:
+      "Nonprofits face a triple threat: ADA Title III, Section 504, and the April 2026 Title II deadline. How to make your charity's website accessible on any budget.",
+    category: "Compliance",
+  },
+  {
+    slug: "email-accessibility-guide-2026",
+    title: "Email Accessibility Guide 2026: How to Make ADA-Compliant Emails",
+    description:
+      "99.89% of marketing emails fail accessibility checks. Learn WCAG email standards, screen reader optimization, dark mode design, and a 15-point checklist to make your emails ADA compliant.",
+    category: "Compliance",
+  },
+  {
+    slug: "alt-text-guide-how-to-write-image-accessibility",
+    title: "How to Write Alt Text for Images: The Complete Accessibility Guide (2026)",
+    description:
+      "Missing alt text is the #1 accessibility violation on the web — found on 54.5% of all pages. Learn how to write effective alt text with 30+ examples, decision trees, and CMS guides.",
+    category: "Guides",
+  },
+  {
+    slug: "accessibility-statement-guide-template-2026",
+    title: "How to Write an Accessibility Statement: Template, Examples & Best Practices (2026)",
+    description:
+      "Complete guide to writing an accessibility statement. Free template, real examples, W3C WAI guidance, and EAA/ADA requirements. Your first line of defense in a lawsuit.",
+    category: "Compliance",
+  },
+  {
+    slug: "accessible-website-examples-2026",
+    title: "10 Accessible Website Examples That Get It Right in 2026",
+    description:
+      "See 10 real websites that nail accessibility — from BBC to gov.uk to Patagonia. Learn specific WCAG techniques each site uses and how to apply them to your own website.",
+    category: "Guides",
+  },
+  {
+    slug: "gainesville-ada-lawsuits-small-business-lessons-2026",
+    title: "Gainesville ADA Lawsuits: 50 Small Businesses Sued by One Plaintiff",
+    description:
+      "One legally blind plaintiff sued 50 Gainesville businesses for website accessibility violations. Settlements cost $6,500–$30,000+. What happened and how to protect your business.",
+    category: "Legal",
+  },
+  {
+    slug: "userway-pricing-review-2026",
+    title: "UserWay Pricing & Review 2026: Plans, Costs & Honest Analysis",
+    description:
+      "Complete UserWay pricing breakdown for 2026. Widget plans from $49/mo to $249/mo, scanning from $990/yr, audits from $4,900. Honest review covering what works, what doesn't, and why overlays alone won't protect you.",
+    category: "Pricing",
+  },
+  {
     slug: "webaim-million-2025-report-analysis",
     title: "WebAIM Million 2025: Why 94.8% of Websites Still Fail Accessibility (7-Year Analysis)",
     description:
