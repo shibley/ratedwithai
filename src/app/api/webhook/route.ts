@@ -12,7 +12,7 @@ function getStripe() {
 }
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY || "re_4MRdkoe5_LqmGfhpGvN7uGtghDN3zNx1k";
-const RESEND_FROM = "shibley@apistatuscheck.com";
+const RESEND_FROM = "Shibley <shibley@apistatuscheck.com>";
 
 async function sendWelcomeEmail(to: string) {
   const payload = {
@@ -142,8 +142,30 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
   const customerId = session.customer as string;
   const subscriptionId = session.subscription as string;
   const email = session.customer_details?.email || session.customer_email || "";
+  const ratedWithAiPriceIds = [
+    process.env.STRIPE_PRO_PRICE_ID,
+    process.env.STRIPE_BUSINESS_PRICE_ID,
+  ].filter((priceId): priceId is string => Boolean(priceId));
 
   console.log("Checkout complete:", { plan, customerId, subscriptionId, email });
+
+  const stripe = getStripe();
+  const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
+    limit: 100,
+  });
+  const isRatedWithAiCheckout = lineItems.data.some(
+    (item) => item.price?.id && ratedWithAiPriceIds.includes(item.price.id)
+  );
+
+  if (!isRatedWithAiCheckout) {
+    console.log("Ignoring non-RatedWithAI checkout", {
+      sessionId: session.id,
+      priceIds: lineItems.data
+        .map((item) => item.price?.id)
+        .filter((priceId): priceId is string => Boolean(priceId)),
+    });
+    return;
+  }
 
   if (email) {
     await sendWelcomeEmail(email);
