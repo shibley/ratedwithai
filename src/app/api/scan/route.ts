@@ -290,6 +290,7 @@ export async function POST(request: NextRequest) {
         passesCount: results.passes.length,
         incompleteCount: results.incomplete.length,
         timestamp: new Date().toISOString(),
+        plan: activePlan ?? "free",
       });
       
     } catch (browserError: unknown) {

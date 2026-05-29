@@ -26,6 +26,22 @@ type ScanResult = {
   grade: "A" | "B" | "C" | "D" | "F";
   violations: AxeViolation[];
   passesCount: number;
+  plan?: "pro" | "business" | "free";
+};
+
+const planBadges: Record<NonNullable<ScanResult["plan"]>, { label: string; className: string }> = {
+  business: {
+    label: "✓ Business account verified — unlimited scans",
+    className: "border-emerald-400/40 bg-emerald-500/10 text-emerald-200",
+  },
+  pro: {
+    label: "✓ Pro account verified — 100 scans/day",
+    className: "border-sky-400/40 bg-sky-500/10 text-sky-200",
+  },
+  free: {
+    label: "Free tier — 5 scans/hour. Upgrade for more.",
+    className: "border-slate-700 bg-slate-800/40 text-slate-300",
+  },
 };
 
 const severityOrder = ["critical", "serious", "moderate", "minor"] as const;
@@ -504,6 +520,13 @@ export default function Home() {
       {result && groupedViolations && (
         <section className="mx-auto w-full max-w-6xl px-6 pb-24">
           <div className="rounded-3xl border border-slate-800/70 bg-slate-900/60 p-8">
+            {result.plan && (
+              <div
+                className={`mb-6 inline-flex rounded-xl border px-4 py-2 text-sm font-medium ${planBadges[result.plan].className}`}
+              >
+                {planBadges[result.plan].label}
+              </div>
+            )}
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div>
                 <p className="text-sm text-slate-400">Scan complete</p>
