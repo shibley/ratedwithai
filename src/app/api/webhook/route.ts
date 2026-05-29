@@ -1,5 +1,50 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
+import { createSupabaseServiceClient } from "@/lib/supabase/server";
+
+type PlanName = "free" | "pro" | "business";
+
+function planFromPriceId(priceId: string | undefined): PlanName {
+  if (!priceId) return "free";
+  if (priceId === process.env.STRIPE_BUSINESS_PRICE_ID) return "business";
+  if (priceId === process.env.STRIPE_PRO_PRICE_ID) return "pro";
+  return "free";
+}
+
+async function upsertProfilePlanByCustomer(customerId: string, plan: PlanName) {
+  try {
+    const stripe = getStripe();
+    const customer = await stripe.customers.retrieve(customerId);
+    if (!customer || (customer as Stripe.DeletedCustomer).deleted) return;
+    const email = (customer as Stripe.Customer).email?.toLowerCase();
+    if (!email) return;
+
+    const supabase = createSupabaseServiceClient();
+    // Find user by email via auth admin
+    const { data: list, error: listErr } = await supabase.auth.admin.listUsers();
+    if (listErr) {
+      console.error("listUsers failed:", listErr.message);
+      return;
+    }
+    const match = list.users.find((u) => u.email?.toLowerCase() === email);
+    if (!match) {
+      console.log(`No Supabase user yet for ${email}; deferring profile upsert.`);
+      return;
+    }
+    const { error: upsertErr } = await supabase.from("profiles").upsert(
+      {
+        id: match.id,
+        email,
+        stripe_customer_id: customerId,
+        plan,
+      },
+      { onConflict: "id" }
+    );
+    if (upsertErr) console.error("profile upsert failed:", upsertErr.message);
+  } catch (err) {
+    console.error("upsertProfilePlanByCustomer error:", err);
+  }
+}
 
 // Lazy initialize Stripe to avoid build-time errors
 function getStripe() {
@@ -176,14 +221,22 @@ async function handleCheckoutComplete(session: Stripe.Checkout.Session) {
 
 async function handleSubscriptionCreated(subscription: Stripe.Subscription) {
   console.log("Subscription created:", subscription.id);
+  const plan = planFromPriceId(subscription.items.data[0]?.price?.id);
+  await upsertProfilePlanByCustomer(subscription.customer as string, plan);
 }
 
 async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
   console.log("Subscription updated:", subscription.id, subscription.status);
+  const plan: PlanName =
+    subscription.status === "active" || subscription.status === "trialing"
+      ? planFromPriceId(subscription.items.data[0]?.price?.id)
+      : "free";
+  await upsertProfilePlanByCustomer(subscription.customer as string, plan);
 }
 
 async function handleSubscriptionCancelled(subscription: Stripe.Subscription) {
   console.log("Subscription cancelled:", subscription.id);
+  await upsertProfilePlanByCustomer(subscription.customer as string, "free");
 }
 
 async function handlePaymentSucceeded(invoice: Stripe.Invoice) {

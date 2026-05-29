@@ -1,15 +1,38 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 function AuthButtons() {
+  const [signedIn, setSignedIn] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const supabase = createSupabaseBrowserClient();
+    supabase.auth.getUser().then(({ data }) => setSignedIn(!!data.user));
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSignedIn(!!session?.user);
+    });
+    return () => sub.subscription.unsubscribe();
+  }, []);
+
+  if (signedIn) {
+    return (
+      <Link
+        href="/dashboard"
+        className="rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:scale-[1.02]"
+      >
+        Dashboard
+      </Link>
+    );
+  }
+
   return (
     <Link
-      href="/"
-      className="rounded-full bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:scale-[1.02]"
+      href="/login"
+      className="rounded-full border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:bg-slate-900"
     >
-      Free Scan
+      Sign in
     </Link>
   );
 }

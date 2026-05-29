@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from "stripe";
 import { chromium } from 'playwright-core';
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 export const runtime = 'nodejs';
 export const maxDuration = 60; // Allow up to 60s for scan
@@ -142,7 +143,23 @@ export async function POST(request: NextRequest) {
     const email = emailParam.includes("@") ? emailParam.toLowerCase() : "";
     let activePlan: ActivePlan = null;
 
-    if (email) {
+    // Authenticated path: cheap profile lookup (no Stripe API call)
+    const supabase = await createSupabaseServerClient();
+    const { data: { user } } = await supabase.auth.getUser();
+
+    if (user) {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("plan")
+        .eq("id", user.id)
+        .maybeSingle();
+      if (profile?.plan === "pro" || profile?.plan === "business") {
+        activePlan = profile.plan;
+      }
+    }
+
+    // Anonymous Pro fallback: email query → live Stripe lookup
+    if (!activePlan && email) {
       try {
         activePlan = await getActivePlanForEmail(email);
       } catch (error) {
@@ -224,8 +241,8 @@ export async function POST(request: NextRequest) {
       }, axeSource);
       
       const { score, grade } = calculateScore(results.violations);
-      
-      const scanId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+
+      let scanId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
       
       interface AxeNode {
         html: string;
@@ -258,7 +275,31 @@ export async function POST(request: NextRequest) {
       }));
       
       await browser.close();
-      
+
+      // Persist scan for authenticated users so it shows in /dashboard
+      if (user) {
+        const { data: inserted, error: insertError } = await supabase
+          .from("scans")
+          .insert({
+            user_id: user.id,
+            url,
+            score,
+            grade,
+            violations_count: violations.length,
+            passes_count: results.passes.length,
+            incomplete_count: results.incomplete.length,
+            violations,
+            plan: activePlan ?? "free",
+          })
+          .select("id")
+          .single();
+        if (insertError) {
+          console.error("Scan insert failed:", insertError);
+        } else if (inserted?.id) {
+          scanId = inserted.id;
+        }
+      }
+
       return NextResponse.json({
         id: scanId,
         url,
