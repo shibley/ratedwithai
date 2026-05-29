@@ -28,7 +28,23 @@ interface ScanResult {
   passesCount: number;
   incompleteCount: number;
   timestamp: string;
+  plan?: "pro" | "business" | "free";
 }
+
+const planBadges: Record<NonNullable<ScanResult["plan"]>, { label: string; className: string }> = {
+  business: {
+    label: "✓ Business account verified — unlimited scans",
+    className: "border-emerald-400/40 bg-emerald-500/10 text-emerald-200",
+  },
+  pro: {
+    label: "✓ Pro account verified — 100 scans/day",
+    className: "border-sky-400/40 bg-sky-500/10 text-sky-200",
+  },
+  free: {
+    label: "Free tier — 5 scans/hour. Upgrade for more.",
+    className: "border-slate-700 bg-slate-800/40 text-slate-300",
+  },
+};
 
 export default function ScanResultPage() {
   const [result, setResult] = useState<ScanResult | null>(null);
@@ -104,6 +120,15 @@ export default function ScanResultPage() {
       </header>
 
       <div className="container mx-auto px-4 py-12">
+        {result.plan && (
+          <div className="max-w-3xl mx-auto mb-8 flex justify-center">
+            <div
+              className={`inline-flex rounded-xl border px-4 py-2 text-sm font-medium ${planBadges[result.plan].className}`}
+            >
+              {planBadges[result.plan].label}
+            </div>
+          </div>
+        )}
         {/* Score Circle */}
         <div className="text-center mb-12">
           <div className="mb-6">

@@ -77,9 +77,14 @@ export default function ScanPage() {
         throw new Error(payload?.error || "Scan failed. Please try again.");
       }
 
-      setResult(payload as ScanResult);
-      // Store for the results page
-      localStorage.setItem("scanResult", JSON.stringify(payload));
+      const scan = payload as ScanResult;
+      setResult(scan);
+      try {
+        localStorage.setItem("scanResult", JSON.stringify(scan));
+      } catch {}
+      if (scan.id) {
+        router.push(`/scan/${scan.id}`);
+      }
     } catch (err) {
       const message = err instanceof Error ? err.message : "Scan failed.";
       setError(message);

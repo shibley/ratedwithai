@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import EmailCapture from "@/components/EmailCapture";
@@ -73,6 +74,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
+  const router = useRouter();
 
   const groupedViolations = useMemo(() => {
     if (!result) return null;
@@ -110,7 +112,14 @@ export default function Home() {
         throw new Error(payload?.error || "Scan failed. Please try again.");
       }
 
-      setResult(payload as ScanResult);
+      const scan = payload as ScanResult;
+      setResult(scan);
+      try {
+        localStorage.setItem("scanResult", JSON.stringify(scan));
+      } catch {}
+      if (scan.id) {
+        router.push(`/scan/${scan.id}`);
+      }
     } catch (err) {
       const message = err instanceof Error ? err.message : "Scan failed.";
       setError(message);
