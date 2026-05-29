@@ -17,7 +17,6 @@ async function getAxeCoreSource(): Promise<string> {
 
 // Simple in-memory rate limiting (5 scans per IP per hour)
 const rateLimitMap = new Map<string, number[]>();
-const proDailyLimitMap = new Map<string, number>();
 
 function getStripe() {
   if (!process.env.STRIPE_SECRET_KEY) {
@@ -42,19 +41,6 @@ function checkRateLimit(ip: string): boolean {
   recentScans.push(now);
   rateLimitMap.set(ip, recentScans);
   
-  return true;
-}
-
-function checkProDailyLimit(email: string): boolean {
-  const dayKey = new Date().toISOString().slice(0, 10);
-  const key = `${email.toLowerCase()}|${dayKey}`;
-  const current = proDailyLimitMap.get(key) ?? 0;
-
-  if (current >= 100) {
-    return false;
-  }
-
-  proDailyLimitMap.set(key, current + 1);
   return true;
 }
 
@@ -165,14 +151,7 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    if (activePlan === "pro") {
-      if (!checkProDailyLimit(email)) {
-        return NextResponse.json(
-          { error: "Daily Pro scan limit reached (100/day)." },
-          { status: 429 }
-        );
-      }
-    } else if (activePlan !== "business") {
+    if (activePlan !== "pro" && activePlan !== "business") {
       if (!checkRateLimit(ip)) {
         return NextResponse.json(
           { error: 'Rate limit exceeded. Maximum 5 scans per hour.' },

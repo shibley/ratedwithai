@@ -32,7 +32,7 @@ const planBadges: Record<NonNullable<ScanResult["plan"]>, { label: string; class
     className: "border-emerald-400/40 bg-emerald-500/10 text-emerald-200",
   },
   pro: {
-    label: "✓ Pro account verified — 100 scans/day",
+    label: "✓ Pro account verified — unlimited scans",
     className: "border-sky-400/40 bg-sky-500/10 text-sky-200",
   },
   free: {
