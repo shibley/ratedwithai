@@ -10,6 +10,13 @@ export async function GET(request: NextRequest) {
     const supabase = await createSupabaseServerClient();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
+      // Ensure a profile row exists for this user (no DB trigger; we do it here).
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user?.email) {
+        await supabase
+          .from("profiles")
+          .upsert({ id: user.id, email: user.email }, { onConflict: "id" });
+      }
       return NextResponse.redirect(`${origin}${next}`);
     }
   }
