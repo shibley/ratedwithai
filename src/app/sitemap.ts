@@ -122,6 +122,8 @@ const blogPosts = [
   "washington-state-ada-lawsuit-surge-kiro7-investigation-2026",
   "wcag-3-0-march-2026-update-timeline",
   "webaim-million-2025-report-analysis",
+  "accessibe-vs-userway-vs-audioeye-2026",
+  "new-york-ada-website-lawsuits-2026",
 ];
 
 // Tool landing pages
