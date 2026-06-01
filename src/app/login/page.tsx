@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { trackPixelEvent } from "@/components/MetaPixel";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -25,6 +26,7 @@ export default function LoginPage() {
         },
       });
       if (error) throw error;
+      trackPixelEvent("Lead", { content_name: "magic_link_sent" });
       setSent(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not send magic link.");

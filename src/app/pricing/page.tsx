@@ -1,10 +1,11 @@
 "use client";
 
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { trackPixelEvent } from "@/components/MetaPixel";
 
 const faqs = [
   {
@@ -51,6 +52,16 @@ function PricingContent() {
   const [proLoading, setProLoading] = useState(false);
   const [proError, setProError] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (checkoutStatus === "success") {
+      trackPixelEvent("Subscribe", {
+        value: 29,
+        currency: "USD",
+        content_name: "pro_monthly",
+      });
+    }
+  }, [checkoutStatus]);
+
   const handleProCheckout = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setProError(null);
@@ -69,6 +80,11 @@ function PricingContent() {
         throw new Error(payload?.error || "Unable to start checkout.");
       }
 
+      trackPixelEvent("InitiateCheckout", {
+        value: 29,
+        currency: "USD",
+        content_name: "pro_monthly",
+      });
       window.location.href = payload.url as string;
     } catch (err) {
       const message = err instanceof Error ? err.message : "Checkout failed.";
