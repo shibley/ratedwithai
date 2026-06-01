@@ -130,11 +130,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
+      <Header />
+      <main>
       <div className="relative overflow-hidden">
         <div className="absolute -top-40 right-0 h-96 w-96 rounded-full bg-gradient-to-br from-sky-500/40 via-blue-500/20 to-purple-500/40 blur-3xl" />
         <div className="absolute -bottom-40 left-0 h-96 w-96 rounded-full bg-gradient-to-tr from-indigo-500/30 via-blue-500/10 to-purple-500/30 blur-3xl" />
-
-        <Header />
 
         <section className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 pb-24 pt-10 lg:flex-row lg:items-center">
           <div className="flex-1 space-y-6">
@@ -648,6 +648,7 @@ export default function Home() {
         </section>
       )}
 
+      </main>
       <Footer />
     </div>
   );

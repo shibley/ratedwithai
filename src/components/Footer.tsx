@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Product */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Product</h4>
+            <h2 className="text-sm font-semibold text-white mb-4">Product</h2>
             <div className="flex flex-col gap-2 text-sm text-slate-400">
               <Link className="transition hover:text-white" href="/tools/free-accessibility-checker">Free Accessibility Checker</Link>
               <Link className="transition hover:text-white" href="/tools/color-contrast-checker">Color Contrast Checker</Link>
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Resources</h4>
+            <h2 className="text-sm font-semibold text-white mb-4">Resources</h2>
             <div className="flex flex-col gap-2 text-sm text-slate-400">
               <Link className="transition hover:text-white" href="/blog/ada-compliance-checklist-2026">ADA Compliance Checklist</Link>
               <Link className="transition hover:text-white" href="/blog/web-accessibility-service">Web Accessibility Service</Link>
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Compliance */}
           <div>
-            <h4 className="text-sm font-semibold text-white mb-4">Compliance</h4>
+            <h2 className="text-sm font-semibold text-white mb-4">Compliance</h2>
             <div className="flex flex-col gap-2 text-sm text-slate-400">
               <Link className="transition hover:text-white" href="/state/california">California ADA Lawsuits</Link>
               <Link className="transition hover:text-white" href="/state/new-york">New York ADA Lawsuits</Link>
@@ -61,8 +61,8 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col gap-4 border-t border-slate-800/70 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-slate-500">© {new Date().getFullYear()} RatedWithAI. Built by <a href="https://saasintegrate.com" className="hover:text-slate-300">Bity LLC</a>.</p>
-          <div className="flex flex-wrap gap-4 text-xs text-slate-500">
+          <p className="text-sm text-slate-300">© {new Date().getFullYear()} RatedWithAI. Built by <a href="https://saasintegrate.com" className="underline hover:text-white">Bity LLC</a>.</p>
+          <div className="flex flex-wrap gap-4 text-xs text-slate-300">
             <a className="transition hover:text-slate-300" href="https://apistatuscheck.com">API Status Check</a>
             <a className="transition hover:text-slate-300" href="https://aisotools.com">AISO Tools</a>
             <a className="transition hover:text-slate-300" href="https://usersrated.com">UsersRated</a>
