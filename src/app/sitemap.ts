@@ -127,6 +127,9 @@ const blogPosts = [
   "california-ada-website-lawsuits-2026",
   "massachusetts-ada-website-lawsuits-2026",
   "michigan-ada-website-lawsuits-2026",
+  "level-access-vs-userway-2026",
+  "washington-ada-website-lawsuits-2026",
+  "north-carolina-ada-website-lawsuits-2026",
 ];
 
 // Tool landing pages
