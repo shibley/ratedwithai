@@ -124,6 +124,9 @@ const blogPosts = [
   "webaim-million-2025-report-analysis",
   "accessibe-vs-userway-vs-audioeye-2026",
   "new-york-ada-website-lawsuits-2026",
+  "california-ada-website-lawsuits-2026",
+  "massachusetts-ada-website-lawsuits-2026",
+  "michigan-ada-website-lawsuits-2026",
 ];
 
 // Tool landing pages
